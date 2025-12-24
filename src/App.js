@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation, } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
 import ContactSection from "./Components/ContactSection";
@@ -105,6 +110,7 @@ import Gasholder from "./BioGasComponentes/Index10Nine";
 import BiogasDryer from "./BioGasComponentes/Index10Ten";
 import BiogasCompressor from "./BioGasComponentes/Index10Elevan";
 import Desulphurization from "./BioGasComponentes/Index10Twel";
+import FlareSystem from "./BioGasComponentes/Index10Thirteen";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -136,53 +142,58 @@ function App() {
             </>
           }
         />
-        <Route path="/biogas" element={
-          <>
-          <BioGasHero/>
-          <CardsSection/>
-           <section id="index1">
-          <BioEnergySection/>
-          </section>
-          <section id="index2">
-            <HighEnergy/>
-          </section>
-            <section id="index3">
-            <SilagePreparation/>
-          </section>
-          <section id="index4">
-            <HLRSection/>
-          </section>
-           <section id="index5">
-            <HLRSectionTwo/>
-          </section>
-          <section id="index6">
-            <RawMaterial/>
-          </section>
-           <section id="index7">
-            <BiogasPlant/>
-          </section>
-           <section id="index8">
-            <BiogasPlantTwo/>
-          </section>
-            <section id="index9">
-            <Technological/>
-          </section>
-          <section id="index10">
-            <MainEquipment/>
-          </section>
-          <ReceivingTank/>
-          <SubmersibleAgitator/>
-          <ReactorSection/>
-          <ReactorAgitator/>
-          <WindowSpotlight/>
-          <PumpEquipment/>
-          <Separator/>
-          <Gasholder/>
-          <BiogasDryer/>
-          <BiogasCompressor/>
-          <Desulphurization/>
-          </>
-        }/>
+        <Route
+          path="/biogas"
+          element={
+            <>
+              <BioGasHero />
+              <CardsSection />
+              <section id="index1">
+                <BioEnergySection />
+              </section>
+              <section id="index2">
+                <HighEnergy />
+              </section>
+              <section id="index3">
+                <SilagePreparation />
+              </section>
+              <section id="index4">
+                <HLRSection />
+              </section>
+              <section id="index5">
+                <HLRSectionTwo />
+              </section>
+              <section id="index6">
+                <RawMaterial />
+              </section>
+              <section id="index7">
+                <BiogasPlant />
+              </section>
+              <section id="index8">
+                <BiogasPlantTwo />
+              </section>
+              <section id="index9">
+                <Technological />
+              </section>
+              <section id="index10">
+                <MainEquipment />
+              </section>
+              <ReceivingTank />
+              <SubmersibleAgitator />
+              <ReactorSection />
+              <ReactorAgitator />
+              <WindowSpotlight />
+              <PumpEquipment />
+              <Separator />
+              <Gasholder />
+              <BiogasDryer />
+              <BiogasCompressor />
+
+              <Desulphurization />
+              <FlareSystem />
+            </>
+          }
+        />
         <Route
           path="/aboutus"
           element={

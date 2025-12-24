@@ -12,7 +12,7 @@ const BiogasCompressor = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="compressor-content">
+        <div className="compressor-content"> 
           <div className="compressor-number"><h1>11</h1>
           <h2>
             Biogas Compressor (BC-01, BC-02)
