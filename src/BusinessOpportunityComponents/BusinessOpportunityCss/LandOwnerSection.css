@@ -1,0 +1,85 @@
+/* Main wrapper */
+.landowner-wrapper {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  position: relative;
+  top: -10vh;
+}
+
+/* Gray side background */
+.land-inner-wrapper {
+  position: relative;
+  background-color: #595959;
+  width: 20%;
+  padding: 6vh 0;
+  height: 75vh;
+}
+
+/* Left big red box */
+.land-left {
+  font-family: 'DDINPRO';
+  background: #e12d36;
+  width: 35vw;
+  height: 50vh;
+  padding: 6vh 4vw;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 2;
+}
+
+.land-quote-img {
+  width: 60px;
+}
+
+.land-number {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 700;
+  padding: 0vh 5vw;
+}
+
+.land-text {
+   font-family: 'DDINPRO';
+  font-size: 60px;
+  margin-top: 1vh;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 0vh 5vw;
+}
+
+/* Right side black text */
+.land-right-text {
+   font-family: 'DDINPRO';
+  width: 50%;
+  padding-left: 30vw;
+  font-size: 60px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.gs-title {
+   font-family: 'DDINPRO';
+  font-size: 60px;
+  margin-bottom: 3vh;
+  color: #1a1a1a;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.gs-blue {
+  background: #1e90ff;
+  color: white;
+  padding: 0px 14px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.gs-green {
+  color: #1aa334;
+  font-weight: 600;
+}

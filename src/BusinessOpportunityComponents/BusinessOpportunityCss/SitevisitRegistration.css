@@ -1,0 +1,49 @@
+.sitevisit-wrapper {
+  height: 20vh;
+  background: #d2d2d2;
+  display: flex;
+  align-items: center;
+  padding: 8vh 5vw;
+  position: relative;
+  transform: translateY(-20vh);
+}
+
+/* LEFT SHAPE IMAGE */
+.sitevisit-left-shape {
+  margin-right: 2vw;
+  position: relative;
+  top: -8vh;
+}
+
+.shape-img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* TEXT SECTION */
+.sitevisit-content {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-6vh);
+}
+
+.sitevisit-titlemain {
+  font-size: 60px;
+  font-weight: 700; 
+  color: #252525;
+  margin-bottom: 0vh;
+  position: relative;
+  left: -12vh;
+}
+
+.sitevisit-titlemain span {
+  color: #e12d36;
+}
+
+.sitevisit-subtext {
+  margin-top: 1vh;
+  font-size: 18px;
+  color: #25252599;
+  width: 22vw;
+}

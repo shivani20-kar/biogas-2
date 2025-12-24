@@ -1,0 +1,110 @@
+.business-opportunity {
+   font-family: 'DDINPRO';
+  padding: 5vh 0vw;
+  background-color: #FFFFFFFF;
+}
+
+.main-title {
+  text-align: start;
+  color: #000000;
+  margin-bottom: 0vh;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5vw;
+}
+
+.subtitle {
+  text-align: start;
+  color: #B5B5B5;
+  margin-bottom: 4vh;
+  font-size: 16px;
+  margin-left: 5vw;
+  width: 21vw;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+/* Common tables */
+.business-table,
+.turnkey-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Business table header */
+.business-table th {
+ 
+  background-color: #E12D36;
+  color: #FFFFFF;
+  padding: 12px 8px;
+  text-align: start;
+  font-weight: bold;
+  padding-left: 5vw;
+  font-size: 16px;
+}
+
+.business-table th a,
+.turnkey-table th a {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+/* Table cells */
+.business-table td,
+.turnkey-table td {
+ padding: 1vh 0vw;
+  text-align: left;
+  border-right: 1px solid #e0e0e0;
+}
+
+.business-table td a,
+.turnkey-table td a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: 0.3s;
+  padding-left: 5vw;
+}
+
+.business-table td a:hover,
+.turnkey-table td a:hover {
+  background-color: #e8f4fd;
+  color: #3498db;
+}
+
+/* Overview left cell */
+.overview-cell {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.overview-cell a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+
+/* Turnkey table header full width */
+.turnkey-table thead tr {
+  background-color: #E12D36 !important;
+}
+
+.turnkey-table thead th {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  padding: 12px 8px;
+  text-align: start;
+  font-weight: bold;
+  border: none !important;
+  padding-left: 5vw;
+  font-size: 16px;
+}

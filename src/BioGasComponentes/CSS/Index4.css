@@ -1,0 +1,103 @@
+/* .hlr-section {
+  width: 100%;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+} */
+.hlr-header {
+background: #5f5f5f;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hlr-arrow {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}
+
+.hlr-arrow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  z-index: -1;
+}
+.hlr-title{
+display: flex;
+flex-direction: column;
+}
+.hlr-title h1 {
+   font-family: 'DDINPRO';
+  font-size: 100px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  line-height: 1;
+  margin-top: 1.7vw;
+  margin-left: 1.5vw;
+}
+
+.hlr-title h2 {
+    font-family: 'DDINPRO';
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -4vw;
+  line-height: 1.2;
+  margin-left: 1.5vw;
+}
+
+.hlr-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 2vw 11vw;
+}
+
+.hlr-left p,
+.hlr-right p {
+ font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: 2vw;
+}
+
+.hlr-left strong,
+.hlr-right strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.hlr-right ul {
+  padding-left: 20px;
+  margin: 15px 0 20px;
+}
+
+.hlr-right ul li {
+    font-family: 'DDINPRO';
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,203 @@
+.biogashero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-top:11vh;
+}
+
+.biogasherogdmainbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.biogasherogdmainbackground img {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.biogashero-content-overlayy {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.biogashero-rows {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0rem;
+  gap: 8vw;
+}
+
+.biogashero-logo-container {
+  flex-shrink: 0;
+  width: 10vw;
+}
+
+.biogashero-logo {
+  width: 180px;
+  height: auto;
+  padding: 2vh 2vw;
+}
+
+.biogashero-nav-commons {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin-top: 7vh;
+}
+
+.biogashero-nav-section-commonns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.biogashero-nav-title-commons {
+  color: #ffd768;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'DDINPRO';
+  white-space: nowrap;
+  margin: 0;
+}
+
+.biogashero-nav-list-commons {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.biogashero-nav-list-commons li {
+  white-space: nowrap;
+}
+
+.biogashero-nav-list-commons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+ font-family: 'DDINPRO';
+  display: inline-block;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.biogashero-nav-list-commons a:hover {
+  transform: translateX(5px);
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.biogashero-hero-bottom-wrap {
+  position: absolute;
+  bottom: 15vh;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  z-index: 5;
+}
+
+.biogashero-circle-elements{
+  background-color: #ffffff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible; 
+  animation: float 3s ease-in-out infinite;
+}
+
+.biogashero-title {
+  line-height: 1.2;
+  font-size: 3.2vw;
+  font-weight: bold;
+  color: white;
+  font-family: 'DDINPRO';
+  margin-top: -20vh;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.biogashero-circle-gifs {
+ position: absolute;
+  width: 200px;
+  max-width: none;
+  left: 35%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.index-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  /* background: #6d6e71; */
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  z-index: 3;
+}
+
+.index-bar span {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Arrow Shape */
+.index-arrow {
+  width: 0;
+  height: 0;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-right: 45px solid #ffffff;
+  margin-right: 25px;
+}
+.index-gray {
+  background: #6d6e71;
+  height: 4vh;
+  width: 100%;
+  position: relative;   /* or remove position */
+}
+

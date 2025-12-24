@@ -1,0 +1,124 @@
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;   /* left–right spacing */
+  row-gap: 130px;     /* top–bottom spacing (increase this) */
+  padding: 20vh 6vw;
+}
+
+
+/* ----- CARD ----- */
+.card {
+  position: relative;
+  background: #e3262f;
+  color: #fff;
+  padding: 60px 40px;
+  min-height: 120px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;
+}
+
+
+.card h3 {
+    font-family: 'DDINPRO';
+  font-size: 1.5vw;
+  line-height: 1.4;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+.card.active {
+  background: #ffffff;
+  color: #E12D36;
+  border: 2px solid #E12D36;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.card-number {
+  position: absolute;
+  top: -9.5vw;
+  left: 0%;
+  font-size: 96px;
+  font-weight: 700;
+  background: #ffffff;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px #E12D36; 
+  padding: 0;
+  /* opacity: 1; */
+  transform: translateY(40px);
+}
+
+/* Hover effect: move number up */
+.card:hover .card-number {
+  animation: numberMoveUp 0.5s ease-out forwards;
+}
+
+
+/* Animations */
+@keyframes numberMoveUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes numberMoveDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(40px);
+    opacity: 0.35;
+  }
+}
+
+.arrow-circle {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px); /* start above */
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #E12D36;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  opacity: 0;
+
+  /* Drop animation on page load */
+  animation: dropArrow 0.6s ease-out forwards;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@keyframes dropArrow {
+  0% {
+    transform: translateX(-50%) translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Arrow flies up when .hide class added */
+.arrow-circle.hide {
+  transform: translateX(-50%) translateY(-100px);
+  opacity: 0;
+}

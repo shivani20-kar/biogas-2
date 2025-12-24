@@ -1,0 +1,230 @@
+/* MAIN WRAPPER */
+.team-wrapper {
+  overflow: visible;
+  position: relative;
+  z-index: 5;
+}
+.team-hero {
+  background-image: url("../../Components/IMAGES/meetourteambackground.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12vh 5vw 18vh 5vw; /* bottom padding added */
+  position: relative;
+  z-index: 5;
+}
+
+.team-text-container {
+  color: #ffffff;
+}
+
+.team-title {
+  font-family: 'DDINPRO';
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.red-line {
+  width: 0.4vw;
+  height: 7vh;
+  background: #e12d36;
+  display: inline-block;
+}
+
+.team-quote-icon {
+  color: #e12d36;
+}
+
+.team-sub-title {
+  font-family: 'DDINPRO';
+  color: #ffffff;
+  width: 50vh;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.team-tagline {
+  font-family: 'DDINPRO';
+  font-size: 26px;
+  background: #490000;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 5px;
+  margin-top: 0vh;
+}
+
+/* ---------- TEAM CARD LAYOUT ---------- */
+.team-cards-wrapper {
+  margin-top: -5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+
+  position: relative;
+  z-index: 10;
+}
+
+/* FIRST BIG IMAGE */
+.center-card {
+  width: 390px;
+}
+
+.big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* BOTTOM ROW */
+.team-card-row {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 7vh;
+}
+
+/* SMALL IMAGES */
+.small-card {
+  width: 260px;
+}
+
+.small-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* HOVER EFFECT */
+.team-card-img {
+  transition: 0.3s ease;
+}
+
+.team-card:hover .team-card-img {
+  transform: scale(1.05);
+}
+
+/* LINKEDIN ICON STYLING */
+.linkedin-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1vh;
+}
+
+.linkedin-icon img {
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.linkedin-icon img:hover {
+  transform: scale(1.15);
+}
+
+.gd2 {
+      position: absolute;
+    left: 77vw;
+    top: 0;
+    width: 16%;
+    margin-top: 0vh;
+    z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* ---------- MAIN WRAPPER ---------- */
+  .team-wrapper {
+    overflow: visible;
+    /* border: 2px solid red; */
+  }
+
+  .team-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10vh 5vw 12vh 5vw;
+    background-position: center;
+  }
+
+  .team-text-container {
+    width: 100%;
+  }
+
+  /* ---------- TITLE ---------- */
+  .team-title {
+    font-size: 32px;      /* Reduced from 60px */
+    gap: 10px;
+  }
+
+  .red-line {
+    width: 2vw;          /* reduced width */
+    height: 5vh;         /* reduced height */
+  }
+
+  .team-sub-title {
+    width: 100%;
+    font-size: 22px;      /* reduced from 40px */
+    margin-top: 1vh;
+  }
+
+  .team-tagline {
+    font-size: 16px;      /* reduced from 26px */
+    padding: 6px 14px;
+  }
+
+  /* ---------- TEAM CARDS ---------- */
+  .team-cards-wrapper {
+    margin-top: 2vh;
+    gap: 3vh;
+  }
+
+  /* BIG CENTER CARD */
+  .center-card {
+    width: 85%;           /* flexible width */
+  }
+
+  .big-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* BOTTOM SMALL CARDS ROW */
+  .team-card-row {
+    flex-direction: column;
+    gap: 3vh;
+    margin-bottom: 5vh;
+    align-items: center;
+  }
+
+  .small-card {
+    width: 75%;           /* flexible */
+  }
+
+  .small-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* LINKEDIN ICON */
+  .linkedin-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* GD2 DECOR IMAGE */
+  .gd2 {
+    width: 30%;
+    left: 60vw;
+    top: 1vh;
+  }
+}

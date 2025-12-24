@@ -1,0 +1,153 @@
+.roadmap-wrapper {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.roadmap-title {
+  font-family: 'DDINPRO';
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+/* COMMON ROW STYLING */
+.roadmap-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* BOXES */
+.roadmap-box {
+  width: 230px;
+  padding: 25px 15px;
+  border-radius: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'DDINPRO';
+  text-align: center;
+  position: relative;
+}
+
+.box-red {
+  background: #b01440;
+}
+.box-orange {
+  background: #f4a52d;
+}
+.box-blue {
+  background: #1c7cb8;
+}
+.box-gold {
+  background: #c8a070;
+}
+
+.box-darkblue {
+  background: #193f72;
+}
+.box-green {
+  background: #a4d29a;
+  color: #003700;
+}
+.box-pink {
+  background: #f18ca0;
+}
+
+/* ARROWS BETWEEN BOXES (TOP ROW) */
+.roadmap-row.top-row .roadmap-arrow {
+  width: 40px;
+  height: 2px;
+  background: #858585;
+  position: relative;
+}
+
+.roadmap-row.top-row .roadmap-arrow::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: -4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 7px solid #858585; /* pointing right */
+}
+
+/* ARROWS BETWEEN BOXES INSIDE DASHED BOX */
+.roadmap-dashed-box .roadmap-arrow {
+  width: 40px;
+  height: 2px;
+  background: #858585;
+  position: relative;
+}
+
+.roadmap-dashed-box .roadmap-arrow::after {
+  content: "";
+  position: absolute;
+  left: -6px; /* move arrow to left side */
+  top: -4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 7px solid #858585; /* pointing left */
+}
+
+/* DASHED SECTION */
+.roadmap-dashed-box {
+  border: 2px dashed #bfbfbf;
+  padding: 30px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1; /* keep above vertical line */
+}
+
+/* VERTICAL CONNECTOR */
+.roadmap-vertical-connector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Single continuous vertical dashed line */
+.roadmap-vertical-connector::before {
+  content: "";
+  position: absolute;
+  top: 0; /* start from top of dashed box */
+  bottom: 0; /* down to footer */
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #bfbfbf,
+    #bfbfbf 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* FOOTER BLOCK */
+.roadmap-footer {
+  background: #ce1f2f;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  font-family: 'DDINPRO';
+  font-size: 20px;
+  font-weight: 700;
+  width: 40%;
+  margin: 20px auto 0 auto;
+  position: relative;
+  z-index: 1; /* above vertical line */
+}
+
+.roadmap-footer span {
+  font-family: 'DDINPRO';
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,39 @@
+.gd-position-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0vh 5vw;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0vh;
+}
+
+/* LEFT SIDE TITLE */
+.gd-position-title {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #282828;
+  margin: 0;
+   font-family: 'DDINPRO';
+}
+
+/* RIGHT SIDE TEXT */
+.gd-position-right {
+  width: 45%;
+}
+
+.gd-position-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #252525cc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.gd-position-learn {
+  font-size: 18px;
+  color: #252525cc;
+  line-height: 1.6;
+  font-weight: 400;
+}

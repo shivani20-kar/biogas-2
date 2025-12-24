@@ -1,0 +1,205 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #000 65%, #e12d36 35%);
+  color: #fff;
+  padding: 0vh 6vw;
+  gap: 20px;
+   font-family: 'DDINPRO';
+  /* margin-top: 11vh; */
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 5s ease;
+}
+
+.form-section.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-section h3 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 1vh;
+}
+
+.form-section h3 span {
+  color: #e12d36;
+}
+
+.form-section .subtitle {
+  font-size: 1rem;
+  color: #fff; 
+  margin-bottom: 1vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:hover,
+form textarea:hover {
+  border-color: #e12d36;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+form .row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+form .row input[name="city"] {
+  flex: 2;
+}
+
+form .row input[name="postcode"] {
+  flex: 1;
+}
+
+.submit-btn {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 7px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E12D36;
+  border-radius: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.submit-btn:hover::before {
+  transform: translateY(0);
+}
+
+.submit-btn:hover {
+  color: #fff;
+}
+
+.submit-btn span, 
+.submit-btn .arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  background-color: #fff;
+  color: #E12D36;
+  padding: 1vh;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacttitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0vh;
+  color: #fff;
+}
+
+.contact-item {
+  margin-bottom: 0vh; 
+  display: flex;
+  margin-right: 2vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+  padding-left: 2vh;
+}
+
+.contact-item .highlight {
+  color: #E12D36;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-info svg {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Map Section */
+.map-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10vw;
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 5s ease;
+}
+
+.map-section.animate {
+  opacity: 1;
+  transform: translateX(0);
+}

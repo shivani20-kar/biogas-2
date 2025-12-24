@@ -1,0 +1,47 @@
+.igd-stories-part2 {
+  line-height: 1.6;
+  margin: 20px;
+  padding: 0vh 5vw;
+}
+
+
+.igd-stories-part2-paragraph {
+font-weight: 400;
+  font-size: 18px;
+  color: #707070;
+   font-family: 'DDINPRO';
+    line-height: 1.6;
+    
+}
+
+.igd-stories-part2-paragraph.bold-text {
+  font-family: 'DDINPRO';
+  font-weight: 700;
+  text-align: start;
+  margin: 1vh 0vw;
+}
+
+.igd-stories-part2 strong {
+  font-family: 'DDINPRO';
+  font-weight: bold;
+  color: #282828;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .igd-stories-part2 {
+    /* border: 2px solid red; */
+    font-size: 15px;      /* Smaller text for mobile */
+    margin: 0px;         /* Reduce spacing */
+    padding: 0vh 4vw;     /* Adjust padding */
+    line-height: 1.5;     /* Slightly tighter */
+  }
+
+  .igd-stories-part2-paragraph.bold-text {
+    font-size: 16px;      /* Bold paragraph slightly bigger */
+    margin: 1.5vh 0vw;
+  }
+
+  .igd-stories-part2 strong {
+    font-size: 16px;
+  }
+}

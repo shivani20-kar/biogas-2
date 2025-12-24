@@ -1,0 +1,21 @@
+.biogassitevisit-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.biogassitevisit-container {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.biogassitevisit-image {
+  width: 100%;
+  height: 70%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

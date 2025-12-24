@@ -1,0 +1,44 @@
+.igd-stories-part3 {
+  font-family: 'DDINPRO';
+  line-height: 1.6;
+  margin: 20px;
+  padding: 0vh 5vw;
+  margin-bottom: 1vh;
+}
+
+.igd-stories-part3-paragraph {
+  font-family: 'DDINPRO';
+  font-size: 18px;
+  margin-bottom: 1vh;
+  text-align: justify;
+  color: #707070;
+}
+
+.igd-stories-part3 strong {
+  font-family: 'DDINPRO';
+  font-weight: 700;
+  color: #282828;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .igd-stories-part3 {
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    margin: 0px;
+    padding: 0vh 4vw;
+   
+  }
+
+  .igd-stories-part3-paragraph {
+    font-size: 15px;     /* Smaller font for mobiles */
+    margin-bottom: 1.2vh;
+    text-align: start;   /* Avoid harsh full justification on small screens */
+    color: #555555;      /* Slightly darker for readability */
+  }
+
+  .igd-stories-part3 strong {
+    font-weight: 600;
+    color: #202020;
+  }
+}

@@ -1,0 +1,122 @@
+
+.hlr-header-two {
+background: #5f5f5f;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.arrow-shape-two {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}
+
+.arrow-shape-two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  z-index: -1;
+}
+.header-text-two{
+display: flex;
+flex-direction: column;
+}
+.title-two {
+   font-family: 'DDINPRO';
+  font-size: 100px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  line-height: 1;
+  margin-top: 1.7vw;
+  margin-left: 1.5vw;
+}
+
+.subtitle-two{
+    font-family: 'DDINPRO';
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -4vw;
+  line-height: 1.2;
+  margin-left: 1.5vw;
+}
+
+.hlr-content-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 2vw 11vw;
+}
+
+.hlr-left-two p,
+.hlr-right-two p {
+ font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: 2vw;
+}
+
+.hlr-left-two strong,
+.hlr-right-two strong {
+  color: #000000;
+  font-weight: 600;
+}
+.hlr-left-two h4{
+    font-size: 1.8vw;
+     font-family: 'DDINPRO';
+  color: #000000;
+  font-weight: 700;
+}
+.hlr-left-two ul {
+  margin-bottom: 8px;
+  font-size: 17px;
+  padding-left: 20px;
+  margin: -20px 0 10px;
+}
+.hlr-left-two ul li{
+     font-family: 'DDINPRO';
+  color: #282828;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.hlr-right-two ul li {
+    font-family: 'DDINPRO';
+  color: #282828;
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+.hlr-right-two ul {
+  padding-left: 20px;
+  margin: 15px 0 20px;
+}
+.fullimg{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4vw;
+}

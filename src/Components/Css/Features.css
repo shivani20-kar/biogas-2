@@ -1,0 +1,54 @@
+/* Features.css */
+
+/* Section styling */
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vh 4vw;
+   
+}
+
+/* Feature box styling */
+.feature-box {
+  flex: 1;
+  background: transparent;      
+  border: 2px solid #ebe8e8;       
+  border-radius: 10px;
+  padding: 1vw;
+  text-align: start;
+  margin: 2vw;
+  transition: 0.3s ease;         
+}
+
+
+/* Heading */
+ h4 {
+  display: flex;
+    justify-content: space-between; 
+    align-items: center;
+     font-family: 'DDINPRO';
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+
+/* Divider line */
+ hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 1rem 0;
+}
+
+
+ p {
+   font-size: 18px;
+   font-weight: 500;
+    line-height: 1.5;
+    color: #2E2E2E;
+    margin-top: 1vh;
+    padding-bottom: 0vh;
+}
+
+

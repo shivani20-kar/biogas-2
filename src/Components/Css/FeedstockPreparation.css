@@ -1,0 +1,50 @@
+.feedstock-container{
+  margin-top: 2vh;
+     background: linear-gradient(90deg, #F5F5F5 53.39%, #595959 53.41%);
+}
+.feedstock {
+   width: auto;
+    height: auto;
+  
+   align-items: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    
+      padding: 1vh 6vw;
+}
+
+.text {
+  width: 600px;
+   font-family: 'DDINPRO';
+}
+
+.text h3 {
+   font-size: 27px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5vh;
+     border-left: 3px solid #c03535;
+     padding-left: 10px;
+}
+
+ .text p {
+ 
+   font-size: 18px;
+   font-weight: 500;
+    font-family: 'DDINPRO';
+}
+
+
+.napierimg {
+  margin-left: 1vw;
+   width: 450px;
+    height: 400px;
+    outline: 2px solid #fff; /* white outline */
+    outline-offset: 15px; 
+    object-fit: cover;
+}
+
+

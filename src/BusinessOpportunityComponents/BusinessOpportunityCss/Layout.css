@@ -1,0 +1,16 @@
+.header-hero-wrapper {
+  position: relative;
+  width: 100%;
+   height: auto;
+}
+
+.page-overlay-content {
+  position: absolute;
+  top: 70vh;        /* EXACT screenshot प्रमाणे placement */
+  left: 0;
+  width: 100%;
+  z-index: 999;     /* headerhero वर दिसण्यासाठी */
+  background: #fff; /* पांढरा background bottom सारखा */
+  padding: 40px 0;
+  border-radius: 20px 20px 0 0;
+}

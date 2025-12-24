@@ -1,0 +1,136 @@
+.rt-wrapper {
+  display: flex;
+}
+
+/* LEFT CONTENT */
+.rt-left {
+  width: 45%;
+  padding: 0vw 6vw ;
+  position: relative;
+}
+
+.rt-number {
+   display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.rt-number h1{
+    font-size: 5vw;
+  font-weight: 700;
+  color: transparent;                 
+  -webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px #cc3a3a;
+}
+.rt-title {
+    width: 100%;
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.rt-subtitle {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+  margin-top: -1.5vw;
+}
+
+.rt-text {
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.rt-section-title {
+ font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: -1vw;
+   margin-bottom: -0.5vw;
+}
+.rt-section-titlee {
+ font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: -1vw;
+   margin-bottom: -0.5vw;
+    border-bottom: 2px solid #E12D36;
+}
+
+.rt-list {
+  margin-top: 1vw;
+  padding-left: 1.2vw;
+}
+
+.rt-list li {
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* SPECS */
+.rt-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 0vw;
+  margin-top: 0vw;
+}
+
+.spec-block h5 {
+  font-family: 'DDINPRO';
+     font-weight: 700;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 0.5vw;
+  margin-bottom: -1vw;
+}
+
+.spec-block p {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+ font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.spec-block span {
+  font-weight: 400;
+}
+/* RIGHT IMAGE */
+.rt-right {
+  width: 47%;
+  background: #6a6a6a;
+  position: relative;          /* IMPORTANT */
+  display: flex;
+  align-items: center;
+  overflow: visible;           /* allow outside */
+}
+
+.rt-image-box {
+  position: absolute;
+  left: -4vw;                 /* background chya baher */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rt-image-box img {
+  width:70%;
+  height: auto;
+  border: 2px solid #E8E8E8;
+  padding: 1vw;
+  display: block;
+}
+

@@ -1,0 +1,22 @@
+.worldmap-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6vh 0;
+  background: #ffffff;
+}
+
+.worldmap-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.worldmap-img {
+  width: 100%;
+
+  object-fit: contain;
+  filter: drop-shadow(0px 12px 25px rgba(0, 0, 0, 0.15));
+}

@@ -1,0 +1,81 @@
+/* MAIN WRAPPER */
+.construction-container {
+   font-family: 'DDINPRO';
+  padding: 5vh 0;
+  background: #ffffff;
+}
+
+/* TITLE */
+.construction-title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 5vw;
+  color: #000;
+}
+
+/* SUBTITLE */
+.construction-subtitle {
+  width: 55vw;
+  color: #777;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+/* TABLE */
+.construction-table-wrapper {
+  width: 100%;
+}
+
+.construction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  table-layout: fixed;
+}
+
+/* HEADER BAR */
+.construction-header th {
+  background-color: #E12D36;
+  padding: 12px 5vw;
+  text-align: start;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* COLUMN WIDTHS */
+.overview-col {
+  width: 20%;
+}
+
+.solutions-col {
+  width: 30%;
+}
+
+.products-col {
+  width: 50%;
+}
+
+/* CELLS */
+.construction-table td {
+  font-size: 16px;
+  padding: 10px 5vw;
+  vertical-align: top;
+  border: none;
+     border-right: 1px solid #e0e0e0; 
+}
+
+/* LINKS */
+.construction-table td a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 3px 0;
+  transition: 0.3s;
+}
+
+.construction-table td a:hover {
+   background-color: #e8f4fd;
+  color: #3498db;
+}

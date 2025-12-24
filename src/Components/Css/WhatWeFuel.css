@@ -1,0 +1,66 @@
+.fuel-produce-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vw 8vw;
+  gap: 3vw;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.fuel-produce-left {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.fuel-produce-title {
+  color: #000;
+   font-family: 'DDINPRO';
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.fuel-produce-subtitle {
+  font-family: 'DDINPRO';
+  color: #555;
+  font-size: 0.9vw;
+  margin-bottom: 2vw;
+}
+
+.fuel-produce-heading {
+  color: #000;
+  font-family: 'DDINPRO';
+  font-size: 2.5vw;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1.5vw;
+}
+
+.produce-description {
+  color: #6b6b6b;
+  font-family: 'DDINPRO';
+  font-size: 1vw;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.fuel-produce-right {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+}
+
+.fuel-produce-image {
+  width: 48%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.fuel-produce-image:hover {
+  transform: scale(1.03);
+}

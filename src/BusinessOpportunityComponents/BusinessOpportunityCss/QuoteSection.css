@@ -1,0 +1,63 @@
+/* Main wrapper */
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  position: relative;
+  top: -10vh;
+}
+
+/* Gray Background Wrapper */
+.quoteinner-wrapper {
+  position: relative;
+  background-color: #595959;
+  width: 20%;
+  padding: 6vh 0;
+  height: 75vh;
+}
+
+/* Left Red Box - Overlay Effect */
+.quote-left {
+   font-family: 'DDINPRO';
+  background: #e12d36;
+  width: 35vw;
+  height: 50vh;
+  padding: 6vh 4vw;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 2;
+}
+
+.quote-img {
+  width: 60px;
+}
+
+.quote-number {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 700;
+  padding: 0vh 5vw;
+}
+
+.quote-text {
+   font-family: 'DDINPRO';
+  font-size: 70px;
+  margin-top: 1vh;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 0vh 5vw;
+}
+
+/* Right side text */
+.quote-righttext {
+  font-family: 'DDINPRO';
+  width: 50%;
+  padding-left: 30vw;
+  font-size: 60px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.4;
+}

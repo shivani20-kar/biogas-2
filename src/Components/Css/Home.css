@@ -1,0 +1,257 @@
+.heror {
+  position: relative;
+  /* width: 100%; */
+  height: 90vh;
+  overflow: hidden;
+  margin-top:11vh;
+}
+
+.gdmainbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.gdmainbackground img {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content-overlayy {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.header-rows {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0rem;
+  gap: 8vw;
+}
+
+.logo-container {
+  flex-shrink: 0;
+  width: 10vw;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  padding: 2vh 2vw;
+}
+
+.nav-commons {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 10vh;
+}
+
+.nav-section-commonns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-title-commons {
+  color: #ffd768;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+font-family: 'DDINPRO';
+  white-space: nowrap;
+  margin: 0;
+}
+
+.nav-list-commons {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-list-commons li {
+  white-space: nowrap;
+}
+
+.nav-list-commons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'DDINPRO';
+  display: inline-block;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.nav-list-commons a:hover {
+  transform: translateX(5px);
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero-bottom-wrap {
+  position: absolute;
+  bottom: 6vh;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  z-index: 5;
+}
+
+.circle-elements{
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: float 3s ease-in-out infinite;
+}
+
+.aboutus-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+ font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.circle-gifs {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 320px – 480px Mobile Responsive */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .heror {
+    /* border: 2px solid red; */
+    height: 50vh;
+    margin-top: 10vh;
+  }
+.gdmainbackground { 
+  height: 100%;
+}
+  .gdmainbackground img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-content-overlayy {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Header / Logo Section */
+  .header-rows {
+    display: none;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 0;
+  }
+
+  .logo-container {
+    width: 40vw;
+  }
+
+  .logo {
+    width: 140px;
+    padding: 1vh 1vw;
+  }
+
+  /* Navigation Section */
+  .nav-commons {
+    margin-top: 2vh;
+    gap: 1.5vh;
+  }
+
+  .nav-section-commonns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-title-commons {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-list-commons {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+
+  .nav-list-commons a {
+    font-size: 14px;
+  }
+
+  /* Bottom Area */
+  .hero-bottom-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: 4vh;
+    padding: 0 4vw;
+    gap: 8rem;
+    width: 100%;
+  }
+
+  /* Circle Animation */
+  .circle-elements {
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+  }
+
+  .circle-gifs {
+    height: 80%;
+  }
+
+  .aboutus-title {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.2;
+  }
+}

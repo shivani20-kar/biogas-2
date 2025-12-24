@@ -1,0 +1,96 @@
+.finance-team-section {
+  font-family: 'DDINPRO';
+  padding: 0vh 5vw;
+  text-align: start;
+}
+
+.finance-team-title {
+  font-family: 'DDINPRO';
+  font-size: 50px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.finance-team-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.finance-card {
+  width: 260px;
+  text-align: center;
+}
+
+.finance-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.finance-card:hover .finance-img {
+  transform: scale(1.05);
+}
+
+/* LINKEDIN ICON */
+.finance-linkedin {
+  display: flex;
+  justify-content: start;
+  margin-top: 1vh;
+}
+
+.finance-linkedin img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.finance-linkedin img:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .finance-team-section {
+    /* border: 2px solid red; */
+    padding: 2vh 4vw;        /* reduced padding */
+    text-align: start;
+  }
+
+  .finance-team-title {
+    font-size: 32px;         /* reduced from 50px */
+    font-weight: bold;
+    color: #707070;
+  }
+
+  .finance-team-container {
+    flex-direction: column;  /* stack cards */
+    align-items: center;
+    gap: 25px;               /* reduced gap */
+  }
+
+  .finance-card {
+    width: 75%;              /* responsive width */
+    text-align: center;
+  }
+
+  .finance-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* LINKEDIN ICON */
+  .finance-linkedin {
+    justify-content: center; /* center on mobile */
+    margin-top: 1vh;
+  }
+
+  .finance-linkedin img {
+    width: 28px;             /* reduced from 35px */
+    height: 28px;
+  }
+}

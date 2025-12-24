@@ -1,0 +1,274 @@
+/* MAIN WRAPPER */
+.biogas-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: none;
+  margin-bottom: 5vh;
+}
+
+/* ---------------- LEFT BOX ---------------- */
+.left-box {
+  width: 50%;
+  background: #595959;
+  padding: 15vh 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-title {
+  font-family: 'DDINPRO';
+  font-size: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.red-line {
+  width: 8px;
+  height: 55px;
+  background: #e12d36;
+  display: inline-block;
+}
+
+.green-text {
+  font-family: 'DDINPRO';
+  color: #2ecc71;
+}
+
+.quote-img {
+  width: 60px;
+  margin: 3vh 0;
+}
+
+.brand-desc {
+  font-family: 'DDINPRO';
+  font-size: 36px;
+  color: #d3d3d3;
+  line-height: 1.1;
+  width: 80%;
+  font-weight: 400;
+}
+
+/* ---------------- RED STRIP ---------------- */
+.red-strip {
+  position: absolute;
+  right: 9vw;
+  bottom: 4vh;
+  width: 450px;
+  height: 60px;
+  background: #e12d36;
+  transform: translateX(50%);
+  z-index: 10;
+}
+
+/* START dots (left) */
+.red-strip::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 20px #fff;
+}
+
+/* END dots (right) */
+.red-strip::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 20px #fff;
+}
+
+/* ---------------- RIGHT BOX ---------------- */
+.right-box {
+  width: 50%;
+  background: #d9d9d9;
+  padding: 15vh 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-heading {
+  font-family: 'DDINPRO';
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin: 3vh 0 1vh;
+}
+
+.section-para {
+  font-family: 'DDINPRO';
+  color: #444;
+  font-size: 17px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.service-list li {
+  font-family: 'DDINPRO';
+  font-size: 17px;
+  margin-bottom: 1vh;
+  color: #333;
+}
+
+/* ---------------- BLUE STRIP ---------------- */
+.blue-strip {
+  position: absolute;
+  left: 9vw; /* extend into left box */
+  top: 4vh;
+  width: 450px;
+  height: 60px;
+  background: #0982fe;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* START dots (left) */
+.blue-strip::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 20px #fff; /* second dot below */
+}
+
+/* END dots (right) */
+.blue-strip::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 20px #fff;
+}
+
+.gd1 {
+      width: 40%;
+    margin-top: 11vh;
+    margin-bottom: -15vh;
+    margin-left: 22vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* MAIN WRAPPER MOBILE */
+  .biogas-wrapper {
+    /* border: 2px solid red; */
+    flex-direction: column;
+    margin-bottom: 4vh;
+  }
+
+  /* ------------- LEFT BOX ------------- */
+  .left-box {
+    width: 87.8%;
+    padding: 8vh 6vw;
+    text-align: left;
+  }
+
+  .brand-title {
+    font-size: 28px;              /* reduced from 58px */
+    gap: 6px;
+  }
+
+  .red-line {
+    width: 6px;
+    height: 35px;
+  }
+
+  .quote-img {
+    width: 40px;
+    margin: 2vh 0;
+  }
+
+  .brand-desc {
+    font-size: 18px;              /* reduced from 36px */
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  /* RED STRIP FOR MOBILE */
+  .red-strip {
+    width: 180px;                 /* reduced strip width */
+    height: 40px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vh;
+  }
+
+  .red-strip::before,
+  .red-strip::after {
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 15px #fff;
+    top: 8px;
+  }
+
+  /* ------------- RIGHT BOX ------------- */
+  .right-box {
+    width: 87.8%;
+    padding: 8vh 6vw;
+    text-align: left;
+    margin-top: 4vh;
+  }
+
+  .section-heading {
+    font-size: 20px;           /* reduced */
+    margin: 2vh 0 1vh;
+  }
+
+  .section-para {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .service-list li {
+    font-size: 15px;
+    margin-bottom: 1vh;
+  }
+
+  /* BLUE STRIP FOR MOBILE */
+  .blue-strip {
+    width: 180px;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2vh;
+  }
+
+  .blue-strip::before,
+  .blue-strip::after {
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    box-shadow: 0 15px #fff;
+  }
+
+  /* GD1 IMAGE */
+  .gd1 {
+    width: 70%;
+    margin: 4vh auto 0 auto;
+  }
+}

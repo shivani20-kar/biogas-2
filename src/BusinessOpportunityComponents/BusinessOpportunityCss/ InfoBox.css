@@ -1,0 +1,60 @@
+/* InfoBox.css */
+.info-box-background {
+  padding-top: 5vh;
+}
+
+/* Grey background wrapper */
+.info-box-backgroundinner {
+  background-color: #d2d2d2;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 15vh;
+  position: relative;
+}
+
+/* Info box overlay (half-width) */
+.info-box-container {
+  background-color: #0982fe;
+  color: #ffffff;
+  padding: 2rem 2.5rem;
+  position: relative;
+  width: 70%;
+  height: 30vh;
+ font-family: 'DDINPRO';
+  font-size: 1.2rem;
+  line-height: 1.6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Corner lines */
+.info-box-container::before,
+.info-box-container::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ffffff;
+  width: 10vw;
+  height: 15vh;
+}
+
+.info-box-container::before {
+  top: 2vh;
+  left: 2vh;
+  border-right: none;
+  border-bottom: none;
+}
+
+.info-box-container::after {
+  bottom: 2vh;
+  right: 2vh;
+  border-left: none;
+  border-top: none;
+}
+
+.info-box-text {
+  margin: 0;
+  font-size: 40px;
+  padding: 2vh 3vw;
+}

@@ -1,0 +1,104 @@
+/* WRAPPER */
+.gdimpax-container {
+   font-family: 'DDINPRO';
+  padding: 5vh 0;
+  background: #ffffff;
+}
+
+/* TITLE */
+.gdimpax-title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 5vw;
+  color: #000000;
+}
+
+/* SUBTITLE */
+.gdimpax-subtitle {
+  width: 55vw;
+  color: #000000;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+/* TABLE WRAPPER */
+.gdimpax-table-wrapper {
+  width: 100%;
+}
+
+/* TABLE */
+.gdimpax-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+/* HEADER (BACKGROUND FULL WIDTH) */
+.gdimpax-table th {
+  background: #e12d36;
+  padding: 1vh 1vw;
+  color: white;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ONLY TEXT SHIFT FORWARD */
+.gdimpax-th-inner {
+  padding-left: 5vw;
+}
+
+/* TABLE CELLS */
+.gdimpax-table td {
+  padding: 10px 2vw;
+  vertical-align: top;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* LAST TD NO BORDER */
+.gdimpax-table td:last-child {
+  border-right: none;
+}
+
+/* LINKS */
+.gdimpax-table td a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s ease;
+  padding: 1vh 3.9vw;
+}
+
+.gdimpax-table td a:hover {
+  background-color: #e8f4fd;
+  color: #3498db;
+}
+
+/* OVERVIEW COLUMN LINK */
+.gdimpax-overview-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* SOLUTIONS COLUMN LINKS */
+.gdimpax-sol-col a {
+  margin-bottom: 6px;
+}
+
+/* COLUMN WIDTHS */
+.gdimpax-table th:nth-child(1),
+.gdimpax-table td:nth-child(1) {
+  width: 22%;
+}
+
+.gdimpax-table th:nth-child(2),
+.gdimpax-table td:nth-child(2) {
+  width: 30%;
+}
+
+.gdimpax-table th:nth-child(3),
+.gdimpax-table td:nth-child(3) {
+  width: 58%;
+}

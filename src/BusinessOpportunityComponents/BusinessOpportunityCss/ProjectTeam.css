@@ -1,0 +1,104 @@
+/* WRAPPER */
+.project-team-wrapper {
+font-family: 'DDINPRO';
+  padding: 5vh 5vw;
+  text-align: start;
+}
+
+/* TITLE */
+.project-team-title {
+  font-family: 'DDINPRO';
+  font-size: 50px;
+  font-weight: bold;
+  color: #707070;
+}
+
+/* FLEX CONTAINER */  
+.project-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+/* CARD */
+.project-card {
+  width: 260px;
+  text-align: start;
+}
+
+/* IMAGE */
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* LINKEDIN ICON WRAPPER */
+.project-linkedin-wrapper {
+  display: inline-block;
+  margin-top: 10px;
+  
+}
+
+.project-linkedin-icon {
+  width: 32px;
+  height: 32px;
+  transition: 0.3s ease;
+}
+
+.project-linkedin-icon:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .project-team-wrapper {
+    /* border: 2px solid red; */
+    padding: 3vh 4vw;     /* reduced padding */
+    text-align: start;
+  }
+
+  /* TITLE */
+  .project-team-title {
+    font-size: 32px;      /* reduced from 50px */
+    font-weight: bold;
+    color: #707070;
+  }
+
+  /* FLEX CONTAINER */
+  .project-team-container {
+    flex-direction: column;   /* stack cards */
+    align-items: center;
+    gap: 25px;                /* reduced gap */
+  }
+
+  /* CARD */
+  .project-card {
+    width: 75%;              /* responsive card width */
+    text-align: center;      /* cleaner on mobile */
+  }
+
+  /* IMAGE */
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* LINKEDIN ICON */
+  .project-linkedin-wrapper {
+    margin-top: 1.5vh;
+  }
+
+  .project-linkedin-icon {
+    width: 26px;            /* reduced from 32px */
+    height: 26px;
+  }
+}

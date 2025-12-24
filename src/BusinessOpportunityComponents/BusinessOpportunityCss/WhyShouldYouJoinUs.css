@@ -1,0 +1,92 @@
+.why-join-wrapper {
+  margin: 0;
+  padding: 0vh 5vw;
+  position: relative;
+  top: -7vh;
+}
+
+/* ---------- TITLE ---------- */
+.why-join-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: 20px;
+  margin-top: 0vh;
+}
+
+/* ---------- DESCRIPTION ---------- */
+.why-join-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #252525cc;
+  margin-bottom: 50px;
+  max-width: 1100px;
+}
+
+/* ---------- ALL CARDS IN 1 ROW ---------- */
+.why-join-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* ---------- CARD ---------- */
+.why-card {
+  width: 10vw;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 2px solid #676767;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: none;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- CARD NUMBER ---------- */
+.why-card-number {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #e12d36;
+}
+
+/* ---------- CARD TEXT ---------- */
+.why-card-text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 2vh;
+  color: #282828;
+}
+
+/* ===================================================
+   🎯 COLOR-BASED BOTTOM-ONLY SHADOW (FINAL)
+   =================================================== */
+
+.border-red {
+  box-shadow: 0px 15px 25px rgba(225, 45, 54, 0.5);
+}
+
+.border-blue {
+  box-shadow: 0px 15px 25px rgba(9, 130, 254, 0.5);
+}
+
+.border-purple {
+  box-shadow: 0px 15px 25px rgba(120, 123, 126, 0.6);
+}
+
+.border-green {
+  box-shadow: 0px 15px 25px rgba(18, 183, 18, 0.5);
+}
+
+.border-orange {
+  box-shadow: 0px 15px 25px rgba(255, 164, 0, 0.6);
+}
+
+.border-pink {
+  box-shadow: 0px 15px 25px rgba(255, 111, 0, 0.5);
+}

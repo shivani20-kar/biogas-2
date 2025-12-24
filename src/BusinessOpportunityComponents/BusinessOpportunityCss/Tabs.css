@@ -1,0 +1,30 @@
+/* CSS: Tabs.css */
+.sector-top-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 12px 0;
+  scrollbar-width: none;
+}
+
+.sector-top-tabs span {
+  white-space: nowrap;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #e8e8e8;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sector-top-tabs span.active {
+  background: #1a8f3a;
+  color: #fff;
+}
+
+/* Hide rows where Impact is “—” */
+td:nth-child(3):has(span:contains("—")),
+th:nth-child(3):has(span:contains("—")) {
+  display: none !important;
+}

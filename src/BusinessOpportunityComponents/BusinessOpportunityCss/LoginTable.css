@@ -1,0 +1,131 @@
+/* Main Wrapper */
+.login-container {
+   font-family: 'DDINPRO';
+  padding: 5vh 0vw;
+  background: #ffffff;
+}
+
+/* Title */
+.login-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0vh;
+  margin-left: 5vw;
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #B5B5B5;
+  margin-bottom: 4vh;
+  margin-left: 5vw;
+ width: 33vw;
+}
+
+/* Table Wrapper */
+.login-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table */
+.login-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;   /* IMPORTANT – fixed layout removes extra white space */
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+/* Column Width Control */
+.login-table th:nth-child(1),
+.login-table td:nth-child(1) {
+  width: 40%;   /* Company */
+   padding-left: 5vw; 
+}
+
+.login-table th:nth-child(2),
+.login-table td:nth-child(2) {
+  width: 20%;   /* Banking */
+}
+
+.login-table th:nth-child(3),
+.login-table td:nth-child(3) {
+  width: 20%;   /* FPC */
+}
+
+.login-table th:nth-child(4),
+.login-table td:nth-child(4) {
+  width: 20%;   /* Trust */
+}
+
+.login-table td:not(:first-child),
+.login-table th:not(:first-child) {
+  padding-left: 1vw;    /* Much smaller space */
+}
+
+/* Header Row */
+.login-table thead th {
+  background: #E12D36;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+      padding-left: 5vw;
+
+  
+}
+
+/* Remove last border */
+.login-table thead th:last-child {
+  border-left: none;
+}
+
+/* Table Body */
+.login-table td {
+  padding: 1.5vh 1vw;
+  font-size: 16px;
+  vertical-align: top;
+      padding-left: 5vw;
+       border-right: 1px solid #e0e0e0; 
+      
+ 
+}
+
+/* Remove last border */
+.login-table td:last-child {
+  border-right: none;
+}
+
+/* Links inside TD */
+.login-table td a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s ease;
+  
+}
+
+/* Hover effect */
+.login-table td a:hover {
+   background-color: #e8f4fd;
+  color: #3498db;
+}
+
+.two-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;   
+}
+
+.two-links a {
+  white-space: nowrap;   
+}
+
+.two-links span {
+  white-space: nowrap;  
+}

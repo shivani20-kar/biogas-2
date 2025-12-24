@@ -1,0 +1,275 @@
+/* Entire Contact Form Area */
+
+.contact-section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-top-text {
+  text-align: start;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  line-height: 1.6;
+}
+
+.red-textvendor {
+  color: #e12d36;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+.green-textvendor {
+  color: #0ea800;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 0vh;
+}
+
+.contactform-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* RED SIDE LINES BEHIND FORM */
+.red-bars {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 0; /* behind the form */
+}
+
+.red-bars-left {
+  top: 5vh; /* top of the form */
+  left: 0;
+}
+
+.red-bars-right {
+  bottom: 5vh;
+  right: 0;
+  flex-direction: column-reverse;
+}
+.red-linevendor {
+  width: 90vw;
+  height: 7vh;
+  background: #e12d36;
+  border-radius: 4px;
+}
+
+/* OUTER DARK GREY FRAME */
+.form-outer-frame {
+  background: #5e5e5e;
+  padding: 8vh 4vw;
+  width: 55%;
+  position: relative; /* for inner border */
+  z-index: 1; /* make it above red bars */
+}
+
+/* INNER BORDER INSIDE OUTER FRAME */
+.form-outer-frame::before {
+  content: "";
+  position: absolute;
+  top: 3vh;
+  left: 1.5vw;
+  right: 1.5vw;
+  bottom: 3vh;
+  border: 3px solid #ffffff;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* INNER WHITE BOX */
+.form-inner-frame {
+  background: #fff;
+  padding: 4vh 4vw;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3; /* highest layer so form inputs stay on top */
+}
+
+/* FORM INPUT STYLE */
+.contact-form input,
+.contact-form textarea {
+  width: 96%;
+  border: 2px solid #676767;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  color: #000;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+.row input:first-child {
+  flex: 3; /* 3x space → Address */
+}
+
+.row input:last-child {
+  flex: 1; /* 1x space → Postcode */
+}
+
+/* SUBMIT BUTTON */
+.contact-form button {
+  width: 100%;
+
+  border-radius: 20px;
+  border: 2px solid #676767;
+  background: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* SAME SUBMIT BUTTON STYLING YOU HAD */
+.submit-btn {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #676767;
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* Red hover background */
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e12d36;
+  border-radius: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.submit-btn:hover::before {
+  transform: translateY(0);
+}
+
+.submit-btn span,
+.submit-btn .arrow {
+  position: relative; 
+  z-index: 1;
+}
+
+/* Arrow icon inside round white circle */
+.arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  background-color: #fff;
+  color: #e12d36;
+  padding: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.submit-btn:hover {
+  color: #fff;
+}
+/* -------- POPUP OVERLAY -------- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* -------- POPUP BOX -------- */
+.popup-box {
+  width: 55%;
+  background: #fff;
+  padding: 4vh 4vw;
+  border-radius: 40px;
+  position: relative;
+  text-align: center;
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Title */
+.popup-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.popup-sub {
+  font-size: 26px;
+  margin-bottom: 5px; 
+}
+
+.popup-text {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.red-x {
+  color: #e12d36;
+  font-weight: bold;
+}
+
+/* Done Button */
+.popup-done {
+  margin-top: 40px;
+  width: 60%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popup-done:hover {
+  background: #e2e2e2;
+}
+
+

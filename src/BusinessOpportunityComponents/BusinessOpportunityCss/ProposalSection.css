@@ -1,0 +1,82 @@
+.proposal-section {
+  position: relative;
+  padding: 5vh 5vw;
+  margin-bottom: 12vh;
+}
+
+/* FIXED: Border now stays at top & does NOT shift down */
+.proposalinner-section {
+  position: relative;
+  padding: 3vh 0vw;
+}
+
+/* Border using pseudo-element */
+.proposalinner-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #e12d36;
+  border-bottom: 4px solid #e12d36;
+  pointer-events: none;
+}
+
+.proposal-text {
+  font-family: 'DDINPRO';
+  font-size: 18px;
+  color: #252525;
+  width: 85%;
+  line-height: 1.6;
+}
+
+.proposal-thanks {
+  font-family: 'DDINPRO';
+  margin-top: 2vh;
+  color: #252525;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.proposal-sincerely {
+  font-family: 'DDINPRO';
+  font-size: 20px;
+  color: #707070;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.signature-box {
+  width: 320px;
+  background: #595959;
+  color: #ffffff;
+  padding: 25px;
+  margin-top: 15px;
+  position: relative;
+  margin-bottom: -6vh;
+}
+
+.signature-line-top {
+  width: 60%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.signature-content p {
+  font-family: 'DDINPRO';
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.signature-line-bottom {
+  width: 100%;
+  height: 3px;
+  background: #e12d36;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

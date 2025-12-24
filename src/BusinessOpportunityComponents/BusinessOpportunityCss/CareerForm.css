@@ -1,0 +1,271 @@
+/* MAIN CONTAINER */
+.contact-section-container-career {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-top-text-career {
+  text-align: start;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.green-textvendor-career {
+  color: #26b526;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* FORM WRAPPER */
+.contactform-wrapper-career {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* RED SIDE LINES (BACKGROUND) */
+.red-bars-career {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 0 !important; /* 🔥 KEEP BEHIND THE FORM */
+}
+
+.red-bars-left-career {
+  top: 5vh;
+  left: 0;
+}
+
+.red-bars-right-career {
+  bottom: 5vh;
+  right: 0;
+  flex-direction: column-reverse;
+}
+
+.red-linevendor-career {
+  width: 90vw;
+  height: 7vh;
+  background: #e12d36;
+  border-radius: 4px;
+}
+
+/* OUTER GREY FRAME */
+.form-outer-frame-career {
+  background: #5e5e5e;
+  padding: 8vh 4vw;
+  width: 55%;
+  position: relative;
+  z-index: 3; /* 🔥 ABOVE RED BARS */
+}
+
+.form-outer-frame-career::before {
+  content: "";
+  position: absolute;
+  top: 3vh;
+  left: 1.5vw;
+  right: 1.5vw;
+  bottom: 3vh;
+  border: 3px solid #ffffff;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* INNER WHITE FRAME */
+.form-inner-frame-career {
+  background: #fff;
+  padding: 4vh 4vw;
+  border-radius: 4px;
+  position: relative;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* UPLOAD STYLE FORM */
+.upload-style-form-career {
+  width: 100%;
+  background: #fff;
+  padding: 3vh 2vw;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  z-index: 5; /* 🔥 TOP CONTENT */
+}
+
+.upload-header-career {
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  border: 1px solid #e3e3e3;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.upload-box-career {
+  width: 100%;
+  height: 220px;
+  border: 2px dashed #c9c9c9;
+  border-radius: 20px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8d8d8d;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hidden-file-input-career {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ORIGINAL SUBMIT BUTTON (UNCHANGED) */
+.submit-btn-career {
+  position: relative;
+  /* border: none; */
+  border-radius: 20px;
+  background-color: #fff;
+  color: #676767;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.submit-btn-career::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e12d36;
+  border-radius: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.submit-btn-career:hover::before {
+  transform: translateY(0);
+}
+
+.submit-btn-career span,
+.submit-btn-career .arrow-career {
+  position: relative;
+  z-index: 1;
+}
+
+.arrow-career {
+  opacity: 0;
+  transform: translateX(-8px);
+  background-color: #fff;
+  color: #e12d36;
+  padding: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.submit-btn-career:hover .arrow-career {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.submit-btn-career:hover {
+  color: #fff;
+}
+
+/* POPUP */
+.popup-overlay-career {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box-career {
+  width: 55%;
+  background: #fff;
+  padding: 4vh 4vw;
+  border-radius: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-close-career {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-title-career {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.popup-sub-career {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.popup-text-career {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.red-x-career {
+  color: #e12d36;
+  font-weight: bold;
+}
+
+.popup-done-career {
+  margin-top: 40px;
+  width: 60%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popup-done-career:hover {
+  background: #e2e2e2;
+}

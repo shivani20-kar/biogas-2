@@ -1,0 +1,242 @@
+
+/* --------------------------- */
+
+.heros {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+    margin-top:11vh;
+}
+
+.smallgdmainbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.smallgdmainbackground img {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* PMO Section Start */
+.pmomainbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.pmomainbackground img {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* PMO Section End */
+
+/* VendorRegistration Section Start */
+.vendor-registration-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.vendor-registration-bg img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.vendor-title {
+  padding-bottom: 25vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.co-owner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.co-owner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.coowner-title {
+  padding-bottom: 25vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.rent-on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.rent-on img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.rent-on-title {
+  padding-bottom: 25vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+   font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.careers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.careers img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.careers-title {
+  padding-bottom: 25vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+   font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.sitevisit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.sitevisit img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.sitevisit-title {
+  padding-bottom: 25vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+ font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.contactUs-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.contactUs-bg img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.contactus-title {
+  padding-bottom: 17vh;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.customerservice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.customerservice img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.customerservice-title {
+  /* padding-bottom: 11vh; */
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  font-family: 'DDINPRO';
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.circle-gifservice {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-bottom-wrapservice {
+  position: absolute;
+  bottom: 18vh;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  z-index: 5;
+}
+
+.circle-elementservice {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: rotateCircle 6s linear infinite;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

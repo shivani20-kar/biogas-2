@@ -1,0 +1,117 @@
+.itcorex-wrapper {
+  padding: 5vh 5vw;
+  text-align: start;
+  font-family: 'DDINPRO';
+}
+
+/* TITLE */
+.itcorex-title {
+  font-family: 'DDINPRO';
+  font-size: 50px;
+  font-weight: bold;
+  color: #707070;
+  text-align: left;
+}
+
+/* X HIGHLIGHT */
+.x-highlight {
+  font-family: 'DDINPRO';
+  color: #E12D36;
+}
+
+/* FLEX CONTAINER */
+.itcorex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* CARD */
+.itcorex-card {
+  width: 260px;
+  text-align: start;
+}
+
+/* IMAGE */
+.itcorex-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+.itcorex-card:hover .itcorex-img {
+  transform: scale(1.05);
+}
+
+/* LINKEDIN ICON (below image) */
+.itcorex-link-wrapper {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.itcorex-linkedin {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.itcorex-linkedin:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .itcorex-wrapper {
+    /* border: 2px solid red; */
+    padding: 3vh 4vw;        /* reduced padding */
+    text-align: start;
+  }
+
+  /* TITLE */
+  .itcorex-title {
+    font-size: 32px;         /* reduced from 50px */
+    font-weight: bold;
+    color: #707070;
+    text-align: left;
+  }
+
+  /* X HIGHLIGHT (same color, no changes needed) */
+  .x-highlight {
+    color: #E12D36;
+  }
+
+  /* FLEX CONTAINER */
+  .itcorex-container {
+    flex-direction: column;  /* stack cards vertically */
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* CARD */
+  .itcorex-card {
+    width: 75%;              /* full responsive width */
+    text-align: center;      /* center aligned for mobile */
+  }
+
+  /* IMAGE */
+  .itcorex-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* LINKEDIN ICON */
+  .itcorex-link-wrapper {
+    margin-top: 1.2vh;
+  }
+
+  .itcorex-linkedin {
+    width: 28px;            /* reduced from 35px */
+    height: 28px;
+  }
+}

@@ -1,0 +1,154 @@
+.footer-wrapper {
+  /* width: 100%; */
+  background-image: url("../IMAGES/Footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  position: relative;
+}
+.gd-footer {
+  background: #ed1c24;
+  padding: 6vh 5vw;
+  width: 84%;
+  margin-top: -35vh;
+  z-index: 3;
+  position: relative;
+  color: white;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left-section {
+  max-width: 55%;
+}
+.left-section h2 {
+   font-family: 'DDINPRO';
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+.left-section p {
+   font-family: 'DDINPRO';
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.contact-btn {
+   font-family: 'DDINPRO';
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+.social-icons {
+  text-align: end;
+  padding-top: 4vh;
+}
+.social-icons i {
+   font-family: 'DDINPRO';
+  font-size: 30px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.right-section {
+  text-align: center;
+}
+.footer-logo {
+  width: 20vw;
+}
+.sanskrit {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+   font-family: 'DDINPRO';
+} /* COPYRIGHT TEXT ONLY — NO BACKGROUND IMAGE */
+.copyright {
+   font-family: 'DDINPRO';
+  color: white;
+  padding: 5vh 5vw;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* FOOTER WRAPPER */
+  .footer-wrapper {
+    /* border: 2px solid red; */
+    padding-top: 100px;          /* reduced from 200px */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gd-footer {
+    padding: 4vh 4vw;            /* reduced padding */
+    width: 85%;                   /* full width on mobile */
+    margin-top: -20vh;            /* adjusted negative margin */
+  }
+
+  .footer-content {
+    flex-direction: column;       /* stack left & right sections */
+    align-items: center;
+    gap: 4vh;
+  }
+
+  /* LEFT SECTION */
+  .left-section {
+    max-width: 100%;
+    text-align: center;           /* center align for mobile */
+  }
+
+  .left-section h2 {
+    font-size: 24px;              /* reduced from 32px */
+    margin-bottom: 1vh;
+  }
+
+  .left-section p {
+    font-size: 14px;              /* reduced from 17px */
+    margin-bottom: 15px;
+  }
+
+  .contact-btn {
+    padding: 10px 25px;           /* smaller button */
+    font-size: 14px;
+    margin-bottom: 2vh;
+  }
+
+  /* SOCIAL ICONS */
+  .social-icons {
+    text-align: center;           /* centered on mobile */
+    padding-top: 2vh;
+  }
+
+  .social-icons i {
+    font-size: 24px;              /* reduced from 30px */
+    margin-right: 12px;
+  }
+
+  /* RIGHT SECTION */
+  .right-section {
+    text-align: center;
+    margin-top: 2vh;
+  }
+
+  .footer-logo {
+    width: 50%;                   /* reduced from 20vw */
+    max-width: 150px;
+  }
+
+  .sanskrit {
+    font-size: 16px;              /* reduced from 20px */
+    margin-top: 8px;
+  }
+
+  /* COPYRIGHT TEXT */
+  .copyright {
+    font-size: 12px;              /* reduced from 14px */
+    padding: 3vh 4vw;
+  }
+}

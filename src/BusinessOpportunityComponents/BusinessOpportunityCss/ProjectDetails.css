@@ -1,0 +1,64 @@
+.project-wrapper {
+  padding: 2vh 5vw;
+  background: #f2f2f2;
+}
+
+/* MAIN TITLE */
+.proje-titles {
+  color: #535353;
+  font-family: 'DDINPRO';
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 1vh;
+}
+
+/* SUBTITLE */
+.proje-subtitles {
+  font-family: 'DDINPRO';
+  color: #252525;
+  font-size: 18px;
+  margin-bottom: 3vh;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-family: 'DDINPRO';
+  color: #535353;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+/* TWO COLUMN WRAPPER */
+.industry-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4vw;
+}
+
+/* ONE COLUMN */
+.industry-column {
+  width: 50%;
+}
+
+/* RED SMALL HEADINGS */
+.red-heading {
+  font-family: 'DDINPRO';
+  font-size: 20px;
+  font-weight: 600;
+  color: #E12D36;
+  margin-bottom: 1vh;
+}
+
+.mt-30 {
+  margin-top: 5vh;
+}
+
+/* BULLET LISTS */
+.list {
+  font-family: 'DDINPRO';
+  color: #252525;
+  line-height: 1.8;
+  font-size: 18px;
+}

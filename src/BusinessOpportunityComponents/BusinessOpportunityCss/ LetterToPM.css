@@ -1,0 +1,130 @@
+.pm-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 0vw 0vh 5vw;
+  background: #ffffff;
+}
+
+/* LEFT SIDE */
+.pm-left {
+  width: 45%;
+}
+
+.pm-to {
+   font-family: 'DDINPRO';
+  color: #535353;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.pm-greeting {
+  margin-top: 2vh;
+  font-size: 18px;
+   font-family: 'DDINPRO';
+  color: #707070;
+}
+
+.pm-title {
+   font-family: 'DDINPRO';
+  margin-top: 2vh;
+  color: #535353;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.pm-desc {
+  margin-top: 2vh;
+   font-family: 'DDINPRO';
+  font-size: 18px;
+  color: #707070;
+  line-height: 1.65;
+}
+
+.pm-subtitle {
+   font-family: 'DDINPRO';
+  color: #535353;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.pm-list {
+  margin-top: 2vh;
+  font-size: 18px;
+  color: #707070;
+  padding-left: 2vw;
+ font-family: 'DDINPRO';
+  line-height: 1.6;
+}
+
+.pm-inner-list {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+/* SOLUTION HIGHLIGHT */
+.pm-solution-title {
+   font-family: 'DDINPRO';
+  margin-top: 2vh;
+  font-size: 18px;
+  color: #252525;
+}
+
+.pm-highlight {
+  margin-top: 4vh;
+  padding: 1vh 1vw;
+}
+
+/* RIGHT SIDE FLAG */
+.pm-right {
+  width: 50%;
+  position: relative;
+}
+
+/* FLAG BOX */
+.pm-flag-box {
+  position: relative;
+}
+
+.pm-flag {
+  margin-top: 35vh;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+/* TEXT OVER FLAG */
+.pm-flag-text {
+  position: absolute;
+  bottom: 18vh;
+  left: 15vw;
+
+  color: #fff;
+}
+
+.pm-vikasit {
+   font-family: 'DDINPRO';
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vikasred-line {
+  width: 0.4vw;
+  height: 5vh;
+  background: #e12d36;
+  display: inline-block;
+}
+
+.vikasitimg {
+  width: 55px;
+  margin-top: 3vh;
+  color: #e12d36;
+}
+
+.pm-appeal {
+   font-family: 'DDINPRO';
+  font-size: 28px;
+  margin-top: 5vh;
+  line-height: 1.4;
+  font-weight: 500;
+}

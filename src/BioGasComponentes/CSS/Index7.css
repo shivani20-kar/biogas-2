@@ -1,0 +1,162 @@
+/* .biogas-wrapper-index {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #333;
+} */
+
+/* Header */
+.biogas-header-index {
+  background: #5f5f5f;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.arrow-index {
+    position: relative;
+  width: 120px;
+  height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}
+
+.arrow-index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  z-index: -1;
+}
+
+.biogas-header-index h1 {
+  font-family: 'DDINPRO';
+  font-size: 100px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  line-height: 1;
+  margin-top: 1.7vw;
+  margin-left: 1.5vw;
+}
+
+.biogas-header-index p {
+   font-family: 'DDINPRO';
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -4.7vw;
+  line-height: 1.2;
+  margin-left: 1.5vw;
+}
+
+/* Tables */
+.table-section{
+    padding: 6vw 6vw;
+}
+.employee-section {
+    padding: 0vw 6vw;
+    margin-bottom: 4vw ;
+}
+
+.big-tabele {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.big-tabel th {
+    height: 6vw;
+ color: #ffffff;
+    font-size: 1.8vw;
+     font-family: 'DDINPRO';
+  background: #676767;
+   padding: 1vw 2vw;
+  border: none;
+  text-align: left;
+  font-weight: 700;
+}
+.big-tabel th:nth-child(1) {
+  padding-right: 52vw;
+}
+
+.tb-new tr td {
+    width: auto;
+  padding: 1.5vw 2vw;
+  font-family: 'DDINPRO';
+  font-size: 1.5vw;
+  text-align: left;
+  color: #000000;
+  border: none;
+}
+
+.tb-new tr td:nth-child(2),
+.tb-new tr td:nth-child(3) {
+   
+  text-align: center;
+}
+.border-botom{
+    border-bottom: 1px solid #000000 !important;
+    border-left: none;
+    border-right: none;
+}
+
+
+.sub-head td {
+  background: none;
+  font-family: 'DDINPRO';
+  font-size: 1.5vw;
+  text-align: left;
+  color: #000000;
+  border: none;
+}
+
+.employee-section h2 {
+    margin-top: -1vw;
+  font-family: 'DDINPRO';
+  font-size: 2.7vw;
+  text-align: left;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.total-row td {
+    padding: 2vw 2vw;
+  background: none;
+  font-family: 'DDINPRO';
+  font-size: 1.5vw;
+  text-align: left;
+  color: #000000;
+}
+.small-tr{
+   height: 8vw;
+ color: #ffffff;
+    font-size: 1.8vw;
+     font-family: 'DDINPRO';
+  background: #676767;
+   padding: 2vw 2vw;
+  border: none !important;
+  text-align: left !important;
+  font-weight: 700;
+  
+}
+.small-tr th:first-child {
+  padding-right: 30vw;  
+  padding-left: 2vw;
+}

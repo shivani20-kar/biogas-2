@@ -1,0 +1,60 @@
+.banner-wrapper {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT WRAPPER */
+.banner-text {
+  gap: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'DDINPRO';
+}
+
+/* FIRST ROW: TWO ITEMS SIDE BY SIDE */
+.row {
+  font-family: 'DDINPRO';
+  font-size: 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* SECOND ROW: CENTER ONE ITEM */
+.center-row {
+  font-family: 'DDINPRO';
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* BULLET DOT */
+.dot {
+  font-family: 'DDINPRO';
+  color: #ff2a2a;
+  margin-right: 12px;
+}
+
+.banner-text p {
+  font-family: 'DDINPRO';
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}

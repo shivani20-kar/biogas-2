@@ -1,0 +1,95 @@
+/* ---------- TOP POINTS ---------- */
+.land-top-points ul {
+  font-size: 18px;
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 0vh;
+}
+
+.land-top-points li {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+   font-family: 'DDINPRO';
+  color: #676767;
+}
+
+/* ---------- MAIN WRAPPER ---------- */
+.land-business-roles-wrapper {
+  padding: 5vh 5vw;
+}
+
+/* ---------- GRID ---------- */
+.land-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 5vh;
+}
+
+/* ---------- COMMON CARD ---------- */
+.land-role-card {
+  padding: 2vh 1vw;
+  color: #ffffff;
+  font-family: 'DDINPRO';
+  min-height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ---------- INNER BORDER BOX ---------- */
+.land-role-inner-border {
+  border: 2px solid #ffffff;
+  padding: 1vh 1.5vw;
+  border-radius: 8px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+/* ---------- TITLE ---------- */
+.land-role-title {
+   font-family: 'DDINPRO';
+  color: #ffffff;
+  font-size: 26px; 
+  margin-bottom: 2vh;
+  font-weight: 600;
+}
+
+/* ---------- TEXT ---------- */
+.land-role-text,
+.land-role-list li {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0vh;
+}
+
+.land-role-list {
+  padding-left: 20px;
+}
+
+.land-role-list li {
+  margin-bottom: 8px;
+}
+
+/* ---------- CARD COLORS ---------- */
+.land-role-red {
+  background: #ea647d;
+}
+
+.land-role-yellow {
+  background: #ba8e48;
+}
+
+.land-role-blue {
+  background: #03a0d0;
+}
+
+.land-role-orange {
+  background: #ca9304;
+}

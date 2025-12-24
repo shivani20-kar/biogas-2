@@ -1,0 +1,143 @@
+.technology-collaboration {
+  padding: 3vh 0vw;
+  display: flex;
+  flex-direction: column;
+   font-family: 'DDINPRO';
+}
+
+.collaboration-header-section {
+  padding: 10vh 5vw;
+  background-image: url("../../Components/IMAGES/technologycollabarationbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.collaboration-main-heading {
+  font-family: 'DDINPRO';
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+ 
+}
+
+
+.collaborationred-line {
+  width: 0.4vw;
+  height: 7vh;
+  background: #E12D36;
+  display: inline-block;
+}
+
+
+.collaboration-sub-heading {
+  font-family: 'DDINPRO';
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFFCC;
+  width: 50vw;
+  margin-top: 4vh;
+}
+
+.collaboration-tagline {
+  font-family: 'DDINPRO';
+  font-size: 28px;
+  color: #707070;
+  margin-top: 2vh;
+}
+
+.collaborationimg {
+  width: 70px;
+  margin-top: 4vh;
+  
+}
+
+
+/* ---------------- SLIDER SECTION ---------------- */
+
+.slider-container {
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+     padding: 5vh 0vw;
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: slide 3s linear infinite;
+}
+
+.slide-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Infinite scroll animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* MAIN WRAPPER */
+  .technology-collaboration {
+    /* border: 2px solid red; */
+    padding: 2vh 0vw;
+  }
+
+  /* HEADER SECTION */
+  .collaboration-header-section {
+    padding: 8vh 5vw;            /* reduced padding */
+    background-position: center;
+  }
+
+  .collaboration-main-heading {
+    font-size: 32px;             /* reduced from 60px */
+    font-weight: bold;
+  }
+
+  .collaborationred-line {
+    width: 3vw;                  /* reduced width */
+    height: 5vh;                 /* reduced height */
+  }
+
+  .collaboration-sub-heading {
+    font-size: 24px;             /* reduced from 50px */
+    width: 100%;                 /* full width on mobile */
+    margin-top: 2vh;
+  }
+
+  .collaboration-tagline {
+    font-size: 16px;             /* reduced from 28px */
+    margin-top: 1.5vh;
+  }
+
+  .collaborationimg {
+    width: 45px;                 /* reduced icon size */
+    margin-top: 3vh;
+  }
+
+  /* SLIDER SECTION */
+  .slider-container {
+    padding: 3vh 0vw;            /* reduced top/bottom padding */
+  }
+
+  .logo-slider {
+    gap: 25px;                   /* reduced spacing */
+    animation: slide 6s linear infinite; /* slower for smoothness */
+  }
+
+  .slide-logo {
+    width: 110px;                /* reduced from 200px */
+    height: 110px;
+    padding: 6px;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.headoffice-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  font-family: "DDINPRO";
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headoffice-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.headoffice-title span {
+  color: #e12d36;
+}
+
+/* Outer Container */
+.headoffice-form-box {
+  width: 40%;
+  border: 2px solid #e12d36;
+  border-radius: 30px;
+  padding: 60px;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* NEW FIX */
+  box-sizing: border-box;
+}
+
+/* Form layout */
+.headoffice-form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Floating label wrapper */
+.float-input {
+  width: 100%;
+  position: relative;
+}
+
+/* Input fields */
+.float-input input,
+.float-input textarea {
+  width: 100% !important;
+  box-sizing: border-box;
+
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  resize: none;
+}
+
+/* Textarea height */
+.float-input textarea {
+  height: 70px;
+}
+
+/* LABEL default position */
+.float-input label {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.25s ease;
+  padding: 0 6px;
+  background: white;
+  font-size: 16px;
+}
+
+/* FLOATING EFFECT */
+.float-input input:focus + label,
+.float-input input:not(:placeholder-shown) + label,
+.float-input textarea:focus + label,
+.float-input textarea:not(:placeholder-shown) + label {
+  top: -14px;
+  left: 14px;
+  font-size: 13px;
+  color: #e12d36;
+  background: white;
+}
+
+/* FILE FIELD SAME WIDTH FIX */
+.file-box {
+  width: 100%;
+}
+
+/* File label floating fix */
+.file-box label {
+  top: -14px !important;
+  font-size: 13px;
+  color: #e12d36;
+}
+
+/* ---------------- NEW SUBMIT BUTTON STYLE ---------------- */
+
+.headoffice-submit {
+  width: 100% !important;
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #676767;
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  position: relative;
+  /* padding: 14px 0; */
+}
+
+.headoffice-submit::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e12d36;
+  border-radius: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.headoffice-submit:hover::before {
+  transform: translateY(0);
+}
+
+.headoffice-submit span,
+.headoffice-submit .arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.headoffice-submit .arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  background-color: #fff;
+  color: #e12d36;
+  padding: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.headoffice-submit:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.headoffice-submit:hover {
+  color: #fff;
+}
+
+/* ---------------- POPUP ---------------- */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  width: 55%;
+  background: #fff;
+  padding: 4vh 4vw;
+  border-radius: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.popup-sub {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.popup-text {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.red-x {
+  color: #e12d36;
+  font-weight: bold;
+}
+
+.popup-done {
+  margin-top: 40px;
+  width: 60%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popup-done:hover {
+  background: #e2e2e2;
+}

@@ -1,0 +1,50 @@
+.support-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
+  margin: 0 auto;
+  text-align: center;
+  padding: 0vh 5vw;
+   font-family: 'DDINPRO';
+}
+
+.support-title {
+  color: #000000;
+  margin-top: 0vh;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 5vh;
+}
+
+.support-table {
+  width: 60%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table-header {
+  background-color: #d63031;
+  color: white;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.table-row {
+  background: white;
+  border: 1px solid #e0e0e0;
+}
+
+.table-cell {
+  padding: 14px;
+  border-right: 1px solid #eee;
+  font-size: 18px;
+  color: #000000;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}

@@ -1,0 +1,114 @@
+/* Investment.css */
+.investment-business-opportunity {
+   font-family: 'DDINPRO';
+  padding: 5vh 0vw;
+  
+}
+
+.investment-main-title {
+  text-align: start;
+  color: #000000;
+  margin-bottom: 0vh;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5vw;
+}
+
+.investment-subtitle {
+  text-align: start;
+  color: #B5B5B5;
+  margin-bottom: 4vh;
+  font-size: 16px;
+  margin-left: 5vw;
+  width: 21vw;
+}
+
+/* Table container */
+.investment-table-container {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+/* Business table */
+.investment-business-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: fixed; /* Column width control sathi */
+}
+
+/* Business table header */
+.investment-business-table th {
+  background-color: #E12D36;
+  font-size: 16px;
+  color: white;
+   padding: 12px 8px;
+  text-align: start;
+  font-weight: bold;
+  white-space: nowrap; 
+  padding-left: 5vw;
+}
+
+.investment-business-table th a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Table cells */
+.investment-business-table td {
+  font-size: 16px;
+  padding: 8px 6px; /* Padding kami kela */
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap; /* Text wrap n hou deyla */
+  overflow: hidden;
+  text-overflow: ellipsis;
+      padding-left: 5vw;
+}
+
+.investment-business-table td a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 4px; /* Padding kami kela */
+  border-radius: 4px;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+
+.investment-business-table td a:hover {
+  background-color: #e8f4fd;
+  color: #3498db;
+}
+
+/* Overview left cell */
+.investment-overview-cell {
+  font-weight: bold;
+  text-align: start;
+  vertical-align: middle !important;
+  white-space: nowrap;
+  width: 120px; /* Fixed width set keli */
+}
+
+.investment-overview-cell a {
+  font-size: 16px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* Specific column widths set karnya sathi */
+.investment-business-table th:nth-child(1),
+.investment-business-table td:nth-child(1) {
+  width: 25%; /* First column width */
+}
+
+.investment-business-table th:nth-child(2),
+.investment-business-table td:nth-child(2) {
+  width: 20%; /* Second column width */
+}
+
+/* Add as needed for other columns */

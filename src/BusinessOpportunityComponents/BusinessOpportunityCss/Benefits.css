@@ -1,0 +1,25 @@
+.benefits-wrapper {
+  padding: 5vh 5vw;
+  background: #ffffff;
+}
+
+.benefits-section {
+  margin-bottom: 5vh;
+}
+
+.benefits-title {
+  font-family: 'DDINPRO';
+      color: #535353;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+.benefits-list {
+  font-family: 'DDINPRO';
+  list-style-type: disc;
+  padding-left: 2vw;
+  font-size: 18px;
+  color: #707070;
+  line-height: 1.8;
+}

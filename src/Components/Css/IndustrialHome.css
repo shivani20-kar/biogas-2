@@ -1,0 +1,97 @@
+/* Container for hero section */
+.heros {
+  position: relative;
+  /* margin-top: 11vh; */
+  width: 100%;
+  height: 80vh; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+   
+}
+
+/* Background image */
+.backgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(80%); /* darken for overlay readability */
+}
+
+/* Overlay to hold content */
+.heros-section {
+  position: relative;
+  margin-top: -25vh;
+
+  z-index: 2;
+  color: #fff;
+  padding: 0vh 6vw;
+  
+  width: 100%;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.breadcrumb li {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li+li::before {
+  content: "|";
+  margin: 0 0.2rem;
+  color: #fff;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #ffd700; /* subtle highlight on hover */
+}
+
+/* Hero content */
+.hero-data {
+  max-width: 900vw;
+}
+
+.hero-data h1 {
+   font-family: 'DDINPRO';
+    font-size: 60px;
+    font-weight: 600;
+     margin-top: 12%;
+    margin-bottom: 1%; 
+    text-transform: uppercase;
+}
+
+.hero-data p {
+  font-family: 'DDINPRO';
+    font-size: 24px;
+    font-weight: 400;
+    width: 60vw;
+  color: #fff;
+    margin: 0;
+    line-height: 1.6;
+}

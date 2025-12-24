@@ -1,0 +1,126 @@
+.farmers-section {
+  position: relative;      /* overlay साठी आवश्यक */
+  display: flex;
+  align-items: center;
+  padding: 6vh 5vw;
+}
+
+/* ----- IMAGE SIDE ----- */
+.image-box {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0 5vw;
+}
+
+.farmer-image {
+  margin-left: 15vw;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ----- TEXT OVERLAY ----- */
+.text-box {
+  position: absolute;       /* image वर येईल */
+  top: 10%;
+  left: 8%;
+  z-index: 5;
+  color: #000;
+}
+
+/* TEXT STYLES */
+.line {
+  font-family: 'DDINPRO';
+  color: #676767;
+  font-size: 83px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 6vh 0;
+}
+
+.line2{
+  font-family: 'DDINPRO';
+   color: #676767;
+  font-size: 83px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: -5vh;
+
+}
+
+.red {
+  font-size: 86px;
+  font-family: 'DDINPRO';
+  color: #d92727;
+  font-weight: 700;
+ 
+}
+
+.whitecolor{
+  color: #FFFFFF ;
+}
+
+.black {
+  font-family: 'DDINPRO';
+  font-size: 92px;
+  color: #676767;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .farmers-section {
+    /* border: 2px solid red; */
+    flex-direction: column;
+    padding: 4vh 4vw;
+  }
+
+  /* IMAGE BOX */
+  .image-box {
+    flex: none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .farmer-image {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .text-box {
+    position: relative;     
+    top: 0;
+    left: 0;
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  /* TEXT STYLES */
+  .line {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 2vh 0;
+  }
+
+  .line2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: -1vh;
+  }
+
+  .red {
+    font-size: 30px;
+  }
+
+  .whitecolor {
+    font-size: 30px;
+  }
+
+  .black {
+    font-size: 32px;
+  }
+}

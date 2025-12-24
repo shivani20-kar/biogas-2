@@ -1,0 +1,77 @@
+.produce-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 6vw;
+  gap: 3vw;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.produce-left {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.produce-title {
+ color: #000;
+ font-family: 'DDINPRO';
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+
+.produce-subtitle {
+ color: #222;
+ font-family: 'DDINPRO';
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16.8px; 
+text-transform: uppercase;
+}
+
+.produce-heading {
+  margin-top: 0vw;
+ color: #000;
+ font-family: 'DDINPRO';
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; 
+text-transform: uppercase;
+  margin-bottom: 1.5vw;
+}
+
+.produce-description {
+ color: #7D7D7D;
+ font-family: 'DDINPRO';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 30.6px; 
+  max-width: 90%;
+}
+
+.produce-right {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+}
+
+.produce-image {
+  width: 48%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.produce-image:hover {
+  transform: scale(1.03);
+}
