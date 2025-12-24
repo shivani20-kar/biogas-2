@@ -5,9 +5,9 @@ import plantImg from "./Frame 2087327530 (2).png";
 const Desulphurization = () => {
   return (
     <div className="desul-wrapper">
-      {/* Left Content */}
+      {/* Left Content */} 
       <div className="desul-left">
-        <div className="section-number">
+        <div className="section-number"> 
             <h1>12</h1>
         <h2 className="section-title">Desulphurization System</h2>
         </div>
@@ -15,7 +15,7 @@ const Desulphurization = () => {
         <h4 className="section-subtitle">
           Three-Stage Hydrogen Sulfide (H₂S) Removal for Clean Biogas
         </h4>
-
+ 
         <p>
           The <strong>GD Planet Desulphurization System </strong>is designed to efficiently
          <strong> remove hydrogen sulfide (H₂S) </strong>from biogas through a <strong>three-stage
