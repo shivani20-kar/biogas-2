@@ -97,6 +97,14 @@ import MainEquipment from "./BioGasComponentes/Index10";
 import ReceivingTank from "./BioGasComponentes/Index10two";
 import SubmersibleAgitator from "./BioGasComponentes/Index10three";
 import ReactorSection from "./BioGasComponentes/Index10Four";
+import ReactorAgitator from "./BioGasComponentes/Index10Five";
+import WindowSpotlight from "./BioGasComponentes/Index10Six";
+import PumpEquipment from "./BioGasComponentes/Index10Seven";
+import Separator from "./BioGasComponentes/Index10Eight";
+import Gasholder from "./BioGasComponentes/Index10Nine";
+import BiogasDryer from "./BioGasComponentes/Index10Ten";
+import BiogasCompressor from "./BioGasComponentes/Index10Elevan";
+import Desulphurization from "./BioGasComponentes/Index10Twel";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -165,6 +173,14 @@ function App() {
           <ReceivingTank/>
           <SubmersibleAgitator/>
           <ReactorSection/>
+          <ReactorAgitator/>
+          <WindowSpotlight/>
+          <PumpEquipment/>
+          <Separator/>
+          <Gasholder/>
+          <BiogasDryer/>
+          <BiogasCompressor/>
+          <Desulphurization/>
           </>
         }/>
         <Route

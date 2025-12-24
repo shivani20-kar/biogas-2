@@ -1,0 +1,107 @@
+.separator-wrapper {
+  display: flex;
+}
+
+/* LEFT SIDE */
+.separator-left {
+ width: 45%;
+  padding: 0vw 6vw ;
+  position: relative;
+}
+
+.separator-number {
+  display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: -4vw;
+}
+.separator-number h1{
+        font-size: 5vw;
+  font-weight: 700;
+  color: transparent;                 
+  -webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px #cc3a3a;
+}
+.separator-title {
+   font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.8;
+  color: #282828;
+}
+.separator-left h4 {
+ font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.8;
+  color: #282828;
+   margin-bottom: -0.5vw;
+}
+.separator-left h3{
+    font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: -1vw;
+  margin-bottom: -0.5vw;
+    border-bottom: 2px solid #E12D36;  
+}
+
+.separator-left p {
+ font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.separator-left ul {
+  margin-top: 0.8vw;
+  padding-left: 1.2vw;
+}
+
+.separator-left ul li {
+ font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+/* SPECIFICATIONS */
+.specs {
+  margin-top: 0vw;
+}
+
+.specs p {
+  display: flex;
+  justify-content: space-between;
+   font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: -1vw;
+}
+
+/* RIGHT SIDE */
+.separator-right {
+  width: 47%;
+  background: #6a6a6a;
+  position: relative;          /* IMPORTANT */
+  display: flex;
+  align-items: center;
+  overflow: visible;   
+}
+
+.separator-right img {
+  position: absolute;
+  left: -5vw;                 /* background chya baher */
+  top: 50%;
+  transform: translateY(-50%);
+ width:100%;
+  height: auto;
+  padding: 1vw;
+  display: block;
+}

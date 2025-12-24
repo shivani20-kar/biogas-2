@@ -21,57 +21,27 @@ const BioGasHero = () => {
             <div className="biogashero-nav-section-commonns">
               <h3 className="biogashero-nav-title-commons">GD Biogas for</h3>
               <ul className="biogashero-nav-list-commons">
-                <li>
-                  <Link to="/business">Business opportunity</Link>
-                </li>
-                <li>
-                  <Link to="/investors">Investors</Link>
-                </li>
-                <li>
-                  <Link to="/technology">Technology</Link>
-                </li>
-                <li>
-                  <Link to="/catalogue">Catalogue</Link>
-                </li>
-                <li>
-                  <Link to="/how-we-work">How Do We Work</Link>
-                </li>
-                <li>
-                  <Link to="/download">Download Material</Link>
-                </li>
-                <li>
-                  <Link to="/login">Log-in</Link>
-                </li>
+                <li><Link to="/business">Business opportunity</Link></li>
+                <li><Link to="/investors">Investors</Link></li>
+                <li><Link to="/technology">Technology</Link></li>
+                <li><Link to="/catalogue">Catalogue</Link></li>
+                <li><Link to="/how-we-work">How Do We Work</Link></li>
+                <li><Link to="/download">Download Material</Link></li>
+                <li><Link to="/login">Log-in</Link></li>
               </ul>
             </div>
 
             <div className="biogashero-nav-section-commonns">
               <h3 className="biogashero-nav-title-commons">GD Planet for</h3>
               <ul className="biogashero-nav-list-commons">
-                <li>
-                  <Link to="/industrial">Industrial Sector</Link>
-                </li>
-                <li>
-                  <Link to="/agriculture">Agriculture</Link>
-                </li>
-                <li>
-                  <Link to="/waste">Waste</Link>
-                </li>
-                <li>
-                  <Link to="/3d-concrete">3D ConcreteHome</Link>
-                </li>
-                <li>
-                  <Link to="/healthcare">Health Care</Link>
-                </li>
-                <li>
-                  <Link to="/mart">GD Mart</Link>
-                </li>
-                <li>
-                  <Link to="/imbaw">GD ImBaw</Link>
-                </li>
-                <li>
-                  <Link to="/tourism">GD Tourism</Link>
-                </li>
+                <li><Link to="/industrial">Industrial Sector</Link></li>
+                <li><Link to="/agriculture">Agriculture</Link></li>
+                <li><Link to="/waste">Waste</Link></li>
+                <li><Link to="/3d-concrete">3D Concrete Home</Link></li>
+                <li><Link to="/healthcare">Health Care</Link></li>
+                <li><Link to="/mart">GD Mart</Link></li>
+                <li><Link to="/imbaw">GD ImBaw</Link></li>
+                <li><Link to="/tourism">GD Tourism</Link></li>
               </ul>
             </div>
           </div>
@@ -80,7 +50,8 @@ const BioGasHero = () => {
 
       <div className="biogashero-hero-bottom-wrap">
         <div className="biogashero-title">
-          NAPIER GRASS, Agricultural <br /> and animal waste based <br />
+          NAPIER GRASS, Agricultural <br />
+          and animal waste based <br />
           BIO-CNG PLANT
         </div>
 
@@ -88,12 +59,6 @@ const BioGasHero = () => {
           <img src={gif} alt="Animation" className="biogashero-circle-gifs" />
         </div>
       </div>
-      {/* <div className="index-bar">
-        <div className="index-arrow"></div>
-        <span>Index</span>
-        
-      </div>
-      <div className="index-gray"></div> */}
     </section>
   );
 };
