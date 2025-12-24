@@ -1,9 +1,8 @@
 .hero {
-  position: relative;
-  width: 100%;
-  height: 90vh;
+ position: relative;
+  height: 100vh;
   overflow: hidden;
-   margin-top:11vh;
+  margin-top:8vh;
 }
 .sectionheromainbackground {
   position: absolute;
@@ -11,8 +10,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .hero-video {
@@ -20,16 +18,43 @@
   height: 100%;
   object-fit: cover;
 }
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  animation: heroZoom 8s ease-in-out infinite;
+}
+
+/* Zoom animation */
+@keyframes heroZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .hero-content-overlay {
   position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
 }
 .header-row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 6vh 2rem;
+  padding: 0 0rem;
+  gap: 8vw;
 }
 
 .logo-containerhero {
@@ -38,17 +63,67 @@
 }
 
 .logohero {
-  width: 200px;
+  width: 180px;
   height: auto;
   padding: 0vh 2vw;
+  animation:
+  logoEntry 2.5s ease-out forwards,
+  zoomInOut 3s ease-in-out infinite;
+
+  animation-delay: 0s, 2.5s;
 }
 
+@keyframes logoEntry {
+  0% {
+    transform: translate(50vw, 50vh) scale(0.3);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .nav-common {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
-  margin-top: 10vh;
+  gap: 1.5vh;
+  margin-top: 7vh;
+
+  animation: navSlideIn 3.5s ease-out forwards;
+}
+
+@keyframes navSlideIn {
+  0% {
+    transform: translateX(100vw); 
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0); 
+    opacity: 1;
+  }
 }
 
 .nav-section-common {
@@ -58,15 +133,18 @@
 }
 
 .nav-title-common {
-  color: #ffd768;
   font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
- font-family: 'DDINPRO';
+  font-family: 'DDINPRO';
   white-space: nowrap;
   margin: 0;
+  color: #FFD768;
+text-shadow: 0 0 8px rgba(0, 0, 0, 0.50);
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .nav-list-common {
@@ -79,7 +157,7 @@
 }
 
 .nav-list-common li {
-  white-space: nowrap;
+   white-space: nowrap;
 }
 
 .nav-list-common a {
@@ -88,7 +166,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'DDINPRO';
+ font-family: 'DDINPRO';
   display: inline-block;
   white-space: nowrap;
   transition: 0.3s ease;
@@ -103,7 +181,7 @@
 
 .hero-bottom-wrapsectionhero {
   position: absolute;
-  bottom: 6vh;
+  bottom: 15vh;
   left: 0;
   width: 90%;
   display: flex;
@@ -114,36 +192,104 @@
 }
 
 .sectionhero-title {
-  font-size: 60px;
-  font-weight: 700;
-  color: white;
   font-family: 'DDINPRO';
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  text-shadow: 4px 0 4px rgba(0, 0, 0, 0.50), 0 4px 4px rgba(0, 0, 0, 0.50), 0 0 8px #000;
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+
+  position: relative; 
+  opacity: 0;         /* Start invisible */
+  animation: riseFromCenter 1.2s ease-out forwards; 
+  animation-delay: 0.3s; 
 }
+
+@keyframes riseFromCenter {
+  0% {
+    transform: translateY(50vh); /* Start from middle of viewport */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);    /* Move to its normal position */
+    opacity: 1;
+  }
+}
+
 
 .circle-element {
   background-color: #ffffff;
-  width: 150px;
-  height: 150px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible; 
   animation: float 3s ease-in-out infinite;
 }
 
 .circle-gifhero {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 50%;
+  position: absolute;
+  width: 200px;
+  max-width: none;
+  left: 35%;
+  top: 0%;
+  transform: translate(-50%, -50%);
 }
+
+
+/* Horizontal line */
+.timeline-line {
+  position: absolute;
+  bottom: 7vh;              /* 👈 inside hero */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  z-index: 6;
+}
+
+/* Dots container */
+.timeline-dots {
+  position: absolute;
+  bottom: 6vh;            /* 👈 slightly above line */
+  left: 2.5%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 6;
+}
+
+/* Individual dots */
+.timeline-dot {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.timeline-dot.active {
+  transform: scale(1.4);
+}
+/* Mail icon */
+.timeline-mail {
+  position: absolute;
+  bottom: 0.5vh;
+  left: 7%;
+  z-index: 6;
+}
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
 
   .hero {
-    height: 50vh;
+    height: 30vh;
      margin-top: 10vh;
   }
 
@@ -197,13 +343,18 @@
 
   /* Circle GIF */
   .circle-element {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-width: 2px;
   }
 
   .circle-gifhero {
-    height: 80%;
+    position: absolute;
+  width: 150px;
+  max-width: none;
+  left: 35%;
+  top: 0%;
+  transform: translate(-50%, -50%);
   }
 }
 
@@ -287,12 +438,12 @@
     height: 110px;
   }
 }
-
+/* 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
 
   .hero {
     height: 90vh;
-    margin-top: 11vh; /* same header spacing logic */
+    margin-top:8vh; 
   }
 
   .logo-containerhero {
@@ -301,17 +452,16 @@
 
   .logohero {
     width: 200px;
-    padding: 2.5vh 2vw;
+    padding: 0vh 2vw;
   }
 
   .header-row {
     padding: 4vh 2rem;
-     margin: 0 auto;
   }
 
   .nav-common {
     display: flex; 
-    gap: 1vh;
+    gap: 2vh;
   }
 
   .nav-title-common {
@@ -327,7 +477,6 @@
     font-size: 16.5px;
   }
 
-  /* Bottom Content */
   .hero-bottom-wrapsectionhero {
     bottom: 6vh;
     padding: 0 6vw;
@@ -368,7 +517,6 @@
     margin: 0 auto;
   }
 
-  /* Navigation */
   .nav-common {
     display: flex;
     gap: 1.2vh;
@@ -388,7 +536,6 @@
     font-size: 17px;
   }
 
-  /* Bottom section */
   .hero-bottom-wrapsectionhero {
     bottom: 7vh;
     padding: 0 8vw;
@@ -407,4 +554,7 @@
   .circle-gifhero {
     height: 80%;
   }
-}
+} */
+
+
+
