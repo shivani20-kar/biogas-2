@@ -1,0 +1,120 @@
+.gasholder-wrapper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 5vw 0vw ;
+  gap: 60px;
+}
+
+/* LEFT */
+.gasholder-left {
+  background: #5f5f5f;
+  padding: 40px;
+  width: 40vw;
+}
+
+/* .image-box {
+  background: #fff;
+  padding: 1.5vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+} */
+
+.imagee-box img {
+    margin-top: 18vw;
+    margin-left: 6vw;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gasholder-right {
+  position: relative;
+  width: 41vw;
+  margin-left: 12vw;
+  margin-top: -1vw;
+}
+.gas-number{
+     display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.gasholder-right h2 {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #282828;
+  width: 26vw;
+}
+
+.gasholder-right h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  color: transparent;                 /* no fill */
+  -webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px #cc3a3a;
+}
+
+.gasholder-right h4 {
+font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+  margin-top: -2vw;
+  margin-bottom: -1vw;
+}
+
+.gasholder-right p {
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: 15px;
+}
+
+.gasholder-right h5 {
+font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+  margin-top: -1vw;
+  margin-bottom: -1vw;
+}
+
+.gasholder-right ul {
+  padding-left: 1.2vw;
+}
+
+.gasholder-right li {
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+/* SPEC BOX */
+.spec-box h4 {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: -1vw;
+  margin-bottom: 0vw;
+   border-bottom: 2px solid #E12D36;
+}
+
+.spec-box p {
+ display: flex;
+  justify-content: space-between;
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #282828;
+   margin-bottom: -1.2vw;
+}

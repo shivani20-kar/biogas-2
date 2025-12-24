@@ -1,0 +1,120 @@
+.pump-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 5vw 0vw ;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.pump-left {
+  background: #5f5f5f;
+  padding: 40px;
+  width: 40vw;
+}
+
+.pump-left img {
+  /* padding: 1vw; */
+    margin-top: 18vw;
+    margin-left: 15vw;
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+/* RIGHT SIDE */
+.pump-right {
+  position: relative;
+  width: 41vw;
+  margin-left: 12vw;
+  margin-top: -1vw;
+}
+
+.pump-number {
+  display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.pump-number h1{
+  font-size: 5vw;
+  font-weight: 700;
+  color: transparent;                 /* no fill */
+  -webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px #cc3a3a;
+}
+.pump-title {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #282828;
+  width: 26vw;
+}
+
+.pump-subtitle {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+  margin-top: -2vw;
+  margin-bottom: -1vw;
+}
+
+.pump-right p {
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: 15px;
+}
+
+.pump-right h5 {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #282828;
+  margin-top: -1vw;
+  margin-bottom: -1vw;
+}
+
+.spec-heading {
+  font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: 0vw;
+  margin-bottom: 0vw;
+   border-bottom: 2px solid #E12D36;
+}
+
+.spec-block {
+  margin-top: 01vw;
+}
+
+.spec-block h6 {
+ font-family: 'DDINPRO';
+font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #282828;
+   margin-top: 0vw;
+  margin-bottom: -1.2vw;
+}
+
+.spec-block p {
+ display: flex;
+  justify-content: space-between;
+  font-family: 'DDINPRO';
+     font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #282828;
+   margin-bottom: -1.2vw;
+}
+
+.spec-block span {
+  font-weight: 500;
+}

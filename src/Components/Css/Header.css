@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 11vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +97,7 @@
 /* ======= Desktop Dropdown Styles ======= */
 .dropdown-box {
   position: absolute;
-  top: 11vh;
+  top: 8vh;
   width: auto;
   background: var(--primary-blue);
   padding: 1vh 0;
@@ -570,7 +570,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   
   .header {
-    height: 11vh;
+    height: 8vh;
     padding: 0 2vw;
   }
 
@@ -593,7 +593,7 @@
   }
 
   .dropdown-box {
-    top: 11vh;
+    top: 8vh;
   }
 
   /* Desktop menu font adjustments */
@@ -610,7 +610,7 @@
 
 .mega-dropdown {
   position: absolute;
-  top: 11vh;
+  top: 8vh;
   left: 69vw;
   display: flex;
   background: var(--primary-blue);

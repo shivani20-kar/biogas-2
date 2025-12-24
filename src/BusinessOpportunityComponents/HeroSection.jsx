@@ -75,9 +75,16 @@ const HeroSection = () => {
       {/* ================= HEADER ================= */}
       <div className="hero-content-overlay">
         <div className="header-row">
-          <div className="logo-containerhero">
-            <img src={logo} alt="GDBioGas Logo" className="logohero" />
-          </div>
+         <div className="logo-containerhero">
+  <img
+    src={logo}
+    alt="GDBioGas Logo"
+    className="logohero"
+    onClick={() => setActiveSlide(0)}   
+    style={{ cursor: "pointer" }}
+  />
+</div>
+
 
           <div className="nav-common">
             <div className="nav-section-common">

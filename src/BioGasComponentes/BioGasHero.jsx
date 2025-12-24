@@ -19,7 +19,7 @@ const BioGasHero = () => {
 
             <div className="biogashero-nav-commons">
               <div className="biogashero-nav-section-commonns">
-             npm start   <h3 className="biogashero-nav-title-commons">GD Biogas for</h3>
+              <h3 className="biogashero-nav-title-commons">GD Biogas for</h3>
                 <ul className="biogashero-nav-list-commons">
                   <li>
                     <Link to="/business">Business opportunity</Link>
