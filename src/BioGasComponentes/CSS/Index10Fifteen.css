@@ -1,4 +1,4 @@
-.flare-wrapper {
+.heating-wrapper {
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 5vw 0vw;
@@ -6,15 +6,17 @@
 }
 
 /* LEFT IMAGE AREA */
-.flare-image-box {
+.heating-image-box {
   background: #5f5f5f;
   padding: 40px;
   width: 40vw;
   display: flex;
-  align-items: center;
+    align-items: center;
 }
 
-.flare-image-box img {
+.heating-image-box img {
+  margin-top: 5.5vh;
+  margin-bottom: 6vh;
   margin-left: 6vw;
   width: 100%;
   height: auto;
@@ -23,7 +25,7 @@
 }
 
 /* RIGHT CONTENT */
-.flare-content {
+.heating-content {
   position: relative;
   width: 41vw;
   margin-left: 10vw;
@@ -31,13 +33,14 @@
 }
 
 /* BIG NUMBER */
-.flare-number {
+.heating-number {
   display: flex;
   align-items: center;
   gap: 2vw;
+  margin-bottom: -4vh;
 }
 
-.flare-number h1 {
+.heating-number h1 {
   font-size: 5vw;
   font-weight: 700;
   font-family: "DDINPRO";
@@ -47,7 +50,7 @@
 }
 
 /* HEADINGS */
-.flare-content h2 {
+.heating-content h2 {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 26px;
@@ -55,7 +58,7 @@
   color: #282828;
 }
 
-.flare-content h4 {
+.heating-content h4 {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 24px;
@@ -65,18 +68,25 @@
   margin-bottom: -1vw;
 }
 
-.flare-content h5 {
+.heating-setup {
+  font-family: "DDINPRO";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #282828;
+  margin: 0;
+}
+
+.heating-content h5 {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -1vw;
-  margin-bottom: -1vw;
 }
 
 /* TEXT */
-.flare-content p {
+.heating-content p {
   font-family: "DDINPRO";
   font-weight: 400;
   font-size: 17px;
@@ -86,12 +96,12 @@
 }
 
 /* LISTS */
-.flare-content ul {
+.heating-content ul {
   padding-left: 2.5vw;
   margin-bottom: 1vw;
 }
 
-.flare-content ul li {
+.heating-content ul li {
   font-family: "DDINPRO";
   font-weight: 400;
   font-size: 17px;
@@ -100,7 +110,7 @@
 }
 
 /* SPECS */
-.flare-spec-title {
+.heating-spec-title {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 22px;
@@ -111,11 +121,11 @@
   border-bottom: 2px solid #e12d36;
 }
 
-.flare-specs {
+.heating-specs {
   margin-top: 1vw;
 }
 
-.flare-specs p {
+.heating-specs p {
   display: flex;
   justify-content: space-between;
   font-family: "DDINPRO";
@@ -126,6 +136,25 @@
   margin-bottom: -1.2vw;
 }
 
-.flare-specs span {
+.heating-specs span {
   font-weight: 500;
+}
+
+.heating-spec-heading {
+  font-family: "DDINPRO";
+  font-weight: 600;
+  font-size: 16px;
+  color: #282828;
+  margin-top: 1.2vw;
+  margin-bottom: 0.3vw;
+}
+
+.heating-spec-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DDINPRO";
+  font-size: 15px;
+  line-height: 1.6;
+  color: #282828;
+  margin-bottom: 0.2vw;
 }

@@ -103,15 +103,15 @@ const WaterSupplySewerage = () => {
             <span>Check valves</span>
           </p>
 
-          <p className="specs-sub">
+          <p className="spec-sub">
             <span>Float switches</span>
           </p>
 
-          <p className="specs-sub">
+          <p className="spec-sub">
             <span>Brackets</span>
           </p>
 
-          <p className="specs-sub">
+          <p className="spec-sub">
             <span>Valves</span>
           </p>
         </div>
