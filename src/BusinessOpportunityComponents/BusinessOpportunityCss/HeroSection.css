@@ -381,7 +381,7 @@ line-height: normal;
   }
 
   .nav-common {
-    display: none; /* still hidden, tablet menu */
+    display: none; 
   }
 
   .sectionhero-title {
