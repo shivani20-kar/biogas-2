@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   gap: 2vw;
-  margin-bottom: 1vw;
+  margin-bottom: -2vw;
 }
 
 .ws-section-number {
