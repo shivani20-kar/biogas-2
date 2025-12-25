@@ -114,6 +114,9 @@ import FlareSystem from "./BioGasComponentes/Index10Thirteen";
 import WaterSupplySewerage from "./BioGasComponentes/Index10Fourteen";
 import HeatingSystem from "./BioGasComponentes/Index10Fifteen";
 import DryCooler from "./BioGasComponentes/Index10Sixteen";
+import AutomationSystem from "./BioGasComponentes/Index10Seventeen";
+import SensorSystem from "./BioGasComponentes/Index10Eighteen";
+import LaboratorySystem from "./BioGasComponentes/Index10Nineteen";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -191,12 +194,15 @@ function App() {
               <Gasholder />
               <BiogasDryer />
               <BiogasCompressor />
-
               <Desulphurization />
               <FlareSystem />
               <WaterSupplySewerage />
               <HeatingSystem />
               <DryCooler />
+              <AutomationSystem />
+              <SensorSystem />
+              <LaboratorySystem />
+
             </>
           }
         />

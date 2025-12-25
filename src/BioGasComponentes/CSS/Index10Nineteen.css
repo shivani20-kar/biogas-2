@@ -1,4 +1,4 @@
-.flare-wrapper {
+.laboratorysystem-wrapper {
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 5vw 0vw;
@@ -6,15 +6,15 @@
 }
 
 /* LEFT IMAGE AREA */
-.flare-image-box {
+.laboratorysystem-image-box {
   background: #5f5f5f;
   padding: 40px;
   width: 40vw;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
-.flare-image-box img { 
+.laboratorysystem-image-box img {
   margin-left: 6vw;
   width: 100%;
   height: auto;
@@ -23,7 +23,7 @@
 }
 
 /* RIGHT CONTENT */
-.flare-content {
+.laboratorysystem-content {
   position: relative;
   width: 41vw;
   margin-left: 10vw;
@@ -31,13 +31,14 @@
 }
 
 /* BIG NUMBER */
-.flare-number {
+.laboratorysystem-number {
   display: flex;
   align-items: center;
   gap: 2vw;
+  margin-bottom: -4vh;
 }
 
-.flare-number h1 {
+.laboratorysystem-number h1 {
   font-size: 5vw;
   font-weight: 700;
   font-family: "DDINPRO";
@@ -47,7 +48,7 @@
 }
 
 /* HEADINGS */
-.flare-content h2 {
+.laboratorysystem-content h2 {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 26px;
@@ -55,28 +56,17 @@
   color: #282828;
 }
 
-.flare-content h4 {
+.laboratorysystem-content h5 {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -2vw;
-  margin-bottom: -1vw;
-}
-
-.flare-content h5 {
-  font-family: "DDINPRO";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.8;
-  color: #282828;
-  margin-top: -1vw;
-  margin-bottom: -1vw;
+  margin: 0;
 }
 
 /* TEXT */
-.flare-content p {
+.laboratorysystem-content p {
   font-family: "DDINPRO";
   font-weight: 400;
   font-size: 17px;
@@ -86,12 +76,12 @@
 }
 
 /* LISTS */
-.flare-content ul {
+.laboratorysystem-content ul {
   padding-left: 2.5vw;
   margin-bottom: 1vw;
 }
 
-.flare-content ul li {
+.laboratorysystem-content ul li {
   font-family: "DDINPRO";
   font-weight: 400;
   font-size: 17px;
@@ -100,32 +90,24 @@
 }
 
 /* SPECS */
-.flare-spec-title {
+.laboratorysystem-spec-title {
   font-family: "DDINPRO";
   font-weight: 700;
   font-size: 22px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -1vw;
-  margin-bottom: 0vw;
   border-bottom: 2px solid #e12d36;
 }
 
-.flare-specs {
+.laboratorysystem-specs {
   margin-top: 1vw;
 }
 
-.flare-specs p {
-  display: flex;
-  justify-content: space-between;
+.laboratorysystem-specs p {
   font-family: "DDINPRO";
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
   color: #282828;
-  margin-bottom: -1.2vw;
-}
-
-.flare-specs span {
-  font-weight: 500;
+  margin: 0;
 }
