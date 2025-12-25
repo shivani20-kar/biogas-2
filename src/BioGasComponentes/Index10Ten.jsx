@@ -14,7 +14,7 @@ const BiogasDryer = () => {
 
         <h4 className="sub-heading">
           Advanced Gas Cooling and Moisture Removal System
-        </h4>
+        </h4> 
 
         <p className="description">
           The <strong>Biogas Dryer and Cooling Unit (CHL-01) </strong>is a critical component of

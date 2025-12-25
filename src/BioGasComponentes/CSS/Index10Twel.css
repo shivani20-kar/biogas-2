@@ -80,7 +80,7 @@
   color: #282828;
 }
 
-/* RIGHT IMAGE */
+/* RIGHT IMAGE */ 
 .desul-right {
   width: 50%;
   background: #5a5a5a;
@@ -95,3 +95,4 @@
   height: auto;
   object-fit: cover; 
 }
+ 

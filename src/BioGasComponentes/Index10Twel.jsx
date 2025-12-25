@@ -76,7 +76,7 @@ Reaction Example: H₂S + Fe(OH)₃ → Fe₂S₃ + H₂O
         </div>
       </div>
 
-      {/* Right Image */}
+      {/* Right Image */} 
       <div className="desul-right">
         <img src={plantImg} alt="Desulphurization Plant" />
       </div>

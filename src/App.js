@@ -113,6 +113,7 @@ import Desulphurization from "./BioGasComponentes/Index10Twel";
 import FlareSystem from "./BioGasComponentes/Index10Thirteen";
 import WaterSupplySewerage from "./BioGasComponentes/Index10Fourteen";
 import HeatingSystem from "./BioGasComponentes/Index10Fifteen";
+import DryCooler from "./BioGasComponentes/Index10Sixteen";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -195,6 +196,7 @@ function App() {
               <FlareSystem />
               <WaterSupplySewerage />
               <HeatingSystem />
+              <DryCooler />
             </>
           }
         />

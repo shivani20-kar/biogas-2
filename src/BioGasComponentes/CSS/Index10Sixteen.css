@@ -1,0 +1,90 @@
+.drycooler-wrapper {
+  display: flex;
+}
+
+.drycooler-left {
+  width: 45%;
+  padding: 0vw 6vw;
+  position: relative;
+}
+
+.drycooler-heading {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: -1vw;
+}
+
+.drycooler-number {
+  font-size: 5vw;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #cc3a3a;
+}
+
+.drycooler-heading h2 {
+  font-family: "DDINPRO";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.drycooler-description {
+  font-family: "DDINPRO";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.drycooler-left h5 {
+  font-family: "DDINPRO";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #282828;
+}
+
+.drycooler-specs h5 {
+  border-bottom: 2px solid #e12d36;
+  margin-top: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.drycooler-specs p {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DDINPRO";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #282828;
+  margin-bottom: -0.8vw;
+}
+
+.drycooler-specs span {
+  font-weight: 400;
+  color: #282828;
+}
+
+.drycooler-right {
+  width: 47%;
+  background: #6a6a6a;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.drycooler-right img {
+  position: absolute;
+  left: -5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  padding: 1vw;
+  display: block;
+}

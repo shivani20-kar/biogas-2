@@ -10,7 +10,7 @@
 .dryer-heading {
   display: flex;
     align-items: center;
-    gap: 2vw;
+    gap: 2vw; 
     margin-bottom: -1vw;
 }
 
