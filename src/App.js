@@ -117,6 +117,11 @@ import DryCooler from "./BioGasComponentes/Index10Sixteen";
 import AutomationSystem from "./BioGasComponentes/Index10Seventeen";
 import SensorSystem from "./BioGasComponentes/Index10Eighteen";
 import LaboratorySystem from "./BioGasComponentes/Index10Nineteen";
+import EquipmentSpecifications from "./BioGasComponentes/Index11";
+import AppendicesSection from "./BioGasComponentes/Index12";
+import Appendix from "./BioGasComponentes/Index13";
+
+
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -203,6 +208,17 @@ function App() {
               <SensorSystem />
               <LaboratorySystem />
 
+              <section id="index11">
+                <EquipmentSpecifications />
+              </section>
+
+              <section id="index12">
+                <AppendicesSection />
+              </section>
+
+               <section id="index13">
+               <Appendix />
+              </section>
             </>
           }
         />
