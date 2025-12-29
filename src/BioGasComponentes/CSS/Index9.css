@@ -10,7 +10,7 @@ background: #5f5f5f;
   align-items: flex-start;
   position: relative;
 }
-.tech-arrow-shape {
+.tech-arrow-shape { 
    position: relative;
   width: 120px;
   height: 180px;

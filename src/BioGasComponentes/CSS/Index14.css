@@ -1,43 +1,37 @@
-.appendix-wrapper {
+.biogasupgrade-wrapper {
   width: 100%;
   background: #ffffff;
   font-family: "DDINPRO";
 }
 
+/* ================= SCROLL ================= */
 .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-/* HEADER */
-.appendix-header {
+/* ================= HEADER ================= */
+.biogasupgrade-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0vw 6vw 0vw;
 }
 
-.appendix-title {
-  font-size: 3.8vw; 
+.biogasupgrade-title {
+  font-size: 3.8vw;
   font-weight: 700;
   color: #000000;
-  margin: 0; 
+  margin: 0;
 }
 
-.appendix-subtitle {
-  font-size: 2vw;
-  font-weight: 600;
-  margin-top: 0.6vw;
-  color: #000000;
-}
-
-/* RED ARROWS */
-.appendix-arrows {
+/* ================= ARROWS ================= */
+.biogasupgrade-arrows {
   display: flex;
   gap: 1vw;
 }
 
-.appendix-arrow-btn {
+.biogasupgrade-arrow-btn {
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
@@ -51,14 +45,15 @@
   align-items: center;
   justify-content: center;
 }
-/* COMMON */
+
+/* Arrow group */
 .arrow-hover-group {
   display: flex;
   align-items: center;
   gap: 0.8vw;
 }
 
-/* HOVER TEXT */
+/* Hover text */
 .arrow-hover-text {
   font-size: 1.1vw;
   font-weight: 300;
@@ -68,7 +63,7 @@
   transition: all 0.3s ease;
 }
 
-/* LEFT ARROW ANIMATION */
+/* Left arrow hover */
 .arrow-left .arrow-hover-text {
   transform: translateX(8px);
 }
@@ -78,7 +73,7 @@
   transform: translateX(0);
 }
 
-/* RIGHT ARROW ANIMATION */
+/* Right arrow hover */
 .arrow-right .arrow-hover-text {
   transform: translateX(-8px);
 }
@@ -88,63 +83,75 @@
   transform: translateX(0);
 }
 
-/* TABLE */
-.appendix-table-container {
+/* ================= TABLE ================= */
+.biogasupgrade-table-container {
   padding: 0 6vw 4vw;
 }
 
-.appendix-table {
+.biogasupgrade-table {
+  width: 100%;
   border-collapse: collapse;
-  table-layout: auto;
-  width: max-content;
-  min-width: 100%;
+  margin-top: 2vw;
+  table-layout: fixed;
 }
 
-.appendix-table thead th {
+.biogasupgrade-table thead th {
   background: #6f6f6f;
   color: #ffffff;
   font-size: 1.6vw;
   font-weight: 600;
   padding: 1.6vw 1.8vw;
-  text-align: left;
-  white-space: nowrap;
-}
-
-.appendix-table td {
-  padding: 1.2vw 1.8vw;
-  border-bottom: 1px solid #d6d6d6;
-  white-space: nowrap;
-}
-
-.appendix-table thead th:nth-child(2),
-.appendix-table thead th:nth-child(3) {
   text-align: center;
+  white-space: nowrap;
 }
 
-.appendix-table tbody td {
+.biogasupgrade-table td {
   font-size: 1.5vw;
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
-  text-align: left;
+  white-space: nowrap;
 }
 
-.appendix-highlight {
-  background-color:#FCDF25;
+/* Equipment column width */
+.biogasupgrade-table th:first-child,
+.biogasupgrade-table td:first-child {
+  min-width: 100vw;
+  text-align: start;
+}
+
+/* Center numeric columns */
+.biogasupgrade-table th:nth-child(2),
+.biogasupgrade-table th:nth-child(3),
+.biogasupgrade-table td:nth-child(2),
+.biogasupgrade-table td:nth-child(3) {
+  text-align: center;
+}
+
+/* Highlight cell */
+.biogasupgrade-highlight {
+  background-color: #fcdf25;
   font-weight: 600;
   color: #000;
 }
 
-/* Equipment Name column width increase */
-.appendix-table th:first-child,
-.appendix-table td:first-child {
-  min-width: 55vw;
+/* ================= LAST ROW ================= */
+.biogasupgrade-total-row {
+  margin-top: 2.5vw;
 }
 
-/* Center align 2, 3, 4, 5, 6 columns in tbody */
-.appendix-table tbody td:nth-child(2),
-.appendix-table tbody td:nth-child(3),
-.appendix-table tbody td:nth-child(4),
-.appendix-table tbody td:nth-child(5),
-.appendix-table tbody td:nth-child(6) {
-  text-align: center;
+.biogasupgrade-total-row td {
+  border: 1px solid #d6d6d6;
+}
+
+/* Column widths */
+.col-equipment {
+  width: 59vw;
+}
+
+.col-small {
+  width: 15vw;
+}
+
+.col-medium {
+  width: 20vw;
 }

@@ -1,33 +1,31 @@
-import React, { useRef } from "react";
+import React from "react";
+import "./CSS/Index15.css";
 
-import "./CSS/Index13.css";
-
-const Appendix = () => {
+const NapierGrass = () => {
   return (
-    <section className="appendix-wrapper">
+    <section className="napiergrass-wrapper">
       {/* HEADER */}
-      <div className="appendix-header">
-        <div className="appendix-header-text">
-          <h1 className="appendix-title">Appendix 4.1</h1>
-          <p className="appendix-subtitle">
+      <div className="napiergrass-header">
+        <div className="napiergrass-header-text">
+          <h1 className="napiergrass-title">
             Biogas plant (Napier grass 33% total solid)
-          </p>
+          </h1>
         </div>
 
         {/* ARROWS */}
-        <div className="appendix-arrows">
-          {/* LEFT ARROW */} 
+        <div className="napiergrass-arrows">
+          {/* LEFT ARROW */}
           <div className="arrow-hover-group arrow-left">
             <span className="arrow-hover-text">
               Go To
               <br /> Back
             </span>
-            <button className="appendix-arrow-btn">←</button>
+            <button className="napiergrass-arrow-btn">←</button>
           </div>
 
           {/* RIGHT ARROW */}
           <div className="arrow-hover-group arrow-right">
-            <button className="appendix-arrow-btn">→</button>
+            <button className="napiergrass-arrow-btn">→</button>
             <span className="arrow-hover-text">
               Go To
               <br /> Next
@@ -37,9 +35,9 @@ const Appendix = () => {
       </div>
 
       {/* TABLE */}
-      <div className="appendix-table-container">
+      <div className="napiergrass-table-container">
         <div className="table-scroll">
-          <table className="appendix-table">
+          <table className="napiergrass-table">
             <thead>
               <tr>
                 <th>Equipment Name</th>
@@ -194,7 +192,6 @@ const Appendix = () => {
                 <td>24,0</td>
                 <td>1,9</td>
               </tr>
-
               <tr>
                 <td>Propylene glycol pump station</td>
                 <td>0,8</td>
@@ -203,7 +200,6 @@ const Appendix = () => {
                 <td>0,5</td>
                 <td>0,4</td>
               </tr>
-
               <tr>
                 <td>Drinage pump</td>
                 <td>1,0</td>
@@ -212,7 +208,6 @@ const Appendix = () => {
                 <td>0,5</td>
                 <td>1,0</td>
               </tr>
-
               <tr>
                 <td>Lighting of the biogas plant territory</td>
                 <td>1,0</td>
@@ -221,7 +216,6 @@ const Appendix = () => {
                 <td>8,0</td>
                 <td>8,0</td>
               </tr>
-
               <tr>
                 <td>Spot light for digesters inspection windows</td>
                 <td>0,1</td>
@@ -230,7 +224,6 @@ const Appendix = () => {
                 <td>0,5</td>
                 <td>0,0</td>
               </tr>
-
               <tr>
                 <td>Working lighting of switchboard</td>
                 <td>0,1</td>
@@ -239,32 +232,29 @@ const Appendix = () => {
                 <td>0,5</td>
                 <td>0,1</td>
               </tr>
-
               <tr>
                 <td>Total installed power, kW</td>
                 <td></td>
                 <td></td>
-                <td className="appendix-highlight">447</td>
+                <td className="napiergrass-highlight">447</td>
                 <td></td>
                 <td></td>
               </tr>
-
               <tr>
                 <td>Total consumed electric energy, kWh per day</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td className="appendix-highlight">7011</td>
+                <td className="napiergrass-highlight">7011</td>
               </tr>
-
               <tr>
                 <td>Total consumed power, kW</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td className="appendix-highlight">292</td>
+                <td className="napiergrass-highlight">292</td>
               </tr>
             </tbody>
           </table>
@@ -274,4 +264,4 @@ const Appendix = () => {
   );
 };
 
-export default Appendix;
+export default NapierGrass;

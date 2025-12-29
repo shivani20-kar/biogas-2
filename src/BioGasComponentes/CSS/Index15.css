@@ -1,4 +1,4 @@
-.appendix-wrapper {
+.napiergrass-wrapper {
   width: 100%;
   background: #ffffff;
   font-family: "DDINPRO";
@@ -10,21 +10,22 @@
 }
 
 /* HEADER */
-.appendix-header {
+.napiergrass-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0vw 6vw 0vw;
 }
 
-.appendix-title {
-  font-size: 3.8vw; 
+.napiergrass-title {
+  font-size: 3.8vw;
   font-weight: 700;
   color: #000000;
-  margin: 0; 
+  margin-bottom: 3vh;
+  margin-top: 0vh;
 }
 
-.appendix-subtitle {
+.napiergrass-subtitle {
   font-size: 2vw;
   font-weight: 600;
   margin-top: 0.6vw;
@@ -32,12 +33,12 @@
 }
 
 /* RED ARROWS */
-.appendix-arrows {
+.napiergrass-arrows {
   display: flex;
   gap: 1vw;
 }
 
-.appendix-arrow-btn {
+.napiergrass-arrow-btn {
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
@@ -51,6 +52,7 @@
   align-items: center;
   justify-content: center;
 }
+
 /* COMMON */
 .arrow-hover-group {
   display: flex;
@@ -89,18 +91,18 @@
 }
 
 /* TABLE */
-.appendix-table-container {
+.napiergrass-table-container {
   padding: 0 6vw 4vw;
 }
 
-.appendix-table {
+.napiergrass-table {
   border-collapse: collapse;
   table-layout: auto;
   width: max-content;
   min-width: 100%;
 }
 
-.appendix-table thead th {
+.napiergrass-table thead th {
   background: #6f6f6f;
   color: #ffffff;
   font-size: 1.6vw;
@@ -110,41 +112,41 @@
   white-space: nowrap;
 }
 
-.appendix-table td {
+.napiergrass-table td {
   padding: 1.2vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   white-space: nowrap;
 }
 
-.appendix-table thead th:nth-child(2),
-.appendix-table thead th:nth-child(3) {
+.napiergrass-table thead th:nth-child(2),
+.napiergrass-table thead th:nth-child(3) {
   text-align: center;
 }
 
-.appendix-table tbody td {
+.napiergrass-table tbody td {
   font-size: 1.5vw;
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   text-align: left;
 }
 
-.appendix-highlight {
-  background-color:#FCDF25;
+.napiergrass-highlight {
+  background-color: #fcdf25;
   font-weight: 600;
   color: #000;
 }
 
 /* Equipment Name column width increase */
-.appendix-table th:first-child,
-.appendix-table td:first-child {
+.napiergrass-table th:first-child,
+.napiergrass-table td:first-child {
   min-width: 55vw;
 }
 
 /* Center align 2, 3, 4, 5, 6 columns in tbody */
-.appendix-table tbody td:nth-child(2),
-.appendix-table tbody td:nth-child(3),
-.appendix-table tbody td:nth-child(4),
-.appendix-table tbody td:nth-child(5),
-.appendix-table tbody td:nth-child(6) {
+.napiergrass-table tbody td:nth-child(2),
+.napiergrass-table tbody td:nth-child(3),
+.napiergrass-table tbody td:nth-child(4),
+.napiergrass-table tbody td:nth-child(5),
+.napiergrass-table tbody td:nth-child(6) {
   text-align: center;
 }
