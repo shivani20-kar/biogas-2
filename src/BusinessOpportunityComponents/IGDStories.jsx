@@ -19,7 +19,7 @@ const IGDStories = () => {
 
           <img className="storiesimg" src={colonimg} alt="" />
 
-          <div className="sub-heading">
+          <div className="sub-headingg">
             GD Earth Planet for<br /> Anand Kranti
           </div>
 

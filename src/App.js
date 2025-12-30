@@ -4,6 +4,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+
 import "./App.css";
 import Header from "./Components/Header";
 import ContactSection from "./Components/ContactSection";
@@ -114,6 +115,7 @@ import FlareSystem from "./BioGasComponentes/Index10Thirteen";
 import WaterSupplySewerage from "./BioGasComponentes/Index10Fourteen";
 import HeatingSystem from "./BioGasComponentes/Index10Fifteen";
 import DryCooler from "./BioGasComponentes/Index10Sixteen";
+import HeroSectionSecondPage from "./Components/HeroSection2page";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -132,16 +134,19 @@ function ScrollToTop() {
   return null;
 }
 function App() {
+
   return (
     <Router>
       <ScrollToTop />
       <Header />
+       
       <Routes>
         <Route
           path="/"
           element={
             <>
               <HeroSection />
+              <HeroSectionSecondPage/>
             </>
           }
         />

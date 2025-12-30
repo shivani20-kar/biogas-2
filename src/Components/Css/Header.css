@@ -571,13 +571,13 @@
   
   .header {
     height: 8vh;
-    padding: 0 2vw;
+    padding: 0 2%;
   }
 
   /* Show Desktop Navbar */
   .nav-links.desktop-menu {
     display: flex !important;
-    gap: 1.8vw;
+    gap: 1.5%;
   }
 
   /* Hide Mobile Menu */
@@ -637,7 +637,6 @@
   }
 }
 
-/* 5. Large Desktops / Full HD / Widescreen (1367px and above) */
 @media screen and (min-width: 1367px) {
 
   .header {
