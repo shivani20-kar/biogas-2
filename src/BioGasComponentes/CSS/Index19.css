@@ -1,0 +1,130 @@
+/* ================= WRAPPER ================= */
+.proposal-wrapper {
+  background: #ffffff;
+  font-family: "DDINPRO";
+}
+
+/* ================= HEADER ================= */
+.proposal-header {
+  background: #5f5f5f;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 7vw;
+}
+
+.proposal-header-text {
+  padding: 0 2vw 4vw;
+}
+
+.proposal-title {
+  font-size: 4.7vw;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 0.15vw #ffffff;
+  margin: 1.5vw 0 0 1.5vw;
+  line-height: 1;
+}
+
+.proposal-subtitle {
+  margin-left: 1.5vw;
+  font-size: 3.5vw;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.proposal-desc {
+  margin-left: 1.5vw;
+  font-size: 1.5vw; 
+  color: #d9d9d9;
+}
+
+/* ================= TABLE ================= */
+.proposal-table-container {
+  display: flex;
+  justify-content: center;
+  padding: 4vh 4vw;
+}
+
+.proposal-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #ffffff;
+  width: 100%;
+}
+
+/* ================= TABLE HEADER ================= */
+.proposal-table thead {
+  background: #6b6b6b;
+  color: #ffffff;
+}
+
+.proposal-table th {
+  padding: 2.3vh 1.6vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* ================= TABLE BODY ================= */
+.proposal-table td {
+  padding: 1.8vh 1.6vw;
+  font-size: 1.3vw;
+  border-bottom: 0.15vh solid #dddddd;
+  text-align: left;
+}
+
+.proposal-table tbody tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.proposal-table th:nth-child(4),
+.proposal-table td:nth-child(4) {
+  text-align: center;
+}
+/* ================= DROPDOWN ================= */
+.table-dropdown {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1.3vw;
+  font-family: "DDINPRO";
+  cursor: pointer;
+  padding-right: 1.8vw;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23000' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0.8vw;
+}
+
+.table-dropdown:focus {
+  outline: none;
+}
+
+/* ================= DOWNLOAD ================= */
+
+.download-cell a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6.8vw;
+  color: #0982fe;
+  font-weight: 500;
+  font-size: 1.3vw;
+  text-decoration: none;
+}
+
+.download-cell a:hover {
+  text-decoration: underline;
+}
+
+.download-cell span {
+  /* margin-left: 0.4vw; */
+  font-size: 1.3vw;
+}

@@ -68,7 +68,7 @@
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 20px;
   font-style: normal;
   /* font-weight: bold; */
@@ -133,7 +133,7 @@
   text-decoration: none;
   color: var(--white);
   font-size: 14px;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   width: 100%;
   transition: all var(--transition-fast);
   display: block;
@@ -148,18 +148,39 @@
   display: none;
 }
 
-.left-align-1 { left: 4.5vw; }
-.left-align-2 { left: 12vw; }
-.left-align-3 { left: 19.5vw; }
-.left-align-4 { left: 29vw; }
-.left-align-5 { left: 42vw; }
-.left-align-6 { left: 56vw; }
-.left-align-7 { left: 64vw; }
-.left-align-8 { left: 80vw; }
-.left-align-9 { left: 82vw; }
-.left-align-10 { left: 89vw; }
-.left-align-11 { left: 91.6vw; }
-
+.left-align-1 {
+  left: 4.5vw;
+}
+.left-align-2 {
+  left: 12vw;
+}
+.left-align-3 {
+  left: 19.5vw;
+}
+.left-align-4 {
+  left: 29vw;
+}
+.left-align-5 {
+  left: 42vw;
+}
+.left-align-6 {
+  left: 56vw;
+}
+.left-align-7 {
+  left: 64vw;
+}
+.left-align-8 {
+  left: 80vw;
+}
+.left-align-9 {
+  left: 82vw;
+}
+.left-align-10 {
+  left: 89vw;
+}
+.left-align-11 {
+  left: 91.6vw;
+}
 
 .mega-col {
   width: 200px;
@@ -174,7 +195,7 @@
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 6px 0;
   display: block;
   transition: color var(--transition-fast);
@@ -272,7 +293,7 @@
   align-items: center;
   padding: 18px 20px;
   color: var(--white);
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 20px;
   /* font-weight: bold; */
   cursor: pointer;
@@ -323,7 +344,7 @@
   padding: 12px 30px;
   color: var(--white);
   text-decoration: none;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 14px;
   border-left: 3px solid transparent;
   transition: all var(--transition-fast);
@@ -346,7 +367,7 @@
   align-items: center;
   padding: 12px 30px;
   color: var(--white);
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 14px;
   /* font-weight: bold; */
   cursor: pointer;
@@ -381,70 +402,68 @@
   border-left: 3px solid var(--accent-red);
 }
 
-
-
 @media (min-width: 320px) and (max-width: 480px) {
   .header {
     height: 10vh;
     padding: 0 4vw;
   }
-  
+
   /* Show Hamburger Icon */
   .hamburger-container {
     display: flex !important;
   }
-  
+
   .hamburger-menu {
     display: flex !important;
   }
-  
+
   /* Hide Desktop Navbar */
   .nav-links.desktop-menu,
   .dropdown-box,
   .mega-dropdown {
     display: none !important;
   }
-  
+
   /* Show logo */
   .logo-container-header {
     display: flex !important;
   }
-  
+
   .logo-header {
     height: 8vh;
   }
-  
+
   /* Mobile Menu Overlay */
   .mobile-menu-overlay {
     top: 10vh;
   }
-  
+
   .mobile-menu-content {
     height: calc(100vh - 8vh);
   }
-  
+
   /* Hamburger size */
   .hamburger-menu {
     width: 26px;
     height: 20px;
   }
-  
+
   .hamburger-line {
     height: 2.5px;
   }
-  
+
   /* Mobile Menu Items */
   .mobile-menu-header-item {
     font-size: 13px;
     padding: 14px 16px;
   }
-  
+
   .mobile-submenu a,
   .mobile-submenu-header {
     font-size: 12px;
     padding: 10px 22px;
   }
-  
+
   .mobile-sub-submenu a {
     font-size: 11px;
     padding: 8px 32px;
@@ -457,53 +476,53 @@
     height: 9vh;
     padding: 0 4vw;
   }
-  
+
   /* Show Hamburger Icon */
   .hamburger-container {
     display: flex !important;
   }
-  
+
   .hamburger-menu {
     display: flex !important;
   }
-  
+
   /* Hide Desktop Navbar */
   .nav-links.desktop-menu,
   .dropdown-box,
   .mega-dropdown {
     display: none !important;
   }
-  
+
   /* Show logo */
   .logo-container-header {
     display: flex !important;
   }
-  
+
   .logo-header {
     height: 40px;
   }
-  
+
   /* Mobile Menu Overlay */
   .mobile-menu-overlay {
     top: 9vh;
   }
-  
+
   .mobile-menu-content {
     height: calc(100vh - 9vh);
   }
-  
+
   /* Mobile Menu Items */
   .mobile-menu-header-item {
     font-size: 14px;
     padding: 16px 18px;
   }
-  
+
   .mobile-submenu a,
   .mobile-submenu-header {
     font-size: 13px;
     padding: 12px 26px;
   }
-  
+
   .mobile-sub-submenu a {
     font-size: 12px;
     padding: 10px 36px;
@@ -516,51 +535,51 @@
     height: 10vh;
     padding: 0 4vw;
   }
-  
+
   /* Check if we should show hamburger or desktop nav */
   .hamburger-container {
     display: flex !important;
   }
-  
+
   .hamburger-menu {
     display: flex !important;
   }
-  
+
   /* Hide Desktop Navbar on tablets by default */
   .nav-links.desktop-menu,
   .dropdown-box,
   .mega-dropdown {
     display: none !important;
   }
-  
+
   /* Show logo */
   .logo-container-header {
     display: flex !important;
   }
-  
+
   .logo-header {
     height: 45px;
   }
-  
+
   .mobile-menu-overlay {
     top: 10vh;
   }
-  
+
   .mobile-menu-content {
     height: calc(100vh - 10vh);
   }
-  
+
   .mobile-menu-header-item {
     font-size: 15px;
     padding: 18px 20px;
   }
-  
+
   .mobile-submenu a,
   .mobile-submenu-header {
     font-size: 14px;
     padding: 14px 30px;
   }
-  
+
   .mobile-sub-submenu a {
     font-size: 13px;
     padding: 12px 40px;
@@ -568,7 +587,6 @@
 }
 /* 4. Laptops & Large Tablets Landscape (1025px to 1366px) */
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
-  
   .header {
     height: 8vh;
     padding: 0 2vw;
@@ -589,7 +607,7 @@
 
   /* Logo size */
   .logo-header {
-     display: none !important;
+    display: none !important;
   }
 
   .dropdown-box {
@@ -608,17 +626,17 @@
     padding: 9px 18px;
   }
 
-.mega-dropdown {
-  position: absolute;
-  top: 8vh;
-  left: 69vw;
-  display: flex;
-  background: var(--primary-blue);
-  gap: 20px;
-  z-index: 999;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.2s ease-out;
-}
+  .mega-dropdown {
+    position: absolute;
+    top: 8vh;
+    left: 69vw;
+    display: flex;
+    background: var(--primary-blue);
+    gap: 20px;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.2s ease-out;
+  }
 
   /* Mega menu columns */
   .mega-col {
@@ -639,16 +657,15 @@
 
 /* 5. Large Desktops / Full HD / Widescreen (1367px and above) */
 @media screen and (min-width: 1367px) {
-
   .header {
-    height: 11vh; 
+    height: 11vh;
     padding: 0 0vw;
   }
 
   /* Desktop Nav Visible */
   .nav-links.desktop-menu {
     display: flex !important;
-    gap: 1.5vw;
+    gap: 3.4vw;
   }
 
   /* Hide Mobile Elements */
@@ -660,7 +677,6 @@
 
   .logo-header {
     display: none;
-   
   }
 
   /* Dropdown positioning */
@@ -694,7 +710,7 @@
   }
 
   .mega-col {
-    width: 220px; 
+    width: 220px;
     padding: 16px;
   }
 
@@ -707,16 +723,38 @@
     width: 200px;
     padding: 16px;
   }
-  
-.left-align-1 { left: 2vw; }
-.left-align-2 { left: 10vw; }
-.left-align-3 { left: 18vw; }
-.left-align-4 { left: 29vw; }
-.left-align-5 { left: 42vw; }
-.left-align-6 { left: 56vw; }
-.left-align-7 { left: 65vw; }
-.left-align-8 { left: 80vw; }
-.left-align-9 { left: 83vw; }
-.left-align-10 { left: 87vw; }
-.left-align-11 { left: 90vw; }
+
+  .left-align-1 {
+    left: 2vw;
+  }
+  .left-align-2 {
+    left: 10vw;
+  }
+  .left-align-3 {
+    left: 18vw;
+  }
+  .left-align-4 {
+    left: 29vw;
+  }
+  .left-align-5 {
+    left: 42vw;
+  }
+  .left-align-6 {
+    left: 56vw;
+  }
+  .left-align-7 {
+    left: 65vw;
+  }
+  .left-align-8 {
+    left: 80vw;
+  }
+  .left-align-9 {
+    left: 83vw;
+  }
+  .left-align-10 {
+    left: 87vw;
+  }
+  .left-align-11 {
+    left: 90vw;
+  }
 }

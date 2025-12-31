@@ -16,7 +16,7 @@ const Industries = () => {
               points="0,0 84,0 120,90 84,180 0,180 36,90"
               fill="#f2f2f2"
               stroke="#e3262f"
-              strokeWidth="4"
+              strokeWidth="4" 
             />
           </svg>
         </div>
@@ -69,3 +69,4 @@ const Industries = () => {
 };
 
 export default Industries;
+ 

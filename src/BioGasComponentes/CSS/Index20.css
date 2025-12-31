@@ -1,140 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
-.headoffice-wrapper {
+.discover-wrapper {
   width: 100%;
-  padding: 80px 0;
+  padding: 8vh 0;
   text-align: center;
   font-family: "DDINPRO";
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headoffice-title {
-  font-size: 42px;
+/* ---------- TITLE ---------- */
+.discover-title {
+  font-size: 2.2vw;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 3vw;
 }
 
-.headoffice-title span {
+.discover-title span {
   color: #e12d36;
 }
 
-/* Outer Container */
-.headoffice-form-box {
+/* ---------- FORM BOX ---------- */
+.discover-form-box {
   width: 40%;
-  border: 2px solid #e12d36;
-  border-radius: 30px;
-  padding: 60px;
-  background: white;
+  border: 0.15vw solid #e12d36;
+  border-radius: 2vw;
+  padding: 4vw;
+  background: #fff;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* NEW FIX */
   box-sizing: border-box;
 }
 
-/* Form layout */
-.headoffice-form {
+/* ---------- FORM ---------- */
+.discover-form {
   width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 2vh;
 }
 
-/* Floating label wrapper */
+/* ---------- FLOAT INPUT ---------- */
 .float-input {
   width: 100%;
   position: relative;
 }
 
-/* Input fields */
 .float-input input,
 .float-input textarea {
-  width: 100% !important;
+  width: 100%;
   box-sizing: border-box;
-
-  padding: 16px 18px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  background: white;
-  font-size: 16px;
+  padding: 1.6vh 1.2vw;
+  border-radius: 1vw;
+  border: 0.08vw solid #ccc;
+  background: #fff;
+  font-size: 0.95vw;
   outline: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4vh 0.8vh rgba(0, 0, 0, 0.15);
   transition: 0.3s ease;
   resize: none;
 }
 
-/* Textarea height */
+/* TEXTAREA */
 .float-input textarea {
-  height: 70px;
+  height: 8vh;
 }
 
-/* LABEL default position */
+/* ---------- LABEL ---------- */
 .float-input label {
   position: absolute;
-  top: 16px;
-  left: 18px;
+  top: 1.6vh;
+  left: 1.2vw;
   color: #777;
   pointer-events: none;
   transition: 0.25s ease;
-  padding: 0 6px;
-  background: white;
-  font-size: 16px;
+  padding: 0 0.4vw;
+  background: #fff;
+  font-size: 0.95vw;
 }
 
-/* FLOATING EFFECT */
+/* FLOAT EFFECT */
 .float-input input:focus + label,
 .float-input input:not(:placeholder-shown) + label,
 .float-input textarea:focus + label,
 .float-input textarea:not(:placeholder-shown) + label {
-  top: -14px;
-  left: 14px;
-  font-size: 13px;
+  top: -1.2vh;
+  left: 1vw;
+  font-size: 0.75vw;
   color: #e12d36;
-  background: white;
 }
 
-/* FILE FIELD SAME WIDTH FIX */
-.file-box {
-  width: 100%;
-}
-
-/* File label floating fix */
+/* FILE LABEL */
 .file-box label {
-  top: -14px !important;
-  font-size: 13px;
+  top: -1.2vh !important;
+  font-size: 0.75vw;
   color: #e12d36;
 }
 
-/* ---------------- NEW SUBMIT BUTTON STYLE ---------------- */
-
-.headoffice-submit {
-  width: 100% !important;
-  box-sizing: border-box;
-
-  border: 1px solid #ccc;
-  border-radius: 20px;
+/* ---------- SUBMIT BUTTON ---------- */
+.discover-submit {
+  width: 100%;
+  border: 0.08vw solid #ccc;
+  border-radius: 1.6vw;
   background-color: #fff;
   color: #676767;
-  font-size: 1rem;
+  font-size: 1vw;
   cursor: pointer;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.8vw;
   overflow: hidden;
   transition: color 0.3s ease;
   position: relative;
-  /* padding: 14px 0; */
+  padding: 1.4vh 0;
 }
 
-.headoffice-submit::before {
+.discover-submit::before {
   content: "";
   position: absolute;
   left: 0;
@@ -142,54 +126,50 @@
   width: 100%;
   height: 100%;
   background-color: #e12d36;
-  border-radius: 20px;
+  border-radius: 1.6vw;
   transform: translateY(100%);
   transition: transform 0.3s ease;
   z-index: 0;
 }
 
-.headoffice-submit:hover::before {
+.discover-submit:hover::before {
   transform: translateY(0);
 }
 
-.headoffice-submit span,
-.headoffice-submit .arrow {
+.discover-submit span,
+.discover-submit .arrow {
   position: relative;
   z-index: 1;
 }
 
-.headoffice-submit .arrow {
+.discover-submit .arrow {
   opacity: 0;
-  transform: translateX(-8px);
+  transform: translateX(-0.6vw);
   background-color: #fff;
   color: #e12d36;
-  padding: 8px;
+  padding: 0.6vh;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 1.4vw;
+  height: 1.4vw;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
 
-.headoffice-submit:hover .arrow {
+.discover-submit:hover .arrow {
   opacity: 1;
   transform: translateX(0);
 }
 
-.headoffice-submit:hover {
+.discover-submit:hover {
   color: #fff;
 }
 
-/* ---------------- POPUP ---------------- */
-
+/* ---------- POPUP ---------- */
 .popup-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
@@ -201,53 +181,43 @@
   width: 55%;
   background: #fff;
   padding: 4vh 4vw;
-  border-radius: 40px;
+  border-radius: 3vw;
   position: relative;
   text-align: center;
 }
 
 .popup-close {
   position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 32px;
+  top: 2vh;
+  right: 2vw;
+  font-size: 2vw;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .popup-title {
-  font-size: 56px;
+  font-size: 3vw;
   font-weight: 700;
 }
 
-.popup-sub {
-  font-size: 26px;
-  margin-bottom: 5px;
-}
-
+.popup-sub,
 .popup-text {
-  font-size: 26px;
+  font-size: 1.4vw;
   line-height: 1.5;
 }
 
-.red-x {
-  color: #e12d36;
-  font-weight: bold;
-}
-
 .popup-done {
-  margin-top: 40px;
+  margin-top: 4vh;
   width: 60%;
-  padding: 12px 0;
-  border-radius: 20px;
-  border: 2px solid #ccc;
-  background: #fff; 
-  font-size: 20px;
+  padding: 1.2vh 0;
+  border-radius: 1.6vw;
+  border: 0.15vw solid #ccc;
+  background: #fff;
+  font-size: 1.2vw; 
   cursor: pointer;
-  transition: 0.3s ease;
 }
-
-.popup-done:hover {
-  background: #e2e2e2;
+.float-input input,
+.float-input textarea {
+  color: #000; /* typed text visible */
 }
