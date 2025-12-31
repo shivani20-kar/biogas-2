@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import "../BusinessOpportunityComponents/BusinessOpportunityCss/ ContactHeadOffice.css";
+import "./CSS/Index20.css";
 
-export default function ContactHeadOffice() {
-  const [form, setForm] = useState({
+export default function ContactDiscover() {
+  const initialForm = {
     name: "",
     contact: "",
     email: "",
     message: "",
     file: "",
-  });
+  };
 
+  const [form, setForm] = useState(initialForm);
   const [showPopup, setShowPopup] = useState(false);
 
   const handleChange = (e) => {
@@ -25,16 +26,16 @@ export default function ContactHeadOffice() {
     setShowPopup(true);
   };
 
+  const closePopup = () => {
+    setShowPopup(false);
+    setForm(initialForm); // Reset form after popup
+  };
+
   return (
     <>
-      <section className="headoffice-wrapper">
-        <h1 className="headoffice-title">
-          Still issue not solved? <br />
-          Connect with our <span>Head Office</span>
-        </h1>
-
-        <div className="headoffice-form-box">
-          <form className="headoffice-form" onSubmit={handleSubmit}>
+      <section className="discover-wrapper">
+        <div className="discover-form-box">
+          <form className="discover-form" onSubmit={handleSubmit}>
             {/* NAME */}
             <div className="float-input">
               <input
@@ -85,7 +86,7 @@ export default function ContactHeadOffice() {
               />
               <label>Message</label>
             </div>
- 
+
             {/* FILE */}
             <div className="float-input file-box">
               <input type="file" name="file" onChange={handleChange} />
@@ -93,9 +94,9 @@ export default function ContactHeadOffice() {
             </div>
 
             {/* SUBMIT BUTTON */}
-            <button type="submit" className="headoffice-submit submit-btn">
+            <button type="submit" className="discover-submit submit-btn">
               <span>Submit</span>
-              <i className="arrow">→</i>
+              <i className="arrow">↗</i>
             </button>
           </form>
         </div>
@@ -104,8 +105,8 @@ export default function ContactHeadOffice() {
       {/* POPUP */}
       {showPopup && (
         <div className="popup-overlay">
-          <div className="popup-box">
-            <button className="popup-close" onClick={() => setShowPopup(false)}>
+          <div className="popup-box"> 
+            <button className="popup-close" onClick={closePopup}>
               ×
             </button>
 
@@ -115,9 +116,9 @@ export default function ContactHeadOffice() {
               Our IT Core<span className="red-x">X</span> Team as soon as
               <br />
               Contact With You
-            </p> 
+            </p>
 
-            <button className="popup-done" onClick={() => setShowPopup(false)}>
+            <button className="popup-done" onClick={closePopup}>
               Done
             </button>
           </div>

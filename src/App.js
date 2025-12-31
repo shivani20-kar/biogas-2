@@ -127,6 +127,10 @@ import NapierGrass from "./BioGasComponentes/Index15";
 import BioCNGEquipment from "./BioGasComponentes/Index16";
 import ImplementationTerms from "./BioGasComponentes/Index17";
 import Industries from "./BioGasComponentes/Index18";
+import ProposalTable from "./BioGasComponentes/Index19";
+import ContactDiscover from "./BioGasComponentes/Index20";
+import BackgroundSection from "./BioGasComponentes/Index21";
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
@@ -241,16 +245,30 @@ function App() {
               </section>
 
               <section id="index16">
-               <BioCNGEquipment />
+                <BioCNGEquipment />
               </section>
 
               <section id="index17">
-               <ImplementationTerms />
+                <ImplementationTerms />
               </section>
 
-               <section id="index18">
-              <Industries />
+              <section id="index18">
+                <Industries />
               </section>
+
+              <section id="index19">
+                <ProposalTable />
+              </section>
+
+              <section id="index20">
+                <ContactDiscover />
+              </section>
+
+              <section id="index21">
+                <BackgroundSection />
+              </section>
+
+              <Footer />
             </>
           }
         />
