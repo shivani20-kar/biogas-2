@@ -1,0 +1,157 @@
+.biogasupgrade-wrapper {
+  width: 100%;
+  background: #ffffff;
+  font-family: "DDINPRO";
+}
+
+/* ================= SCROLL ================= */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ================= HEADER ================= */
+.biogasupgrade-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vw 6vw 0vw;
+}
+
+.biogasupgrade-title {
+  font-size: 3.8vw;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+/* ================= ARROWS ================= */
+.biogasupgrade-arrows {
+  display: flex;
+  gap: 1vw;
+}
+
+.biogasupgrade-arrow-btn {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background: #e12d36;
+  color: #ffffff;
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arrow group */
+.arrow-hover-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+/* Hover text */
+.arrow-hover-text {
+  font-size: 1.1vw;
+  font-weight: 300;
+  color: #000000;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Left arrow hover */
+.arrow-left .arrow-hover-text {
+  transform: translateX(8px);
+}
+
+.arrow-left:hover .arrow-hover-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right arrow hover */
+.arrow-right .arrow-hover-text {
+  transform: translateX(-8px);
+}
+
+.arrow-right:hover .arrow-hover-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ================= TABLE ================= */
+.biogasupgrade-table-container {
+  padding: 0 6vw 4vw;
+}
+
+.biogasupgrade-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2vw;
+  table-layout: fixed;
+}
+
+.biogasupgrade-table thead th {
+  background: #6f6f6f;
+  color: #ffffff;
+  font-size: 1.6vw;
+  font-weight: 600;
+  padding: 1.6vw 1.8vw;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.biogasupgrade-table td {
+  font-size: 1.5vw;
+  padding: 1.5vw 1.8vw;
+  border-bottom: 1px solid #d6d6d6;
+  white-space: nowrap;
+}
+
+/* Equipment column width */
+.biogasupgrade-table th:first-child,
+.biogasupgrade-table td:first-child {
+  min-width: 100vw;
+  text-align: start;
+}
+
+/* Center numeric columns */
+.biogasupgrade-table th:nth-child(2),
+.biogasupgrade-table th:nth-child(3),
+.biogasupgrade-table td:nth-child(2),
+.biogasupgrade-table td:nth-child(3) {
+  text-align: center;
+}
+
+/* Highlight cell */
+.biogasupgrade-highlight {
+  background-color: #fcdf25;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ================= LAST ROW ================= */
+.biogasupgrade-total-row {
+  margin-top: 2.5vw;
+}
+
+.biogasupgrade-total-row td {
+  border: 1px solid #d6d6d6;
+}
+
+/* Column widths */
+.col-equipment {
+  width: 59vw;
+}
+
+.col-small {
+  width: 15vw;
+}
+
+.col-medium {
+  width: 20vw;
+}

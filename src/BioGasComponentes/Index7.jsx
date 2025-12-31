@@ -143,7 +143,7 @@ const BiogasPlant = () => {
             </tr>
             <tr className="total-row">
               <td className="border-botom">Total</td>
-              <td className="border-botom">7</td>
+              <td className="border-botom">7</td> 
               <td className="border-botom"></td>
               <td className="border-botom"></td>
             </tr>

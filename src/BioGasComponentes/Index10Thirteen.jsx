@@ -14,7 +14,7 @@ const FlareSystem = () => {
       <div className="flare-content">
         <div className="flare-number">
           <h1>13</h1>
-          <h2>Flare System (FL-01)</h2>
+          <h2>Flare System (FL-01)</h2> 
         </div>
 
         <h4>Safe and Controlled Combustion System</h4>

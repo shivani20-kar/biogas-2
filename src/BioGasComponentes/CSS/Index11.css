@@ -1,0 +1,108 @@
+/* ================= HEADER ================= */
+.equipmentspecifications-header {
+  background: #5f5f5f;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.equipmentspecifications-arrow {
+  width: 120px;
+  height: 180px;
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}
+
+.equipmentspecifications-title h1 {
+  font-family: "DDINPRO";
+  font-size: 90px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  line-height: 1;
+  margin-top: 1.7vw;
+  margin-left: 1.5vw;
+}
+
+.equipmentspecifications-title p {
+  font-family: "DDINPRO";
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -4vw;
+  margin-left: 1.5vw;
+}
+
+/* ================= TABLE SECTION ================= */
+.equipmentspecifications-table-section {
+  padding: 6vw;
+}
+
+/* Base table */
+.equipmentspecifications-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+
+/* ================= HEADER ROW ================= */
+.equipmentspecifications-table-head th {
+  background: #676767;
+  color: #ffffff;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-weight: 700;
+  text-align: left;
+
+  /* INCREASED padding */
+  padding: 3vw 1.8vw;
+
+  /* remove all borders */
+  border: none;
+}
+
+/* ================= BODY ROWS ================= */
+.equipmentspecifications-table-body td {
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  text-align: left;
+
+  /* INCREASED padding */
+  padding: 2.5vw 1.8vw;
+
+  /* ONLY horizontal separation */
+  border-bottom: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+/* ================= COLUMN ALIGNMENT ================= */
+/* NO */
+.equipmentspecifications-table th:nth-child(1),
+.equipmentspecifications-table td:nth-child(1) {
+  width: 8%;
+  text-align: center;
+}
+
+/* Equipment */
+.equipmentspecifications-table th:nth-child(2),
+.equipmentspecifications-table td:nth-child(2) {
+  width: 44%;
+  text-align: left;
+}
+
+/* Characteristic */
+.equipmentspecifications-table th:nth-child(3),
+.equipmentspecifications-table td:nth-child(3) {
+  width: 28%;
+  text-align: start;
+}
+
+/* Quantity */
+.equipmentspecifications-table th:nth-child(4),
+.equipmentspecifications-table td:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}

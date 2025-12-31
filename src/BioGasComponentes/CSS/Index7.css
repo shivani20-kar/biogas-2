@@ -1,9 +1,3 @@
-/* .biogas-wrapper-index {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  color: #333;
-} */
-
 /* Header */
 .biogas-header-index {
   background: #5f5f5f;
@@ -13,18 +7,11 @@
 }
 
 .arrow-index {
-    position: relative;
+  position: relative;
   width: 120px;
   height: 180px;
   background: #f2f2f2;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
@@ -34,19 +21,12 @@
   position: absolute;
   inset: 0;
   background: #e3262f;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   z-index: -1;
 }
 
 .biogas-header-index h1 {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -57,7 +37,7 @@
 }
 
 .biogas-header-index p {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -67,12 +47,12 @@
 }
 
 /* Tables */
-.table-section{
-    padding: 6vw 6vw;
+.table-section {
+  padding: 6vw 6vw;
 }
 .employee-section {
-    padding: 0vw 6vw;
-    margin-bottom: 4vw ;
+  padding: 0vw 6vw;
+  margin-bottom: 4vw;
 }
 
 .big-tabele {
@@ -81,12 +61,12 @@
 }
 
 .big-tabel th {
-    height: 6vw;
- color: #ffffff;
-    font-size: 1.8vw;
-     font-family: 'DDINPRO';
+  height: 6vw;
+  color: #ffffff;
+  font-size: 1.8vw;
+  font-family: "DDINPRO";
   background: #676767;
-   padding: 1vw 2vw;
+  padding: 1vw 2vw;
   border: none;
   text-align: left;
   font-weight: 700;
@@ -96,9 +76,9 @@
 }
 
 .tb-new tr td {
-    width: auto;
+  width: auto;
   padding: 1.5vw 2vw;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.5vw;
   text-align: left;
   color: #000000;
@@ -107,19 +87,17 @@
 
 .tb-new tr td:nth-child(2),
 .tb-new tr td:nth-child(3) {
-   
   text-align: center;
 }
-.border-botom{
-    border-bottom: 1px solid #000000 !important;
-    border-left: none;
-    border-right: none;
+.border-botom {
+  border-bottom: 1px solid #000000 !important;
+  border-left: none;
+  border-right: none;
 }
-
 
 .sub-head td {
   background: none;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.5vw;
   text-align: left;
   color: #000000;
@@ -127,8 +105,8 @@
 }
 
 .employee-section h2 {
-    margin-top: -1vw;
-  font-family: 'DDINPRO';
+  margin-top: -1vw;
+  font-family: "DDINPRO";
   font-size: 2.7vw;
   text-align: left;
   color: #000000;
@@ -137,26 +115,25 @@
 }
 
 .total-row td {
-    padding: 2vw 2vw;
+  padding: 2vw 2vw;
   background: none;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.5vw;
   text-align: left;
   color: #000000;
 }
-.small-tr{
-   height: 8vw;
- color: #ffffff;
-    font-size: 1.8vw;
-     font-family: 'DDINPRO';
+.small-tr {
+  height: 8vw;
+  color: #ffffff;
+  font-size: 1.8vw;
+  font-family: "DDINPRO";
   background: #676767;
-   padding: 2vw 2vw;
+  padding: 2vw 2vw;
   border: none !important;
   text-align: left !important;
   font-weight: 700;
-  
 }
 .small-tr th:first-child {
-  padding-right: 30vw;  
+  padding-right: 30vw;
   padding-left: 2vw;
 }

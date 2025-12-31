@@ -116,7 +116,17 @@ import WaterSupplySewerage from "./BioGasComponentes/Index10Fourteen";
 import HeatingSystem from "./BioGasComponentes/Index10Fifteen";
 import DryCooler from "./BioGasComponentes/Index10Sixteen";
 import HeroSectionSecondPage from "./Components/HeroSection2page";
-
+import AutomationSystem from "./BioGasComponentes/Index10Seventeen";
+import SensorSystem from "./BioGasComponentes/Index10Eighteen";
+import LaboratorySystem from "./BioGasComponentes/Index10Nineteen";
+import EquipmentSpecifications from "./BioGasComponentes/Index11";
+import AppendicesSection from "./BioGasComponentes/Index12";
+import Appendix from "./BioGasComponentes/Index13";
+import BiogasUpgrade from "./BioGasComponentes/Index14";
+import NapierGrass from "./BioGasComponentes/Index15";
+import BioCNGEquipment from "./BioGasComponentes/Index16";
+import ImplementationTerms from "./BioGasComponentes/Index17";
+import Industries from "./BioGasComponentes/Index18";
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
@@ -196,12 +206,50 @@ function App() {
               <Gasholder />
               <BiogasDryer />
               <BiogasCompressor />
-
               <Desulphurization />
               <FlareSystem />
               <WaterSupplySewerage />
               <HeatingSystem />
               <DryCooler />
+              <AutomationSystem />
+              <SensorSystem />
+              <LaboratorySystem />
+
+              <section id="index11">
+                <EquipmentSpecifications />
+              </section>
+
+              <section id="index12">
+                <AppendicesSection />
+              </section>
+
+              <section id="index13">
+                <Appendix />
+              </section>
+
+              <section id="index14">
+                <BiogasUpgrade />
+              </section>
+
+              <section id="index15">
+                <NapierGrass />
+              </section>
+
+              <section id="index14">
+                <BiogasUpgrade />
+              </section>
+
+              <section id="index16">
+               <BioCNGEquipment />
+              </section>
+
+              <section id="index17">
+               <ImplementationTerms />
+              </section>
+
+               <section id="index18">
+              <Industries />
+              </section>
             </>
           }
         />
