@@ -155,6 +155,7 @@ function App() {
           path="/"
           element={
             <>
+            
               <HeroSection />
               <HeroSectionSecondPage/>
             </>
