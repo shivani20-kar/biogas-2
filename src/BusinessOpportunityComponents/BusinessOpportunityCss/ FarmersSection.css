@@ -1,5 +1,5 @@
 .farmers-section {
-  position: relative;     
+  position: relative;
   display: flex;
   align-items: center;
   padding: 6vh 5vw;
@@ -7,36 +7,36 @@
 
 /* ----- IMAGE SIDE ----- */
 .image-box {
-   position: relative;
+  position: relative;
   flex: 2;
   display: flex;
   justify-content: center;
   padding: 0 5vw;
 }
+
 .gray-box {
   padding-left: 2vw;
   position: absolute;
-  right: 0px;
-  top: -40px;
+  right: 0;
+  top: -6vh;
   width: 20%;
   height: 100%;
   background: #d3d3d3;
   z-index: 1;
 }
 
-
 .image-box img {
- position: relative;
-  z-index: 2;              
+  position: relative;
+  z-index: 2;
   width: 90%;
   height: auto;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0.5vw;
 }
 
 /* ----- TEXT OVERLAY ----- */
 .text-box {
-  position: absolute;       /* image वर येईल */
+  position: absolute;
   top: 10%;
   left: 8%;
   z-index: 5;
@@ -45,62 +45,49 @@
 
 /* TEXT STYLES */
 .line {
- color: #676767;
- font-family: 'DDINPRO';
-font-size: 100px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  margin: 0 0 6vh 0;
+  color: #676767;
+  font-family: "DDINPRO";
+  font-size: 7vw; /* 100px → vw */
+  font-weight: 400;
+  margin:  0;
 }
 
-.line2{
-  font-family: 'DDINPRO';
+.line2 {
+  font-family: "DDINPRO";
   color: #676767;
-font-size: 100px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-size: 7vw;
+  font-weight: 400;
   margin-top: -5vh;
-
 }
 
 .red {
- color: #E12D36;
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-  font-family: 'DDINPRO';
+  color: #e12d36;
+  font-size: 7vw;
+  font-weight: 700;
+  font-family: "DDINPRO";
 }
 
-.whitecolor{
- color: #FFF;
-  font-family: 'DDINPRO';
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.whitecolor {
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 7vw;
+  font-weight: 700;
 }
 
 .black {
-  font-family: 'DDINPRO';
- color: #676767;
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #676767;
+  font-size: 7vw;
+  font-weight: 700;
 }
 
+/* ================= MOBILE ================= */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   .farmers-section {
-    /* border: 2px solid red; */
     flex-direction: column;
     padding: 4vh 4vw;
   }
 
-  /* IMAGE BOX */
   .image-box {
     flex: none;
     padding: 0;
@@ -108,42 +95,35 @@ line-height: normal;
   }
 
   .farmer-image {
-    margin-left: 0;
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 1vw;
   }
 
   .text-box {
-    position: relative;     
+    position: relative;
     top: 0;
     left: 0;
     margin-top: 2vh;
     text-align: center;
   }
 
-  /* TEXT STYLES */
   .line {
-    font-size: 28px;
-    line-height: 1.2;
-    margin: 0 0 2vh 0;
+    font-size: 6vw;
+    margin-bottom: 2vh;
   }
 
   .line2 {
-    font-size: 28px;
-    line-height: 1.2;
+    font-size: 6vw;
     margin-top: -1vh;
   }
 
-  .red {
-    font-size: 30px;
-  }
-
+  .red,
   .whitecolor {
-    font-size: 30px;
+    font-size: 6.5vw;
   }
 
   .black {
-    font-size: 32px;
+    font-size: 7vw;
   }
 }

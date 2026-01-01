@@ -1,8 +1,7 @@
-
 .agitator-wrapper {
- display: grid;
+  display: grid;
   grid-template-columns: 40% 60%;
-  padding: 7vw 0vw ;
+  padding: 5vw 0vw;
   gap: 60px;
 }
 
@@ -14,9 +13,9 @@
 
 .agitator-left img {
   /* border: 2px solid #E8E8E8; */
-    padding: 1vw;
-    margin-top: 45vw;
-    margin-left: 15vw;
+  padding: 1vw;
+  margin-top: 45vw;
+  margin-left: 15vw;
   width: 80%;
   height: auto;
   display: block;
@@ -28,39 +27,41 @@
   margin-left: 12vw;
   margin-top: -1vw;
 }
-.agitator-head{
-   display: flex;
-    align-items: center;
-    gap: 2vw;
+.agitator-head {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
-.agitator-head h1{
-    font-size: 5vw;
+.agitator-head h1 {
+  font-size: 5vw;
   font-weight: 700;
-  color: transparent;                 /* no fill */
+  color: transparent; /* no fill */
   -webkit-text-fill-color: transparent;
--webkit-text-stroke: 1px #cc3a3a;
+  -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0.5vw;
 }
 .agitator-title {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+  margin-top: 0.5vw;
 }
 
 .agitator-subtitle {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -2.3vw;
+  margin-top: -3vw;
   margin-bottom: 0vw;
 }
 
 .agitator-right p {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -73,8 +74,8 @@ font-weight: 700;
 }
 
 .agitator-right li {
-   font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -87,15 +88,14 @@ font-weight: 700;
 .spec-grid {
   display: flex;
   flex-direction: column;
- 
 }
 
 .spec-grid p {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 15px;
   line-height: 1;
 }
