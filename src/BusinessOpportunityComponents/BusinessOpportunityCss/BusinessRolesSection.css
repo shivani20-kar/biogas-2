@@ -1,26 +1,22 @@
 /* ---------- TOP POINTS ---------- */
+.business-roles-wrapper {
+  padding: 0vh 4.5vw;
+}
 .top-points ul {
-  font-size: 18px;
-  list-style: disc;
-  /* margin-bottom: 4vh; */
-  padding-left: 20px;
+  padding-left: 4.2vw;
   margin-top: 0vh;
 }
 
 .top-points li {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 12px;
+ color: #676767;
+font-size: 1.9vw;
+font-style: normal;
+font-weight: 700;
+line-height: 35px; /* 166.667% */
+  margin-bottom: 3vw;
    font-family: 'DDINPRO';
-  color: #676767;
 }
 
-/* ---------- MAIN WRAPPER ---------- */
-.business-roles-wrapper {
-  padding: 5vh 5vw;
-}
-
-/* ---------- GRID ---------- */
 .roles-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -31,9 +27,7 @@
 /* ---------- COMMON CARD ---------- */
 .role-card {
   padding: 2vh 1vw;
-  color: #ffffff;
-   font-family: 'DDINPRO';
-  min-height: 28vh;
+  height: 52vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -54,42 +48,42 @@
 /* ---------- TITLE ---------- */
 .role-title {
    font-family: 'DDINPRO';
-  color: #ffffff;
-  font-size: 26px;
-  margin-bottom: 2vh;
-  font-weight: 600;
+ color: #FFF;
+text-align: center;
+font-size: 1.8vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+margin-bottom: 0vw;
 }
-
-/* ---------- TEXT ---------- */
-.role-text,
-.role-list li {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
+.role-text{
+ color: #FFF;
+text-align: center;
+font-family: 'DDINPRO';
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 700;
+line-height: 29px; /* 166.667% */
+letter-spacing: 0.48px;
 }
-
-.role-list {
-  padding-left: 20px;
-}
-
-.role-list li {
-  margin-bottom: 8px;
-}
-
 /* ---------- CARD COLORS ---------- */
 .role-red {
-  background: #ea647d;
+ background: #EA647D;
+box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-yellow {
-  background: #e6bd7b;
+ background: #BA8E48;
+box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-blue {
-  background: #03a0d0;
+ background: #03A0D0;
+box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-orange {
-  background: #feb903;
+background: #CA9304;
+box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 }

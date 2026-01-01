@@ -31,28 +31,54 @@ export default function ContactForm() {
           <div className="form-outer-frame">
             {/* Inner White Frame */}
             <div className="form-inner-frame">
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Applicant Name" required />
-                <input
-                  type="text"
-                  placeholder="Product / Service Name"
-                  required
-                />
-                <input type="text" placeholder="Contact Number" required />
-                <input type="email" placeholder="Email ID" required />
+             <form className="contact-form" onSubmit={handleSubmit}>
 
-                <div className="row">
-                  <input type="text" placeholder="Address" />
-                  <input type="text" placeholder="Postcode" />
-                </div>
+<div className="floating-field">
+  <input type="text" required />
+  <label>Applicant Name</label>
+</div>
 
-                <textarea placeholder="Message"></textarea>
 
-                <button type="submit" className="submit-btn">
-                  <span>Submit</span>
-                  <FontAwesomeIcon className="arrow" icon={faArrowRight} />
-                </button>
-              </form>
+  <div className="floating-field">
+    <input type="text" required />
+    <label>Product / Service Name</label>
+  </div>
+
+  <div className="floating-field">
+    <input type="text" required />
+    <label>Contact Number</label>
+  </div>
+
+  <div className="floating-field">
+    <input type="email" required />
+    <label>Email ID</label>
+  </div>
+
+  <div className="row-con">
+  <div className="floating-field-add large-input">
+    <input type="text" required />
+    <label>Address</label>
+  </div>
+
+  <div className="floating-field-add small-input">
+    <input type="text" required />
+    <label>Pincode</label>
+  </div>
+</div>
+
+
+  <div className="floating-field">
+    <textarea required></textarea>
+    <label>Message</label>
+  </div>
+
+  <button type="submit" className="submit-btn">
+    <span>Submit</span>
+    <FontAwesomeIcon className="arrow" icon={faArrowRight} />
+  </button>
+
+</form>
+
             </div>
           </div>
 

@@ -11,12 +11,9 @@ export default function QuoteSection() {
       <div className="quoteinner-wrapper">
         <div className="quote-left">
           <img src={quoteImg} alt="quote" className="quote-img" />
-
-          <h2 className="quote-number">25</h2>
-
-          <p className="quote-text">
-            Champions <br /> per Village.
-          </p>
+ <h2 className="quote-number"> 25</h2>
+ <p className="quote-text"> Oppourntunities to  Champion <br/>in your Village </p>
+        
         </div>
       </div>
 

@@ -152,31 +152,31 @@
   left: 4.5vw;
 }
 .left-align-2 {
-  left: 12vw;
+  left: 11.5vw;
 }
 .left-align-3 {
-  left: 19.5vw;
+  left: 19vw;
 }
 .left-align-4 {
-  left: 29vw;
+  left: 28.4vw;
 }
 .left-align-5 {
-  left: 42vw;
+  left: 40.5vw;
 }
 .left-align-6 {
-  left: 56vw;
+  left: 54vw;
 }
 .left-align-7 {
-  left: 64vw;
+  left: 61vw;
 }
 .left-align-8 {
   left: 80vw;
 }
 .left-align-9 {
-  left: 82vw;
+  left: 79vw;
 }
 .left-align-10 {
-  left: 89vw;
+  left: 85vw;
 }
 .left-align-11 {
   left: 91.6vw;
@@ -657,7 +657,7 @@
 
 @media screen and (min-width: 1367px) {
   .header {
-    height: 11vh;
+    height: 8vh;
     padding: 0 0vw;
   }
 

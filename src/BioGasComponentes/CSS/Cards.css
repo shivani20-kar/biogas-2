@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 60px;   /* left–right spacing */
-  row-gap: 130px;     /* top–bottom spacing (increase this) */
-  padding: 20vh 6vw;
+  row-gap: 110px;     /* top–bottom spacing (increase this) */
+  padding: 17vh 6vw;
 }
 
 
@@ -43,7 +43,7 @@
 }
 .card-number {
   position: absolute;
-  top: -9.5vw;
+  top: -8vw;
   left: 0%;
   font-size: 96px;
   font-weight: 700;

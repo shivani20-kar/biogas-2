@@ -15,18 +15,25 @@
 }
 
 .red-textvendor {
-  color: #e12d36;
-  font-size: 40px;
-  font-weight: 600;
+ color: #F00;
+font-family: 'DDINPRO';
+font-size: 4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 234.375% */
+letter-spacing: 1.28px;
   margin-bottom: 0vh;
-  margin-top: 0vh;
+  margin-top: 5vh;
 }
 
 .green-textvendor {
-  color: #0ea800;
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 0vh;
+color: #26B526;
+font-family: 'DDINPRO';
+font-size: 4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 10px; /* 234.375% */
+letter-spacing: 1.28px;
 }
 
 .contactform-wrapper {
@@ -57,16 +64,17 @@
   flex-direction: column-reverse;
 }
 .red-linevendor {
-  width: 90vw;
-  height: 7vh;
-  background: #e12d36;
-  border-radius: 4px;
+  width: 87vw;
+  height: 9vh;
+ background: #E12D36;
+box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: none;
 }
 
 /* OUTER DARK GREY FRAME */
 .form-outer-frame {
-  background: #5e5e5e;
-  padding: 8vh 4vw;
+background: #676767;
+  padding: 6vw 6vw;
   width: 55%;
   position: relative; /* for inner border */
   z-index: 1; /* make it above red bars */
@@ -76,47 +84,140 @@
 .form-outer-frame::before {
   content: "";
   position: absolute;
-  top: 3vh;
-  left: 1.5vw;
-  right: 1.5vw;
-  bottom: 3vh;
-  border: 3px solid #ffffff;
+  top: 3vw;
+  left: 3vw;
+  right: 3vw;
+  bottom: 3vw;
+  border: 1px solid #ffffff;
   pointer-events: none;
   z-index: 2;
 }
 
 /* INNER WHITE BOX */
 .form-inner-frame {
+   width: 78%;
   background: #fff;
-  padding: 4vh 4vw;
+  padding: 6vw 6vw;
   border-radius: 4px;
   position: relative;
-  z-index: 3; /* highest layer so form inputs stay on top */
+  z-index: 3; 
+}
+.floating-field,
+.floating-field-add {
+  position: relative;
+  width: 100%;
 }
 
-/* FORM INPUT STYLE */
-.contact-form input,
-.contact-form textarea {
-  width: 96%;
-  border: 2px solid #676767;
-  padding: 12px 12px;
+/* INPUT & TEXTAREA */
+.floating-field input,
+.floating-field textarea {
+  width: 100%;
+  padding: 16px 14px;
+  border: 1.5px solid #9a9a9a;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
-  color: #000;
+  background: #fff;
+}
+.row-con {
+  display: flex;
+  gap: 10px; /* space between Address and Pincode */
+  align-items: flex-start;
+}
+
+/* Make inputs stacked vertically inside container */
+.floating-field-add {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Address input takes as much space as possible */
+.floating-field-add.large-input {
+  flex: 12; /* takes more space */
+}
+
+/* Pincode input grows to fill remaining space */
+.floating-field-add.small-input {
+  flex: 4; /* takes remaining space after Address */
+}
+
+.floating-field-add input {
+  width: 90%; /* important: input fills its container */
+  padding: 16px 14px;
+  border: 1.5px solid #9a9a9a;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
   background: #fff;
 }
 
-.row {
-  display: flex;
-  gap: 15px;
-}
-.row input:first-child {
-  flex: 3; /* 3x space → Address */
+
+/* TEXTAREA HEIGHT */
+.floating-field textarea {
+  min-height: 120px;
+  resize: none;
 }
 
-.row input:last-child {
-  flex: 1; /* 1x space → Postcode */
+/* LABEL */
+.floating-field label,
+.floating-field-add label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6f6f6f;
+  pointer-events: none;
+  transition: 0.25s ease;
+  z-index: 2;
+}
+
+/* 🔥 BORDER HIDE STRIP (IMPORTANT) */
+.floating-field label::before,
+.floating-field-add label::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: 50%;
+  height: 2px;              /* border thickness */
+  background: #fff;         /* same as input bg */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+/* HOVER / FOCUS BORDER */
+.floating-field input:hover,
+.floating-field textarea:hover,
+.floating-field-add input:hover,
+.floating-field input:focus,
+.floating-field textarea:focus,
+.floating-field-add input:focus {
+  border-color: red;
+}
+
+/* DEFAULT – force label to center */
+.floating-field-add input:not(:focus):not(:hover) + label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+/* FLOAT ANIMATION */
+.floating-field input:hover + label,
+.floating-field textarea:hover + label,
+.floating-field-add input:hover + label,
+.floating-field input:focus + label,
+.floating-field textarea:focus + label,
+.floating-field-add input:focus + label,
+.floating-field input:valid + label,
+.floating-field textarea:valid + label,
+.floating-field-add input:valid + label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: red;
 }
 
 /* SUBMIT BUTTON */

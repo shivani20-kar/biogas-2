@@ -5,7 +5,7 @@
   margin-top:8vh;
   border: 1px solid #bdbdbd;
   border-bottom: none;
-   cursor: none;
+   /* cursor: none; */
 }
 .hero:hover .cursor-box {
   display: flex;
@@ -200,7 +200,7 @@ line-height: normal;
   left: 0;
   width: 90%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 0 5vw;
   z-index: 5;
@@ -272,7 +272,6 @@ line-height: normal;
   transform: translate(-50%, -50%);
 }
 
-
 /* Horizontal line */
 .timeline-line {
   position: absolute;
@@ -316,6 +315,21 @@ line-height: normal;
   left: 7%;
   z-index: 6;
 }
+
+/* Animate fill from top to bottom */
+.mail-fill-rect {
+  animation: fillMail 2s ease-in-out forwards;
+}
+
+@keyframes fillMail {
+  from {
+    height: 0;
+  }
+  to {
+    height: 30px; /* SVG height */
+  }
+}
+
 .animated-box{
   position: relative;
   animation: curveMove 1.6s ease-out forwards;
@@ -428,6 +442,7 @@ line-height: 30px;
   gap: 10px;
   transform: translate(-50%, -50%);
   z-index: 99999;
+  margin-left: 3.5vw;
 }
 
 

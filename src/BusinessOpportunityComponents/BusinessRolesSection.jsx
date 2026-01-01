@@ -39,20 +39,16 @@ export default function BusinessRolesSection() {
         <div className="role-card role-yellow">
           <div className="role-inner-border">
             <h3 className="role-title">The Vibe :</h3>
-            <ul className="role-list">
-              <li>
-                <b>Own It:</b> You run the show in your area. You are the agency.
-              </li>
-              <li>
-                <b>Scale It:</b> No caps on revenue. The more you build, 
-                the more you earn.
-              </li>
-              <li>
-                <b>Collaborate:</b> You get full access to our infrastructure,
+             <p className="role-text">
+                Own It:You run the show in your area. You are the agency.<br/>
+             
+                Scale It:No caps on revenue. The more you build, 
+                the more you earn.<br/>
+           
+                Collaborate: You get full access to our infrastructure,
                 supply chain, and branding.
-              </li>
-            </ul>
-          </div>
+                </p>
+                       </div>
         </div>
 
         {/* ---- CARD 3 ---- */}

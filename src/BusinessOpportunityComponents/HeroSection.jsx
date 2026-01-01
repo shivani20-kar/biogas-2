@@ -615,11 +615,44 @@ For Carbon Credit & Sustainable Tourism<br/>
 ))}
 
       </div>
-      <div className="timeline-mail">
-       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="23" viewBox="0 0 49 30" fill="none">
-  <path d="M0.750153 1.11621L24.0236 10.6068L24.3068 10.7223L24.59 10.6068L47.8633 1.11621V19.5844L24.3068 29.1904L0.750153 19.5844V1.11621Z" stroke="white" stroke-width="1.5"/>
-</svg>
-      </div>
+     <div className="timeline-mail">
+  <svg
+    width="44"
+    height="23"
+    viewBox="0 0 49 30"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <mask id="mailMask">
+        <rect x="0" y="0" width="49" height="0" fill="white">
+          <animate
+            attributeName="height"
+            from="0"
+            to="30"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+        </rect>
+      </mask>
+    </defs>
+
+    {/* Animated fill */}
+    <path
+      d="M0.750153 1.11621L24.0236 10.6068L24.3068 10.7223L24.59 10.6068L47.8633 1.11621V19.5844L24.3068 29.1904L0.750153 19.5844V1.11621Z"
+      fill="white"
+      mask="url(#mailMask)"
+    />
+
+    {/* Outline */}
+    <path
+      d="M0.750153 1.11621L24.0236 10.6068L24.3068 10.7223L24.59 10.6068L47.8633 1.11621V19.5844L24.3068 29.1904L0.750153 19.5844V1.11621Z"
+      fill="none"
+      stroke="white"
+      strokeWidth="1.5"
+    />
+  </svg>
+</div>
+
     </div>
   );
 };
