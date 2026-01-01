@@ -1,8 +1,7 @@
-
 .compressor-wrapper {
- display: grid;
+  display: grid;
   grid-template-columns: 40% 60%;
-  padding: 5vw 0vw ;
+  padding: 5vw 0vw;
   gap: 60px;
 }
 
@@ -14,16 +13,16 @@
 }
 
 .compressor-image-box img {
-    margin-top: 18vw;
-    margin-left: 6vw;
+  margin-top: 18vw;
+  margin-left: 6vw;
   width: 100%;
-  height: auto; 
+  height: auto;
   display: block;
 }
 
 /* RIGHT CONTENT */
 .compressor-content {
-   position: relative;
+  position: relative;
   width: 41vw;
   margin-left: 12vw;
   margin-top: -1vw;
@@ -31,41 +30,43 @@
 
 /* BIG NUMBER */
 .compressor-number {
-     display: flex;
-    align-items: center;
-    gap: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
-.compressor-number h1{
-     font-size: 5vw;
+.compressor-number h1 {
+  font-size: 6vw;
   font-weight: 700;
-   font-family: 'DDINPRO';
-  color: transparent;                 /* no fill */
+  font-family: "DDINPRO";
+  color: transparent; /* no fill */
   -webkit-text-fill-color: transparent;
--webkit-text-stroke: 1px #cc3a3a;
+  -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0vw;
 }
 
 /* HEADINGS */
 .compressor-content h2 {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.5;
   color: #282828;
+  margin-top: 0vw;
 }
 
 .compressor-content h4 {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -2vw;
-  margin-bottom: -1vw;
+  margin-top: -3.3vw;
+  margin-bottom: -0.5vw;
 }
 
 .compressor-content h5 {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
@@ -75,8 +76,8 @@ font-weight: 700;
 
 /* TEXT */
 .compressor-content p {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -90,8 +91,8 @@ font-weight: 700;
 }
 
 .compressor-content ul li {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -99,14 +100,14 @@ font-weight: 700;
 
 /* SPECS */
 .spec-title {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 22px;
   line-height: 1.8;
   color: #282828;
-   margin-top: -1vw;
+  margin-top: -1vw;
   margin-bottom: 0vw;
-   border-bottom: 2px solid #E12D36;
+  border-bottom: 2px solid #e12d36;
 }
 
 .specs {
@@ -116,12 +117,12 @@ font-weight: 700;
 .specs p {
   display: flex;
   justify-content: space-between;
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
   color: #282828;
-   margin-bottom: -1.2vw;
+  margin-bottom: -1.2vw;
 }
 
 .specs span {

@@ -5,64 +5,66 @@
 /* LEFT */
 .reactor-left {
   width: 45%;
-  padding: 0vw 6vw ;
+  padding: 0vw 6vw;
   position: relative;
 }
 
 .reactor-title {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
 }
 
-.reactor-no{
-     display: flex;
-    align-items: center;
-    gap: 2vw;
+.reactor-no {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
 .reactor-no h1 {
-   font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
-  color: transparent;                 
+  color: transparent;
   -webkit-text-fill-color: transparent;
--webkit-text-stroke: 1px #cc3a3a;
+  -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: -0.5vw;
 }
 
 .reactor-no h2 {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+  margin-top: 0vw;
 }
 .reactor-left p {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
 }
 
 .reactor-left h4 {
-   font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -1.5vw;
-  margin-bottom: -1vw;
+  margin-top: -3.3vw;
+  margin-bottom: 0vw;
 }
-.reactor-left h5{
-     font-family: 'DDINPRO';
-font-weight: 700;
+.reactor-left h5 {
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-   margin-top: -1vw;
+  margin-top: -1vw;
   margin-bottom: -1vw;
-   border-bottom: 2px solid #E12D36;
+  border-bottom: 2px solid #e12d36;
 }
 
 .reactor-left ul {
@@ -71,8 +73,8 @@ font-weight: 700;
 }
 
 .reactor-left ul li {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -83,18 +85,17 @@ font-weight: 700;
   display: grid;
   gap: 0.6vw 2vw;
   margin-top: 1vw;
- 
 }
 
 .spec-grid p {
- display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 15px;
   line-height: 1;
-   padding: 0 0;
+  padding: 0 0;
 }
 
 .spec-grid span {
@@ -105,21 +106,19 @@ font-weight: 700;
 .reactor-right {
   width: 47%;
   background: #6a6a6a;
-  position: relative;          /* IMPORTANT */
+  position: relative; /* IMPORTANT */
   display: flex;
   align-items: center;
-  overflow: visible;   
+  overflow: visible;
 }
 
 .reactor-right img {
-     position: absolute;
-  left: -5vw;                 /* background chya baher */
+  position: absolute;
+  left: -5vw; /* background chya baher */
   top: 50%;
   transform: translateY(-50%);
- width:80%;
+  width: 80%;
   height: auto;
   padding: 1vw;
   display: block;
 }
-
-
