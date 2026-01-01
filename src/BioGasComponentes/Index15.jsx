@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./CSS/Index15.css";
 
 const NapierGrass = () => {
+  const tableRef = useRef(null);
+
+  const goNext = () => {
+    if (!tableRef.current) return;
+    tableRef.current.scrollBy({
+      left: 500, // पुढे किती scroll करायचं (adjust करू शकतोस)
+      behavior: "smooth",
+    });
+  };
+
+  const goBack = () => {
+    if (!tableRef.current) return;
+    tableRef.current.scrollBy({
+      left: -500, // मागे किती scroll करायचं
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="napiergrass-wrapper">
       {/* HEADER */}
@@ -20,12 +38,22 @@ const NapierGrass = () => {
               Go To
               <br /> Back
             </span>
-            <button className="napiergrass-arrow-btn">←</button>
+            <button
+              className="napiergrass-arrow-btn"
+              onClick={goBack}
+            >
+              ←
+            </button>
           </div>
 
           {/* RIGHT ARROW */}
           <div className="arrow-hover-group arrow-right">
-            <button className="napiergrass-arrow-btn">→</button>
+            <button
+              className="napiergrass-arrow-btn"
+              onClick={goNext}
+            >
+              →
+            </button>
             <span className="arrow-hover-text">
               Go To
               <br /> Next
@@ -36,7 +64,7 @@ const NapierGrass = () => {
 
       {/* TABLE */}
       <div className="napiergrass-table-container">
-        <div className="table-scroll">
+        <div className="table-scroll" ref={tableRef}>
           <table className="napiergrass-table">
             <thead>
               <tr>
@@ -48,6 +76,7 @@ const NapierGrass = () => {
                 <th>Consumption kWh per day</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <td>Loader V=30 m3</td>

@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./CSS/Index16.css"; // Updated CSS file
 
 const BioCNGEquipment = () => {
+  const tableScrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    tableScrollRef.current.scrollBy({
+      left: -500,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    tableScrollRef.current.scrollBy({
+      left: 500,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="BioCNGEquipment-wrapper">
       {/* HEADER */}
@@ -19,10 +34,15 @@ const BioCNGEquipment = () => {
               Go To
               <br /> Back
             </span>
-            <button className="BioCNGEquipment-arrow-btn">←</button>
+            <button className="BioCNGEquipment-arrow-btn" onClick={scrollLeft}>
+              ←
+            </button>
           </div>
+
           <div className="arrow-hover-group arrow-right">
-            <button className="BioCNGEquipment-arrow-btn">→</button>
+            <button className="BioCNGEquipment-arrow-btn" onClick={scrollRight}>
+              →
+            </button>
             <span className="arrow-hover-text">
               Go To
               <br /> Next
@@ -33,7 +53,7 @@ const BioCNGEquipment = () => {
 
       {/* TABLE */}
       <div className="BioCNGEquipment-table-container">
-        <div className="table-scroll">
+        <div className="table-scroll" ref={tableScrollRef}>
           <table className="BioCNGEquipment-table">
             <thead>
               <tr>

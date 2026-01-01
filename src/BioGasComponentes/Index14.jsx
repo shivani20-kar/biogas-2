@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./CSS/Index14.css";
 
 const BiogasUpgrade = () => {
+  const tableRef = useRef(null);
+
+  const goNext = () => {
+    if (!tableRef.current) return;
+    tableRef.current.scrollBy({
+      left: 500, // पुढे किती scroll करायचं
+      behavior: "smooth",
+    });
+  };
+
+  const goBack = () => {
+    if (!tableRef.current) return;
+    tableRef.current.scrollBy({
+      left: -500, // मागे किती scroll करायचं
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="biogasupgrade-wrapper">
       {/* ================= HEADER ================= */}
@@ -12,15 +30,27 @@ const BiogasUpgrade = () => {
 
         {/* ================= ARROWS ================= */}
         <div className="biogasupgrade-arrows">
+          {/* LEFT */}
           <div className="arrow-hover-group arrow-left">
             <span className="arrow-hover-text">
               Go To <br /> Back
             </span>
-            <button className="biogasupgrade-arrow-btn">←</button>
+            <button
+              className="biogasupgrade-arrow-btn"
+              onClick={goBack}
+            >
+              ←
+            </button>
           </div>
 
+          {/* RIGHT */}
           <div className="arrow-hover-group arrow-right">
-            <button className="biogasupgrade-arrow-btn">→</button>
+            <button
+              className="biogasupgrade-arrow-btn"
+              onClick={goNext}
+            >
+              →
+            </button>
             <span className="arrow-hover-text">
               Go To <br /> Next
             </span>
@@ -30,7 +60,8 @@ const BiogasUpgrade = () => {
 
       {/* ================= TABLE ================= */}
       <div className="biogasupgrade-table-container">
-        <div className="table-scroll">
+        <div className="table-scroll" ref={tableRef}>
+          {/* MAIN TABLE */}
           <table className="biogasupgrade-table">
             <colgroup>
               <col className="col-equipment" />
@@ -73,7 +104,6 @@ const BiogasUpgrade = () => {
 
               <tr>
                 <td>Total installed power, kW</td>
-
                 <td></td>
                 <td></td>
                 <td className="biogasupgrade-highlight">567,0</td>
@@ -96,12 +126,12 @@ const BiogasUpgrade = () => {
                 <td></td>
                 <td></td>
                 <td></td>
-                <td className="biogasupgrade-highlight"> 567</td>
+                <td className="biogasupgrade-highlight">567</td>
               </tr>
             </tbody>
           </table>
 
-          {/* ===== IMAGE प्रमाणे खाली वेगळी row ===== */}
+          {/* ===== BOTTOM SINGLE ROW TABLE ===== */}
           <table className="biogasupgrade-table biogasupgrade-total-row">
             <colgroup>
               <col className="col-equipment" />
