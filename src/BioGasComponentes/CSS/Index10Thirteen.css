@@ -38,12 +38,13 @@
 }
 
 .flare-number h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
   font-family: "DDINPRO";
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0vw;
 }
 
 /* HEADINGS */
@@ -53,6 +54,7 @@
   font-size: 26px;
   line-height: 1.5;
   color: #282828;
+      margin-top: 0vw;
 }
 
 .flare-content h4 {
@@ -61,8 +63,8 @@
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -2vw;
-  margin-bottom: -1vw;
+  margin-top: -3.3vw;
+  margin-bottom: -0.3vw;
 }
 
 .flare-content h5 {

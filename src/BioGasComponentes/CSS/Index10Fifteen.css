@@ -11,7 +11,7 @@
   padding: 40px;
   width: 40vw;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .heating-image-box img {
@@ -41,12 +41,14 @@
 }
 
 .heating-number h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
   font-family: "DDINPRO";
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
 }
 
 /* HEADINGS */
@@ -56,6 +58,8 @@
   font-size: 26px;
   line-height: 1.5;
   color: #282828;
+  margin-top: 1.7vw;
+  margin-bottom: 0vw;
 }
 
 .heating-content h4 {
@@ -92,7 +96,6 @@
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
-  margin-bottom: 15px;
 }
 
 /* LISTS */

@@ -1,12 +1,6 @@
-/* .equipment-wrapper {
-  width: 100%;
-  background: #ffffff;
-  font-family: "Inter", sans-serif;
-} */
-
 /* Header */
 .equipment-header {
-background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -17,20 +11,13 @@ background: #5f5f5f;
   width: 120px;
   height: 180px;
   background: #f2f2f2;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
 
-.main-titlee h1{
-  font-family: 'DDINPRO';
+.main-titlee h1 {
+  font-family: "DDINPRO";
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -44,7 +31,7 @@ background: #5f5f5f;
 .equipment-content {
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 7vw 0vw ;
+  padding: 5vw 0vw;
   gap: 60px;
 }
 
@@ -56,10 +43,10 @@ background: #5f5f5f;
 }
 
 .equipment-left img {
-    border: 2px solid #E8E8E8;
-    padding: 1vw;
-    margin-top: 17vw;
-    margin-left: 15vw;
+  border: 2px solid #e8e8e8;
+  padding: 1vw;
+  margin-top: 17vw;
+  margin-left: 15vw;
   width: 80%;
   height: auto;
   display: block;
@@ -74,38 +61,40 @@ background: #5f5f5f;
 }
 
 .equipment-number {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
 .equipment-number h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
-  color: transparent;                 /* no fill */
+  color: transparent; /* no fill */
   -webkit-text-fill-color: transparent;
--webkit-text-stroke: 1px #cc3a3a;
+  -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0.5vw;
 }
-.equipment-text{
-  font-family: 'DDINPRO';
-font-weight: 700;
+.equipment-text {
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+  margin-top: 1vw;
 }
 
 .equipment-right h4 {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-  margin-top: -2.3vw;
+  margin-top: -3.3vw;
   margin-bottom: 0vw;
 }
 
 .equipment-right p {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -113,12 +102,12 @@ font-weight: 700;
 }
 
 .equipment-right h5 {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
-   margin-top: 0vw;
+  margin-top: 0vw;
   margin-bottom: 0vw;
 }
 
@@ -128,8 +117,8 @@ font-weight: 700;
 }
 
 .equipment-right ul li {
-   font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -138,21 +127,21 @@ font-weight: 700;
 
 /* Specifications */
 .specifications h6 {
-  font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
   margin-bottom: 0vw;
   margin-top: -1vw;
-  border-bottom: 2px solid #E12D36;
+  border-bottom: 2px solid #e12d36;
 }
 
 .spec-row {
   display: flex;
   justify-content: space-between;
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.8;
   color: #282828;

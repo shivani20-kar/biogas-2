@@ -15,11 +15,12 @@
   margin-bottom: -1vw;
 }
 .section-number h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: 0vw;
 }
 .section-title {
   font-family: "DDINPRO";
@@ -27,6 +28,7 @@
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+  margin-top: -1vw;
 }
 
 .section-subtitle {
@@ -36,7 +38,7 @@
   line-height: 1.8;
   color: #282828;
   margin-bottom: -0.5vw;
-  margin-top: -2vw;
+  margin-top: -3.3vw;
 }
 
 .desul-left p {
@@ -80,7 +82,7 @@
   color: #282828;
 }
 
-/* RIGHT IMAGE */ 
+/* RIGHT IMAGE */
 .desul-right {
   width: 50%;
   background: #5a5a5a;
@@ -93,6 +95,5 @@
   width: 90%;
   margin-right: 12vw;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
- 

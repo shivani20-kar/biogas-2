@@ -658,13 +658,17 @@
 @media screen and (min-width: 1367px) {
   .header {
     height: 8vh;
+<<<<<<< HEAD
     padding: 0 0vw;
+=======
+    padding: 0 2vw;
+>>>>>>> f5a206f1bb0b55c50fb7468876c14249dc21aff2
   }
 
   /* Desktop Nav Visible */
   .nav-links.desktop-menu {
     display: flex !important;
-    gap: 3.4vw;
+    gap: 3vw;
   }
 
   /* Hide Mobile Elements */
@@ -680,7 +684,7 @@
 
   /* Dropdown positioning */
   .dropdown-box {
-    top: 10vh;
+    top: 8vh;
   }
 
   /* Desktop menu text */
@@ -698,8 +702,8 @@
   /* Mega dropdown */
   .mega-dropdown {
     position: absolute;
-    top: 10vh;
-    left: 61vw; /* adjust according to your menu alignment */
+    top: 8vh;
+    left: 65vw; /* adjust according to your menu alignment */
     display: flex;
     background: var(--primary-blue);
     gap: 24px;
@@ -724,36 +728,36 @@
   }
 
   .left-align-1 {
-    left: 2vw;
+    left: 4vw;
   }
   .left-align-2 {
-    left: 10vw;
+    left: 12vw;
   }
   .left-align-3 {
-    left: 18vw;
+    left: 20vw;
   }
   .left-align-4 {
-    left: 29vw;
+    left: 30vw;
   }
   .left-align-5 {
-    left: 42vw;
+    left: 41vw;
   }
   .left-align-6 {
-    left: 56vw;
+    left: 53vw;
   }
   .left-align-7 {
-    left: 65vw;
+    left: 61vw;
   }
   .left-align-8 {
-    left: 80vw;
+    left: 90vw;
   }
   .left-align-9 {
-    left: 83vw;
+    left: 80vw;
   }
   .left-align-10 {
     left: 87vw;
   }
   .left-align-11 {
-    left: 90vw;
+    left: 93vw;
   }
 }

@@ -17,11 +17,13 @@
 }
 
 .sensorsystem-number {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #cc3a3a;
+  margin-top: -1.8vw;
+
 }
 
 .sensorsystem-heading h2 {
@@ -30,6 +32,7 @@
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+      margin-bottom: 1vw;
 }
 
 .sensorsystem-description {

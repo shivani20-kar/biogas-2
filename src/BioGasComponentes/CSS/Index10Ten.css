@@ -15,11 +15,12 @@
 }
 
 .dryer-number {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 700;
   color: transparent;                 
   -webkit-text-fill-color: transparent;
 -webkit-text-stroke: 1px #cc3a3a;
+     margin-top: -0.5vw;
 }
 
 .dryer-heading h2 {
@@ -28,6 +29,7 @@ font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
   color: #282828;
+      margin-bottom: 0vw;
 }
 
 .sub-heading {
@@ -37,6 +39,7 @@ font-weight: 700;
   line-height: 1.8;
   color: #282828;
    margin-bottom: -0.5vw;
+       margin-top: 1.5vw;
 }
 
 .description {
