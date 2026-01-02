@@ -35,7 +35,7 @@
 
 /* ================= TABLE SECTION ================= */
 .equipmentspecifications-table-section {
-  padding: 6vw;
+  padding: 4vw 5vw;
 }
 
 /* Base table */
@@ -69,7 +69,7 @@
   text-align: left;
 
   /* INCREASED padding */
-  padding: 2.5vw 1.8vw;
+  padding: 1.5vw 1.8vw;
 
   /* ONLY horizontal separation */
   border-bottom: 1px solid #000;

@@ -23,7 +23,7 @@ const BioCNGEquipment = () => {
       <div className="BioCNGEquipment-header">
         <div className="BioCNGEquipment-header-text">
           <h1 className="BioCNGEquipment-title">
-            Prices for equipment and services for <br /> 20 tpd bioCNG plant
+            Prices for equipment and services for <br /> 20 TPD BiO-CNG plant
           </h1>
         </div>
 
@@ -487,7 +487,7 @@ const BioCNGEquipment = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  <b>TOTALby Client, EUR</b>
+                  <b>TOTAL by Client, EUR</b>
                 </td>
                 <td></td>
                 <td></td>

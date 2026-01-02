@@ -1,19 +1,13 @@
-/* .raw-wrapper {
-  padding: 40px 60px;
-  font-family: "Inter", sans-serif;
-  color: #000;
-} */
-
 /* Header */
 .raw-header {
- background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
 }
 
 .raw-header h1 {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -24,7 +18,7 @@
 }
 
 .raw-header p {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -35,18 +29,11 @@
 
 /* Arrow */
 .raw-arrow-shape {
-   position: relative;
+  position: relative;
   width: 120px;
   height: 180px;
   background: #f2f2f2;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
@@ -56,25 +43,28 @@
   position: absolute;
   inset: 0;
   background: #e3262f;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   z-index: -1;
 }
 
-.tablle-center{
-    padding: 6vh 6vw;
+.tablle-center {
+      padding: 3vh 6vw
 }
 .table-title {
-     font-family: 'DDINPRO';
-    color: #000000;
+  font-family: "DDINPRO";
+  color: #000000;
   font-size: 40px;
   font-weight: 700;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 2.2s ease-out,
+    transform 2.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+.table-title.animate-title {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Table */
@@ -89,23 +79,23 @@
 }
 
 thead th {
-    color: #ffffff;
-    font-size: 14px;
-     font-family: 'DDINPRO';
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "DDINPRO";
   background: #676767;
   padding: 15px 5px;
-  border: 1px solid #BCBCBC;
+  border: 1px solid #bcbcbc;
   text-align: center;
   font-weight: 300;
 }
 
 tbody td {
-    width: 5%;
-    font-size: 16px;
-    color: #000000;
-     font-family: 'DDINPRO';
+  width: 5%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "DDINPRO";
   padding: 15px 5px;
-  border: 1px solid #BCBCBC;
+  border: 1px solid #bcbcbc;
   text-align: center;
   background: #fff;
 }

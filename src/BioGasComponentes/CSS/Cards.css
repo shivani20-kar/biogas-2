@@ -1,11 +1,11 @@
 .cards-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 60px;   /* left–right spacing */
-  row-gap: 130px;     /* top–bottom spacing (increase this) */
+  column-gap: 60px; /* left–right spacing */
+  row-gap: 130px; /* top–bottom spacing (increase this) */
   padding: 20vh 6vw;
+  /* margin-bottom: -3vw; */
 }
-
 
 /* ----- CARD ----- */
 .card {
@@ -21,13 +21,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
+  align-items: center; /* horizontal centering */
   text-align: center;
 }
 
-
 .card h3 {
-    font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.5vw;
   line-height: 1.4;
   font-weight: bold;
@@ -37,8 +36,8 @@
 
 .card.active {
   background: #ffffff;
-  color: #E12D36;
-  border: 2px solid #E12D36;
+  color: #e12d36;
+  border: 2px solid #e12d36;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 .card-number {
@@ -50,7 +49,7 @@
   background: #ffffff;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1.5px #E12D36; 
+  -webkit-text-stroke: 1.5px #e12d36;
   padding: 0;
   /* opacity: 1; */
   transform: translateY(40px);
@@ -60,7 +59,6 @@
 .card:hover .card-number {
   animation: numberMoveUp 0.5s ease-out forwards;
 }
-
 
 /* Animations */
 @keyframes numberMoveUp {
@@ -93,7 +91,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #E12D36;
+  background: #e12d36;
   color: #fff;
   display: flex;
   align-items: center;
