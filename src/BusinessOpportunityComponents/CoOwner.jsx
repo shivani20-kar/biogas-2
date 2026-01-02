@@ -8,7 +8,6 @@ const CoOwnerHero = () => {
   return (
     <>
       <section className="hero">
-        {/* 🔹 Updated class */}
         <div className="co-owner">
           <img
             src={coownerimage}

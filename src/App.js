@@ -130,6 +130,7 @@ import Industries from "./BioGasComponentes/Index18";
 import ProposalTable from "./BioGasComponentes/Index19";
 import ContactDiscover from "./BioGasComponentes/Index20";
 import BackgroundSection from "./BioGasComponentes/Index21";
+import RentSection from "./BusinessOpportunityComponents/RentSection";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -365,6 +366,37 @@ function App() {
             </>
           }
         />
+         <Route
+          path="/LandProposals"
+          element={
+            <>
+              <CoOwnerHero />
+              <LandRegistration />
+              <LandOwnerSection />
+              <LandBusinessRolesSection />
+              <ContactFormLand />
+              <InfoBox />
+              <ContactInfo />
+              <Footer />
+            </>
+          }
+        />
+          <Route
+          path="/RentOn"
+          element={
+            <>
+              <RentOnHero />
+              <LongLeaseRegistration />
+              <RentSection/>
+              <LongLeaseBusinessRolesSection />
+              {/* <ContactFormLongLease /> */}
+               <ContactFormLand />
+              <InfoBox />
+              <ContactInfo />
+              <Footer />
+            </>
+          }
+        />
         <Route
           path="/ContactUS"
           element={
@@ -381,36 +413,8 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/LandProposals"
-          element={
-            <>
-              <CoOwnerHero />
-              <LandRegistration />
-              <LandOwnerSection />
-              <LandBusinessRolesSection />
-              <ContactFormLand />
-              <InfoBox />
-              <ContactInfo />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/RentOn"
-          element={
-            <>
-              <RentOnHero />
-              <LongLeaseRegistration />
-              <LandOwnerSection />
-              <LongLeaseBusinessRolesSection />
-              <ContactFormLongLease />
-              <InfoBox />
-              <ContactInfo />
-              <Footer />
-            </>
-          }
-        />
+       
+      
         <Route
           path="/Careers"
           element={

@@ -33,17 +33,13 @@ export default function LongLeaseBusinessRolesSection() {
         <div className="longlease-role-card longlease-role-yellow">
           <div className="longlease-role-inner-border">
             <h3 className="longlease-role-title">The Vibe :</h3>
-            <ul className="longlease-role-list">
               <p className="longlease-role-text">
                 Transparent, Sustainable, Opportunity-Driven.
-              </p>
-              <p className="longlease-role-text">
+              <br/>
                Future-focused with reliable, long-term commitments.
-              </p>
-              <p className="longlease-role-text">
+              <br/>
                 Empowering villages through ethical and inclusive partnerships.
               </p>
-            </ul>
           </div>
         </div>
 

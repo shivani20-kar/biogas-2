@@ -3,7 +3,7 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/LandOwnerSection
 
 import landquoteImg from "../Components/IMAGES/white“ (1).png";
 
-export default function LandOwnerSection() {
+export default function RentSection() {
   return (
     <section className="landowner-wrapper">
       {/* LEFT RED BLOCK */}
@@ -23,11 +23,10 @@ export default function LandOwnerSection() {
       <div className="land-right">
         <p className="land-right-text">
           <h1 className="gs-title">
-            <span className="gs-blue">G</span> <span className="new-text">RAMSHAKT</span>
+            <span className="gs-blue">G</span>RAMSHAKT
             <span className="gs-green">i</span>
           </h1>
-        <strong>High-Impact Roles:</strong>  <br />
-          Salary, 10% Profit Sharing, <br />and Local Project<br /> Leadership.
+         "Partner with GDBiogas <br /> for a predictable, long-<br />term revenue stream." 
         </p>
       </div>
     </section>

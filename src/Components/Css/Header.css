@@ -658,11 +658,8 @@
 @media screen and (min-width: 1367px) {
   .header {
     height: 8vh;
-<<<<<<< HEAD
     padding: 0 0vw;
-=======
     padding: 0 2vw;
->>>>>>> f5a206f1bb0b55c50fb7468876c14249dc21aff2
   }
 
   /* Desktop Nav Visible */

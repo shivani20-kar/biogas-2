@@ -36,17 +36,13 @@ export default function LandBusinessRolesSection() {
         <div className="land-role-card land-role-yellow">
           <div className="land-role-inner-border">
             <h3 className="land-role-title">The Vibe :</h3>
-            <ul className="land-role-list">
               <p className="land-role-text">
-                Trustworthy, future-ready, and farmer-focused.
-              </p>
-              <p className="land-role-text">
-                Empowering rural communities with transparent collaboration.
-              </p>
-              <p className="land-role-text">
+                Trustworthy, future-ready, and farmer-focused.<br/>
+             
+                Empowering rural communities with transparent collaboration.<br/>
+            
                 Driven by innovation, sustainability, and long-term growth.
               </p>
-            </ul>
           </div>
         </div>
  

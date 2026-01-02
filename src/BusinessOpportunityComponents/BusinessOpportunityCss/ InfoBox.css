@@ -5,26 +5,22 @@
 
 /* Grey background wrapper */
 .info-box-backgroundinner {
-  background-color: #d2d2d2;
+  background: #D2D2D2;
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 15vh;
+  height: 26vh;
   position: relative;
 }
 
 /* Info box overlay (half-width) */
 .info-box-container {
-  background-color: #0982fe;
-  color: #ffffff;
+background: #0982FE;
   padding: 2rem 2.5rem;
   position: relative;
-  width: 70%;
-  height: 30vh;
- font-family: 'DDINPRO';
-  font-size: 1.2rem;
-  line-height: 1.6;
+  width: 80%;
+  height: 45vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
@@ -40,21 +36,27 @@
 }
 
 .info-box-container::before {
-  top: 2vh;
-  left: 2vh;
+  top: 2vw;
+  left: 2vw;
   border-right: none;
   border-bottom: none;
 }
 
 .info-box-container::after {
-  bottom: 2vh;
-  right: 2vh;
+  bottom: 2vw;
+  right: 2vw;
   border-left: none;
   border-top: none;
 }
 
 .info-box-text {
   margin: 0;
-  font-size: 40px;
-  padding: 2vh 3vw;
+ color: #FFF;
+font-family: 'DDINPRO';
+font-size: 3.4vw;
+font-style: normal;
+font-weight: 700;
+line-height: 55px; /* 125% */
+letter-spacing: 1.28px;
+  padding: 4vh 2vw;
 }

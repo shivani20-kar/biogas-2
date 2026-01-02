@@ -2,26 +2,28 @@
 .landowner-wrapper {
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: #ebe6e6;
   position: relative;
   top: -10vh;
 }
 
 /* Gray side background */
 .land-inner-wrapper {
-  position: relative;
+ position: relative;
   background-color: #595959;
-  width: 20%;
+  width: 19%;
   padding: 6vh 0;
-  height: 75vh;
+  height: 100vh;
 }
 
 /* Left big red box */
 .land-left {
+ border: 10px solid #FFF;
+background: linear-gradient(0deg, #E12D36 0%, #E12D36 100%), #D9D9D9;
+box-shadow: 4px 0 16px 0 rgba(0, 0, 0, 0.25), 0 4px 16px 0 rgba(0, 0, 0, 0.25);
   font-family: 'DDINPRO';
-  background: #e12d36;
-  width: 35vw;
-  height: 50vh;
+  width: 40vw;
+  height: 78vh;
   padding: 6vh 4vw;
   color: #ffffff;
   position: absolute;
@@ -33,53 +35,75 @@
 
 .land-quote-img {
   width: 60px;
-}
-
-.land-number {
-  font-size: 70px;
-  margin: 0;
-  font-weight: 700;
-  padding: 0vh 5vw;
+   margin-top: 4vw;
 }
 
 .land-text {
-   font-family: 'DDINPRO';
-  font-size: 60px;
-  margin-top: 1vh;
-  line-height: 1.2;
-  font-weight: 500;
-  padding: 0vh 5vw;
+  margin-top: 2vw;
+  color: #FFF;
+font-family: 'DDINPRO';
+font-size: 7vw;
+font-style: normal;
+font-weight: 700;
+line-height: 120px;
+  padding: 0vh 2vw;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
-
+.land-right{
+  padding-left: 5vw;
+}
 /* Right side black text */
 .land-right-text {
-   font-family: 'DDINPRO';
-  width: 50%;
+  font-family: 'DDINPRO';
   padding-left: 30vw;
-  font-size: 60px;
-  font-weight: 400;
-  color: #1a1a1a;
-  line-height: 1.4;
+ color: #000;
+font-size: 3.3vw;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 125% */
+letter-spacing: 1.92px;
+}
+.gs-title {
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  gap: 0.5vw;
 }
 
-.gs-title {
-   font-family: 'DDINPRO';
-  font-size: 60px;
-  margin-bottom: 3vh;
-  color: #1a1a1a;
-  font-weight: 500;
-  letter-spacing: 1px;
+/* RAMSHAKT text */
+.new-text {
+  display: flex;
+  align-items: center;
+  margin-top: 0 !important;   /* remove negative margin */
+  font-family: 'DDINPRO';
+  color: #000;
+  font-size: 6vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.92px;
 }
+
 
 .gs-blue {
-  background: #1e90ff;
-  color: white;
-  padding: 0px 14px;
-  display: inline-block;
-  font-weight: 600;
+ background: #0982FE;
+color: #FFF;
+ font-family: 'DDINPRO';
+font-size: 10vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.8px;
+text-transform: none;
+  padding: 0vw 1vw;
+  text-align: end;
 }
 
 .gs-green {
-  color: #1aa334;
-  font-weight: 600;
+ color: #0E9B0E;
+ font-family: 'DDINPRO';
+font-size: 6vw;
+font-style: normal;
+font-weight: 700;
+line-height: 120px;
+letter-spacing: 2.56px;
 }
