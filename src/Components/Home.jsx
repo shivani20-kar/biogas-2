@@ -15,7 +15,14 @@ const AboutHero = () => {
         <div className="hero-content-overlayy"> 
           <div className="header-rows">
             <div className="logo-container">
-              <img src={logo} alt="GDBioGas Logo" className="logo" />
+              {/* <img src={logo} alt="GDBioGas Logo" className="logo" /> */}
+              <div className="logo-anim-wrap">
+              <img
+                src={logo}
+                alt="GDBioGas Logo"
+                className="logo"
+              />
+            </div>
             </div>
 
             <div className="nav-commons">
@@ -78,7 +85,7 @@ const AboutHero = () => {
             </div>
           </div>
         </div>
-
+ 
         <div className="hero-bottom-wrap">
           <div className="aboutus-title">About Us</div>
 

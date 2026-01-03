@@ -1,6 +1,6 @@
 import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/ FarmersSection.css";
-import farmersImg from "../Components/IMAGES/sippakorn-yamkasikorn-_dpxwkqkl7q-unsplash_south_asia_lady_cows-1440x596-1 1.png";
+import farmersImg from "../Components/IMAGES/farmersection.png";
 
 const FarmersSection = () => {
   return (
@@ -14,9 +14,11 @@ const FarmersSection = () => {
         <p className="line">In short,</p>
 
         <p className="line highlight">
-          <span className="red">DIGNITY</span> <span className="whitecolor">TO</span>
+          <span className="red">DIGNITY</span>{" "}
+          <span className="whitecolor">TO</span>
           <br />
-          <span className="black">THE FAR</span> <span className="whitecolor">MERS</span>
+          <span className="black">THE FAR</span>{" "}
+          <span className="whitecolor">MERS</span>
         </p>
 
         <p className="line2">
@@ -25,7 +27,7 @@ const FarmersSection = () => {
       </div>
 
       {/* RIGHT SIDE IMAGE */}
-      <div className="image-box">
+      <div className="image-boxf">
         <div className="gray-box"></div>
         <img src={farmersImg} alt="Farmer" />
       </div>

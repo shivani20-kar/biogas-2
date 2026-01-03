@@ -6,9 +6,11 @@
 
 .finance-team-title {
   font-family: 'DDINPRO';
-  font-size: 50px;
-  font-weight: bold;
-  color: #707070;
+ font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #707070;
 }
 
 .finance-team-container {
