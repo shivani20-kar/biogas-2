@@ -7,7 +7,7 @@ export default function ContactDiscover() {
     contact: "",
     email: "",
     message: "",
-    file: "",
+    file: null,
   };
 
   const [form, setForm] = useState(initialForm);
@@ -28,7 +28,7 @@ export default function ContactDiscover() {
 
   const closePopup = () => {
     setShowPopup(false);
-    setForm(initialForm); // Reset form after popup
+    setForm(initialForm);
   };
 
   return (
@@ -87,16 +87,40 @@ export default function ContactDiscover() {
               <label>Message</label>
             </div>
 
-            {/* FILE */}
+            {/* FILE (UPDATED) */}
             <div className="float-input file-box">
-              <input type="file" name="file" onChange={handleChange} />
-              <label>Attach File here</label>
+              <input
+                type="file"
+                id="fileInput"
+                name="file"
+                onChange={handleChange}
+              />
+              <label htmlFor="fileInput">
+                {form.file ? form.file.name : "Attach File here"}
+              </label>
             </div>
 
-            {/* SUBMIT BUTTON */}
-            <button type="submit" className="discover-submit submit-btn">
+            {/* SUBMIT */}
+            <button type="submit" className="discover-submit">
               <span>Submit</span>
-              <i className="arrow">↗</i>
+              <i className="sub-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 41 41"
+                  style={{ cursor: "pointer" }}
+                >
+                  <circle cx="20.5" cy="20.5" r="20.5" fill="#FFFFFF" />
+                  <path
+                    d="M14 27L27 14M27 14H16M27 14V25"
+                    stroke="#E12D36"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </i>
             </button>
           </form>
         </div>
@@ -105,11 +129,10 @@ export default function ContactDiscover() {
       {/* POPUP */}
       {showPopup && (
         <div className="popup-overlay">
-          <div className="popup-box"> 
+          <div className="popup-box">
             <button className="popup-close" onClick={closePopup}>
               ×
             </button>
-
             <h1 className="popup-title">Thank You..!</h1>
             <p className="popup-sub">For Connecting</p>
             <p className="popup-text">
@@ -117,7 +140,6 @@ export default function ContactDiscover() {
               <br />
               Contact With You
             </p>
-
             <button className="popup-done" onClick={closePopup}>
               Done
             </button>

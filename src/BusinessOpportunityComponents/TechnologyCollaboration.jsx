@@ -5,7 +5,7 @@ import zorgBiogasLogo from "../Components/IMAGES/zorg1.png";
 import orkelLogo from "../Components/IMAGES/0rkel2.png";
 import abLogo from "../Components/IMAGES/ab3.png";
 import shaktimanLogo from "../Components/IMAGES/shaktiman4.png";
-import tetrapak from "../Components/IMAGES/tetra5.png";
+import tetrapak from "../Components/IMAGES/tetra5.png"; 
 import skyLogo from "../Components/IMAGES/sky6.png";
 import farmerpLogo from "../Components/IMAGES/farmerp7.png";
 import karabLogo from "../Components/IMAGES/karab8.png";
@@ -36,11 +36,12 @@ const TechnologyCollaboration = () => {
         <img className="collaborationimg" src={colonimg} alt="" />
 
         <div className="collaboration-sub-heading">
-          Advancing Together Through Smart Technology Partnerships
+          Advancing Together <br /> Through Smart Technology <br />
+          Partnerships
         </div>
 
         <div className="collaboration-tagline">
-          A journey of transformation and sustainability.
+          A journey of transformation <br />and sustainability.
         </div>
       </div>
 

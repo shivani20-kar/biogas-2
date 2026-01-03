@@ -43,12 +43,14 @@
 
 /* ---------- FLOAT INPUT ---------- */
 .float-input {
+
   width: 100%;
   position: relative;
 }
 
 .float-input input,
 .float-input textarea {
+  
   width: 100%;
   box-sizing: border-box;
   padding: 1.6vh 1.2vw;
@@ -72,7 +74,7 @@
   position: absolute;
   top: 1.6vh;
   left: 1.2vw;
-  color: #777;
+   color: #221F1D;
   pointer-events: none;
   transition: 0.25s ease;
   padding: 0 0.4vw;
@@ -99,36 +101,35 @@
 }
 
 /* ---------- SUBMIT BUTTON ---------- */
+/* ---------- SUBMIT BUTTON ---------- */
 .discover-submit {
   width: 100%;
-  border: 0.08vw solid #ccc;
-  border-radius: 1.6vw;
-  background-color: #fff;
-  color: #676767;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #221F1D;
   font-size: 1vw;
   cursor: pointer;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8vw;
+
+  padding: 1.4vh 0;
+  position: relative;
   overflow: hidden;
   transition: color 0.3s ease;
-  position: relative;
-  padding: 1.4vh 0;
 }
 
+/* red slide background */
 .discover-submit::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #e12d36;
-  border-radius: 1.6vw;
+  inset: 0;
+  background: #e12d36;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
   z-index: 0;
 }
 
@@ -136,34 +137,45 @@
   transform: translateY(0);
 }
 
-.discover-submit span,
-.discover-submit .arrow {
+.discover-submit span {
   position: relative;
   z-index: 1;
 }
 
-.discover-submit .arrow {
+/* ---------- ARROW ---------- */
+.discover-submit .sub-icon {
   opacity: 0;
   transform: translateX(-0.6vw);
-  background-color: #fff;
-  color: #e12d36;
-  padding: 0.6vh;
+  background: #ffffff;
   border-radius: 50%;
-  width: 1.4vw;
-  height: 1.4vw;
+  width: 1.8vw;
+  height: 1.8vw;
+
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
 
-.discover-submit:hover .arrow {
+/* svg color */
+.discover-submit .sub-icon svg path {
+  fill: #e12d36;
+}
+
+/* hover */
+.discover-submit:hover {
+  color: #ffffff;
+}
+
+.discover-submit:hover .sub-icon {
   opacity: 1;
   transform: translateX(0);
 }
 
-.discover-submit:hover {
-  color: #fff;
+/* arrow वर hot hover येऊ नये */
+.discover-submit .sub-icon,
+.discover-submit .sub-icon svg {
+  pointer-events: none;
 }
 
 /* ---------- POPUP ---------- */
@@ -214,10 +226,25 @@
   border-radius: 1.6vw;
   border: 0.15vw solid #ccc;
   background: #fff;
-  font-size: 1.2vw; 
+  font-size: 1.2vw;
   cursor: pointer;
 }
 .float-input input,
 .float-input textarea {
   color: #000; /* typed text visible */
+}
+/* FLOAT EFFECT: focus, not-empty, or hover */
+.float-input input:focus + label,
+.float-input input:not(:placeholder-shown) + label,
+.float-input textarea:focus + label,
+.float-input textarea:not(:placeholder-shown) + label,
+.float-input:hover label {
+  top: -1.2vh;
+  left: 1vw;
+  font-size: 0.75vw;
+  color: #e12d36;
+}
+.discover-submit .arrow,
+.discover-submit .arrow svg {
+  pointer-events: none; /* cursor arrow वर असला तरी hover trigger होणार नाही */
 }

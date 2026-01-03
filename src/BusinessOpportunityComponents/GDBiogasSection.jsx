@@ -9,7 +9,7 @@ const GDBiogasSection = () => {
       {/* LEFT SIDE */}
       <div className="left-box">
         <div className="brand-title">
-          <span className="red-line"></span>
+          <span className="red-linegd"></span>
           GD B<span className="green-text">i</span>OGAS
         </div>
 

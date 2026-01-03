@@ -32,7 +32,7 @@
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
-  line-height: 1; 
+  line-height: 1;
   margin-top: 1.7vw;
   margin-left: 1.5vw;
 }
@@ -79,28 +79,38 @@
 }
 
 .industry-card-content h3 {
-  font-size: 2vw;
+  color: #252525;
+  font-family: "DDINPRO";
+  font-size: 2.2vw;
+  font-style: normal;
   font-weight: 700;
-  margin: 0;
+  line-height: normal;
+  margin: 0vw;
 }
 
 .industry-card-content p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: "DDINPRO";
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.8;
+
   color: #a1a1a1;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 /* LINK */
 .industry-link {
-  margin-top: 0.7vw;
-  font-size: 1.3vw;
-  font-weight: 500;
   color: #e12d36;
-  display: inline-block;
-  margin-bottom: 3vw;
+  font-family: "DDINPRO";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.industry-link svg {
+  vertical-align: middle;
 }
 
 /* REFERENCES – IMAGE MATCHED */
@@ -121,10 +131,10 @@
 }
 
 .reference-arrow {
-  width: 4vw;
-  height: 4vw;
+  /* width: 4vw; */
+  /* height: 4vw; */
   border-radius: 50%;
-  background-color: #e12d36;
+  /* background-color: #e12d36; */
   color: #ffffff;
   display: flex;
   align-items: center;

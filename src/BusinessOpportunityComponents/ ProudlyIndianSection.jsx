@@ -11,7 +11,7 @@ const ProudlyIndianSection = () => {
         <img className="proudlyimg" src={colonimg} alt="" />
 
         <p className="pi-left-text">
-          High-quality biogas equipment made in Germany France, US, Norway,
+          High-quality biogas<br />equipment made in <br />Germany France, US,<br /> Norway,
           Australia.
         </p>
 
@@ -20,7 +20,7 @@ const ProudlyIndianSection = () => {
         </p>
 
         <p className="pi-left-text">
-          Several superior biogas and allied product technologies
+          Several superior biogas and<br /> allied product technologies
         </p>
       </div>
 

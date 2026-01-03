@@ -1,22 +1,23 @@
 .itcorex-wrapper {
   padding: 5vh 5vw;
   text-align: start;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
 }
 
 /* TITLE */
 .itcorex-title {
-  font-family: 'DDINPRO';
-  font-size: 50px;
-  font-weight: bold;
+  font-family: "DDINPRO";
+  font-size: 3.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   color: #707070;
-  text-align: left;
 }
 
 /* X HIGHLIGHT */
 .x-highlight {
-  font-family: 'DDINPRO';
-  color: #E12D36;
+  font-family: "DDINPRO";
+  color: #e12d36;
 }
 
 /* FLEX CONTAINER */
@@ -64,17 +65,16 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   /* WRAPPER */
   .itcorex-wrapper {
     /* border: 2px solid red; */
-    padding: 3vh 4vw;        /* reduced padding */
+    padding: 3vh 4vw; /* reduced padding */
     text-align: start;
   }
 
   /* TITLE */
   .itcorex-title {
-    font-size: 32px;         /* reduced from 50px */
+    font-size: 32px; /* reduced from 50px */
     font-weight: bold;
     color: #707070;
     text-align: left;
@@ -82,20 +82,20 @@
 
   /* X HIGHLIGHT (same color, no changes needed) */
   .x-highlight {
-    color: #E12D36;
+    color: #e12d36;
   }
 
   /* FLEX CONTAINER */
   .itcorex-container {
-    flex-direction: column;  /* stack cards vertically */
+    flex-direction: column; /* stack cards vertically */
     align-items: center;
     gap: 25px;
   }
 
   /* CARD */
   .itcorex-card {
-    width: 75%;              /* full responsive width */
-    text-align: center;      /* center aligned for mobile */
+    width: 75%; /* full responsive width */
+    text-align: center; /* center aligned for mobile */
   }
 
   /* IMAGE */
@@ -111,7 +111,7 @@
   }
 
   .itcorex-linkedin {
-    width: 28px;            /* reduced from 35px */
+    width: 28px; /* reduced from 35px */
     height: 28px;
   }
 }
