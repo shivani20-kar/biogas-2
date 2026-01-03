@@ -1,26 +1,29 @@
 .why-join-wrapper {
-  margin: 0;
-  padding: 0vh 5vw;
-  position: relative;
-  top: -7vh;
+  padding: 0vh 6vw;
+  /* margin-top: 0vw; */
 }
 
 /* ---------- TITLE ---------- */
 .why-join-title {
-  font-size: 60px;
-  font-weight: 700;
-  color: #282828;
-  margin-bottom: 20px;
-  margin-top: 0vh;
+ color: #282828;
+font-family: 'DDINPRO';
+font-size: 6vw;
+font-style: normal;
+font-weight: 400;
+line-height: 10px; /* 117.188% */
+  margin-top: -3vw;
 }
 
 /* ---------- DESCRIPTION ---------- */
 .why-join-desc {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #252525cc;
-  margin-bottom: 50px;
-  max-width: 1100px;
+  color: rgba(37, 37, 37, 0.80);
+font-family: 'DDINPRO';
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 166.667% */
+letter-spacing: 0.48px;
+  /* max-width: 62vw; */
 }
 
 /* ---------- ALL CARDS IN 1 ROW ---------- */
@@ -33,14 +36,12 @@
 
 /* ---------- CARD ---------- */
 .why-card {
-  width: 10vw;
-  padding: 30px 20px;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 2px solid #676767;
+  background-color: white;
+  width: 11vw;
+  height: 15.5vw;
+  padding: 1vw 1vw;
   text-align: center;
   transition: 0.3s ease;
-  box-shadow: none;
 }
 
 .why-card:hover {
@@ -49,44 +50,62 @@
 
 /* ---------- CARD NUMBER ---------- */
 .why-card-number {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #e12d36;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #E12D36;
+color: transparent;
+font-family: 'DDINPRO';
+font-size: 6vw;
+font-style: normal;
+font-weight: 700;
+line-height: 0px;
+margin-top: 4vw;
 }
 
 /* ---------- CARD TEXT ---------- */
 .why-card-text {
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 2vh;
-  color: #282828;
+  text-align: left;
+ color: #282828;
+font-family: 'DDINPRO';
+font-size: 1.8vw;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 125% */
+margin-top: -2vw;
 }
 
-/* ===================================================
-   🎯 COLOR-BASED BOTTOM-ONLY SHADOW (FINAL)
-   =================================================== */
-
 .border-red {
-  box-shadow: 0px 15px 25px rgba(225, 45, 54, 0.5);
+ border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(225, 45, 54, 0.50);
 }
 
 .border-blue {
-  box-shadow: 0px 15px 25px rgba(9, 130, 254, 0.5);
-}
+border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(9, 130, 254, 0.50);}
 
 .border-purple {
-  box-shadow: 0px 15px 25px rgba(120, 123, 126, 0.6);
-}
+border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(120, 123, 126, 0.60);}
 
 .border-green {
-  box-shadow: 0px 15px 25px rgba(18, 183, 18, 0.5);
-}
+border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(18, 183, 18, 0.50);}
 
 .border-orange {
-  box-shadow: 0px 15px 25px rgba(255, 164, 0, 0.6);
-}
+border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(255, 164, 0, 0.60);}
 
 .border-pink {
-  box-shadow: 0px 15px 25px rgba(255, 111, 0, 0.5);
-}
+border-radius: 48px;
+border: 1px solid #676767;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.50);}

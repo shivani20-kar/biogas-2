@@ -7,48 +7,41 @@
 
 /* CARD BASE DESIGN */
 .role-cardvideo {
-  width: 80vw;
-  height: 40vh;
+  width: 76vw;
+  height: 60vh;
   background: #676767;
-  border-radius: 4px;
-  padding: 40px 40px;
+  padding: 2vw 6vw 2vw 6vw;
   display: flex;
   align-items: center;
   position: relative; /* IMPORTANT for absolute positioning */
 }
 
-/* ----------------------------- */
-/* LEFT CARD → VIDEO BOX RIGHT  */
-/* ----------------------------- */
 .left-card {
   margin-right: auto;
 }
 
 .left-card .video-box {
   position: absolute;
-  right: -110px; /* बाहर right side */
+  right: -6vw;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* ----------------------------- */
-/* RIGHT CARD → VIDEO BOX LEFT  */
-/* ----------------------------- */
 .right-card {
   margin-left: auto;
 }
 
 .right-card .video-box {
   position: absolute;
-  left: -110px; /* बाहर left side */
+  left: -6vw; 
   top: 50%;
   transform: translateY(-50%);
 }
 
 /* RED BOX DESIGN */
 .video-box {
-  width: 30vw;
-  height: 40vh;
+  width: 32vw;
+  height: 44vh;
   background: #e12d36;
   display: flex;
   justify-content: center;
@@ -58,23 +51,28 @@
 /* WHITE PLAY CIRCLE */
 .play-icon-wrapper {
   background: #ffffff;
-  padding: 15px;
+  height: 3vw;
+  width: 3vw;
+  padding: 1vw;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ text-align: center;
+ display: flex;
+ align-items: center;
 }
-
 .play-icon {
-  width: 26px;
+  cursor: pointer;
+  margin-left: 0.5vw;
 }
 
-/* TEXT */
-/* GENERAL TEXT */
 .role-textvideo {
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 1.4;
+ color: #FFF;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #FFF;
+font-family: 'DDINPRO';
+font-size: 5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 90px; /* 125% */
 }
 
 /* LEFT CARD → TEXT LEFT SIDE AND MORE WIDTH */

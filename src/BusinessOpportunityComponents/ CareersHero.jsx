@@ -6,7 +6,7 @@ import careersimage from "../Components/IMAGES/CareerBackgroundimg.jpeg";
 const CareersHero = () => {
   return (
     <>
-      <section className="hero">
+      <section className="heror">
         <div className="careers">
           <img src={careersimage} alt="Careers Background" />
         </div>

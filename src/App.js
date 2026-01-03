@@ -397,25 +397,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/ContactUS"
-          element={
-            <>
-              <ContactUs />
-              <ContactUsHeader />
-              <ContactLayout />
-              <ConsentNote />
-              <GdOffices />
-              <WorldMapSection />
-              <InfoBox />
-              <ContactInfo />
-              <Footer />
-            </>
-          }
-        />
-       
-      
-        <Route
+         <Route
           path="/Careers"
           element={
             <>
@@ -427,6 +409,22 @@ function App() {
               <GDPositionIntro />
               <RoleVideosSection />
               <CareerForm />
+              <InfoBox />
+              <ContactInfo />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/ContactUS"
+          element={
+            <>
+              <ContactUs />
+              <ContactUsHeader />
+              <ContactLayout />
+              <ConsentNote />
+              <GdOffices />
+              <WorldMapSection />
               <InfoBox />
               <ContactInfo />
               <Footer />

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/RoleVideosSection.css";
-import playIcon from "../Components/IMAGES/Polygon 7.png";
 
 const videoList = {
   commissioning: "https://www.youtube.com/embed/VIDEO_1",
@@ -24,17 +23,19 @@ export default function RoleVideosSection() {
       video: videoList.commissioning,
     },
     {
-      text: "What is the role of the CEO?",
+      
+      text:(<> What is the <br/> role of the CEO?</>),
       align: "right",
       video: videoList.ceo,
     },
-    {
-      text: (
-        <>
-          What is the role of the <br />
-          IT CoreX?
-        </>
-      ),
+   {
+  text: (
+    <>
+      What is the role of the <br />
+      IT Core<span className="red-x">X</span>?
+    </>
+  ),
+
       align: "left",
       video: videoList.itcorex,
     },
@@ -59,13 +60,19 @@ export default function RoleVideosSection() {
           className={`role-cardvideo ${
             item.align === "right" ? "right-card" : "left-card"
           }`}
-          onClick={() => setActiveVideo(item.video)}
+          // onClick={() => setActiveVideo(item.video)}
         >
           <div className="role-textvideo">{item.text}</div>
 
           <div className="video-box">
-            <div className="play-icon-wrapper">
-              <img src={playIcon} className="play-icon" alt="play" />
+            <div className="play-icon-wrapper"  onClick={(e) => {
+    e.stopPropagation(); // prevents parent click (safe)
+    setActiveVideo(item.video);
+  }}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="play-icon" width="40" height="30" viewBox="0 0 38 44" fill="none">
+  <path d="M37.5 21.6504L-2.03916e-06 43.301L-1.46405e-07 -0.00024578L37.5 21.6504Z" fill="black"/>
+</svg>
+              {/* <img src={playIcon} className="play-icon" alt="play" /> */}
             </div>
           </div>
         </div>

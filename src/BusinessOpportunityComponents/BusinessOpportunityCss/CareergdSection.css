@@ -1,21 +1,24 @@
 .careergd-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5vh 5vw;
+  padding: 5vw 6vw;
   gap: 5vw;
 }
 
 .careergd-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .careergd-title {
   width: 50vw;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #282828;
+ color: #282828;
+font-family: 'DDINPRO';
+font-size: 5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 70px; /* 125% */
   margin-bottom: 5vh;
   margin-top: 0vh;
 }
@@ -27,11 +30,22 @@
 }
 
 .careergd-link {
-  font-size: 20px;
-  font-weight: 500;
-  color: #252525cc;
-  text-decoration: underline;
+ color: rgba(37, 37, 37, 0.80);
+font-family: 'DDINPRO';
+font-size: 2.2vw;
+font-style: normal;
+text-decoration: none;
+font-weight: 700;
+line-height: 40px; /* 100% */
+letter-spacing: 0.8px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
   cursor: pointer;
+  
 }
 
 .careergd-arrow-btn {
@@ -50,10 +64,16 @@
 .careergd-right {
   display: flex;
   flex-direction: column;
+  margin-top: -2vw;
 }
 
 .careergd-para {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #252525cc;
+ color: rgba(37, 37, 37, 0.80);
+font-family: 'DDINPRO';
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 125% */
+letter-spacing: 0.64px;
+margin-bottom: -0.5vw;
 }
