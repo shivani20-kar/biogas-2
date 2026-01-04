@@ -2,7 +2,7 @@ import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/DownloadMaterial.css";
 
 const DownloadMaterial = () => {
-  return (
+  return ( 
     <div className="download-container">
 
       {/* Title */}

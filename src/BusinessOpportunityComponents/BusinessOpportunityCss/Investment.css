@@ -1,52 +1,63 @@
 /* Investment.css */
 .investment-business-opportunity {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0vw;
-  
 }
 
+
+
 .investment-main-title {
-  text-align: start;
-  color: #000000;
-  margin-bottom: 0vh;
-  font-size: 40px;
-  font-weight: bold;
   margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 .investment-subtitle {
-  text-align: start;
-  color: #B5B5B5;
-  margin-bottom: 4vh;
-  font-size: 16px;
   margin-left: 5vw;
-  width: 21vw;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* Table container */
 .investment-table-container {
   overflow-x: auto;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 
 /* Business table */
 .investment-business-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
-  table-layout: fixed; /* Column width control sathi */
+  font-size: 1.2vw;
+  table-layout: fixed;
+  border: none; /* no outer table borders */
 }
 
-/* Business table header */
+/* Table headers - Remove vertical lines between headers */
 .investment-business-table th {
-  background-color: #E12D36;
-  font-size: 16px;
+  background-color: #e12d36;
+  font-size: 1.3vw;
   color: white;
-   padding: 12px 8px;
-  text-align: start;
-  font-weight: bold;
-  white-space: nowrap; 
+  padding: 1.5vh 2vw;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
   padding-left: 5vw;
+  border: none; /* no horizontal borders */
+  border-right: none !important; /* specifically remove vertical lines between headers */
 }
 
 .investment-business-table th a {
@@ -54,31 +65,45 @@
   text-decoration: none;
 }
 
+/* Remove vertical borders from all header cells */
+.investment-business-table th:nth-child(1),
+.investment-business-table th:nth-child(2),
+.investment-business-table th:nth-child(3) {
+  border-right: none;
+}
+
 /* Table cells */
 .investment-business-table td {
-  font-size: 16px;
-  padding: 8px 6px; /* Padding kami kela */
+  font-size: 1vw;
+  padding: 1.5vh 2vw;
   text-align: left;
   vertical-align: top;
-  white-space: nowrap; /* Text wrap n hou deyla */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-      padding-left: 5vw;
+  padding-left: 5vw;
+  border: none; /* remove all horizontal borders */
+  border-right: 0.1vw solid #cccccc; /* only vertical lines between cells */
+  font-weight: 400;
+}
+
+.investment-business-table td:last-child {
+  border-right: none; /* remove vertical line on last column */
 }
 
 .investment-business-table td a {
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 4px; /* Padding kami kela */
-  border-radius: 4px;
+  border-radius: 0.4vw;
   transition: 0.3s;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 16px;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 3px 2px;
 }
-
 
 .investment-business-table td a:hover {
   background-color: #e8f4fd;
@@ -88,27 +113,45 @@
 /* Overview left cell */
 .investment-overview-cell {
   font-weight: bold;
-  text-align: start;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 25%;
+  border: none; /* no horizontal or vertical borders */
+}
+
+/* Product cells */
+.investment-product-cell {
   vertical-align: middle !important;
-  white-space: nowrap;
-  width: 120px; /* Fixed width set keli */
+  border: none !important;
 }
 
-.investment-overview-cell a {
-  font-size: 16px;
-  color: #000000;
-  white-space: nowrap;
-}
-
-/* Specific column widths set karnya sathi */
+/* Column widths */
 .investment-business-table th:nth-child(1),
 .investment-business-table td:nth-child(1) {
-  width: 25%; /* First column width */
+  width: 25%;
 }
 
 .investment-business-table th:nth-child(2),
 .investment-business-table td:nth-child(2) {
-  width: 20%; /* Second column width */
+  width: 30%;
 }
 
-/* Add as needed for other columns */
+.investment-business-table th:nth-child(3),
+.investment-business-table td:nth-child(3) {
+  width: 45%;
+}
+
+/* Ensure no horizontal borders on last row */
+.investment-business-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Remove any potential vertical borders in the header row */
+.investment-business-table thead tr {
+  border-bottom: none;
+}
+
+.investment-business-table thead th {
+  border-right: none;
+}

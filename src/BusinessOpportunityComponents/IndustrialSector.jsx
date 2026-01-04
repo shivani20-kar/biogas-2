@@ -11,7 +11,7 @@ const IndustrialSector = () => {
         "Biogas",
         "Biogas Plants",
         "Biogas Outputs",
-        "Benefits of Biogas",
+        "Benefits of Biogas", 
         "Questions & Answers",
       ],
       products: [
@@ -162,18 +162,18 @@ const IndustrialSector = () => {
         <table className="sector-table">
           <thead>
             <tr>
-              <th>Overview</th>
-              <th>Solutions</th>
-              <th>Products</th>
-              {current.impact && <th>Impact</th>}
+              <th className="sector-th">Overview</th>
+              <th className="sector-th">Solutions</th>
+              <th className="sector-th">Products</th>
+              {current.impact && <th className="sector-th">Impact</th>}
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td>{current.overview}</td>
+              <td className="sector-td">{current.overview}</td>
 
-              <td>
+              <td className="sector-td">
                 <div className="cell-list">
                   {current.solutions?.map((item, i) => (
                     <a
@@ -188,7 +188,7 @@ const IndustrialSector = () => {
                 </div>
               </td>
 
-              <td>
+              <td className="sector-td">
                 <div className="cell-list products-list">
                   {current.products?.map((item, i) => (
                     <a
@@ -203,9 +203,8 @@ const IndustrialSector = () => {
                 </div>
               </td>
 
-              {/* IMPACT column only if exists */}
               {current.impact && (
-                <td>
+                <td className="sector-td">
                   <div className="cell-list">
                     {current.impact.map((item, i) => (
                       <a

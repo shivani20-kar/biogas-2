@@ -1,7 +1,7 @@
 import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/ Technology.css";
 
-const Technology = () => {
+const Technology = () => { 
   return (
     <div className="tech-container">
 

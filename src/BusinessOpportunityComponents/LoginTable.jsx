@@ -4,7 +4,6 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/LoginTable.css";
 const LoginTable = () => {
   return (
     <div className="login-container">
-
       <h1 className="login-title">Log-IN</h1>
       <p className="login-subtitle">
         Company brochures and questionnaires for various industries
@@ -12,7 +11,6 @@ const LoginTable = () => {
 
       <div className="login-table-wrapper">
         <table className="login-table">
-
           <thead>
             <tr>
               <th>Company</th>
@@ -23,64 +21,97 @@ const LoginTable = () => {
           </thead>
 
           <tbody>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">Dealer</a>
-                <span>  </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="#">Distributor</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">Supplier</a>
-                <span>    </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="#">Agency</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">Co-Owner</a>
-                <span>    </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="#">Partners</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">Associate</a>
-                <span>    </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="#">Human Resources</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">Manager</a>
-                <span>    </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
                 <a href="#">Director</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
             <tr>
-              <td className="two-links">
+              <td>
                 <a href="#">CEO</a>
               </td>
-              <td></td><td></td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-
           </tbody>
-
         </table>
       </div>
-
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Investment = () => {
         <p className="investment-subtitle">GD for energy sustainability solutions in the manufacturing sector.</p>
       </div>
 
-      {/* ---------------- Investment Table ---------------- */}
+      {/* ---------------- Investment Table ---------------- */} 
       <div className="investment-table-container">
         <table className="investment-business-table">
           <thead>
@@ -27,6 +27,8 @@ const Investment = () => {
               </td>
               <td><a href="/Solutions">BOT (Built-Operate-Transfer)</a></td>
               <td rowSpan="1"><a href="/product">Biogas & Allied Product Refinery</a></td>
+              
+             
             </tr>
 
             <tr>
@@ -36,15 +38,18 @@ const Investment = () => {
 
             <tr>
               <td><a href="/Solutions">BOOT (Built-Own-Operate-Transfer)</a></td>
+              <td></td>
              
             </tr>
 
             <tr>
               <td><a href="/Solutions">BLT (Built-Lease-Transfer)</a></td>
+             <td></td>
             </tr>
 
             <tr>
               <td><a href="/Solutions">BFO (Built-Finance-Operate)</a></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

@@ -1,27 +1,35 @@
 /* Main Wrapper */
 .download-container {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0vw;
   background: #ffffff;
 }
 
 /* Title */
 .download-title {
-  font-size: 40px;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 0.5vh;
   margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 /* Subtitle */
 .download-subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  color: #b5b5b5;
-  margin-bottom: 4vh;
   margin-left: 5vw;
-  width: 33vw;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* Table Wrapper */
@@ -34,7 +42,7 @@
 .download-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 18px;
+  font-size: 1.25vw;
   font-weight: 300;
   color: #1a1a1a;
   border: none;
@@ -42,29 +50,36 @@
 
 /* Table Header */
 .download-table thead th {
-  background: #d63333;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px 20px;
-  font-size: 18px;
-  font-weight: 500;
-  border: none;
-  padding-left: 5vw;
+  background: #d92c33;
+    color: #ffffff;
+    text-align: left;
+    padding: 2vh 1vw;
+    padding-left: 5vw;
+    font-size: 1.3vw;
+    font-weight: 600;
 }
 
 /* Table Cells */
 .download-table td {
-  font-size: 16px;
-  padding: 20px;
+  font-size: 1vw;
+  padding: 1.39vh 0vw;
   vertical-align: top;
   padding-left: 5vw;
-  border-right: 1px solid #e0e0e0;     /* RIGHT BORDER FIXED */
+  border: none; /* सर्व border काढून टाका */
 }
 
-/* Left Column */
+/* Overview column ला फक्त उजव्या बाजूला border */
 .download-table td:first-child {
   width: 25%;
-  border-left: none;   /* LEFT BORDER REMOVED */
+  border-right: 0.1vw solid #e0e0e0;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Solutions column ला border नाही */
+.download-table td:last-child {
+  border: none;
 }
 
 /* Links */
@@ -78,80 +93,3 @@
   background-color: #e8f4fd;
   color: #3498db;
 }
-
-
-  /* Title */
-  .work-title {
-    font-size: 40px;
-    font-weight: 500;
-    color: #000000;
-    margin-bottom: 0vh;
-    margin-left: 5vw;
-  }
-
-  /* Subtitle */
-  .work-subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    color: #b5b5b5;
-    margin-bottom: 4vh;
-    margin-left: 5vw;
-    width: 24vw;
-  }
-
-  /* Table Wrapper */
-  .work-table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  /* Table */
-  .work-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 18px;
-    font-weight: 300;
-    color: #1a1a1a;
-    border: none;
-  }
-
-  /* Table Header */
-  .work-table thead th {
-    background: #e12d36;
-    color: #ffffff;
-    text-align: left;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    padding-left: 5vw;
-  }
-
-  /* Table Rows */
-  .work-table td {
-    font-size: 16px;
-    padding: 1.5vh 0vw;
-    vertical-align: top;
-    border: none;
-    padding-left: 5vw;
-    border-right: 1px solid #e0e0e0;
-  }
-
-  .work-table td:first-child {
-    width: 30%;
-    border-left: 1px solid #d8d8d8;
-    border: none;
-  }
-
-  /* Links inside TD */
-  .work-table td a {
-    text-decoration: none;
-    color: #000000;
-    transition: 0.2s;
-  }
-
-  .work-table td a:hover {
-    background-color: #e8f4fd;
-    color: #3498db;
-  }
-

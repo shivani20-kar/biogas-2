@@ -48,7 +48,7 @@
 }
 
 .tablle-center {
-      padding: 3vh 6vw
+  padding: 3vh 6vw;
 }
 .table-title {
   font-family: "DDINPRO";
@@ -72,13 +72,11 @@
   overflow-x: auto;
   margin-bottom: 30px;
 }
-
-.table {
+.raw-table {
   width: 100%;
   border-collapse: collapse;
 }
-
-thead th {
+.raw-table .raw-th {
   color: #ffffff;
   font-size: 14px;
   font-family: "DDINPRO";
@@ -89,13 +87,12 @@ thead th {
   font-weight: 300;
 }
 
-tbody td {
-  width: 5%;
+.raw-table .raw-td {
   font-size: 16px;
   color: #000000;
   font-family: "DDINPRO";
   padding: 15px 5px;
   border: 1px solid #bcbcbc;
   text-align: center;
-  background: #fff;
+  background: #ffffff;
 }

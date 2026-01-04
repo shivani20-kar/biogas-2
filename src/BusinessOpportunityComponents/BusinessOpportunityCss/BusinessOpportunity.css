@@ -1,110 +1,131 @@
 .business-opportunity {
-   font-family: 'DDINPRO';
-  padding: 5vh 0vw;
-  background-color: #FFFFFFFF;
+  font-family: "DDINPRO";
+  padding: 5vh 0;
+  background-color: #ffffff;
 }
 
+/* -------- TITLE -------- */
 .main-title {
-  text-align: start;
-  color: #000000;
-  margin-bottom: 0vh;
-  font-size: 40px;
-  font-weight: bold;
   margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 .subtitle {
-  text-align: start;
-  color: #B5B5B5;
-  margin-bottom: 4vh;
-  font-size: 16px;
   margin-left: 5vw;
-  width: 21vw;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
-/* Table container */
+/* -------- TABLE COMMON -------- */
 .table-container {
+  width: 100%;
   overflow-x: auto;
-  margin-bottom: 30px;
 }
 
-/* Common tables */
 .business-table,
 .turnkey-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
+  border: none;
 }
 
-/* Business table header */
-.business-table th {
- 
-  background-color: #E12D36;
-  color: #FFFFFF;
-  padding: 12px 8px;
+/* -------- HEADER -------- */
+th.thb {
+  background-color: #e12d36;
+  color: #ffffff;
   text-align: start;
-  font-weight: bold;
-  padding-left: 5vw;
-  font-size: 16px;
+  font-size: 1.3vw;
+  font-weight: 600;
+  padding: 2vh 5vw;
+   border: none;
 }
 
-.business-table th a,
-.turnkey-table th a {
-  color:#FFFFFF;
-  text-decoration: none;
+th.thb:last-child {
+  border-right: none;
 }
 
-/* Table cells */
-.business-table td,
-.turnkey-table td {
- padding: 1vh 0vw;
-  text-align: left;
-  border-right: 1px solid #e0e0e0;
+/* -------- CELLS -------- */
+.business-table td.tdd {
+  border-right: 0.1vw solid #e0e0e0;
+  vertical-align: top;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
 }
 
-.business-table td a,
-.turnkey-table td a {
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
+.business-table td.tdd:last-child {
+  border-right: none;
+}
+
+.turnkey-table td.tdd {
+  border-right: 0.1vw solid #e0e0e0;
+  vertical-align: top;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.turnkey-table td.tdd:last-child {
+  border-right: none;
+}
+
+/* -------- LINKS -------- */
+td.tdd a {
   display: block;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+  color: #000;
+  text-decoration: none;
   transition: 0.3s;
-  padding-left: 5vw;
+  text-align: start;
 }
 
-.business-table td a:hover,
-.turnkey-table td a:hover {
-  background-color: #e8f4fd;
+td.tdd a:hover {
+  background-color: #f2f6fa;
   color: #3498db;
 }
 
-/* Overview left cell */
-.overview-cell {
-  font-weight: bold;
+/* -------- OVERVIEW CELL -------- */
+td.tdd {
+  width: 16vw;
   text-align: center;
-  vertical-align: middle !important;
+  vertical-align: middle;
+  padding: 0;
 }
 
-.overview-cell a {
-  font-weight: bold;
-  color: #2c3e50;
+td.tdd a {
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  padding-top: 0.5vw;
+  margin-left: 3vw;
 }
 
-
-/* Turnkey table header full width */
-.turnkey-table thead tr {
-  background-color: #E12D36 !important;
+/* -------- TURNKEY -------- */
+.turnkey-solution {
+  margin-top: 5vh;
 }
 
-.turnkey-table thead th {
-  background-color: transparent !important;
-  color: #FFFFFF !important;
-  padding: 12px 8px;
-  text-align: start;
-  font-weight: bold;
-  border: none !important;
-  padding-left: 5vw;
-  font-size: 16px;
+.turnkey-table thead th.thd {
+  background-color: #e12d36;
+  color: #fff;
+ font-size: 1.3vw;
+  font-weight: 600;
+  padding: 2vh 5vw;
+  text-align: left;
+  border: none;
 }

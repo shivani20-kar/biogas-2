@@ -51,130 +51,131 @@ const RawMaterial = () => {
         </div>
       </div>
 
-      <div className="tablle-center">
+       <div className="tablle-center">
+        {/* ================= TABLE 1 ================= */}
         <h2 className="table-title">
           Raw material potential from the napier grass 27% total
           solid(approximately 80 day-harvest)
         </h2>
 
         <div className="table-wrapper">
-          <table className="table">
+          <table className="table raw-table">
             <thead>
               <tr>
-                <th>Substrate</th>
-                <th>Quantity (tonnes/day)</th>
-                <th>Quantity (tonnes/Year)</th>
-                <th>DM content (%)</th>
-                <th>ODM content (%)</th>
-                <th>DM Quantity (tonnes/day)</th>
-                <th>ODM Quantity (tonnes/day)</th>
-                <th>Biogas Yield (m3/tonnes ODM)</th>
-                <th>Biogas Yield (m3/day)</th>
-                <th>Methane Content (%)</th>
-                <th>Bio Methane/Bio-CNG (m3/day)</th>
+                <th className="raw-th">Substrate</th>
+                <th className="raw-th">Quantity (tonnes/day)</th>
+                <th className="raw-th">Quantity (tonnes/Year)</th>
+                <th className="raw-th">DM content (%)</th>
+                <th className="raw-th">ODM content (%)</th>
+                <th className="raw-th">DM Quantity (tonnes/day)</th>
+                <th className="raw-th">ODM Quantity (tonnes/day)</th>
+                <th className="raw-th">Biogas Yield (m3/tonnes ODM)</th>
+                <th className="raw-th">Biogas Yield (m3/day)</th>
+                <th className="raw-th">Methane Content (%)</th>
+                <th className="raw-th">Bio Methane/Bio-CNG (m3/day)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Napier Grass</td>
-                <td>293.3</td>
-                <td>107065</td>
-                <td>27</td>
-                <td>96</td>
-                <td>79.20</td>
-                <td>76.03</td>
-                <td>690</td>
-                <td>52462</td>
-                <td>53</td>
-                <td>27445</td>
+                <td className="raw-td">Napier Grass</td>
+                <td className="raw-td">293.3</td>
+                <td className="raw-td">107065</td>
+                <td className="raw-td">27</td>
+                <td className="raw-td">96</td>
+                <td className="raw-td">79.20</td>
+                <td className="raw-td">76.03</td>
+                <td className="raw-td">690</td>
+                <td className="raw-td">52462</td>
+                <td className="raw-td">53</td>
+                <td className="raw-td">27445</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        {/* Section 2 */}
+        {/* ================= TABLE 2 ================= */}
         <h2 className="table-title">
           Raw material potential from the napier grass 30% total
           solid(approximately 80 day-harvest)
         </h2>
 
         <div className="table-wrapper">
-          <table className="table">
+          <table className="table raw-table">
             <thead>
               <tr>
-                <th>Substrate</th>
-                <th>Quantity (tonnes/day)</th>
-                <th>Quantity (tonnes/Year)</th>
-                <th>DM content (%)</th>
-                <th>ODM content (%)</th>
-                <th>DM Quantity (tonnes/day)</th>
-                <th>ODM Quantity (tonnes/day)</th>
-                <th>Biogas Yield (m3/tonnes ODM)</th>
-                <th>Biogas Yield (m3/day)</th>
-                <th>Methane Content (%)</th>
-                <th>Bio Methane/Bio-CNG (m3/day)</th>
+                <th className="raw-th">Substrate</th>
+                <th className="raw-th">Quantity (tonnes/day)</th>
+                <th className="raw-th">Quantity (tonnes/Year)</th>
+                <th className="raw-th">DM content (%)</th>
+                <th className="raw-th">ODM content (%)</th>
+                <th className="raw-th">DM Quantity (tonnes/day)</th>
+                <th className="raw-th">ODM Quantity (tonnes/day)</th>
+                <th className="raw-th">Biogas Yield (m3/tonnes ODM)</th>
+                <th className="raw-th">Biogas Yield (m3/day)</th>
+                <th className="raw-th">Methane Content (%)</th>
+                <th className="raw-th">Bio Methane/Bio-CNG (m3/day)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Napier Grass</td>
-                <td>293.3</td>
-                <td>107065</td>
-                <td>27</td>
-                <td>96</td>
-                <td>79.20</td>
-                <td>76.03</td>
-                <td>690</td>
-                <td>52462</td>
-                <td>53</td>
-                <td>27445</td>
+                <td className="raw-td">Napier Grass</td>
+                <td className="raw-td">293.3</td>
+                <td className="raw-td">107065</td>
+                <td className="raw-td">30</td>
+                <td className="raw-td">96</td>
+                <td className="raw-td">79.20</td>
+                <td className="raw-td">76.03</td>
+                <td className="raw-td">690</td>
+                <td className="raw-td">52462</td>
+                <td className="raw-td">53</td>
+                <td className="raw-td">27445</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        {/* Section 3 */}
+        {/* ================= TABLE 3 ================= */}
         <h2 className="table-title">
           Raw material potential from the napier grass 33% total
           solid(approximately 120 day-harvest)
         </h2>
 
         <div className="table-wrapper">
-          <table className="table">
+          <table className="table raw-table">
             <thead>
               <tr>
-                <th>Substrate</th>
-                <th>Quantity (tonnes/day)</th>
-                <th>Quantity (tonnes/Year)</th>
-                <th>DM content (%)</th>
-                <th>ODM content (%)</th>
-                <th>DM Quantity (tonnes/day)</th>
-                <th>ODM Quantity (tonnes/day)</th>
-                <th>Biogas Yield (m3/tonnes ODM)</th>
-                <th>Biogas Yield (m3/day)</th>
-                <th>Methane Content (%)</th>
-                <th>Bio Methane/Bio-CNG (m3/day)</th>
+                <th className="raw-th">Substrate</th>
+                <th className="raw-th">Quantity (tonnes/day)</th>
+                <th className="raw-th">Quantity (tonnes/Year)</th>
+                <th className="raw-th">DM content (%)</th>
+                <th className="raw-th">ODM content (%)</th>
+                <th className="raw-th">DM Quantity (tonnes/day)</th>
+                <th className="raw-th">ODM Quantity (tonnes/day)</th>
+                <th className="raw-th">Biogas Yield (m3/tonnes ODM)</th>
+                <th className="raw-th">Biogas Yield (m3/day)</th>
+                <th className="raw-th">Methane Content (%)</th>
+                <th className="raw-th">Bio Methane/Bio-CNG (m3/day)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Napier Grass</td>
-                <td>240</td>
-                <td>87600</td>
-                <td>33</td>
-                <td>96</td>
-                <td>79.20</td>
-                <td>76.03</td>
-                <td>690</td>
-                <td>52462</td>
-                <td>52</td>
-                <td>27445</td>
+                <td className="raw-td">Napier Grass</td>
+                <td className="raw-td">240</td>
+                <td className="raw-td">87600</td>
+                <td className="raw-td">33</td>
+                <td className="raw-td">96</td>
+                <td className="raw-td">79.20</td>
+                <td className="raw-td">76.03</td>
+                <td className="raw-td">690</td>
+                <td className="raw-td">52462</td>
+                <td className="raw-td">52</td>
+                <td className="raw-td">27445</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </section>
+    </section> 
   );
 };
 

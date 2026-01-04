@@ -2,7 +2,7 @@ import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/Agriculture.css";
 
 const Agriculture = () => {
-  return (
+  return ( 
     <div className="agri-container">
 
       <h1 className="agri-title">Agriculture Sector</h1>

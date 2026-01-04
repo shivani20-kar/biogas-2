@@ -1,131 +1,102 @@
 /* Main Wrapper */
 .login-container {
-   font-family: 'DDINPRO';
-  padding: 5vh 0vw;
+  font-family: "DDINPRO";
+  padding: 5vh 0;
   background: #ffffff;
 }
 
 /* Title */
 .login-title {
-  font-size: 40px;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 0vh;
   margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 /* Subtitle */
 .login-subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  color: #B5B5B5;
-  margin-bottom: 4vh;
   margin-left: 5vw;
- width: 33vw;
-}
-
-/* Table Wrapper */
-.login-table-wrapper {
-  width: 100%;
-  overflow-x: auto;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* Table */
 .login-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;   /* IMPORTANT – fixed layout removes extra white space */
-  font-size: 18px;
-  color: #1a1a1a;
+  table-layout: fixed;
 }
 
-/* Column Width Control */
-.login-table th:nth-child(1),
-.login-table td:nth-child(1) {
-  width: 40%;   /* Company */
-   padding-left: 5vw; 
-}
-
-.login-table th:nth-child(2),
-.login-table td:nth-child(2) {
-  width: 20%;   /* Banking */
-}
-
-.login-table th:nth-child(3),
-.login-table td:nth-child(3) {
-  width: 20%;   /* FPC */
-}
-
-.login-table th:nth-child(4),
-.login-table td:nth-child(4) {
-  width: 20%;   /* Trust */
-}
-
-.login-table td:not(:first-child),
-.login-table th:not(:first-child) {
-  padding-left: 1vw;    /* Much smaller space */
-}
-
-/* Header Row */
+/* Header */
 .login-table thead th {
-  background: #E12D36;
+  background: #d92c33;
   color: #ffffff;
   text-align: left;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 500;
-      padding-left: 5vw;
-
-  
+  padding: 2vh 1vw;
+  padding-left: 5vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  border-right: none; /* Header ला vertical border नको */
 }
 
-/* Remove last border */
-.login-table thead th:last-child {
-  border-left: none;
+.login-table thead th:first-child {
+  padding-left: 5vw;
 }
 
-/* Table Body */
-.login-table td {
-  padding: 1.5vh 1vw;
-  font-size: 16px;
-  vertical-align: top;
-      padding-left: 5vw;
-       border-right: 1px solid #e0e0e0; 
-      
- 
-}
-
-/* Remove last border */
-.login-table td:last-child {
+/* Header ला border नाही */
+.login-table th:not(:last-child) {
   border-right: none;
 }
 
-/* Links inside TD */
+/* Column widths */
+.login-table th:nth-child(1),
+.login-table td:nth-child(1) {
+  width: 25%;
+}
+
+.login-table th:nth-child(2),
+.login-table td:nth-child(2),
+.login-table th:nth-child(3),
+.login-table td:nth-child(3),
+.login-table th:nth-child(4),
+.login-table td:nth-child(4) {
+  width: 30%;
+}
+
+/* Body cells ला vertical border */
+.login-table td:not(:last-child) {
+  border-right: 1px solid #dcdcdc;
+}
+
+/* Body cells */
+.login-table td {
+  padding: 12px 1vw;
+  vertical-align: middle;
+}
+
+.login-table td:first-child {
+  padding-left: 5vw;
+}
+
+/* Links */
 .login-table td a {
   font-size: 16px;
+  color: #000;
   text-decoration: none;
-  color: #000000;
-  transition: 0.2s ease;
-  
 }
 
-/* Hover effect */
 .login-table td a:hover {
-   background-color: #e8f4fd;
-  color: #3498db;
-}
-
-.two-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  white-space: nowrap;   
-}
-
-.two-links a {
-  white-space: nowrap;   
-}
-
-.two-links span {
-  white-space: nowrap;  
+  color: #e12d36;
 }

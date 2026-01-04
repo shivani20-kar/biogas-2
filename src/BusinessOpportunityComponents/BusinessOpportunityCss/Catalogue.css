@@ -2,7 +2,7 @@
    Main Container
 --------------------------------*/
 .catalogue-container {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0vw;
   background: #ffffff;
 }
@@ -11,20 +11,28 @@
    Title + Subtitle
 --------------------------------*/
 .catalogue-title {
-  font-size: 42px;
-  font-weight: 500;
-  color:#000000;
-  margin-bottom: 0vh;
-   margin-left: 5vw;
+  margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 .catalogue-subtitle {
-  font-size: 18px;
-  color: #B5B5B5;
+  margin-left: 5vw;
+  margin-top: 1vh;
   margin-bottom: 4vh;
- width: 25vw;
-  line-height: 1.4;
-   margin-left: 5vw;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* ------------------------------
@@ -43,23 +51,23 @@
   border-collapse: collapse;
   table-layout: fixed;
   border-spacing: 0 !important;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 /* ------------------------------
    Table Header
 --------------------------------*/
 .catalogue-table thead th {
-  background: #D92C33;
-  color: #FFFFFF;
+  background: #d92c33;
+  color: #ffffff;
   text-align: left;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
+  padding: 2vh 1vw;
   padding-left: 5vw;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
-/* Column Widths (Figma Exact Ratio) */
+/* Column Widths */
 .col-overview {
   width: 15%;
 }
@@ -69,21 +77,31 @@
 }
 
 /* ------------------------------
-   Table Body
+   Table Body – NO horizontal borders
 --------------------------------*/
 .catalogue-table tbody td {
-  padding: 0.5vh 0vw;
-  border: none;
+  padding: 0.26vh 0vw;
+  border: none !important;
   color: #000000;
-  font-size: 16px;
-    padding-left: 5vw; 
-    border-right: 1px solid #e0e0e0;
+  padding-left: 5vw;
+  font-size: 1vw;
+  font-weight: 400;
 }
 
-/* Vertical Divider Between Columns */
+/* Vertical Divider – फक्त first column */
+.catalogue-table tbody td:first-child {
+  border-right: 0.1vw solid #e0e0e0 !important;
+}
+
+/* Second column – no border */
 .catalogue-table tbody td:nth-child(2) {
-  /* border-left: 1px solid #d7d7d7; */
   padding-left: 5vw;
+  border: none !important;
+}
+
+/* ❌ Horizontal row borders पूर्ण काढले */
+.catalogue-table tbody tr {
+  border: none;
 }
 
 /* ------------------------------
@@ -92,15 +110,13 @@
 .catalogue-table td a {
   color: #1a1a1a;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1vw;
   display: block;
-  padding: 4px 0px;
-  /* transition: 0.2s ease-in-out; */
-  padding-left: 0;
+  padding: 0.5vw;
+  font-weight: 400;
 }
 
-/* Hover effect (Figma clean underline) */
 .catalogue-table td a:hover {
-   background-color: #e8f4fd;
+  background-color: #e8f4fd;
   color: #3498db;
 }

@@ -1,25 +1,35 @@
 /* ------------ MAIN WRAPPER ------------- */
 .sector-container {
- font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0;
   background: #fff;
 }
 
 /* Title */
 .sector-title {
-  font-size: 40px;
-  font-weight: 500;
-  color: #000;
   margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
 }
 
 /* Subtitle */
 .sector-subtitle {
-  font-size: 18px;
-  color: #B5B5B5;
   margin-left: 5vw;
-  margin-bottom: 3vh;
-  width: 28vw;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 25vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* ------------------ TOP TABS ------------------ */
@@ -31,14 +41,14 @@
 }
 
 .sector-top-tabs span {
-  font-size: 15px;
-  color: #E12D36;
+  font-size: 1.2vw;
+  color: #e12d36;
   padding-bottom: 6px;
   cursor: pointer;
 }
 
 .sector-top-tabs span.active {
-  border-bottom: 2px solid #E12D36;
+  border-bottom: 2px solid #e12d36;
   font-weight: 600;
 }
 
@@ -56,14 +66,21 @@
 }
 
 /* Header */
-.sector-table thead th {
-  background-color: #E12D36;
-  color: #fff;
+.sector-th {
+  background: #d63333;
+  color: #ffffff;
   text-align: left;
-  padding: 12px;
-  padding-left: 5vw;
+  padding: 1.04vh 1.39vw;
+  font-size: 1.3vw;
   font-weight: 600;
-  font-size: 16px;
+  border: none;
+  padding-left: 5vw;
+  
+}
+
+/* शेवटच्या header ला border नाही */
+.sector-table th:last-child {
+  border-right: none;
 }
 
 /* Column widths */
@@ -88,14 +105,19 @@
 }
 
 /* Table body cells */
-.sector-table tbody td {
+.sector-td {
   padding: 20px 5vw;
   vertical-align: top;
   border: none;
-  font-size: 16px;
+  font-size: 1vw;
   color: #000;
   word-break: break-word;
-     border-right: 1px solid #e0e0e0; 
+  border-right: 1px solid #e0e0e0; /* सर्व columns ला border */
+}
+
+/* शेवटच्या column ला border नाही */
+.sector-table td:last-child {
+  border-right: none;
 }
 
 /* ------------------ LIST BOXES ------------------ */
@@ -107,19 +129,19 @@
 
 .cell-list a {
   display: block;
-  font-size: 16px;
+  font-size: 1vw;
   color: #000;
   text-decoration: none;
   padding: 1vh 0vw;
   line-height: 1.4;
   border-radius: 8px;
-  
+  text-align: start;
+  font-weight: 400;
 }
 
 .cell-list a:hover {
   background-color: #e8f4fd;
   color: #3498db;
-  
 }
 
 /* PRODUCTS — No Scroll */

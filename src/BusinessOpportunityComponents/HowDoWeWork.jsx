@@ -3,17 +3,17 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/HowDoWeWork.css"
 
 const HowDoWeWork = () => {
   return (
-    <div className="work-container">
+    <div className="work-container"> 
 
       {/* Title */}
-      <h1 className="work-title">How Do We Work</h1>
+      <h1 className="work-titlewe">How Do We Work</h1>
       <p className="work-subtitle">
         GD for energy sustainability solutions in the manufacturing sector.
       </p>
 
       {/* Table Section */}
       <div className="work-table-wrapper">
-        <table className="work-table">
+        <table className="work-tablewe">
           
           <thead>
             <tr>

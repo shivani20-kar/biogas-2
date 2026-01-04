@@ -4,7 +4,7 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/Catalogue.css";
 const Catalogue = () => {
   return (
     <div className="catalogue-container">
-
+ 
       {/* Title Section */}
       <h1 className="catalogue-title">Catalogue</h1>
       <p className="catalogue-subtitle">
