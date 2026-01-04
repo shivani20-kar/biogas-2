@@ -1,12 +1,6 @@
-
-/* .biogas-container-two {
-  width: 100%;
-  background: #ffffff;
-} */
-
 /* HEADER */
 .biogas-header-two {
- background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -17,20 +11,13 @@
   width: 120px;
   height: 180px;
   background: #f2f2f2;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
 
 .biogas-header-two h1 {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -41,7 +28,7 @@
 }
 
 .biogas-header-two p {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -52,7 +39,7 @@
 
 /* CONTENT */
 .biogas-content-two {
- display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   padding: 2vw 11vw;
@@ -60,8 +47,8 @@
 
 /* LEFT */
 .biogas-left-two h3 {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
@@ -69,8 +56,8 @@ font-weight: 700;
 }
 
 .biogas-left-two p {
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -78,21 +65,19 @@ font-weight: 700;
 }
 
 .image-box {
-  /* border: 1px solid #ccc; */
-  /* padding: 15px; */
   text-align: center;
 }
 
-.image-boxx img {
+.image-box img {
   width: 145%;
-  /* max-width: 320px; */
+  max-width: 320px;
   height: 100%;
 }
 
 /* RIGHT */
 .biogas-right-two h3 {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
@@ -100,8 +85,8 @@ font-weight: 700;
 }
 
 .biogas-right-two h4 {
- font-family: 'DDINPRO';
-font-weight: 700;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
   color: #282828;
@@ -110,8 +95,8 @@ font-weight: 700;
 }
 
 .biogas-right-two p {
-font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -125,11 +110,10 @@ font-family: 'DDINPRO';
 }
 
 .biogas-right-two li {
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
   /* margin-bottom: 20px; */
 }
-

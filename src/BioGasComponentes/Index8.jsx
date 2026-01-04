@@ -13,8 +13,8 @@ const BiogasPlantTwo = () => {
                             stroke="#e3262f"
                             strokeWidth="4"
                         />
-                    </svg></div>
-        <div>
+                    </svg></div> 
+        <div> 
           <h1>Biogas</h1>
           <p>Plant Working Principle</p>
         </div>
