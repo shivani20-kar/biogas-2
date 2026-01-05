@@ -415,6 +415,20 @@ function App() {
             </>
           }
         />
+         <Route
+          path="/SiteVisit"
+          element={
+            <>
+              <SiteVisitHero />
+              <SitevisitRegistration />
+              <ScheduleSiteVisit />
+              <BiogasSectionsitevisit />
+              <InfoBox />
+              <ContactInfo />
+              <Footer />
+            </>
+          }
+        />
         <Route
           path="/ContactUS"
           element={
@@ -431,20 +445,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/SiteVisit"
-          element={
-            <>
-              <SiteVisitHero />
-              <SitevisitRegistration />
-              <ScheduleSiteVisit />
-              <BiogasSectionsitevisit />
-              <InfoBox />
-              <ContactInfo />
-              <Footer />
-            </>
-          }
-        />
+       
         <Route
           path="/CustomerServiceCentre"
           element={
