@@ -7,7 +7,7 @@ import coownerimage from "../Components/IMAGES/co-ownerbackground.jpg";
 const CoOwnerHero = () => {
   return (
     <>
-      <section className="hero">
+      <section className="heror">
         <div className="co-owner">
           <img
             src={coownerimage}
