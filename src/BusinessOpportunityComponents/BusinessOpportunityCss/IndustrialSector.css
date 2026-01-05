@@ -45,11 +45,14 @@
   color: #e12d36;
   padding-bottom: 6px;
   cursor: pointer;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .sector-top-tabs span.active {
   border-bottom: 2px solid #e12d36;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ------------------ TABLE ------------------ */
@@ -67,15 +70,18 @@
 
 /* Header */
 .sector-th {
-  background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
   padding: 1.04vh 1.39vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   padding-left: 5vw;
-  
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 /* शेवटच्या header ला border नाही */
@@ -112,7 +118,11 @@
   font-size: 1vw;
   color: #000;
   word-break: break-word;
-  border-right: 1px solid #e0e0e0; /* सर्व columns ला border */
+  border-right: 1px solid #e0e0e0;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 /* शेवटच्या column ला border नाही */
@@ -137,6 +147,10 @@
   border-radius: 8px;
   text-align: start;
   font-weight: 400;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .cell-list a:hover {

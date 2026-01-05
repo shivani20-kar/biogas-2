@@ -49,7 +49,7 @@ th.thb {
   color: #ffffff;
   text-align: start;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   padding: 2vh 5vw;
   border: none;
   font-family: "DDINPRO";
@@ -109,7 +109,7 @@ td.tdd {
   font-family: "DDINPRO";
 }
 
-td.tdd a { 
+td.tdd a {
   font-weight: 400;
   color: #000;
   text-decoration: none;
