@@ -72,11 +72,18 @@
   animation-delay: 0s, 2.5s;
 }
 
-
 @keyframes logozoomInOut {
-  animation: zoomInOut 6s ease-in-out infinite;
-  transform-origin: center center;
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+
 
 @keyframes zoomInOut {
   0% {
