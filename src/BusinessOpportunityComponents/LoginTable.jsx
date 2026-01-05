@@ -22,89 +22,77 @@ const LoginTable = () => {
 
           <tbody>
             <tr>
-              <td>
-                <a href="#">Dealer</a>
-              </td>
+              <td><a href="/login/company/dealer">Dealer</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Distributor</a>
-              </td>
+              <td><a href="/login/company/distributor">Distributor</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Supplier</a>
-              </td>
+              <td><a href="/login/company/supplier">Supplier</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Agency</a>
-              </td>
+              <td><a href="/login/company/agency">Agency</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Co-Owner</a>
-              </td>
+              <td><a href="/login/company/co-owner">Co-Owner</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Partners</a>
-              </td>
+              <td><a href="/login/company/partners">Partners</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Associate</a>
-              </td>
+              <td><a href="/login/company/associate">Associate</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Human Resources</a>
-              </td>
+              <td><a href="/login/company/hr">Human Resources</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Manager</a>
-              </td>
+              <td><a href="/login/company/manager">Manager</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">Director</a>
-              </td>
+              <td><a href="/login/company/director">Director</a></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
+
             <tr>
-              <td>
-                <a href="#">CEO</a>
-              </td>
+              <td><a href="/login/company/ceo">CEO</a></td>
               <td></td>
               <td></td>
               <td></td>
