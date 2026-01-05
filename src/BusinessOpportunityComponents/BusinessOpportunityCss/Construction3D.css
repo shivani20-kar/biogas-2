@@ -46,10 +46,10 @@
 
 /* HEADER BAR */
 .construction-header th {
-  background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
@@ -82,7 +82,7 @@
   border-right: 1px solid #e0e0e0;
   font-family: "DDINPRO";
   font-style: normal;
- color: #000;
+  color: #000;
   line-height: normal;
   font-weight: 400;
 }

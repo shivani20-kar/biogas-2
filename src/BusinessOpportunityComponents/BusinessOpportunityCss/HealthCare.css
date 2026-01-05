@@ -46,10 +46,10 @@
 
 /* HEADER */
 .hc-table th {
-  background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
@@ -70,6 +70,8 @@
   font-style: normal;
   line-height: normal;
   font-size: 1vw;
+  font-weight: 400;
+  color: #000;
 }
 
 /* LINKS */
@@ -77,14 +79,14 @@
   display: block;
   font-size: 1vw;
   text-decoration: none;
-  color: #333;
+  color: #000;
 font-family: "DDINPRO";
   font-style: normal;
-
+  font-weight: 400;
   line-height: normal;
   margin-bottom: 8px;
   transition: 0.3s ease;
-  padding: 0vh 3vw;
+  padding: 1vh 3vw;
 }
 
 .hc-table td a:hover {

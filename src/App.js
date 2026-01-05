@@ -131,6 +131,7 @@ import ProposalTable from "./BioGasComponentes/Index19";
 import ContactDiscover from "./BioGasComponentes/Index20";
 import BackgroundSection from "./BioGasComponentes/Index21";
 import RentSection from "./BusinessOpportunityComponents/RentSection";
+import GDTourism from "./BusinessOpportunityComponents/GDTourism";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -149,20 +150,18 @@ function ScrollToTop() {
   return null;
 }
 function App() {
-
   return (
     <Router>
       <ScrollToTop />
       <Header />
-       
+
       <Routes>
         <Route
           path="/"
           element={
             <>
-            
               <HeroSection />
-              <HeroSectionSecondPage/>
+              <HeroSectionSecondPage />
             </>
           }
         />
@@ -366,7 +365,7 @@ function App() {
             </>
           }
         />
-         <Route
+        <Route
           path="/LandProposals"
           element={
             <>
@@ -381,23 +380,23 @@ function App() {
             </>
           }
         />
-          <Route
+        <Route
           path="/RentOn"
           element={
             <>
               <RentOnHero />
               <LongLeaseRegistration />
-              <RentSection/>
+              <RentSection />
               <LongLeaseBusinessRolesSection />
               {/* <ContactFormLongLease /> */}
-               <ContactFormLand />
+              <ContactFormLand />
               <InfoBox />
               <ContactInfo />
               <Footer />
             </>
           }
         />
-         <Route
+        <Route
           path="/Careers"
           element={
             <>
@@ -415,7 +414,7 @@ function App() {
             </>
           }
         />
-         <Route
+        <Route
           path="/SiteVisit"
           element={
             <>
@@ -445,7 +444,6 @@ function App() {
             </>
           }
         />
-       
         <Route
           path="/CustomerServiceCentre"
           element={
@@ -585,6 +583,15 @@ function App() {
             <>
               <Herosmall />
               <GDImpax />
+            </>
+          }
+        />
+        <Route
+          path="/tourism"
+          element={
+            <>
+              <Herosmall />
+              <GDTourism />
             </>
           }
         />

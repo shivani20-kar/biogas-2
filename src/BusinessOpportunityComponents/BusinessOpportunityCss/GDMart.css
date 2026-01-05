@@ -1,13 +1,13 @@
 /* Main Wrapper */
 .gdmart-container {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0;
   background: #ffffff;
 }
 
 /* Title */
 .gdmart-title {
-   margin-left: 5vw;
+  margin-left: 5vw;
   font-size: 4.5vw;
   color: #000;
   margin-bottom: 0vw;
@@ -20,7 +20,7 @@
 
 /* Subtitle */
 .gdmart-subtitle {
- margin-left: 5vw;
+  margin-left: 5vw;
   margin-top: 1vh;
   margin-bottom: 4vh;
   font-size: 1.5vw;
@@ -43,20 +43,23 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 /* Table Header */
 .gdmart-table thead th {
- background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   padding-left: 5vw;
   border-right: none;
+  font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 /* LEFT COLUMN */
@@ -70,7 +73,7 @@
 /* LEFT COLUMN LINK */
 .left-link {
   font-size: 1vw;
-  color: #2c3e50;
+  color: #000;
   text-decoration: none;
   padding: 8px 0;
   display: block;
@@ -86,7 +89,13 @@
 /* RIGHT COLUMN CELLS */
 .gdmart-table td {
   padding: 1vh 0;
-      border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-weight: 400;
+  color: #000;
 }
 
 /* RIGHT COLUMN LINKS */
@@ -99,6 +108,9 @@
   border-radius: 4px;
   transition: 0.3s;
   font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 .gdmart-table td:last-child {
@@ -111,14 +123,12 @@
   color: #3498db;
 }
 
-
 .gdmart-table td:first-child,
 .gdmart-table th:first-child {
-  width: 30%;  
+  width: 30%;
 }
 
 .gdmart-table td:nth-child(2),
 .gdmart-table th:nth-child(2) {
-  width: 70%;  
+  width: 70%;
 }
-
