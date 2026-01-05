@@ -1,7 +1,7 @@
 import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/Construction3D.css";
 
-const Construction3D = () => {
+const Construction3D = () => { 
   return (
     <div className="construction-container">
       <h1 className="construction-title">3D Constructions</h1>

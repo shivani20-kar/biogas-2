@@ -53,11 +53,15 @@
   color: #ffffff;
   text-align: start;
   padding: 2vh 0vw;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   font-size: 1.3vw;
   padding-left: 5vw;
+  font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
 }
+
 
 /* ---------------------------- */
 /* Column Width Reduced */
@@ -76,8 +80,9 @@
 .tech-table tbody td {
   padding: 1vh 0vw !important; /* converted to vh */
   border: none; /* remove all borders initially */
-  color: #000000;
-  border-right: 0.1vw solid #e0e0e0; /* vertical border between columns */
+  color: #000;
+  border-right: 0.1vw solid #e0e0e0;
+  font-family: "DDINPRO";
 }
 
 .tech-table tbody td:last-child {
@@ -90,7 +95,11 @@
 
 .tech-table td a {
   font-size: 1vw;
-  color: #2c3e50;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
   text-decoration: none;
   display: block;
   padding: 0.5vh;
@@ -101,6 +110,7 @@
   text-overflow: ellipsis;
   padding-left: 5vw;
   text-align: start;
+  font-family: "DDINPRO";
 }
 
 .tech-table td a:hover {

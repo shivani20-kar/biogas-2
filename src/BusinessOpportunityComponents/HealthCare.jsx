@@ -4,7 +4,7 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/HealthCare.css";
 const HealthCare = () => {
   return (
     <div className="hc-container">
-
+ 
       <h1 className="hc-title">Health Care</h1>
 
       <p className="hc-subtitle">

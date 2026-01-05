@@ -43,7 +43,7 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 /* Headings */
@@ -56,6 +56,7 @@
   font-weight: 600;
   border: none;
   padding-left: 5vw;
+  border-right: none; 
 }
 
 /* Column Widths */
@@ -79,6 +80,11 @@
   padding: 2vh 0vw;
   vertical-align: top;
   border-right: 1px solid #e0e0e0;
+  font-size: 1vw;
+}
+
+.agri-table tbody td:last-child {
+  border-right: none;
 }
 
 /* LINKS */

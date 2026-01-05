@@ -6,7 +6,7 @@ export default function GDImpax() {
     <div className="gdimpax-container">
 
       {/* TITLE */}
-      <h1 className="gdimpax-title">GD ImPax</h1>
+      <h1 className="gdimpax-title">GD ImPax</h1> 
       <p className="gdimpax-subtitle">Opening doors to a better future</p>
 
       {/* TABLE */}
