@@ -53,6 +53,8 @@ th.thb {
   padding: 2vh 5vw;
   border: none;
   font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 th.thb:last-child {
@@ -93,6 +95,9 @@ td.tdd a {
   text-decoration: none;
   transition: 0.3s;
   text-align: start;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 td.tdd a:hover {
@@ -116,6 +121,8 @@ td.tdd a {
   padding-top: 0.5vw;
   margin-left: 3vw;
   font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* -------- TURNKEY -------- */
@@ -125,11 +132,13 @@ td.tdd a {
 
 .turnkey-table thead th.thd {
   background-color: #e12d36;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3vw;
   font-weight: 700;
   padding: 2vh 5vw;
   text-align: left;
   border: none;
   font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }

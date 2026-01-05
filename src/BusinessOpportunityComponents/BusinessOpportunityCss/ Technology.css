@@ -59,9 +59,8 @@
   padding-left: 5vw;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
+  line-height: normal;
 }
-
 
 /* ---------------------------- */
 /* Column Width Reduced */
@@ -83,6 +82,10 @@ line-height: normal;
   color: #000;
   border-right: 0.1vw solid #e0e0e0;
   font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
+  font-size: 1vw;
+  font-weight: 400;
 }
 
 .tech-table tbody td:last-child {

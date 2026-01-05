@@ -83,8 +83,13 @@
 
 /* Body cells */
 .login-table td {
-  padding: 12px 1vw;
+  padding: 8px 1vw;
   vertical-align: middle;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
+  font-size: 1vw;
+  font-weight: 400;
 }
 
 .login-table td:first-child {
@@ -99,6 +104,7 @@
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
+  font-weight: 400;
 }
 
 .login-table td a:hover {

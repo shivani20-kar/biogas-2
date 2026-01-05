@@ -58,7 +58,6 @@
   border-right: none !important;
   font-family: "DDINPRO";
   font-style: normal;
-
 line-height: normal;
 }
 
@@ -89,6 +88,9 @@ line-height: normal;
   border-right: 0.1vw solid #cccccc; /* only vertical lines between cells */
   font-weight: 400;
   font-family: "DDINPRO";
+ 
+  font-style: normal;
+  line-height: normal;
 }
 
 .investment-business-table td:last-child {
@@ -107,7 +109,10 @@ line-height: normal;
   font-size: 1vw;
   font-weight: 400;
   padding: 3px 2px;
-  font-family: "DDINPRO";
+   font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
+
 }
 
 .investment-business-table td a:hover {
@@ -122,7 +127,7 @@ line-height: normal;
   vertical-align: middle;
   white-space: nowrap;
   width: 25%;
-  border: none; /* no horizontal or vertical borders */
+  border: none;
 }
 
 /* Product cells */
