@@ -1,7 +1,7 @@
 import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/WasteSector.css";
 
-const WasteSector = () => {
+const WasteSector = () => { 
   return (
     <div className="waste-container">
 
@@ -43,6 +43,7 @@ const WasteSector = () => {
               <td>
                 <a href="/waste/solutions/municipal-waste">Municipal Waste</a>
               </td>
+              <td></td>
             </tr>
 
             <tr>
@@ -50,6 +51,7 @@ const WasteSector = () => {
               <td>
                 <a href="/waste/solutions/industrial-waste">Industrial Waste</a>
               </td>
+              <td></td>
             </tr>
 
             <tr>
@@ -57,6 +59,7 @@ const WasteSector = () => {
               <td>
                 <a href="/waste/solutions/orc-power">Industrial ORC to Power</a>
               </td>
+              <td></td>
             </tr>
 
             <tr>
@@ -64,6 +67,7 @@ const WasteSector = () => {
               <td>
                 <a href="/waste/solutions/sewage-slug-waste">Sewage Slug Waste</a>
               </td>
+              <td></td>
             </tr>
 
           </tbody>

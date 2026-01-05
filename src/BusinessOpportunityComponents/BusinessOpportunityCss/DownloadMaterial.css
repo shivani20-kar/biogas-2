@@ -44,19 +44,19 @@
   border-collapse: collapse;
   font-size: 1.25vw;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #000;
   border: none;
 }
 
 /* Table Header */
 .download-table thead th {
-  background: #d92c33;
-    color: #ffffff;
-    text-align: left;
-    padding: 2vh 1vw;
-    padding-left: 5vw;
-    font-size: 1.3vw;
-    font-weight: 600;
+  background: #e12d36;
+  color: #ffffff;
+  text-align: left;
+  padding: 2vh 1vw;
+  padding-left: 5vw;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
 /* Table Cells */
@@ -65,10 +65,13 @@
   padding: 1.39vh 0vw;
   vertical-align: top;
   padding-left: 5vw;
-  border: none; /* सर्व border काढून टाका */
+  border: none;
+   font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
 }
 
-/* Overview column ला फक्त उजव्या बाजूला border */
+
 .download-table td:first-child {
   width: 25%;
   border-right: 0.1vw solid #e0e0e0;
@@ -77,7 +80,7 @@
   border-bottom: none;
 }
 
-/* Solutions column ला border नाही */
+
 .download-table td:last-child {
   border: none;
 }
@@ -85,8 +88,15 @@
 /* Links */
 .download-table td a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   transition: 0.2s ease;
+  display: inline-block;
+  padding: 0.35vh 0.7vw;
+  font-size: 1vw;
+  font-weight: 400;
+   font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
 }
 
 .download-table td a:hover {

@@ -41,21 +41,22 @@
 
 /* Header */
 .login-table thead th {
-  background: #d92c33;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
   padding: 2vh 1vw;
-  padding-left: 5vw;
   font-size: 1.3vw;
-  font-weight: 600;
-  border-right: none; /* Header ला vertical border नको */
+  font-weight: 700;
+  border-right: none;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .login-table thead th:first-child {
   padding-left: 5vw;
 }
 
-/* Header ला border नाही */
 .login-table th:not(:last-child) {
   border-right: none;
 }
@@ -92,9 +93,12 @@
 
 /* Links */
 .login-table td a {
-  font-size: 16px;
+  font-size: 1vw;
   color: #000;
   text-decoration: none;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .login-table td a:hover {

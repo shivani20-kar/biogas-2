@@ -58,13 +58,15 @@
    Table Header
 --------------------------------*/
 .catalogue-table thead th {
-  background: #d92c33;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
   padding: 2vh 1vw;
   padding-left: 5vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
 }
 
 /* Column Widths */
@@ -82,13 +84,16 @@
 .catalogue-table tbody td {
   padding: 0.26vh 0vw;
   border: none !important;
-  color: #000000;
+  color: #000;
   padding-left: 5vw;
   font-size: 1vw;
   font-weight: 400;
+  font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
 }
 
-/* Vertical Divider – फक्त first column */
+
 .catalogue-table tbody td:first-child {
   border-right: 0.1vw solid #e0e0e0 !important;
 }
@@ -99,7 +104,7 @@
   border: none !important;
 }
 
-/* ❌ Horizontal row borders पूर्ण काढले */
+
 .catalogue-table tbody tr {
   border: none;
 }
@@ -108,12 +113,15 @@
    Link Styling Inside TD
 --------------------------------*/
 .catalogue-table td a {
-  color: #1a1a1a;
+  color: #000;
   text-decoration: none;
   font-size: 1vw;
   display: block;
   padding: 0.5vw;
-  font-weight: 400;
+ font-family: "DDINPRO";
+  font-style: normal;
+line-height: normal;
+
 }
 
 .catalogue-table td a:hover {
