@@ -1,7 +1,7 @@
 /* ===== MAIN SECTION ===== */
 .sitevisit-section {
   text-align: center;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 /* ===== TOP RED AREA ===== */
@@ -43,47 +43,47 @@ text-transform: uppercase;
 
 .small-date-box {
   background: white;
-  width: 120px;
-  padding: 2vw 2vw;
+  width: 130px;
+  height: 22vh;
+  padding: 2vw 1.5vw;
   border-radius: 25px;
 }
 
 .date-format {
   font-family: 'DDINPRO';
-  font-size: 32px;
+  font-size: 1.6vw;
   font-weight: 700;
   line-height: normal;
-
   color: #fff; /* inner text color */
-
-  /* Text stroke (Chrome, Safari, Edge) */
   -webkit-text-stroke: 1px #000;
-
-  /* Fallback border using shadow (Firefox support) */
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
 }
 
 .big-date-box {
-  width: 340px;
+  width: 30vw;
   background: white;
-  padding: 25px 20px;
-  border-radius: 20px;
+  padding: 2vw 1.5vw;
+  border-radius: 25px;
+  height: 22vh;
 }
 .today-text {
-  font-size: 18px;
-  color: #333;
+  text-align: left;
+ color: #282828;
+ font-family: 'DDINPRO';
+font-size: 2vw;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 125% */
 }
 .today-date {
-  font-size: 48px;
+  text-align: left;
+  font-family: 'DDINPRO';
+  font-size: 4vw;
   font-weight: 700;
-  margin-top: 10px;
+  line-height: normal;
+  color: #fff; /* inner text color */
+  -webkit-text-stroke: 1px #000;
 }
 
-/* ===== TABS ===== */
 .visit-tabs {
   margin-top: 10px;
 }
