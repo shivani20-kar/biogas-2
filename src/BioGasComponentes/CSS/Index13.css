@@ -20,15 +20,21 @@
 .appendix-title {
   font-size: 3.8vw;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin: 0;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .appendix-subtitle {
   font-size: 2vw;
   font-weight: 600;
   margin-top: 0.6vw;
-  color: #000000;
+  color: #000;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* RED ARROWS */
@@ -61,11 +67,14 @@
 /* HOVER TEXT */
 .arrow-hover-text {
   font-size: 1.1vw;
-  font-weight: 300;
-  color: #000000;
+  color: #000;
   white-space: nowrap;
   opacity: 0;
   transition: all 0.3s ease;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* LEFT ARROW ANIMATION */
@@ -104,16 +113,24 @@
   background: #6f6f6f;
   color: #ffffff;
   font-size: 1.6vw;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.6vw 1.8vw;
   text-align: left;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .appendix-table td {
   padding: 1.2vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .appendix-table thead th:nth-child(2),
@@ -126,12 +143,20 @@
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   text-align: left;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .appendix-highlight {
   background-color: #fcdf25;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 /* Equipment Name column width increase */
@@ -147,4 +172,20 @@
 .appendix-table tbody td:nth-child(5),
 .appendix-table tbody td:nth-child(6) {
   text-align: center;
+}
+
+/* VERTICAL BORDERS */
+.appendix-table th,
+.appendix-table td {
+  border-right: 1px solid #d6d6d6;
+}
+
+.appendix-table th:last-child,
+.appendix-table td:last-child {
+  border-right: 1px solid #d6d6d6;
+}
+
+.appendix-table th:first-child,
+.appendix-table td:first-child {
+  border-left: 1px solid #d6d6d6;
 }

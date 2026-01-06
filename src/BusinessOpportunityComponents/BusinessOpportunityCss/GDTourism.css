@@ -1,0 +1,163 @@
+/* CONTAINER */
+.gdtourism-container {
+  font-family: "DDINPRO";
+  padding: 5vh 0;
+  background: #ffffff;
+}
+
+/* TITLE */
+.gdtourism-title {
+  margin-left: 5vw;
+  font-size: 4.5vw;
+  color: #000;
+  margin-bottom: 0vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0vw;
+  font-family: "DDINPRO";
+}
+
+/* SUBTITLE */
+.gdtourism-subtitle {
+  margin-left: 5vw;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  font-size: 1.5vw;
+  width: 54vw;
+  color: #b5b5b5;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "DDINPRO";
+}
+
+/* TABLE */
+.gdtourism-table-wrapper {
+  width: 100%;
+}
+
+.gdtourism-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* HEADER */
+.gdtourism-table th {
+  background: #e12d36;
+  color: #ffffff;
+  text-align: left;
+  padding: 1.5vh 1.39vw;
+  font-size: 1.3vw;
+  font-weight: 700;
+  border: none;
+  padding-left: 5vw;
+  border-right: none;
+  font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
+}
+
+/* BODY CELLS */
+.gdtourism-table td {
+  vertical-align: top;
+  padding: 4vh 5vw;
+  border-right: 1px solid #e0e0e0;
+  font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-weight: 400;
+  color: #000;
+}
+
+.gdtourism-table td:last-child {
+  border-right: none;
+}
+
+/* LEFT OVERVIEW */
+.gdtourism-overview h3 {
+  font-size: 1.5vw;
+  margin-bottom: 2vh;
+  font-family: "DDINPRO";
+
+  color: #000;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gdtourism-overview p {
+  font-size: 1vw;
+  color: #7d7d7d;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2vh;
+
+  font-family: "DDINPRO";
+}
+
+/* RIGHT CARD */
+.gdtourism-card {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.gdtourism-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* GREEN SECTION */
+.gdtourism-card-content {
+  background: #a6ff79;
+  padding: 2.5vh 2vw;
+  font-family: "DDINPRO";
+}
+
+.gdtourism-card-content h4 {
+  font-size: 1.2vw;
+  margin-bottom: 1vh;
+  font-family: "DDINPRO";
+  color: #1d3d3e;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+}
+
+.gdtourism-card-content p {
+  line-height: 1.5;
+  margin-bottom: 1.5vh;
+  color: #1d3d3e;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "DDINPRO";
+  width: 22vw;
+}
+
+.gdtourism-card-content a {
+  font-family: "DDINPRO";
+  font-size: 0.95vw;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  color: #1d3d3e;
+}
+
+/* COLUMN WIDTHS */
+.gdtourism-table th:nth-child(1),
+.gdtourism-table td:nth-child(1) {
+  width: 45%;
+}
+
+.gdtourism-table th:nth-child(2),
+.gdtourism-table td:nth-child(2) {
+  width: 55%;
+}

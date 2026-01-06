@@ -10,6 +10,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 7vw;
+  font-family: "DDINPRO";
 }
 
 .proposal-header-text {
@@ -23,6 +24,7 @@
   -webkit-text-stroke: 0.15vw #ffffff;
   margin: 1.5vw 0 0 1.5vw;
   line-height: 1;
+  font-family: "DDINPRO";
 }
 
 .proposal-subtitle {
@@ -32,12 +34,14 @@
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "DDINPRO";
 }
 
 .proposal-desc {
   margin-left: 1.5vw;
   font-size: 1.5vw;
   color: #d9d9d9;
+  font-family: "DDINPRO";
 }
 
 /* ================= TABLE ================= */
@@ -58,14 +62,20 @@
 .proposal-table thead {
   background: #6b6b6b;
   color: #ffffff;
+  font-family: "DDINPRO";
 }
 
 .proposal-table th {
   padding: 2.3vh 1.6vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   white-space: nowrap;
+  font-family: "DDINPRO";
+
+  font-style: normal;
+
+  line-height: normal;
 }
 
 /* ================= TABLE BODY ================= */
@@ -139,12 +149,11 @@
   display: inline-flex;
   align-items: center;
   gap: 6.8vw;
-  
 
   text-decoration: none;
 
   color: #0982fe;
-   font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
@@ -157,4 +166,21 @@
 
 .download-cell span {
   font-size: 1.3vw;
+}
+
+/* ================= VERTICAL BORDERS ================= */
+.proposal-table {
+  border: 1px solid #d6d6d6;
+}
+
+/* Inner vertical lines */
+.proposal-table th,
+.proposal-table td {
+  border-right: 1px solid #d6d6d6;
+}
+
+/* Left outer border */
+.proposal-table th:first-child,
+.proposal-table td:first-child {
+  border-left: 1px solid #d6d6d6;
 }

@@ -20,16 +20,23 @@
 .napiergrass-title {
   font-size: 3.8vw;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin-bottom: 3vh;
   margin-top: 0vh;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .napiergrass-subtitle {
   font-size: 2vw;
   font-weight: 600;
   margin-top: 0.6vw;
-  color: #000000;
+  color: #000;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* RED ARROWS */
@@ -51,6 +58,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* COMMON */
@@ -63,11 +73,14 @@
 /* HOVER TEXT */
 .arrow-hover-text {
   font-size: 1.1vw;
-  font-weight: 300;
-  color: #000000;
+  font-weight: 400;
+  color: #000;
   white-space: nowrap;
   opacity: 0;
   transition: all 0.3s ease;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* LEFT ARROW ANIMATION */
@@ -106,16 +119,23 @@
   background: #6f6f6f;
   color: #ffffff;
   font-size: 1.6vw;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.6vw 1.8vw;
   text-align: left;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .napiergrass-table td {
   padding: 1.2vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .napiergrass-table thead th:nth-child(2),
@@ -128,6 +148,10 @@
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   text-align: left;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .napiergrass-highlight {
@@ -149,4 +173,20 @@
 .napiergrass-table tbody td:nth-child(5),
 .napiergrass-table tbody td:nth-child(6) {
   text-align: center;
+}
+
+/* ================= VERTICAL BORDERS ================= */
+.napiergrass-table th,
+.napiergrass-table td {
+  border-right: 1px solid #d6d6d6;
+}
+
+.napiergrass-table th:last-child,
+.napiergrass-table td:last-child {
+  border-right: 1px solid #d6d6d6;
+}
+
+.napiergrass-table th:first-child,
+.napiergrass-table td:first-child {
+  border-left: 1px solid #d6d6d6;
 }

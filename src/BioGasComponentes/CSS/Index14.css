@@ -21,8 +21,11 @@
 .biogasupgrade-title {
   font-size: 3.8vw;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin: 0;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* ================= ARROWS ================= */
@@ -56,11 +59,14 @@
 /* Hover text */
 .arrow-hover-text {
   font-size: 1.1vw;
-  font-weight: 300;
-  color: #000000;
+  font-weight: 400;
+  color: #000;
   white-space: nowrap;
   opacity: 0;
   transition: all 0.3s ease;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* Left arrow hover */
@@ -98,11 +104,14 @@
 .biogasupgrade-table thead th {
   background: #6f6f6f;
   color: #ffffff;
-  font-size: 1.6vw; 
-  font-weight: 600;
+  font-size: 1.6vw;
+  font-weight: 700;
   padding: 1.6vw 1.8vw;
   text-align: center;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .biogasupgrade-table td {
@@ -110,6 +119,10 @@
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Equipment column width */
@@ -130,8 +143,11 @@
 /* Highlight cell */
 .biogasupgrade-highlight {
   background-color: #fcdf25;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* ================= LAST ROW ================= */
@@ -154,4 +170,20 @@
 
 .col-medium {
   width: 20vw;
+}
+
+/* ================= VERTICAL BORDERS ================= */
+.biogasupgrade-table th,
+.biogasupgrade-table td {
+  border-right: 1px solid #d6d6d6;
+}
+
+.biogasupgrade-table th:last-child,
+.biogasupgrade-table td:last-child {
+  border-right: 1px solid #d6d6d6;
+}
+
+.biogasupgrade-table th:first-child,
+.biogasupgrade-table td:first-child {
+  border-left: 1px solid #d6d6d6;
 }

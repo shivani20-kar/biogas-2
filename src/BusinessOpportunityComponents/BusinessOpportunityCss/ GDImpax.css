@@ -45,15 +45,18 @@
 }
 /* HEADER (BACKGROUND FULL WIDTH) */
 .gdimpax-table th {
-  background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   padding-left: 5vw;
   border-right: none;
+   font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
 }
 
 
@@ -63,6 +66,12 @@
       padding: 0vh 1vw;
   vertical-align: top;
   border-right: 1px solid #e0e0e0;
+   font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-weight: 400;
+  color: #000;
 }
 
 /* LAST TD NO BORDER */
@@ -73,11 +82,16 @@
 /* LINKS */
 .gdimpax-table td a {
   display: block;
-  font-size: 16px;
+  font-size: 1vw;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   transition: 0.3s ease;
   padding: 1vh 3.9vw;
+   font-style: normal;
+  line-height: normal;
+  font-family: "DDINPRO";
+  font-weight: 400;
+
 }
 
 .gdimpax-table td a:hover {

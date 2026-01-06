@@ -20,8 +20,12 @@
 .BioCNGEquipment-title {
   font-size: 3vw;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin: 0;
+
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 .BioCNGEquipment-subtitle {
@@ -100,9 +104,13 @@
   background: #6f6f6f;
   color: #ffffff;
   font-size: 1.6vw;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.6vw 1.8vw;
   text-align: left;
+  font-family: "DDINPRO";
+  font-style: normal;
+
+  line-height: normal;
 }
 
 /* FIXED WIDTHS FOR COLUMNS */
@@ -153,14 +161,34 @@
   padding: 1.5vw 1.8vw;
   border-bottom: 1px solid #d6d6d6;
   white-space: nowrap;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .client-responsibility td {
   color: #e12d36;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .bold {
   font-size: 1.8vw;
   font-weight: 700;
+}
+
+/* ================= VERTICAL BORDERS ================= */
+.BioCNGEquipment-table th,
+.BioCNGEquipment-table td {
+  border-right: 1px solid #d6d6d6;
+}
+
+.BioCNGEquipment-table th:last-child,
+.BioCNGEquipment-table td:last-child {
+  border-right: 1px solid #d6d6d6;
+}
+
+.BioCNGEquipment-table th:first-child,
+.BioCNGEquipment-table td:first-child {
+  border-left: 1px solid #d6d6d6;
 }

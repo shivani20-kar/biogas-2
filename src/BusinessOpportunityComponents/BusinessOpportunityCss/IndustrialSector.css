@@ -48,6 +48,7 @@
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
+  font-weight: 400;
 }
 
 .sector-top-tabs span.active {
@@ -73,7 +74,7 @@
   background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
@@ -121,7 +122,7 @@
   border-right: 1px solid #e0e0e0;
   font-family: "DDINPRO";
   font-style: normal;
-
+  font-weight: 400;
   line-height: normal;
 }
 

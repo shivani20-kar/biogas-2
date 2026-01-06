@@ -46,15 +46,18 @@
 
 /* HEADER BAR */
 .construction-header th {
-  background: #d63333;
+  background: #e12d36;
   color: #ffffff;
   text-align: left;
-  padding: 1.04vh 1.39vw;
+  padding: 1.5vh 1.39vw;
   font-size: 1.3vw;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   padding-left: 5vw;
   border-right: none;
+  font-family: "DDINPRO";
+  font-style: normal;
+  line-height: normal;
 }
 
 /* COLUMN WIDTHS */
@@ -73,10 +76,15 @@
 /* CELLS */
 .construction-table td {
   font-size: 1vw;
-  padding: 7px 5vw;
+  padding: 4px 5vw;
   vertical-align: top;
   border: none;
   border-right: 1px solid #e0e0e0;
+  font-family: "DDINPRO";
+  font-style: normal;
+  color: #000;
+  line-height: normal;
+  font-weight: 400;
 }
 
 .construction-table td:last-child {
@@ -85,11 +93,16 @@
 
 /* LINKS */
 .construction-table td a {
-  color: #333;
+  color: #000;
   text-decoration: none;
   display: block;
   padding: 3px 0;
   transition: 0.3s;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1vw;
 }
 
 .construction-table td a:hover {
