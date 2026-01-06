@@ -66,8 +66,8 @@
   font-size: 1.3vw;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 700;
+  line-height: normal;
+  font-weight: 700;
 }
 
 /* Column Widths */
@@ -91,9 +91,8 @@ font-weight: 700;
   font-weight: 400;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
+  line-height: normal;
 }
-
 
 .catalogue-table tbody td:first-child {
   border-right: 0.1vw solid #e0e0e0 !important;
@@ -104,7 +103,6 @@ line-height: normal;
   padding-left: 5vw;
   border: none !important;
 }
-
 
 .catalogue-table tbody tr {
   border: none;
@@ -119,14 +117,17 @@ line-height: normal;
   font-size: 1vw;
   display: block;
   padding: 0.5vw;
- font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 400;
-
+  line-height: normal;
+  font-weight: 400;
 }
 
 .catalogue-table td a:hover {
   background-color: #e8f4fd;
   color: #3498db;
+}
+.catalogue-table tbody tr:first-child td a {
+  padding-top: 2.5vh !important;
+  display: block;
 }

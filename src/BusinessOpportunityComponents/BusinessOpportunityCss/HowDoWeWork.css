@@ -58,8 +58,8 @@
   font-size: 1.3vw;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 700;
+  line-height: normal;
+  font-weight: 700;
 }
 
 /* Table Rows */
@@ -71,9 +71,8 @@ font-weight: 700;
   padding-left: 5vw;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 400;
-  
+  line-height: normal;
+  font-weight: 400;
 }
 
 .work-tablewe td:first-child {
@@ -89,20 +88,23 @@ font-weight: 400;
 /* Links inside TD */
 .work-tablewe td a {
   text-decoration: none;
-    color: #000;
-    transition: 0.2s ease;
-    display: inline-block;
-    padding: 0.35vh 0.7vw;
-    font-size: 1vw;
-    font-family: "DDINPRO";
+  color: #000;
+  transition: 0.2s ease;
+  display: inline-block;
+  padding: 0.35vh 0.7vw;
+  font-size: 1vw;
+  font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 400;
-    
-
+  line-height: normal;
+  font-weight: 400;
 }
 
 .work-tablewe td a:hover {
   background-color: #e8f4fd;
   color: #3498db;
+}
+
+/* पहिल्या रो ला पॅडिंग टॉप द्या */
+.work-tablewe tbody tr:first-child td {
+  padding-top: 2.5vh !important;
 }

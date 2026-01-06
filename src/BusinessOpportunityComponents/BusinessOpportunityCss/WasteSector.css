@@ -1,13 +1,13 @@
 /* PAGE WRAPPER */
 .waste-container {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding: 5vh 0vw;
   background: #ffffff;
 }
 
 /* TITLE */
 .waste-title {
- margin-left: 5vw;
+  margin-left: 5vw;
   font-size: 4.5vw;
   color: #000;
   margin-bottom: 0vw;
@@ -84,7 +84,7 @@
   vertical-align: top;
   border: none;
   color: #000;
-  border-right: 1px solid #e0e0e0; 
+  border-right: 1px solid #e0e0e0;
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
@@ -104,14 +104,18 @@
   text-decoration: none;
   display: block;
   padding: 0.5vh 5vw;
-  border-radius: 5px; 
+  border-radius: 5px;
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
   font-weight: 400;
 }
 
-.waste-table td a:hover{
-   background-color: #e8f4fd;
+.waste-table td a:hover {
+  background-color: #e8f4fd;
   color: #3498db;
+}
+
+.waste-table tbody tr:first-child td {
+  padding-top: 2vh;
 }

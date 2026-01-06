@@ -118,3 +118,7 @@ font-family: "DDINPRO";
 .hc-table td:nth-child(3) {
   width: 58%; /* Products */
 }
+
+.hc-table tbody tr:first-child td {
+  padding-top: 2vh;
+}

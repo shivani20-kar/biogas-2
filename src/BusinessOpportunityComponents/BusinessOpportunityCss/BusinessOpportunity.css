@@ -87,18 +87,6 @@ th.thb:last-child {
 }
 
 /* -------- LINKS -------- */
-td.tdd a {
-  display: block;
-  padding: 2vh 2vw;
-  font-size: 1vw;
-  color: #000;
-  text-decoration: none;
-  transition: 0.3s;
-  text-align: start;
-  font-family: "DDINPRO";
-  font-style: normal;
-  line-height: normal;
-}
 
 td.tdd a:hover {
   background-color: #f2f6fa;
@@ -118,11 +106,16 @@ td.tdd a {
   font-weight: 400;
   color: #000;
   text-decoration: none;
-  padding-top: 0.5vw;
   margin-left: 3vw;
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
+  display: block;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+
+  transition: 0.3s;
+  text-align: start;
 }
 
 /* -------- TURNKEY -------- */
@@ -135,10 +128,18 @@ td.tdd a {
   color: #ffffff;
   font-size: 1.3vw;
   font-weight: 700;
-  padding: 2vh 5vw;
+  padding: 1.5vh 5vw;
   text-align: left;
   border: none;
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
+}
+
+.business-table tbody tr:first-child td > :first-child {
+  margin-top: 2vh;
+}
+
+.turnkey-table tbody tr:first-child td > :first-child {
+  margin-top: 2vh;
 }

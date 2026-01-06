@@ -165,3 +165,9 @@ line-height: normal;
 .investment-business-table thead th {
   border-right: none;
 }
+
+/* Add top padding only to the first row of tbody */
+.investment-business-table tbody tr:first-child td {
+  padding-top: 3vh; /* adjust this value as needed */
+}
+

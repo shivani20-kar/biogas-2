@@ -81,19 +81,19 @@
   font-size: 1.5vw;
   margin-bottom: 2vh;
   font-family: "DDINPRO";
-
+  margin-top: 0vh;
   color: #000;
 
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 }
 
 .gdtourism-overview p {
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: #7d7d7d;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 00;
   line-height: 1.5;
   margin-bottom: 2vh;
 
@@ -114,26 +114,27 @@
 
 /* GREEN SECTION */
 .gdtourism-card-content {
-  background: #a6ff79;
+  background: #eeebeb;
   padding: 2.5vh 2vw;
   font-family: "DDINPRO";
 }
 
 .gdtourism-card-content h4 {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   margin-bottom: 1vh;
   font-family: "DDINPRO";
   color: #1d3d3e;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 10px;
+      margin-top: 1vw;
 }
 
 .gdtourism-card-content p {
   line-height: 1.5;
   margin-bottom: 1.5vh;
   color: #1d3d3e;
-  font-size: 1vw;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   font-family: "DDINPRO";
@@ -144,7 +145,7 @@
   font-family: "DDINPRO";
   font-size: 0.95vw;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   line-height: normal;
 

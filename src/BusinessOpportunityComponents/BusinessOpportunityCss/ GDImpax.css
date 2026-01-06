@@ -125,3 +125,8 @@
 .gdimpax-table td:nth-child(3) {
   width: 58%;
 }
+
+
+.gdimpax-table tbody tr:first-child td {
+  padding-top: 2vh;
+}

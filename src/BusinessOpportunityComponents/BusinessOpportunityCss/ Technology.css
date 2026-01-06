@@ -125,3 +125,16 @@
 .tech-table td:nth-child(2) {
   padding-left: 0 !important;
 }
+
+/* Add top spacing only to the first row, first column link */
+.tech-table tbody tr:first-child td:first-child a {
+  padding-top: 2vh; 
+  display: block;   
+}
+
+.tech-table tbody tr:first-child td:nth-child(2) a {
+  padding-top: 2vh; 
+  display: block;   
+}
+
+

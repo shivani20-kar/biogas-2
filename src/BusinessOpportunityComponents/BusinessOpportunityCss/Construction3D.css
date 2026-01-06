@@ -109,3 +109,8 @@
   background-color: #e8f4fd;
   color: #3498db;
 }
+
+
+.construction-table tbody tr:first-child td {
+  padding-top: 2.3vh;
+}

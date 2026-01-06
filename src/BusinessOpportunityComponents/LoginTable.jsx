@@ -4,7 +4,7 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/LoginTable.css";
 const LoginTable = () => {
   return (
     <div className="login-container">
-      <h1 className="login-title">Log-IN</h1>
+      <h1 className="login-title">Login</h1>
       <p className="login-subtitle">
         Company brochures and questionnaires for various industries
       </p>
