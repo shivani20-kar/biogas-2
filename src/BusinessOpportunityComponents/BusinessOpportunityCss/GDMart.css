@@ -132,3 +132,9 @@
 .gdmart-table th:nth-child(2) {
   width: 70%;
 }
+
+
+.gdmart-table tbody tr:first-child td a {
+  padding-top: 2vh; 
+  display: block;    
+}

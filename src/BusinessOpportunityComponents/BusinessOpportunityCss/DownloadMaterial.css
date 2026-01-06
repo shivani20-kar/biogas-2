@@ -110,3 +110,8 @@ line-height: normal;
   background-color: #e8f4fd;
   color: #3498db;
 }
+
+/* पहिल्या रो ला अतिरिक्त पॅडिंग टॉप द्या */
+.download-table tbody tr:first-child td {
+  padding-top: 2vh !important;
+}

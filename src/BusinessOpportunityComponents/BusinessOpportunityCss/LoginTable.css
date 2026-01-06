@@ -93,7 +93,7 @@
 }
 
 .login-table td:first-child {
-  padding-left: 5vw;
+  padding-left: 0vw;
 }
 
 /* Links */
@@ -105,8 +105,15 @@
   font-style: normal;
   line-height: normal;
   font-weight: 400;
+  padding: 0.5vh 5vw;
 }
 
 .login-table td a:hover {
-  color: #e12d36;
+  background-color: #e8f4fd;
+  color: #3498db;
+}
+
+.login-table tbody tr:first-child td a {
+  padding-top: 2vh;
+  display: block;
 }
