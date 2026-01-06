@@ -96,7 +96,7 @@
 
 /* ======= Desktop Dropdown Styles ======= */
 .dropdown-box {
-  position: absolute;
+  position: fixed;
   top: 8vh;
   width: auto;
   background: var(--primary-blue);
@@ -627,7 +627,7 @@
   }
 
   .mega-dropdown {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     left: 69vw;
     display: flex;
@@ -698,7 +698,7 @@
 
   /* Mega dropdown */
   .mega-dropdown {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     left: 65vw; /* adjust according to your menu alignment */
     display: flex;

@@ -1,10 +1,16 @@
 import "./CSS/BioGasHero.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../Components/IMAGES/Logowhite.png";
 import mainbackground from "./Frame 2087328139.png";
 import gif from "../Components/IMAGES/maingif.gif";
 
 const BioGasHero = () => {
+    const navigate = useNavigate(); // initialize navigate
+  
+    const handleLogoClick = () => {
+      navigate("/"); // navigate to home route
+    };
   return (
     <section className="biogashero">
       <div className="biogasherogdmainbackground">
@@ -14,7 +20,8 @@ const BioGasHero = () => {
       <div className="biogashero-content-overlayy">
         <div className="biogashero-rows">
           <div className="biogashero-logo-container">
-            <img src={logo} alt="GDBioGas Logo" className="biogashero-logo" />
+            <img src={logo} alt="GDBioGas Logo" className="biogashero-logo" onClick={handleLogoClick} // click triggers navigation
+                style={{ cursor: "pointer" }} />
           </div>
 
           <div className="biogashero-nav-commons">

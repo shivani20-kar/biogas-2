@@ -20,7 +20,7 @@ export default function FaqCategories() {
       <h2 className="faq-title">FAQS</h2>
 
       <p className="faq-subtitle">
-        We’ve answered the big questions, but if you still have something on
+        We’ve answered the big questions, but if you still <br/>have something on
         your mind, we’re here to help. Choose your industry.
       </p>
 

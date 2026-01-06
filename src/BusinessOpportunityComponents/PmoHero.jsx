@@ -1,4 +1,5 @@
 import "../Components/Css/Home.css";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../Components/IMAGES/Logowhite.png";
 
@@ -7,6 +8,11 @@ import pmoimage from "../Components/IMAGES/PMObackhround.jpg";
 import gif from "../Components/IMAGES/maingif.gif";
 
 const PmoHero = () => {
+  const navigate = useNavigate(); // initialize navigate
+
+  const handleLogoClick = () => {
+    navigate("/"); // navigate to home route
+  };
   return (
     <>
       <section className="hero">
@@ -18,7 +24,8 @@ const PmoHero = () => {
         <div className="hero-content-overlay">
           <div className="header-row">
             <div className="logo-container">
-              <img src={logo} alt="GDBioGas Logo" className="logo" />
+              <img src={logo} alt="GDBioGas Logo" className="logo" onClick={handleLogoClick} // click triggers navigation
+                style={{ cursor: "pointer" }} />
             </div>
 
             <div className="nav-common">

@@ -1,10 +1,16 @@
 import "./Css/Home.css";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "./IMAGES/Logowhite.png";
 import mainbackground from "../Components/IMAGES/aboutusbackground.png";
 import gif from "../Components/IMAGES/maingif.gif";
 
 const AboutHero = () => {
+   const navigate = useNavigate(); // initialize navigate
+
+  const handleLogoClick = () => {
+    navigate("/"); // navigate to home route
+  };
   return (
    
       <div className="heror">
@@ -21,6 +27,8 @@ const AboutHero = () => {
                 src={logo}
                 alt="GDBioGas Logo"
                 className="logo"
+                 onClick={handleLogoClick} // click triggers navigation
+                style={{ cursor: "pointer" }}
               />
             </div>
             </div>

@@ -1,48 +1,53 @@
 .contactussection-wrapper {
-  height: 20vh;
+ height: 20vh;
   background: #d2d2d2;
   display: flex;
   align-items: center;
   padding: 8vh 5vw;
   position: relative;
-  /* transform: translateY(-20vh); */
+  transform: translateY(-12vh);
 }
 
 .contactussection-left-shape {
-  margin-right: 2vw;
+  margin-left: -2.5vw;
   position: relative;
-  top: -8vh;
-}
-
-.contactussection-shape-img {
-  width: 140px;
-  height: auto;
-  object-fit: contain;
+  top: -4.5vh;
 }
 
 .contactussection-content {
-  display: flex;
+   display: flex;
   flex-direction: column;
-  transform: translateY(-10vh);
+  transform: translateY(-8vh);
+margin-top: 5vw;
 }
 
 .contactussection-title {
-  font-size: 60px;
-  font-weight: 700;
   color: #252525;
+font-family: 'DDINPRO';
+font-size: 5vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   margin-bottom: 0vh;
   position: relative;
-  left: -10vh;
-  margin-top: 10vh;
+  left: -12vh;
 }
 
 .contactussection-title span {
-  color: #e12d36;
+ color: #E12D36;
+font-family: 'DDINPRO';
+font-size: 5vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .contactussection-subtext {
-  margin-top: 1vh;
-  font-size: 18px;
-  color: #25252599;
-  width: 22vw;
+  color: rgba(37, 37, 37, 0.60);
+font-family: 'DDINPRO';
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
 }
