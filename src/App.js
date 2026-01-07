@@ -132,6 +132,8 @@ import ContactDiscover from "./BioGasComponentes/Index20";
 import BackgroundSection from "./BioGasComponentes/Index21";
 import RentSection from "./BusinessOpportunityComponents/RentSection";
 import GDTourism from "./BusinessOpportunityComponents/GDTourism";
+import OverViewHero from "./HowDoWeWorkComponents/Overview";
+import ConceptSection from "./HowDoWeWorkComponents/HowDoOverView1";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -165,6 +167,18 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/overview/turnkey-approach"
+          element={
+            <>
+             <OverViewHero />
+             <ConceptSection />
+            </>
+          }
+        />
+
+
         <Route
           path="/biogas"
           element={
@@ -595,6 +609,8 @@ function App() {
             </>
           }
         />
+
+
         {/* Contact Us Page */}
         <Route
           path="/contact"
