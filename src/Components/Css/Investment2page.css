@@ -1,0 +1,63 @@
+.congrats-section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   background-image: url("../Rectangle 161.png");
+  display: flex;
+  /* margin-top: 6vw; */
+}
+
+.congrats-overlay {
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.congrats-card {
+  /* width: 1100px; */
+  padding: 1.5vw 6.5vw !important;
+}
+
+.congrats-content {
+  display: flex;
+  gap: 7vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  flex: 1;
+  margin-top: 5vw;
+}
+.left h2{
+color: #282828;
+font-family: "DDINPRO";
+font-size: 5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 8vw;
+
+}
+.left p{
+  width: 37vw;
+  color: rgba(40, 40, 40, 0.90);
+font-family: "DDINPRO";
+font-size: 2.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 125% */
+}
+.right p{
+ color: rgba(40, 40, 40, 0.90);
+font-family: "DDINPRO";
+font-size: 2.2vw;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 150% */
+}

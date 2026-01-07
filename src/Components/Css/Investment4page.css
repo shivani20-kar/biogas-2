@@ -1,0 +1,86 @@
+.strength-section {
+  min-height: 100vh;                 /* 🔥 compulsory */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2vw 0vw;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+.strength-section img{
+    margin-top: 5vw;
+}
+.strength-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5vw;
+  margin-bottom: 4vw;
+}
+
+.strength-card {
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1vw 1.5vw;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.strength-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0,0,0,0.6);
+}
+
+.strength-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+  flex-shrink: 0;
+}
+
+.strength-card p {
+  margin: 0;
+  font-size: 1vw;
+}
+
+.turnkey-section {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 2vw 3vw;
+  background: rgba(0,0,0,0.5);
+  max-width: 600px;
+}
+
+.turnkey-section h3 {
+  margin: 0 0 1vw 0;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.turnkey-section p {
+  margin-bottom: 1.5vw;
+  font-size: 1vw;
+}
+
+.turnkey-section button {
+  padding: 0.5vw 1.5vw;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.turnkey-section button:hover {
+  background-color: #ddd;
+}

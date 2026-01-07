@@ -1,39 +1,42 @@
-import "../Components/Css/Home.css";
-import { Link } from "react-router-dom";
+import "./Css/Home.css";
 import { useNavigate } from "react-router-dom";
-
-import logo from "../Components/IMAGES/Logowhite.png";
-import VendorRegistrationimage from "../Components/IMAGES/VendorRegistrationbackground.jpg";
+import { Link } from "react-router-dom";
+import logo from "./IMAGES/Logowhite.png";
+import mainbackground from "../Components/Hero Section 5.png";
 import gif from "../Components/IMAGES/maingif.gif";
 
-const VendorRegistration = () => {
-    const navigate = useNavigate(); // initialize navigate
+const InvestmentHero = () => {
+   const navigate = useNavigate(); // initialize navigate
 
   const handleLogoClick = () => {
     navigate("/"); // navigate to home route
   };
   return (
-    <>
-      <section className="heror">
-        {/* 🔹 Corrected class */}
-        <div className="vendor-registration-bg">
-          <img
-            src={VendorRegistrationimage}
-            alt="Vendor Registration Background"
-          />
+   
+      <div className="heror">
+        <div className="gdmainbackground">
+          <img src={mainbackground} alt="" />
         </div>
 
-        <div className="hero-content-overlay">
-          <div className="header-row">
+        <div className="hero-content-overlayy"> 
+          <div className="header-rows">
             <div className="logo-container">
-              <img src={logo} alt="GDBioGas Logo" className="logo" onClick={handleLogoClick} // click triggers navigation
-                style={{ cursor: "pointer" }} />
+              {/* <img src={logo} alt="GDBioGas Logo" className="logo" /> */}
+              <div className="logo-anim-wrap">
+              <img
+                src={logo}
+                alt="GDBioGas Logo"
+                className="logo"
+                 onClick={handleLogoClick} // click triggers navigation
+                style={{ cursor: "pointer" }}
+              />
+            </div>
             </div>
 
-            <div className="nav-common">
-              <div className="nav-section-common">
-                <h3 className="nav-title-common">GD Biogas for</h3>
-                <ul className="nav-list-common">
+            <div className="nav-commons">
+              <div className="nav-section-commonns">
+                <h3 className="nav-title-commons">GD Biogas for</h3>
+                <ul className="nav-list-commons">
                   <li>
                     <Link to="/business">Business opportunity</Link>
                   </li>
@@ -41,7 +44,7 @@ const VendorRegistration = () => {
                     <Link to="/investors">Investors</Link>
                   </li>
                   <li>
-                    <Link to="/technology">Technology</Link>
+                    <Link to="/technology">Technology</Link> 
                   </li>
                   <li>
                     <Link to="/catalogue">Catalogue</Link>
@@ -58,9 +61,9 @@ const VendorRegistration = () => {
                 </ul>
               </div>
 
-              <div className="nav-section-common">
-                <h3 className="nav-title-common">GD Planet for</h3>
-                <ul className="nav-list-common">
+              <div className="nav-section-commonns">
+                <h3 className="nav-title-commons">GD Planet for</h3>
+                <ul className="nav-list-commons">
                   <li>
                     <Link to="/industrial">Industrial Sector</Link>
                   </li>
@@ -78,7 +81,7 @@ const VendorRegistration = () => {
                   </li>
                   <li>
                     <Link to="/mart">GD Mart</Link>
-                  </li>
+                  </li> 
                   <li>
                     <Link to="/imbaw">GD ImBaw</Link>
                   </li>
@@ -90,13 +93,17 @@ const VendorRegistration = () => {
             </div>
           </div>
         </div>
-
+ 
         <div className="hero-bottom-wrap">
-          <div className="vendor-title">Gen-Z Growth Partners</div>
+          <div className="aboutus-title">Invest in the<br/>Future of Energy</div>
+          <div className="InveHero-title">Secure<br/> <span>2X</span><br/>Returns</div>
+
+          <div className="circle-elements">
+            <img src={gif} alt="Animation" className="circle-gifs" />
+          </div>
         </div>
-      </section>
-    </>
+      </div>
   );
 };
-
-export default VendorRegistration;
+ 
+export default InvestmentHero;

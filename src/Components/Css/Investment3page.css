@@ -1,0 +1,173 @@
+.products-section {
+  padding: 2vw 0vw;
+  background: #ffffff;
+}
+.product-banner {
+  background: #01356B;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Start left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* start lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s; /* start after text finishes */
+  opacity: 0; /* initially hidden */
+}
+
+
+/* Arrow Shape */
+.blue-arrow-shapee {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(
+    0% 0%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    0% 100%,
+    30% 50%
+  );
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}
+
+/* Hero Text */
+.product-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-outline {
+    font-family: 'DDINPRO';
+  font-size: 100px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  line-height: 1;
+  margin-top: 1.7vw;
+  margin-left: 1.5vw;
+}
+
+/* Grid */
+.products-grid {
+  padding: 4vw 6.5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 4vw;
+}
+
+/* Card */
+.product-card {
+  background: #E12D36;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.product-image img {
+  width: 100%;
+  height: 21vw;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.product-content {
+  padding: 20px;
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-content h3 {
+    width: 100%;
+ color: #FFF;
+font-family: 'DDINPRO';
+font-size: 2.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.card-arrow {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background: #E12D36;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateX(30px);   /* थोडं दूर start */
+  transition: 
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.product-card:hover .card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+/* Arrow SVG */
+.card-arrow svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+}
+
+
+
+
+.product-card:hover {
+  background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.product-card:hover h3 {
+   color: #E12D36;
+}
+
+
+
