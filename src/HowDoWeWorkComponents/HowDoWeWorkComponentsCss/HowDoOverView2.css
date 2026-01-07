@@ -1,36 +1,43 @@
-.concept-section {
+.design-permissions-section {
   height: 100vh;
   background-size: cover;
-  background-position: left;
+  background-position: right center;
   position: relative;
+  margin: 6vh 0vw;
 }
 
-.concept-overlay {
+/* LEFT WHITE PANEL */
+.design-permissions-panel {
   position: absolute;
-  top: 10%; /* start/top position */
-  right: 3%;
-  width: 40%;
+  left: 0;
+  top: 0;
+  width: 48%;
+  height: 100%;
 }
 
-.concept-content {
+/* CONTENT */
+.design-permissions-content {
   font-family: "DDINPRO";
-  color: #282828;
+  color: #000;
   text-align: left;
-  padding: 0vh 2vw;
+  font-style: normal;
+  padding: 0vh 5vw;
 }
 
-.concept-heading {
+/* HEADING */
+.design-permissions-heading {
   display: flex;
   align-items: center;
   gap: 1vw;
   font-size: 2.4vw;
   font-weight: 500;
   line-height: 1.2;
-  margin: 0 0 2vw 0;
   font-family: "DDINPRO";
+  margin-top: 0vw;
 }
 
-.concept-number {
+/* NUMBER */
+.design-step-number {
   font-size: 5vw;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e12d36;
@@ -45,7 +52,8 @@
   color: transparent;
 }
 
-.concept-title {
+/* TITLE */
+.design-step-title {
   font-family: "DDINPRO";
   font-size: 2.4vw;
   font-weight: 700;
@@ -54,7 +62,8 @@
   line-height: normal;
 }
 
-.concept-content p {
+/* TEXT */
+.design-permissions-content p {
   font-size: 1.3vw;
   color: #2e2e2e;
   font-family: "DDINPRO";

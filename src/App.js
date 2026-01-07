@@ -134,6 +134,7 @@ import RentSection from "./BusinessOpportunityComponents/RentSection";
 import GDTourism from "./BusinessOpportunityComponents/GDTourism";
 import OverViewHero from "./HowDoWeWorkComponents/Overview";
 import ConceptSection from "./HowDoWeWorkComponents/HowDoOverView1";
+import DesignPermissions from "./HowDoWeWorkComponents/HowDoOverView2";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -174,6 +175,8 @@ function App() {
             <>
              <OverViewHero />
              <ConceptSection />
+             <DesignPermissions />
+
             </>
           }
         />
