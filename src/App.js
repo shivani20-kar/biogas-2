@@ -132,10 +132,6 @@ import ContactDiscover from "./BioGasComponentes/Index20";
 import BackgroundSection from "./BioGasComponentes/Index21";
 import RentSection from "./BusinessOpportunityComponents/RentSection";
 import GDTourism from "./BusinessOpportunityComponents/GDTourism";
-import InvestmentHero from "./Components/InvestmentHero";
-import Congratulations from "./Components/Investment2page";
-import InvestmetProducts from "./Components/Investment3page";
-import InvestStrengthSection from "./Components/Investment4page";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -166,17 +162,6 @@ function App() {
             <>
               <HeroSection />
               <HeroSectionSecondPage />
-            </>
-          }
-        />
-         <Route
-          path="/investment/biogas-advanced-biofuel"
-          element={
-            <>
-              <InvestmentHero/>
-              <Congratulations/>
-              <InvestmetProducts/>
-              <InvestStrengthSection/>
             </>
           }
         />
@@ -610,6 +595,8 @@ function App() {
             </>
           }
         />
+
+
         {/* Contact Us Page */}
         <Route
           path="/contact"
