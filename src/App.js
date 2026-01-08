@@ -136,6 +136,17 @@ import InvestmentHero from "./Components/InvestmentHero";
 import Congratulations from "./Components/Investment2page";
 import InvestmetProducts from "./Components/Investment3page";
 import InvestStrengthSection from "./Components/Investment4page";
+import OverViewHero from "./HowDoWeWorkComponents/Overview";
+import ConceptSection from "./HowDoWeWorkComponents/HowDoOverView1";
+import DesignPermissions from "./HowDoWeWorkComponents/HowDoOverView2";
+import Commissioning from "./HowDoWeWorkComponents/HowDoOverView4";
+import BiologicalServicesSection from "./HowDoWeWorkComponents/HowDoOverView5";
+import SustainableResourceUtilization from "./HowDoWeWorkComponents/HowDoOverView6";
+import CommunityEngagementSection from "./HowDoWeWorkComponents/HowDoOverView7";
+import ContinuousImprovementStrategies from "./HowDoWeWorkComponents/HowDoOverView8";
+import MarketingSection from "./HowDoWeWorkComponents/HowDoOverView9";
+import QualityEfficiency from "./HowDoWeWorkComponents/HowDoOverView10";
+import EquipmentSection from "./HowDoWeWorkComponents/HowDoOverView3";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -169,6 +180,32 @@ function App() {
             </>
           }
         />
+
+           <Route
+          path="/overview/turnkey-approach"
+          element={
+            <>
+              <OverViewHero />
+              <ConceptSection />
+              <DesignPermissions />
+              <EquipmentSection />
+              <Commissioning />
+              <BiologicalServicesSection />
+              <SustainableResourceUtilization />
+              <CommunityEngagementSection />
+              <ContinuousImprovementStrategies />
+              <MarketingSection />
+              <QualityEfficiency/>
+              <Footer />
+
+
+            </>
+          }
+        /> 
+
+
+
+
          <Route
           path="/investment/biogas-advanced-biofuel"
           element={
