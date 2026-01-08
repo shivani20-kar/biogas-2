@@ -1,4 +1,5 @@
-.design-permissions-section {
+/* CSS File: HowDoOverView2.css */
+.sustainable-resource-section {
   height: 100vh;
   background-size: cover;
   background-position: right center;
@@ -7,16 +8,16 @@
 }
 
 /* LEFT WHITE PANEL */
-.design-permissions-panel {
+.sustainable-resource-panel {
   position: absolute;
   left: 0;
   top: 0;
-  width: 48%;
+  width: 51%;
   height: 100%;
 }
 
 /* CONTENT */
-.design-permissions-content {
+.sustainable-resource-content {
   font-family: "DDINPRO";
   color: #000;
   text-align: left;
@@ -25,7 +26,7 @@
 }
 
 /* HEADING */
-.design-permissions-heading {
+.sustainable-resource-heading {
   display: flex;
   align-items: center;
   gap: 1vw;
@@ -34,11 +35,11 @@
   line-height: 1.2;
   font-family: "DDINPRO";
   margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0vh;
 }
 
 /* NUMBER */
-.design-step-number {
+.sustainable-resource-step-number {
   font-size: 5vw;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e12d36;
@@ -54,7 +55,7 @@
 }
 
 /* TITLE */
-.design-step-title {
+.sustainable-resource-step-title {
   font-family: "DDINPRO";
   font-size: 2.4vw;
   font-weight: 700;
@@ -64,7 +65,7 @@
 }
 
 /* TEXT */
-.design-permissions-content p {
+.sustainable-resource-content p {
   font-size: 1.2vw;
   color: #2e2e2e;
   font-family: "DDINPRO";

@@ -1,13 +1,14 @@
-.design-permissions-section {
+/* SECTION */
+.quality-efficiency-section {
   height: 100vh;
   background-size: cover;
   background-position: right center;
   position: relative;
-  margin: 6vh 0vw;
+  margin: 6vh 0vw 25vh 0vw;
 }
 
-/* LEFT WHITE PANEL */
-.design-permissions-panel {
+/* LEFT PANEL */
+.quality-efficiency-panel {
   position: absolute;
   left: 0;
   top: 0;
@@ -16,7 +17,7 @@
 }
 
 /* CONTENT */
-.design-permissions-content {
+.quality-efficiency-content {
   font-family: "DDINPRO";
   color: #000;
   text-align: left;
@@ -25,50 +26,42 @@
 }
 
 /* HEADING */
-.design-permissions-heading {
+.quality-efficiency-heading {
+  font-family: "DDINPRO";
   display: flex;
   align-items: center;
   gap: 1vw;
-  font-size: 2.4vw;
-  font-weight: 400;
-  line-height: 1.2;
-  font-family: "DDINPRO";
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
 
-/* NUMBER */
-.design-step-number {
+/* STEP NUMBER */
+.quality-step-number {
+  font-family: "DDINPRO";
   font-size: 5vw;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #e12d36;
-  font-style: normal;
+  -webkit-text-stroke: 1px #e12d36;
   font-weight: 700;
-  line-height: 136.839%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  align-self: stretch;
+  line-height: 1;
   color: transparent;
+  display: flex;
+  align-items: center;
 }
 
 /* TITLE */
-.design-step-title {
+.quality-step-title {
   font-family: "DDINPRO";
   font-size: 2.4vw;
   font-weight: 700;
   color: #282828;
-  font-style: normal;
   line-height: normal;
 }
 
-/* TEXT */
-.design-permissions-content p {
+/* PARAGRAPH TEXT */
+.quality-efficiency-content p {
   font-size: 1.2vw;
-  color: #2e2e2e;
   font-family: "DDINPRO";
-  font-style: normal;
+  color: #2e2e2e;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 1vw;
 }

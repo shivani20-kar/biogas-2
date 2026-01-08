@@ -1,44 +1,36 @@
-.design-permissions-section {
+.overviewequipment-section {
   height: 100vh;
   background-size: cover;
-  background-position: right center;
+  background-position: left;
   position: relative;
-  margin: 6vh 0vw;
 }
 
-/* LEFT WHITE PANEL */
-.design-permissions-panel {
+.overviewequipment-overlay {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 48%;
-  height: 100%;
+  right: 3%;
+  width: 40%;
 }
 
-/* CONTENT */
-.design-permissions-content {
+.overviewequipment-content {
   font-family: "DDINPRO";
-  color: #000;
+  color: #282828;
   text-align: left;
-  font-style: normal;
-  padding: 0vh 5vw;
+  padding: 0vh 0vw;
 }
 
-/* HEADING */
-.design-permissions-heading {
+.overviewequipment-heading {
   display: flex;
   align-items: center;
   gap: 1vw;
   font-size: 2.4vw;
   font-weight: 400;
   line-height: 1.2;
+  margin: 0 0 1vw 0;
   font-family: "DDINPRO";
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  padding-top: 1vw;
 }
 
-/* NUMBER */
-.design-step-number {
+.overviewequipment-number {
   font-size: 5vw;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e12d36;
@@ -53,8 +45,7 @@
   color: transparent;
 }
 
-/* TITLE */
-.design-step-title {
+.overviewequipment-title {
   font-family: "DDINPRO";
   font-size: 2.4vw;
   font-weight: 700;
@@ -63,8 +54,7 @@
   line-height: normal;
 }
 
-/* TEXT */
-.design-permissions-content p {
+.overviewequipment-content p {
   font-size: 1.2vw;
   color: #2e2e2e;
   font-family: "DDINPRO";
