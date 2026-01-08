@@ -1,34 +1,72 @@
-/* .tech-wrapper {
-  width: 100%;
-  font-family: Arial, sans-serif;
-} */
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
 
 /* ---------- HEADER ---------- */
 .tech-header {
-background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
 }
-.tech-arrow-shape { 
-   position: relative;
+
+.tech-arrow-shape {
+  position: relative;
   width: 120px;
   height: 180px;
   background: #f2f2f2;
-  clip-path: polygon(
-    0% 0%,
-    70% 0%,
-    100% 50%,
-    70% 100%,
-    0% 100%,
-    30% 50%
-  );
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
 
+.tech-arrow-shape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
+  z-index: -1;
+}
+
+.tech-titlee {
+  display: flex;
+  flex-direction: column;
+}
+
 .tech-titlee h1 {
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -39,7 +77,7 @@ background: #5f5f5f;
 }
 
 .tech-titlee p {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -50,35 +88,36 @@ background: #5f5f5f;
 
 /* ---------- CONTENT ---------- */
 .tech-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    padding: 2vw 11vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 2vw 11vw;
 }
 
-.tech-content p{
-    margin-top: -3vw;
-     font-family: 'DDINPRO';
-     font-weight: 400;
+.tech-content p {
+  margin-top: -3vw;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.6;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
+
 .tech-wrapper h3 {
-padding: 0vw 11vw;
-  font-family: 'DDINPRO';
-     font-weight: 700;
+  padding: 0vw 11vw;
+  font-family: "DDINPRO";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.8;
+  color: #2e2e2e;
 }
 
-
 .tech-columns p {
-  font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: "DDINPRO";
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.6;
-  color: #2E2E2E;
+  color: #2e2e2e;
   margin-bottom: 2px;
   margin-top: -3vw;
 }

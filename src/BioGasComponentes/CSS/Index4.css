@@ -1,10 +1,41 @@
-/* .hlr-section {
-  width: 100%;
-  background: #ffffff;
-  font-family: "Inter", sans-serif;
-} */
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* ---------- HEADER ---------- */
 .hlr-header {
-background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -42,12 +73,14 @@ background: #5f5f5f;
   );
   z-index: -1;
 }
-.hlr-title{
-display: flex;
-flex-direction: column;
+
+.hlr-title {
+  display: flex;
+  flex-direction: column;
 }
+
 .hlr-title h1 {
-   font-family: 'DDINPRO';
+  font-family: 'DDINPRO';
   font-size: 100px;
   font-weight: bold;
   color: transparent;
@@ -58,7 +91,7 @@ flex-direction: column;
 }
 
 .hlr-title h2 {
-    font-family: 'DDINPRO';
+  font-family: 'DDINPRO';
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -67,6 +100,7 @@ flex-direction: column;
   margin-left: 1.5vw;
 }
 
+/* ---------- CONTENT ---------- */
 .hlr-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -76,8 +110,8 @@ flex-direction: column;
 
 .hlr-left p,
 .hlr-right p {
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: 'DDINPRO';
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
@@ -96,7 +130,7 @@ flex-direction: column;
 }
 
 .hlr-right ul li {
-    font-family: 'DDINPRO';
+  font-family: 'DDINPRO';
   color: #000000;
   font-weight: 700;
   margin-bottom: 8px;

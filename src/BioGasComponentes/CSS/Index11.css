@@ -1,3 +1,38 @@
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
 /* ================= HEADER ================= */
 .equipmentspecifications-header {
   background: #5f5f5f;
@@ -6,11 +41,28 @@
   position: relative;
 }
 
-.equipmentspecifications-arrow {
+.arrow-index {
+  position: relative;
   width: 120px;
   height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
+}
+
+.arrow-index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
+  z-index: -1;
+}
+
+.equipmentspecifications-title {
+  display: flex;
+  flex-direction: column;
 }
 
 .equipmentspecifications-title h1 {
@@ -54,11 +106,7 @@
   font-size: 1.8vw;
   font-weight: 700;
   text-align: left;
-
-  /* INCREASED padding */
   padding: 2vw 1.8vw;
-
-  /* remove all borders */
   border: none;
 }
 
@@ -67,11 +115,7 @@
   font-family: "DDINPRO";
   font-size: 1.5vw;
   text-align: left;
-
-  /* INCREASED padding */
   padding: 1.5vw 1.8vw;
-
-  /* ONLY horizontal separation */
   border-bottom: 1px solid #000;
   border-left: none;
   border-right: none;

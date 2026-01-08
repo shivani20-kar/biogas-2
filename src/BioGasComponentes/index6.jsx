@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./CSS/Index6.css";
 
 const RawMaterial = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const titles = document.querySelectorAll(".table-title");
 
@@ -14,18 +17,24 @@ const RawMaterial = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add("animate-title");
-            }, 300); // thoda extra delay
+            if (entry.target === bannerRef.current) {
+              setVisible(true);
+              observer.unobserve(entry.target);
+            } else if (entry.target.classList.contains("table-title")) {
+              setTimeout(() => {
+                entry.target.classList.add("animate-title");
+              }, 300);
+            }
           }
         });
       },
       {
-        threshold: 0.15, // thoda sa visible zala ki
-        rootMargin: "0px 0px -180px 0px", // 🔥 khup scroll nantarच trigger
+        threshold: 0.15,
+        rootMargin: "0px 0px -180px 0px",
       }
     );
 
+    if (bannerRef.current) observer.observe(bannerRef.current);
     titles.forEach((title) => observer.observe(title));
 
     return () => observer.disconnect();
@@ -34,8 +43,8 @@ const RawMaterial = () => {
   return (
     <section className="raw-wrapper">
       {/* Header */}
-      <div className="raw-header ">
-        <div className="raw-arrow-shape">
+      <div className="raw-header" ref={bannerRef}>
+        <div className={`raw-arrow-shape ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -45,13 +54,13 @@ const RawMaterial = () => {
             />
           </svg>
         </div>
-        <div>
+        <div className={`raw-header-content ${visible ? "animate-text" : ""}`}>
           <h1>Raw Material</h1>
           <p>Potential</p>
         </div>
       </div>
 
-       <div className="tablle-center">
+      <div className="tablle-center">
         {/* ================= TABLE 1 ================= */}
         <h2 className="table-title">
           Raw material potential from the napier grass 27% total
@@ -175,7 +184,7 @@ const RawMaterial = () => {
           </table>
         </div>
       </div>
-    </section> 
+    </section>
   );
 };
 

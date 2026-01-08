@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index2.css";
 
 const HighEnergy = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="energy-section">
       {/* Header */}
-      <div className="energy-header">
-        <div className="energy-arrow-shape">
+      <div className="energy-header" ref={bannerRef}>
+        <div className={`energy-arrow-shape ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -17,7 +38,7 @@ const HighEnergy = () => {
           </svg>
         </div>
 
-        <div className="header-text">
+        <div className={`header-text ${visible ? "animate-text" : ""}`}>
           <h1 className="outline-text">High energy</h1>
           <h3>Yield from green crops</h3>
         </div>
@@ -29,9 +50,8 @@ const HighEnergy = () => {
           <p>
             <strong> Napier grass — </strong> also known as{" "}
             <strong>
-              {" "}
               King Grass, Royal Grass, Sudanese Grass, or Perennial Elephant
-              Grass —{" "}
+              Grass —
             </strong>
             is widely cultivated across tropical and subtropical regions. Its
             fast growth, high biomass yield, and adaptability make it one of the
@@ -71,7 +91,7 @@ const HighEnergy = () => {
             <strong>(CBG) or Bio-Compressed Natural Gas (Bio-CNG).</strong>
             In India,<strong> CBG and Bio-CNG</strong> are the most common
             terms, while
-            <strong> “biomethane”</strong> is more widely used in Europe. All
+            <strong> "biomethane"</strong> is more widely used in Europe. All
             these terms refer to the same high-quality renewable fuel.{" "}
           </p>
 

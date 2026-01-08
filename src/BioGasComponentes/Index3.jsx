@@ -1,22 +1,43 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index3.css";
 
 const SilagePreparation = () => {
+    const bannerRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setVisible(true);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        if (bannerRef.current) observer.observe(bannerRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section className="silage-section">
             {/* Header */}
-            <div className="silage-header">
-                <div className="silage-arrow-shape">
+            <div className="silage-header" ref={bannerRef}>
+                <div className={`silage-arrow-shape ${visible ? "animate-arrow" : ""}`}>
                     <svg className="arrow-svg" viewBox="0 0 120 180">
                         <polygon
                             points="0,0 84,0 120,90 84,180 0,180 36,90"
                             fill="#f2f2f2"
-                            stroke="#e3262f"
+                            stroke="#e3262f" 
                             strokeWidth="4"
                         />
                     </svg>
                 </div>
-                <div className="silage-header-text">
+                <div className={`silage-header-text ${visible ? "animate-text" : ""}`}>
                     <h1>Silage Preparation</h1>
                     <h2>A Key Step Before Biogas Production</h2>
                 </div>
