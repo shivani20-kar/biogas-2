@@ -2,7 +2,7 @@ import "../Components/Css/Home.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../Components/IMAGES/Logowhite.png";
-import mainbackground from "../Components/IMAGES/overpng.png";
+import mainbackground from "./Hero Section 2.png";
 import gif from "../Components/IMAGES/maingif.gif";
 
 const OverViewHero = () => {

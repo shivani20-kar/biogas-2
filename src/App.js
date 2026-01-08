@@ -132,6 +132,17 @@ import ContactDiscover from "./BioGasComponentes/Index20";
 import BackgroundSection from "./BioGasComponentes/Index21";
 import RentSection from "./BusinessOpportunityComponents/RentSection";
 import GDTourism from "./BusinessOpportunityComponents/GDTourism";
+import OverViewHero from "./HowDoWeWorkComponents/Overview";
+import ConceptSection from "./HowDoWeWorkComponents/HowDoOverView1";
+import DesignPermissions from "./HowDoWeWorkComponents/HowDoOverView2";
+import EquipmentSection from "./HowDoWeWorkComponents/HowDoOverView3";
+import Commissioning from "./HowDoWeWorkComponents/HowDoOverView4";
+import BiologicalServicesSection from "./HowDoWeWorkComponents/HowDoOverView5";
+import SustainableResourceUtilization from "./HowDoWeWorkComponents/HowDoOverView6";
+import CommunityEngagementSection from "./HowDoWeWorkComponents/HowDoOverView7";
+import ContinuousImprovementStrategies from "./HowDoWeWorkComponents/HowDoOverView8";
+import MarketingSection from "./HowDoWeWorkComponents/HowDoOverView9";
+import QualityEfficiency from "./HowDoWeWorkComponents/HowDoOverView10";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -162,6 +173,25 @@ function App() {
             <>
               <HeroSection />
               <HeroSectionSecondPage />
+            </>
+          }
+        />
+        <Route
+          path="/overview/turnkey-approach"
+          element={
+            <>
+              <OverViewHero />
+              <ConceptSection />
+              <DesignPermissions />
+              <EquipmentSection />
+              <Commissioning />
+              <BiologicalServicesSection />
+              <SustainableResourceUtilization />
+              <CommunityEngagementSection />
+              <ContinuousImprovementStrategies />
+              <MarketingSection />
+              <QualityEfficiency />
+              <Footer />
             </>
           }
         />
@@ -595,8 +625,6 @@ function App() {
             </>
           }
         />
-
-
         {/* Contact Us Page */}
         <Route
           path="/contact"
