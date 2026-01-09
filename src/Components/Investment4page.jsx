@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Css/Investment4page.css";
 import background from "./Rectangle-164.png"; 
-import fram from "./Frame 2087328311 33.png"
+import frame from "./Frame 2087328311 33.png"
 const strengths = [
   { id: "01", title: "Concept Development and research", color: "#00d2ff" },
   { id: "02", title: "Design and permissions", color: "#00ffc3" },
@@ -60,21 +60,32 @@ const InvestStrengthSection = () => {
         </div>
       </div>
 
-      <div className="strength-cards">
-        {strengths.map((item) => (
-          <div
-            key={item.id}
-            className="strength-card"
-            style={{ borderColor: item.color }}
-          >
-            <span className="strength-number" style={{ backgroundColor: item.color }}>
-                
-              {item.id}
-            </span>
-            <p>{item.title}</p>
-          </div>
-        ))}
+      <div className="strength-frame-wrapper">
+  {strengths.map((item) => (
+    <div key={item.id} className="strength-frame">
+      <img
+        src={frame}
+        alt="frame"
+        className="frame-img"
+        style={{
+          boxShadow: `0 0 0 2px ${item.color}`,
+        }}
+      />
+
+      <div className="frame-content">
+        <span
+          className="frame-number"
+          style={{ backgroundColor: item.color }}
+        >
+          {item.id}
+        </span>
+
+        <p className="frame-title">{item.title}</p>
       </div>
+    </div>
+  ))}
+</div>
+
 
       <div className="turnkey-section">
         <div>

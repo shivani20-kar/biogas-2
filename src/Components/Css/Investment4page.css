@@ -10,45 +10,39 @@
 .strength-section img{
     margin-top: 5vw;
 }
-.strength-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5vw;
-  margin-bottom: 4vw;
+.strength-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
 }
 
-.strength-card {
-  display: flex;
-  align-items: center;
-  border: 2px solid;
-  border-radius: 10px;
-  padding: 1vw 1.5vw;
-  transition: transform 0.3s ease, background 0.3s ease;
+/* FRAME IMAGE */
+.frame-img {
+  width: 100%;
+  display: block;
+  border-radius: 40px;
 }
 
-.strength-card:hover {
-  transform: translateY(-5px);
-  background: rgba(0,0,0,0.6);
-}
-
-.strength-number {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-weight: bold;
+/* NUMBER */
+.frame-number {
+  min-width: 46px;
+  height: 46px;
   color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1vw;
-  flex-shrink: 0;
 }
 
-.strength-card p {
-  margin: 0;
-  font-size: 1vw;
+/* TEXT */
+.frame-title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.4;
 }
+
 
 .turnkey-section {
   display: flex;
