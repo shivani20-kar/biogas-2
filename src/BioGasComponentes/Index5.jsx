@@ -1,30 +1,20 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./CSS/Index5.css";
 import fullimg from "../BioGasComponentes/Group 1000001823.png";
 
 const HLRSectionTwo = () => {
   const imgRef = useRef(null);
-  const bannerRef = useRef(null);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            if (entry.target === bannerRef.current) {
-              setVisible(true);
-              observer.unobserve(entry.target);
-            } else if (entry.target === imgRef.current) {
-              imgRef.current.classList.add("animate");
-            }
-          }
-        });
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          imgRef.current.classList.add("animate");
+        }
       },
       { threshold: 0.35 }
     );
 
-    if (bannerRef.current) observer.observe(bannerRef.current);
     if (imgRef.current) observer.observe(imgRef.current);
 
     return () => observer.disconnect();
@@ -33,8 +23,8 @@ const HLRSectionTwo = () => {
   return (
     <section className="hlr-section-two">
       {/* ================= HEADER ================= */}
-      <div className="hlr-header-two" ref={bannerRef}>
-        <div className={`arrow-shape-two ${visible ? "animate-arrow" : ""}`}>
+      <div className="hlr-header-two">
+        <div className="arrow-shape-two">
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -45,7 +35,7 @@ const HLRSectionTwo = () => {
           </svg>
         </div>
 
-        <div className={`header-text-two ${visible ? "animate-text" : ""}`}>
+        <div className="header-text-two">
           <h1 className="title-two">GD Planet's</h1>
           <h2 className="subtitle-two">
             High-Load Reactor (HLR): Efficient Biogas <br />

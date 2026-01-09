@@ -259,7 +259,7 @@ const handleNext = () => {
       <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_5336_22863" result="shape"/>
     </filter>
   </defs>
-</svg> Sustainability</p> 
+</svg> Sustainability</p>  
 </div>,
     <div className="animated-box" key={activeSlide}>
       <div className="title-row">

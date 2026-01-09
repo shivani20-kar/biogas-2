@@ -180,8 +180,7 @@ function App() {
             </>
           }
         />
-
-           <Route
+        <Route
           path="/overview/turnkey-approach"
           element={
             <>
@@ -195,25 +194,19 @@ function App() {
               <CommunityEngagementSection />
               <ContinuousImprovementStrategies />
               <MarketingSection />
-              <QualityEfficiency/>
+              <QualityEfficiency />
               <Footer />
-
-
             </>
           }
-        /> 
-
-
-
-
-         <Route
+        />
+        <Route
           path="/investment/biogas-advanced-biofuel"
           element={
             <>
-              <InvestmentHero/>
-              <Congratulations/>
-              <InvestmetProducts/>
-              <InvestStrengthSection/>
+              <InvestmentHero />
+              <Congratulations />
+              <InvestmetProducts />
+              <InvestStrengthSection />
             </>
           }
         />
