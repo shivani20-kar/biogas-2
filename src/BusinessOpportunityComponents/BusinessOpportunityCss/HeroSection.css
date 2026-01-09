@@ -543,18 +543,14 @@ svg:hover path {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
-
   .hero {
     height: 60vh;
     margin-top: 9vh;
   }
 
-
   .hero-content-overlay {
     display: none;
   }
-
 
   .logo-containerhero {
     width: 20vw;
@@ -595,7 +591,6 @@ svg:hover path {
     height: 70vh;
     margin-top: 10vh;
   }
-
 
   .hero-content-overlay {
     display: none;
@@ -639,9 +634,9 @@ svg:hover path {
     margin-top: 8vh;
   }
 
-   .hero-content-overlay {
+  /* .hero-content-overlay {
     display: none;
-  }
+  } */
 
   .logo-containerhero {
     width: 12vw;
