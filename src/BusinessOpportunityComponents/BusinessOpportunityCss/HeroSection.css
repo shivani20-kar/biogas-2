@@ -687,7 +687,7 @@ svg:hover path {
     height: 75%;
   }
 }
-
+/* 
 @media screen and (min-width: 1367px) {
   .hero {
     height: 100vh;
@@ -705,7 +705,7 @@ svg:hover path {
 
   .header-row {
     padding: 5vh 3rem;
-    /* margin: 0 auto; */
+    
   }
 
   .nav-common {
@@ -745,4 +745,4 @@ svg:hover path {
   .circle-gifhero {
     height: 80%;
   }
-}
+} */

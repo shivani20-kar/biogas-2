@@ -214,6 +214,8 @@ function App() {
               <InvestmentBooks/>
               <InvestmentContactForm/>
               <Footer/>
+            </>
+          }
         />
         <Route
           path="/investment/biogas-advanced-biofuel"
