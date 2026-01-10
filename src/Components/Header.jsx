@@ -4,6 +4,7 @@ import "./Css/Header.css";
 import logo from "./IMAGES/Logo.png";
 
 const Header = () => {
+
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,6 +26,9 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+    const handleLogoClick = () => {
+    navigate("/"); // navigate to home route
+  };
 
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
@@ -326,6 +330,8 @@ const Header = () => {
               src={logo}
               alt="Company Logo" 
               className="logo-header"
+               onClick={handleLogoClick} // click triggers navigation
+                style={{ cursor: "pointer" }}
             />
           </Link>
         </div>

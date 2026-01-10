@@ -1,0 +1,123 @@
+.investment-section {
+  padding: 0vw 0vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.investment-title {
+  padding-left: 6vw;
+  text-align: left;
+  font-family: 'DDINPRO';
+ color: #282828;
+font-size: 5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.investment-curves-ring {
+  position: absolute;
+  top: 50%;
+  right: -10vw;
+  transform: translateY(-50%);
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 81, 0, 0.25);
+}
+
+/* inner ring */
+.investment-curves-ring::before {
+  content: "";
+  position: absolute;
+  inset: -3vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 81, 0, 0.35);
+}
+
+/* middle ring */
+.investment-curves-ring::after {
+  content: "";
+  position: absolute;
+  inset: -5.5vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 81, 0, 0.45);
+}
+
+/* outer rings */
+.investment-curves-ring span {
+  position: absolute;
+  inset: -8vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 81, 0, 0.6);
+}
+
+.investment-curves-ring span:nth-child(2) {
+  inset: -10vw;
+  border-color: rgba(255, 81, 0, 0.75);
+}
+
+.investment-curves-ring span:nth-child(3) {
+  inset: -12.5vw;
+  border-color: rgba(255, 81, 0, 0.95);
+}
+
+.investment-cards {
+   position: relative;
+  display: flex;
+  /* justify-content: center; */
+  gap: 0vw;
+  align-items: center;
+}
+
+.investment-card {
+  width: 43vw;
+  cursor: default;
+}
+
+.investment-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+}
+.agri-img {
+  width: 30vw !important;    
+  /* max-width: 100%; */
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* clickable hover */
+.clickable {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable:hover {
+  transform: scale(1.03);
+}
+.book-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.book-wrapper {
+  display: flex;
+  perspective: 1200px;
+}
+
+.book-page {
+  width: 320px;
+  height: auto;
+  cursor: pointer;
+}
+
+.book-page img {
+  width: 100%;
+  display: block;
+}

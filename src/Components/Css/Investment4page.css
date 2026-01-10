@@ -4,43 +4,74 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2vw 0vw;
+  padding: 0vw 0vw 4vw 0vw;
   position: relative;
 }
-.strength-section img{
-    margin-top: 5vw;
-}
+
 .strength-frame {
   position: relative;
   width: 100%;
   max-width: 520px;
 }
 
-/* FRAME IMAGE */
-.frame-img {
+.strength-frame-wrapper {
   width: 100%;
-  display: block;
-  border-radius: 40px;
+  max-width: 1200px;
+  margin: 1.6vw auto 2vw auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 2 frames per row */
+  gap: 1.5vw 8.5vw; /* row gap | column gap */
+  align-items: center;
+  justify-items: flex-start;
+}
+
+/* 🔥 FRAME MASK MAGIC */
+.frame-mask {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 5 / 1;
+  mask-image: url("../Frame 2087328311 33.png");
+  -webkit-mask-image: url("../Frame 2087328311 33.png");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+/* CONTENT INSIDE */
+.frame-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  gap: 4.4vw;
+  padding: 0 2.2vw;
 }
 
 /* NUMBER */
 .frame-number {
-  min-width: 46px;
-  height: 46px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ color: #FFF;
+ font-family: 'DDINPRO';
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;  
+  margin-top: 1.5vw; 
 }
 
-/* TEXT */
+/* TITLE */
 .frame-title {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.4;
+ color: #FFF;
+text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+ font-family: 'DDINPRO';
+font-size: 1.7vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 3.3vw;
+/* margin-left: 3.3vw; */
 }
 
 

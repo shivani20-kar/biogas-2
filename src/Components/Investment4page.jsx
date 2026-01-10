@@ -3,16 +3,16 @@ import "./Css/Investment4page.css";
 import background from "./Rectangle-164.png"; 
 import frame from "./Frame 2087328311 33.png"
 const strengths = [
-  { id: "01", title: "Concept Development and research", color: "#00d2ff" },
-  { id: "02", title: "Design and permissions", color: "#00ffc3" },
-  { id: "03", title: "Equipment supply and installation", color: "#ffb600" },
-  { id: "04", title: "Commissioning", color: "#ff4500" },
-  { id: "05", title: "Biological services", color: "#b6ff00" },
-  { id: "06", title: "Sustainable Resource Utilization", color: "#00cfff" },
-  { id: "07", title: "Community Engagement Initiatives", color: "#ff0000" },
-  { id: "08", title: "Continuous Improvement Strategies", color: "#ff00c8" },
-  { id: "09", title: "Marketing", color: "#e600ff" },
-  { id: "10", title: "Quality and efficiency", color: "#00d2ff" },
+  { id: "01", title: "Concept Development and research", color: "#00CCE7" },
+  { id: "02", title: "Design and permissions", color: "#20E3BB" },
+  { id: "03", title: "Equipment supply and installation", color: "#FFAC26" },
+  { id: "04", title: "Commissioning", color: "#FF5622" },
+  { id: "05", title: "Biological services", color: "#9DC506" },
+  { id: "06", title: "Sustainable Resource Utilization", color: "#05B5B0" },
+  { id: "07", title: "Community Engagement Initiatives", color: "#DC0529" },
+  { id: "08", title: "Continuous Improvement Strategies", color: "#C21D75" },
+  { id: "09", title: "Marketing", color: "#E700B5" },
+  { id: "10", title: "Quality and efficiency", color: "#0AA7CD" },
 ];
 
 const InvestStrengthSection = () => {
@@ -60,17 +60,15 @@ const InvestStrengthSection = () => {
         </div>
       </div>
 
-      <div className="strength-frame-wrapper">
+     <div className="strength-frame-wrapper">
   {strengths.map((item) => (
     <div key={item.id} className="strength-frame">
-      <img
-        src={frame}
-        alt="frame"
-        className="frame-img"
-        style={{
-          boxShadow: `0 0 0 2px ${item.color}`,
-        }}
-      />
+      
+      {/* COLORED FRAME */}
+      <div
+        className="frame-mask"
+        style={{ backgroundColor: item.color }}
+      ></div>
 
       <div className="frame-content">
         <span
@@ -82,9 +80,11 @@ const InvestStrengthSection = () => {
 
         <p className="frame-title">{item.title}</p>
       </div>
+
     </div>
   ))}
 </div>
+
 
 
       <div className="turnkey-section">
