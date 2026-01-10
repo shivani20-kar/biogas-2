@@ -1,27 +1,47 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index10.css";
-import feederImg from "./Rectangle 64.png"; 
+import feederImg from "./Rectangle 64.png";
 
 const MainEquipment = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="equipment-wrapper">
       {/* Header */}
-      <div className="equipment-header">
-        <div className="main-arrow-shape">
+      <div className="equipment-header" ref={bannerRef}>
+        <div className={`main-arrow-shape ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
-                        <polygon
-                            points="0,0 84,0 120,90 84,180 0,180 36,90"
-                            fill="#f2f2f2"
-                            stroke="#e3262f"
-                            strokeWidth="4"
-                        />
-                    </svg>
+            <polygon
+              points="0,0 84,0 120,90 84,180 0,180 36,90"
+              fill="#f2f2f2"
+              stroke="#e3262f"
+              strokeWidth="4"
+            />
+          </svg>
         </div>
-         <div className="main-titlee">
+        <div className={`main-titlee ${visible ? "animate-text" : ""}`}>
           <h1>Main Equipment's</h1>
         </div>
       </div>
-
       {/* Content */}
       <div className="equipment-content">
         {/* Left Image Box */}

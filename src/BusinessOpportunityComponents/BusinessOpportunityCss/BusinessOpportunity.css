@@ -143,3 +143,213 @@ td.tdd a {
 .turnkey-table tbody tr:first-child td > :first-child {
   margin-top: 2vh;
 }
+
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .business-opportunity {
+    padding: 3vh 0;
+  }
+  
+  .main-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+  
+  .subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+  
+  th.thb {
+    font-size: 3.5vw;
+    padding: 1.5vh 4vw;
+  }
+  
+  td.tdd {
+    width: auto;
+    min-width: 200px;
+  }
+  
+  td.tdd a {
+    font-size: 3.5vw;
+    padding: 1.5vh 3vw;
+    margin-left: 2vw;
+  }
+  
+  .turnkey-table thead th.thd {
+    font-size: 3.5vw;
+    padding: 1.5vh 4vw;
+  }
+  
+  .turnkey-solution {
+    margin-top: 4vh;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .business-opportunity {
+    padding: 4vh 0;
+  }
+  
+  .main-title {
+    font-size: 6.5vw;
+    margin-left: 4vw;
+  }
+  
+  .subtitle {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+  
+  th.thb {
+    font-size: 2.8vw;
+    padding: 1.8vh 4vw;
+  }
+  
+  td.tdd {
+    width: auto;
+    min-width: 180px;
+  }
+  
+  td.tdd a {
+    font-size: 2.8vw;
+    padding: 1.2vh 2.5vw;
+    margin-left: 2.5vw;
+  }
+  
+  .turnkey-table thead th.thd {
+    font-size: 2.8vw;
+    padding: 1.5vh 4vw;
+  }
+  
+  .turnkey-solution {
+    margin-top: 4.5vh;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-title {
+    font-size: 5.5vw;
+    margin-left: 4vw;
+  }
+  
+  .subtitle {
+    font-size: 2.3vw;
+    width: 40%;
+    margin-left: 4vw;
+  }
+  
+  th.thb {
+    font-size: 2.2vw;
+    padding: 2vh 4vw;
+  }
+  
+  td.tdd {
+    width: auto;
+    min-width: 160px;
+  }
+  
+  td.tdd a {
+    font-size: 2vw;
+    padding: 1vh 2vw;
+    margin-left: 2.5vw;
+  }
+  
+  .turnkey-table thead th.thd {
+    font-size: 2.2vw;
+    padding: 1.5vh 4vw;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .main-title {
+    font-size: 4vw;
+  }
+  
+  .subtitle {
+    font-size: 1.8vw;
+    width: 30%;
+  }
+  
+  th.thb {
+    font-size: 1.6vw;
+    padding: 2vh 4.5vw;
+  }
+  
+  td.tdd a {
+    font-size: 1.4vw;
+    padding: 1vh 2vw;
+  }
+  
+  .turnkey-table thead th.thd {
+    font-size: 1.6vw;
+    padding: 1.5vh 4.5vw;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+@media screen and (min-width: 1367px) {
+  .main-title {
+    font-size: 3.5vw;
+  }
+  
+  .subtitle {
+    font-size: 1.3vw;
+    width: 25%;
+  }
+  
+  th.thb {
+    font-size: 1.2vw;
+    padding: 2vh 5vw;
+  }
+  
+  td.tdd a {
+    font-size: 1vw;
+    padding: 1vh 2vw;
+  }
+  
+  .turnkey-table thead th.thd {
+    font-size: 1.2vw;
+    padding: 1.5vh 5vw;
+  }
+}
+
+/* Additional responsive improvements for tables on mobile */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .business-table,
+  .turnkey-table {
+    min-width: 600px; /* Ensures table doesn't get too narrow on mobile */
+  }
+  
+  .business-table td.tdd,
+  .turnkey-table td.tdd {
+    border-right: 0.5px solid #e0e0e0;
+  }
+}
+
+/* Prevent text from becoming too small on very small screens */
+@media (max-width: 360px) {
+  td.tdd a {
+    font-size: 3.2vw;
+    padding: 1vh 2.5vw;
+  }
+  
+  th.thb {
+    font-size: 3.2vw;
+    padding: 1.2vh 3vw;
+  }
+}

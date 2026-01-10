@@ -1,19 +1,48 @@
-/* .silage-section {
-  width: 100%;
-  background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-} */
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
 
 /* ---------- HEADER ---------- */
 .silage-header {
- background: #5f5f5f;
+  background: #5f5f5f;
   display: flex;
   align-items: flex-start;
   position: relative;
 }
 
-.silage-arrow-shape{
-     position: relative;
+.silage-arrow-shape {
+  position: relative;
   width: 120px;
   height: 180px;
   background: #f2f2f2;
@@ -28,6 +57,7 @@
   margin-left: 1vw;
   margin-top: -1.2vw;
 }
+
 .silage-arrow-shape::before {
   content: "";
   position: absolute;
@@ -43,10 +73,12 @@
   );
   z-index: -1;
 }
-.silage-header-text{
-     display: flex;
+
+.silage-header-text {
+  display: flex;
   flex-direction: column;
 }
+
 .silage-header-text h1 {
   font-family: 'DDINPRO';
   font-size: 100px;
@@ -59,7 +91,7 @@
 }
 
 .silage-header-text h2 {
-   font-family: 'DDINPRO';
+  font-family: 'DDINPRO';
   font-size: 44px;
   font-weight: bold;
   color: #ffffff;
@@ -68,8 +100,9 @@
   margin-left: 1.5vw;
 }
 
+/* ---------- CONTENT ---------- */
 .silage-content {
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   padding: 2vw 11vw;
@@ -78,8 +111,8 @@
 
 .silage-left-content p,
 .silage-right-content p {
- font-family: 'DDINPRO';
-     font-weight: 400;
+  font-family: 'DDINPRO';
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.8;
   color: #000000;
@@ -88,7 +121,7 @@
 
 .silage-left-content h3,
 .silage-right-content h3 {
-    color: #000000;
+  color: #000000;
   font-family: 'DDINPRO';
   font-size: 1.9vw;
   font-weight: 700;

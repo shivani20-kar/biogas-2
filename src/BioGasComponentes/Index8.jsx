@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index8.css";
-import biogasImg from "./Gemini_Generated_Image_m8y7k3m8y7k3m8y7-removebg-preview 1.png"; 
+import biogasImg from "./Gemini_Generated_Image_m8y7k3m8y7k3m8y7-removebg-preview 1.png";
+
 const BiogasPlantTwo = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="biogas-container-two">
       {/* HEADER */}
-      <div className="biogas-header-two">
-        <div className="header-arrow-two"> <svg className="arrow-svg" viewBox="0 0 120 180">
-                        <polygon
-                            points="0,0 84,0 120,90 84,180 0,180 36,90"
-                            fill="#f2f2f2"
-                            stroke="#e3262f"
-                            strokeWidth="4"
-                        />
-                    </svg></div> 
-        <div> 
+      <div className="biogas-header-two" ref={bannerRef}>
+        <div className={`header-arrow-two ${visible ? "animate-arrow" : ""}`}>
+          <svg className="arrow-svg" viewBox="0 0 120 180">
+            <polygon
+              points="0,0 84,0 120,90 84,180 0,180 36,90"
+              fill="#f2f2f2"
+              stroke="#e3262f"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div className={`header-content-two ${visible ? "animate-text" : ""}`}>
           <h1>Biogas</h1>
           <p>Plant Working Principle</p>
         </div>
       </div>
-
       {/* CONTENT */}
       <div className="biogas-content-two">
         {/* LEFT */}

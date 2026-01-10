@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index18.css";
 
 import imgSatara from "../BioGasComponentes/industries-satara.png";
@@ -6,11 +6,32 @@ import imgPatan from "../BioGasComponentes/industries-patan.png";
 import imgPalshi from "../BioGasComponentes/industries-palshi.png";
 
 const Industries = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="industries-wrapper">
       {/* ================= HEADER ================= */}
-      <div className="industries-header">
-        <div className="arrow-index">
+      <div className="industries-header" ref={bannerRef}>
+        <div className={`arrow-index ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -21,12 +42,11 @@ const Industries = () => {
           </svg>
         </div>
 
-        <div className="industries-header-text">
+        <div className={`industries-header-text ${visible ? "animate-text" : ""}`}>
           <h1 className="industries-title">Industries</h1>
           <p className="industries-subtitle">GD planet plants</p>
         </div>
       </div>
-
       {/* ================= CARDS ================= */}
       <div className="industries-cards">
         <div className="industry-card">

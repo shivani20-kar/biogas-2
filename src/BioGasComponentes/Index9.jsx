@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index9.css";
 
 const Technological = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="tech-wrapper">
       {/* Header */}
-      <div className="tech-header">
-        <div className="tech-arrow-shape">
-          {" "}
+      <div className="tech-header" ref={bannerRef}>
+        <div className={`tech-arrow-shape ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -18,7 +38,7 @@ const Technological = () => {
           </svg>
         </div>
 
-        <div className="tech-titlee">
+        <div className={`tech-titlee ${visible ? "animate-text" : ""}`}>
           <h1>Technological</h1>
           <p>process of biogas production</p>
         </div>

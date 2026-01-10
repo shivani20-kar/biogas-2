@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./CSS/Index11.css";
 
 const EquipmentSpecifications = () => {
+  const bannerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="equipmentspecifications-wrapper">
       {/* Header */}
-      <div className="equipmentspecifications-header">
-        <div className="arrow-index">
+      <div className="equipmentspecifications-header" ref={bannerRef}>
+        <div className={`arrow-index ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"
@@ -17,7 +38,7 @@ const EquipmentSpecifications = () => {
           </svg>
         </div>
 
-        <div className="equipmentspecifications-title">
+        <div className={`equipmentspecifications-title ${visible ? "animate-text" : ""}`}>
           <h1>Equipment</h1>
           <p>Specification List</p>
         </div>

@@ -1,3 +1,38 @@
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
 /* WRAPPER */
 .industries-wrapper {
   background: #ffffff;
@@ -13,11 +48,23 @@
 }
 
 /* ARROW */
-.industries-arrow {
-  width: 6.25vw;
-  height: 16.6vh;
+.arrow-index {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background: #f2f2f2;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   margin-left: 1vw;
   margin-top: -1.2vw;
+}
+
+.arrow-index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e3262f;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
+  z-index: -1;
 }
 
 /* HEADER TEXT */
@@ -47,14 +94,13 @@
 
 /* CARDS SECTION */
 .industries-cards {
-  position: relative; /* ⭐ MOST IMPORTANT */
+  position: relative;
   background-image: url("../industriesBackground.png");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   gap: 4.1vw;
-  /* padding: 4.5vw 3vw; */
   padding: 4.5vw 3vw 9vw;
 }
 
@@ -91,9 +137,7 @@
 .industry-card-content p {
   font-size: 1.3vw;
   font-family: "DDINPRO";
-
   color: #a1a1a1;
-
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -131,10 +175,7 @@
 }
 
 .reference-arrow {
-  /* width: 4vw; */
-  /* height: 4vw; */
   border-radius: 50%;
-  /* background-color: #e12d36; */
   color: #ffffff;
   display: flex;
   align-items: center;

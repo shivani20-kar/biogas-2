@@ -183,8 +183,7 @@ function App() {
             </>
           }
         />
-
-           <Route
+        <Route
           path="/overview/turnkey-approach"
           element={
             <>
@@ -198,10 +197,8 @@ function App() {
               <CommunityEngagementSection />
               <ContinuousImprovementStrategies />
               <MarketingSection />
-              <QualityEfficiency/>
+              <QualityEfficiency />
               <Footer />
-
-
             </>
           }
         /> 
@@ -217,6 +214,16 @@ function App() {
               <InvestmentBooks/>
               <InvestmentContactForm/>
               <Footer/>
+        />
+        <Route
+          path="/investment/biogas-advanced-biofuel"
+          element={
+            <>
+              <InvestmentHero />
+              <Congratulations />
+              <InvestmetProducts />
+              <InvestStrengthSection />
+>>>>>>> 4a627382d26d51f91c8cbdf50a6b3d57c1b55320
             </>
           }
         />

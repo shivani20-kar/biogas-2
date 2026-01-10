@@ -1,5 +1,39 @@
-/* ================= HEADER ================= */
+/* ===== Animation for Text ===== */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+/* ===== Animation for Arrow ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-text {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-arrow {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* ================= HEADER ================= */
 .hlr-header-two {
   background: #5f5f5f;
   display: flex;
@@ -52,7 +86,6 @@
 }
 
 /* ================= CONTENT ================= */
-
 .hlr-content-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,13 +137,13 @@
   margin: 15px 0 20px;
 }
 
+/* ================= IMAGE ================= */
 .fullimg-wrapper {
   position: relative;
   overflow: hidden;
   padding-bottom: 5vw;
 }
 
-/* image */
 .fullimg {
   width: 100%;
   height: auto;
@@ -120,7 +153,6 @@
   transform: scale(1);
 }
 
-/* SAME AS BACKGROUND SECTION */
 .fullimg.animate {
   animation: imageZoomInOut 10s ease-in-out infinite;
 }
@@ -130,12 +162,10 @@
   0% {
     transform: scale(1);
   }
-
   50% {
-    transform: scale(1.8); /* zoom in */
+    transform: scale(1.8);
   }
-
   100% {
-    transform: scale(1); /* zoom out */
+    transform: scale(1);
   }
 }
