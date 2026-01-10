@@ -131,3 +131,390 @@
   padding-top: 2.5vh !important;
   display: block;
 }
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .catalogue-container {
+    padding: 3vh 0;
+  }
+
+  .catalogue-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .catalogue-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .catalogue-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2vh;
+  }
+
+  .catalogue-table {
+    min-width: 500px;
+    font-size: 3.5vw;
+    table-layout: auto;
+  }
+
+  .catalogue-table thead th {
+    font-size: 4vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .catalogue-table tbody td {
+    padding: 1vh 0vw !important;
+    border-right: 0.5px solid #e0e0e0;
+    font-size: 3.5vw;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+  }
+
+  .catalogue-table td a {
+    font-size: 3.5vw;
+    padding: 8px 0px;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .catalogue-table tbody tr:first-child td:first-child a,
+  .catalogue-table tbody tr:first-child td:nth-child(2) a {
+    padding-top: 1.5vh;
+  }
+
+  /* Adjust column widths for mobile */
+  .catalogue-table td:first-child,
+  .catalogue-table th:first-child {
+    width: 30% !important;
+    min-width: 120px;
+  }
+
+  .catalogue-table td:nth-child(2),
+  .catalogue-table th:nth-child(2) {
+    width: 70% !important;
+    min-width: 200px;
+  }
+
+  /* Adjust padding for column 2 */
+  .catalogue-table td:nth-child(2) a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .catalogue-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .catalogue-subtitle {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .catalogue-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .catalogue-table {
+    min-width: 550px;
+    font-size: 2.5vw;
+    table-layout: auto;
+  }
+
+  .catalogue-table thead th {
+    font-size: 2.8vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .catalogue-table tbody td {
+    padding: 1.2vh 0vw !important;
+    border-right: 0.7px solid #e0e0e0;
+    font-size: 2.5vw;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .catalogue-table td a {
+    font-size: 2.5vw;
+    padding: 10px 0px;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 35px;
+  }
+
+  .catalogue-table tbody tr:first-child td:first-child a,
+  .catalogue-table tbody tr:first-child td:nth-child(2) a {
+    padding-top: 1.8vh;
+  }
+
+  /* Adjust column widths */
+  .catalogue-table td:first-child,
+  .catalogue-table th:first-child {
+    width: 25% !important;
+    min-width: 130px;
+  }
+
+  .catalogue-table td:nth-child(2),
+  .catalogue-table th:nth-child(2) {
+    width: 75% !important;
+    min-width: 250px;
+  }
+
+  /* Adjust padding for column 2 */
+  .catalogue-table td:nth-child(2) a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .catalogue-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .catalogue-subtitle {
+    font-size: 2.2vw;
+    width: 40%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .catalogue-table {
+    font-size: 1.8vw;
+    table-layout: auto;
+  }
+
+  .catalogue-table thead th {
+    font-size: 2vw;
+    padding: 1.8vh 0vw;
+    padding-left: 4vw;
+  }
+
+  .catalogue-table tbody td {
+    padding: 1.2vh 0vw !important;
+    border-right: 0.8px solid #e0e0e0;
+    font-size: 1.8vw;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .catalogue-table td a {
+    font-size: 1.8vw;
+    padding: 8px 0px;
+    padding-left: 4vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .catalogue-table tbody tr:first-child td:first-child a,
+  .catalogue-table tbody tr:first-child td:nth-child(2) a {
+    padding-top: 1.5vh;
+  }
+
+  /* Adjust column widths for tablets */
+  .catalogue-table td:first-child,
+  .catalogue-table th:first-child {
+    width: 25% !important;
+  }
+
+  .catalogue-table td:nth-child(2),
+  .catalogue-table th:nth-child(2) {
+    width: 75% !important;
+  }
+
+  /* Adjust padding for column 2 */
+  .catalogue-table td:nth-child(2) a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .catalogue-title {
+    font-size: 3.5vw;
+  }
+
+  .catalogue-subtitle {
+    font-size: 1.5vw;
+    width: 30%;
+  }
+
+  .catalogue-table {
+    font-size: 1.3vw;
+  }
+
+  .catalogue-table thead th {
+    font-size: 1.4vw;
+    padding: 2vh 0vw;
+    padding-left: 4.5vw;
+  }
+
+  .catalogue-table tbody td {
+    padding: 1.2vh 0vw !important;
+    border-right: 0.9px solid #e0e0e0;
+    font-size: 1.2vw;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  .catalogue-table td a {
+    font-size: 1.2vw;
+    padding: 6px 0px;
+    padding-left: 4.5vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .catalogue-table tbody tr:first-child td:first-child a,
+  .catalogue-table tbody tr:first-child td:nth-child(2) a {
+    padding-top: 1.8vh;
+  }
+
+  /* Adjust column widths */
+  .catalogue-table td:first-child,
+  .catalogue-table th:first-child {
+    width: 15% !important;
+  }
+
+  .catalogue-table td:nth-child(2),
+  .catalogue-table th:nth-child(2) {
+    width: 85% !important;
+  }
+
+  /* Adjust padding for column 2 */
+  .catalogue-table td:nth-child(2) a {
+    padding-left: 3.5vw !important;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+@media screen and (min-width: 1367px) {
+  .catalogue-table {
+    font-size: 0.95vw;
+  }
+
+  .catalogue-table tbody tr:first-child td:first-child a,
+  .catalogue-table tbody tr:first-child td:nth-child(2) a {
+    padding-top: 2vh;
+  }
+
+  /* Adjust column widths for large screens */
+  .catalogue-table td:first-child,
+  .catalogue-table th:first-child {
+    width: 15% !important;
+  }
+
+  .catalogue-table td:nth-child(2),
+  .catalogue-table th:nth-child(2) {
+    width: 85% !important;
+  }
+}
+
+/* Additional global fixes for text visibility */
+@media (max-width: 1024px) {
+  .catalogue-table tbody td {
+    /* Remove all text truncation */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+
+  .catalogue-table td a {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+}
+
+/* Fix for very long text */
+.catalogue-table tbody td {
+  /* Allow long words to break */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.catalogue-table td a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure table layout is flexible on mobile */
+@media (max-width: 768px) {
+  .catalogue-table {
+    table-layout: auto !important;
+  }
+
+  .catalogue-table th,
+  .catalogue-table td {
+    min-width: 0 !important;
+  }
+}
+
+/* Smooth scrolling on mobile */
+@media (max-width: 768px) {
+  .catalogue-table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .catalogue-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .catalogue-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+  }
+}

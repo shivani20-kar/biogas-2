@@ -108,3 +108,348 @@
 .work-tablewe tbody tr:first-child td {
   padding-top: 2.5vh !important;
 }
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .work-container {
+    padding: 3vh 0;
+  }
+
+  .work-titlewe {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .work-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .work-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2vh;
+  }
+
+  .work-tablewe {
+    min-width: 500px;
+    font-size: 3.5vw;
+    table-layout: auto;
+  }
+
+  .work-tablewe thead th {
+    font-size: 4vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .work-tablewe td {
+    font-size: 3.5vw;
+    padding: 1vh 0vw !important;
+    border-right: 0.5px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+  }
+
+  .work-tablewe td:first-child {
+    width: 30% !important;
+    min-width: 120px;
+  }
+
+  .work-tablewe td:last-child {
+    width: 70% !important;
+    min-width: 200px;
+  }
+
+  .work-tablewe td a {
+    font-size: 3.5vw;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .work-tablewe tbody tr:first-child td {
+    padding-top: 1.5vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .work-tablewe td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .work-titlewe {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .work-subtitle {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .work-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .work-tablewe {
+    min-width: 550px;
+    font-size: 2.5vw;
+    table-layout: auto;
+  }
+
+  .work-tablewe thead th {
+    font-size: 2.8vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .work-tablewe td {
+    font-size: 2.5vw;
+    padding: 1.2vh 0vw !important;
+    border-right: 0.7px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .work-tablewe td:first-child {
+    width: 30% !important;
+    min-width: 130px;
+  }
+
+  .work-tablewe td:last-child {
+    width: 70% !important;
+    min-width: 250px;
+  }
+
+  .work-tablewe td a {
+    font-size: 2.5vw;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 35px;
+  }
+
+  .work-tablewe tbody tr:first-child td {
+    padding-top: 1.8vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .work-tablewe td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .work-titlewe {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .work-subtitle {
+    font-size: 2.2vw;
+    width: 40%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .work-tablewe {
+    font-size: 1.8vw;
+    table-layout: auto;
+  }
+
+  .work-tablewe thead th {
+    font-size: 2vw;
+    padding: 1.8vh 0vw;
+    padding-left: 4vw;
+  }
+
+  .work-tablewe td {
+    font-size: 1.8vw;
+    padding: 1.2vh 0vw !important;
+    border-right: 0.8px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .work-tablewe td:first-child {
+    width: 30% !important;
+  }
+
+  .work-tablewe td:last-child {
+    width: 70% !important;
+  }
+
+  .work-tablewe td a {
+    font-size: 1.8vw;
+    padding: 8px 0px;
+    padding-left: 4vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .work-tablewe tbody tr:first-child td {
+    padding-top: 1.5vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .work-tablewe td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .work-titlewe {
+    font-size: 3.5vw;
+  }
+
+  .work-subtitle {
+    font-size: 1.5vw;
+    width: 30%;
+  }
+
+  .work-tablewe {
+    font-size: 1.3vw;
+  }
+
+  .work-tablewe thead th {
+    font-size: 1.4vw;
+    padding: 2vh 0vw;
+    padding-left: 4.5vw;
+  }
+
+  .work-tablewe td {
+    font-size: 1.2vw;
+    padding: 1.2vh 0vw !important;
+    border-right: 0.9px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  .work-tablewe td:first-child {
+    width: 30% !important;
+  }
+
+  .work-tablewe td:last-child {
+    width: 70% !important;
+  }
+
+  .work-tablewe td a {
+    font-size: 1.2vw;
+    padding: 6px 0px;
+    padding-left: 4.5vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .work-tablewe tbody tr:first-child td {
+    padding-top: 1.8vh !important;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+@media screen and (min-width: 1367px) {
+}
+
+/* Additional global fixes for text visibility */
+@media (max-width: 1024px) {
+  .work-tablewe td {
+    /* Remove all text truncation */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+
+  .work-tablewe td a {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+}
+
+/* Fix for very long text */
+.work-tablewe td {
+  /* Allow long words to break */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.work-tablewe td a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure table layout is flexible on mobile */
+@media (max-width: 768px) {
+  .work-tablewe {
+    table-layout: auto !important;
+  }
+
+  .work-tablewe th,
+  .work-tablewe td {
+    min-width: 0 !important;
+  }
+}
+
+/* Smooth scrolling on mobile */
+@media (max-width: 768px) {
+  .work-table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .work-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .work-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+  }
+}
