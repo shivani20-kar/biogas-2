@@ -20,7 +20,7 @@
 
 /* Subtitle */
 .login-subtitle {
-  margin-left: 5vw;
+  margin-left: 5vw; 
   margin-top: 1vh;
   margin-bottom: 4vh;
   font-size: 1.5vw;
@@ -116,4 +116,429 @@
 .login-table tbody tr:first-child td a {
   padding-top: 2vh;
   display: block;
+}
+
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .login-container {
+    padding: 3vh 0;
+  }
+
+  .login-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .login-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .login-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2vh;
+  }
+
+  .login-table {
+    min-width: 800px;
+    font-size: 3.5vw;
+    table-layout: auto;
+  }
+
+  .login-table thead th {
+    font-size: 4vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .login-table thead th:first-child {
+    padding-left: 4vw;
+  }
+
+  .login-table td {
+    font-size: 3.5vw;
+    padding: 1.2vh 0vw !important;
+    border-right: 0.5px solid #dcdcdc;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+  }
+
+  .login-table td:first-child {
+    padding-left: 4vw !important;
+  }
+
+  .login-table td:not(:last-child) {
+    border-right: 0.5px solid #dcdcdc;
+  }
+
+  .login-table td a {
+    font-size: 3.5vw;
+    padding: 8px 1vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .login-table tbody tr:first-child td a {
+    padding-top: 1.5vh;
+  }
+
+  /* Adjust column widths for mobile */
+  .login-table th:nth-child(1),
+  .login-table td:nth-child(1) {
+    width: 25% !important;
+    min-width: 100px;
+  }
+
+  .login-table th:nth-child(2),
+  .login-table td:nth-child(2),
+  .login-table th:nth-child(3),
+  .login-table td:nth-child(3),
+  .login-table th:nth-child(4),
+  .login-table td:nth-child(4) {
+    width: 25% !important;
+    min-width: 150px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .login-subtitle {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .login-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .login-table {
+    min-width: 850px;
+    font-size: 2.5vw;
+    table-layout: auto;
+  }
+
+  .login-table thead th {
+    font-size: 2.8vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .login-table thead th:first-child {
+    padding-left: 4vw;
+  }
+
+  .login-table td {
+    font-size: 2.5vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.7px solid #dcdcdc;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .login-table td:first-child {
+    padding-left: 4vw !important;
+  }
+
+  .login-table td:not(:last-child) {
+    border-right: 0.7px solid #dcdcdc;
+  }
+
+  .login-table td a {
+    font-size: 2.5vw;
+    padding: 10px 1vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 35px;
+  }
+
+  .login-table tbody tr:first-child td a {
+    padding-top: 1.8vh;
+  }
+
+  /* Adjust column widths */
+  .login-table th:nth-child(1),
+  .login-table td:nth-child(1) {
+    width: 25% !important;
+    min-width: 120px;
+  }
+
+  .login-table th:nth-child(2),
+  .login-table td:nth-child(2),
+  .login-table th:nth-child(3),
+  .login-table td:nth-child(3),
+  .login-table th:nth-child(4),
+  .login-table td:nth-child(4) {
+    width: 25% !important;
+    min-width: 180px;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .login-subtitle {
+    font-size: 2.2vw;
+    width: 40%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .login-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .login-table {
+    font-size: 1.8vw;
+    table-layout: auto;
+  }
+
+  .login-table thead th {
+    font-size: 2vw;
+    padding: 1.8vh 0vw;
+    padding-left: 4vw;
+  }
+
+  .login-table thead th:first-child {
+    padding-left: 4vw;
+  }
+
+  .login-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.8px solid #dcdcdc;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .login-table td:first-child {
+    padding-left: 4vw !important;
+  }
+
+  .login-table td:not(:last-child) {
+    border-right: 0.8px solid #dcdcdc;
+  }
+
+  .login-table td a {
+    font-size: 1.8vw;
+    padding: 8px 1vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .login-table tbody tr:first-child td a {
+    padding-top: 1.5vh;
+  }
+
+  /* Adjust column widths for tablets */
+  .login-table th:nth-child(1),
+  .login-table td:nth-child(1) {
+    width: 25% !important;
+  }
+
+  .login-table th:nth-child(2),
+  .login-table td:nth-child(2),
+  .login-table th:nth-child(3),
+  .login-table td:nth-child(3),
+  .login-table th:nth-child(4),
+  .login-table td:nth-child(4) {
+    width: 25% !important;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .login-title {
+    font-size: 3.5vw;
+  }
+
+  .login-subtitle {
+    font-size: 1.5vw;
+    width: 30%;
+  }
+
+  .login-table {
+    font-size: 1.3vw;
+  }
+
+  .login-table thead th {
+    font-size: 1.4vw;
+    padding: 2vh 0vw;
+    padding-left: 4.5vw;
+  }
+
+  .login-table thead th:first-child {
+    padding-left: 4.5vw;
+  }
+
+  .login-table td {
+    font-size: 1.2vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.9px solid #dcdcdc;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  .login-table td:first-child {
+    padding-left: 4.5vw !important;
+  }
+
+  .login-table td:not(:last-child) {
+    border-right: 0.9px solid #dcdcdc;
+  }
+
+  .login-table td a {
+    font-size: 1.2vw;
+    padding: 6px 1vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .login-table tbody tr:first-child td a {
+    padding-top: 1.8vh;
+  }
+
+  /* Adjust column widths */
+  .login-table th:nth-child(1),
+  .login-table td:nth-child(1) {
+    width: 25% !important;
+  }
+
+  .login-table th:nth-child(2),
+  .login-table td:nth-child(2),
+  .login-table th:nth-child(3),
+  .login-table td:nth-child(3),
+  .login-table th:nth-child(4),
+  .login-table td:nth-child(4) {
+    width: 25% !important;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+/* @media screen and (min-width: 1367px) {
+  
+
+  .login-table thead th:first-child {
+    padding-left: 5vw;
+  }
+
+  .login-table td {
+    padding: 1.5vh 0vw !important;
+    font-size: 1vw;
+  }
+
+  .login-table td:first-child {
+    padding-left: 5vw !important;
+  }
+
+} */
+
+/* Additional global fixes for text visibility */
+@media (max-width: 1024px) {
+  .login-table td {
+    /* Remove all text truncation */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+
+  .login-table td a {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+}
+
+/* Fix for very long text */
+.login-table td {
+  /* Allow long words to break */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.login-table td a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure table layout is flexible on mobile */
+@media (max-width: 768px) {
+  .login-table {
+    table-layout: auto !important;
+  }
+
+  .login-table th,
+  .login-table td {
+    min-width: 0 !important;
+  }
+}
+
+/* Smooth scrolling on mobile */
+@media (max-width: 768px) {
+  .login-table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .login-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .login-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+  }
 }

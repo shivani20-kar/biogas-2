@@ -46,7 +46,7 @@
   font-weight: 300;
   color: #000;
   border: none;
-    font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
 }
@@ -60,7 +60,7 @@
   padding-left: 5vw;
   font-size: 1.3vw;
   font-weight: 700;
-    font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
 }
@@ -72,12 +72,11 @@
   vertical-align: top;
   padding-left: 5vw;
   border: none;
-   font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
-font-weight: 400;
+  line-height: normal;
+  font-weight: 400;
 }
-
 
 .download-table td:first-child {
   width: 25%;
@@ -86,7 +85,6 @@ font-weight: 400;
   border-top: none;
   border-bottom: none;
 }
-
 
 .download-table td:last-child {
   border: none;
@@ -101,9 +99,9 @@ font-weight: 400;
   padding: 0.35vh 0.7vw;
   font-size: 1vw;
   font-weight: 400;
-   font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
+  line-height: normal;
 }
 
 .download-table td a:hover {
@@ -111,7 +109,370 @@ line-height: normal;
   color: #3498db;
 }
 
-/* पहिल्या रो ला अतिरिक्त पॅडिंग टॉप द्या */
 .download-table tbody tr:first-child td {
   padding-top: 2vh !important;
+}
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .download-container {
+    padding: 3vh 0;
+  }
+
+  .download-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .download-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .download-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2vh;
+  }
+
+  .download-table {
+    min-width: 500px;
+    font-size: 3.5vw;
+    table-layout: auto;
+  }
+
+  .download-table thead th {
+    font-size: 4vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .download-table td {
+    font-size: 3.5vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.5px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+  }
+
+  .download-table td:first-child {
+    width: 30% !important;
+    min-width: 120px;
+    border-right: 0.5px solid #e0e0e0;
+  }
+
+  .download-table td:last-child {
+    width: 70% !important;
+    min-width: 200px;
+  }
+
+  .download-table td a {
+    font-size: 3.5vw;
+    padding: 8px 0px;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .download-table tbody tr:first-child td {
+    padding-top: 1.5vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .download-table td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .download-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .download-subtitle {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .download-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .download-table {
+    min-width: 550px;
+    font-size: 2.5vw;
+    table-layout: auto;
+  }
+
+  .download-table thead th {
+    font-size: 2.8vw;
+    padding: 1.5vh 0vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .download-table td {
+    font-size: 2.5vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.7px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .download-table td:first-child {
+    width: 30% !important;
+    min-width: 130px;
+    border-right: 0.7px solid #e0e0e0;
+  }
+
+  .download-table td:last-child {
+    width: 70% !important;
+    min-width: 250px;
+  }
+
+  .download-table td a {
+    font-size: 2.5vw;
+    padding: 10px 0px;
+    padding-left: 4vw;
+    /* Allow text to wrap */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 35px;
+  }
+
+  .download-table tbody tr:first-child td {
+    padding-top: 1.8vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .download-table td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .download-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .download-subtitle {
+    font-size: 2.2vw;
+    width: 40%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .download-table {
+    font-size: 1.8vw;
+    table-layout: auto;
+  }
+
+  .download-table thead th {
+    font-size: 2vw;
+    padding: 1.8vh 0vw;
+    padding-left: 4vw;
+  }
+
+  .download-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.8px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .download-table td:first-child {
+    width: 30% !important;
+    border-right: 0.8px solid #e0e0e0;
+  }
+
+  .download-table td:last-child {
+    width: 70% !important;
+  }
+
+  .download-table td a {
+    font-size: 1.8vw;
+    padding: 8px 0px;
+    padding-left: 4vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .download-table tbody tr:first-child td {
+    padding-top: 1.5vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .download-table td:last-child a {
+    padding-left: 3vw !important;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .download-title {
+    font-size: 3.5vw;
+  }
+
+  .download-subtitle {
+    font-size: 1.5vw;
+    width: 30%;
+  }
+
+  .download-table {
+    font-size: 1.3vw;
+  }
+
+  .download-table thead th {
+    font-size: 1.4vw;
+    padding: 2vh 0vw;
+    padding-left: 4.5vw;
+  }
+
+  .download-table td {
+    font-size: 1.2vw;
+    padding: 1.5vh 0vw !important;
+    border-right: 0.9px solid #e0e0e0;
+    /* Ensure text visibility */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  .download-table td:first-child {
+    width: 30% !important;
+    border-right: 0.9px solid #e0e0e0;
+  }
+
+  .download-table td:last-child {
+    width: 70% !important;
+  }
+
+  .download-table td a {
+    font-size: 1.2vw;
+    padding: 6px 0px;
+    padding-left: 4.5vw;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.4;
+  }
+
+  .download-table tbody tr:first-child td {
+    padding-top: 1.8vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .download-table td:last-child a {
+    padding-left: 3.5vw !important;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+@media screen and (min-width: 1367px) {
+  .download-table tbody tr:first-child td {
+    padding-top: 2vh !important;
+  }
+
+  /* Adjust padding for last column */
+  .download-table td:last-child a {
+    padding-left: 4vw !important;
+  }
+}
+
+/* Additional global fixes for text visibility */
+@media (max-width: 1024px) {
+  .download-table td {
+    /* Remove all text truncation */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+
+  .download-table td a {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word;
+  }
+}
+
+/* Fix for very long text */
+.download-table td {
+  /* Allow long words to break */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.download-table td a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure table layout is flexible on mobile */
+@media (max-width: 768px) {
+  .download-table {
+    table-layout: auto !important;
+  }
+
+  .download-table th,
+  .download-table td {
+    min-width: 0 !important;
+  }
+}
+
+/* Smooth scrolling on mobile */
+@media (max-width: 768px) {
+  .download-table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .download-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .download-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+  }
 }

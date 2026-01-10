@@ -58,7 +58,7 @@
   border-right: none !important;
   font-family: "DDINPRO";
   font-style: normal;
-line-height: normal;
+  line-height: normal;
 }
 
 .investment-business-table th a {
@@ -80,17 +80,18 @@ line-height: normal;
   text-align: left;
   color: #000;
   vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; /* Changed from nowrap to normal */
+  overflow: visible; /* Changed from hidden to visible */
+  text-overflow: clip; /* Changed from ellipsis to clip */
   padding-left: 5vw;
   border: none; /* remove all horizontal borders */
   border-right: 0.1vw solid #cccccc; /* only vertical lines between cells */
   font-weight: 400;
   font-family: "DDINPRO";
- 
   font-style: normal;
-  line-height: normal;
+  line-height: 1.4; /* Added line height for better readability */
+  word-wrap: break-word; /* Allow long words to break */
+  hyphens: auto; /* Add hyphenation support */
 }
 
 .investment-business-table td:last-child {
@@ -103,16 +104,16 @@ line-height: normal;
   display: block;
   border-radius: 0.4vw;
   transition: 0.3s;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; /* Changed from nowrap to normal */
+  overflow: visible; /* Changed from hidden to visible */
+  text-overflow: clip; /* Changed from ellipsis to clip */
   font-size: 1vw;
   font-weight: 400;
   padding: 3px 2px;
-   font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
-  line-height: normal;
-
+  line-height: 1.4;
+  word-wrap: break-word;
 }
 
 .investment-business-table td a:hover {
@@ -171,3 +172,300 @@ line-height: normal;
   padding-top: 3vh; /* adjust this value as needed */
 }
 
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .investment-business-opportunity {
+    padding: 3vh 0;
+  }
+
+  .investment-main-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .investment-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .investment-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2vh;
+  }
+
+  .investment-business-table {
+    min-width: 700px; /* Keep table scrollable on mobile */
+    font-size: 3.5vw;
+  }
+
+  .investment-business-table th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .investment-business-table td {
+    font-size: 3.5vw;
+    padding: 0; /* Increased padding */
+    padding-left: 4vw;
+    border-right: 0.5px solid #cccccc;
+    white-space: normal !important; /* Ensure normal wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.5; /* Increased line height */
+    min-height: 50px; /* Minimum height for visibility */
+    word-break: break-word; /* Break long words */
+  }
+
+  .investment-business-table td a {
+    font-size: 3.5vw;
+    padding: 8px 4px; /* Increased padding */
+    white-space: normal !important; /* Allow wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.5;
+    min-height: 40px; /* Minimum height for links */
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .investment-business-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .investment-business-table th:nth-child(1),
+  .investment-business-table td:nth-child(1) {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .investment-business-table th:nth-child(2),
+  .investment-business-table td:nth-child(2) {
+    width: 35%;
+    min-width: 180px;
+  }
+
+  .investment-business-table th:nth-child(3),
+  .investment-business-table td:nth-child(3) {
+    width: 35%;
+    min-width: 200px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .investment-main-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .investment-subtitle {
+    font-size: 3vw;
+    width: 50%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .investment-table-container {
+    overflow-x: auto;
+    margin-bottom: 2.5vh;
+  }
+
+  .investment-business-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .investment-business-table th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .investment-business-table td {
+    font-size: 2.8vw;
+    padding: 1.5vh 3vw; /* Increased padding */
+    padding-left: 4vw;
+    border-right: 0.7px solid #cccccc;
+    white-space: normal !important; /* Allow text to wrap */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    min-height: 50px; /* Increased minimum height */
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .investment-business-table td a {
+    font-size: 2.8vw;
+    padding: 10px 3px; /* Increased padding for better touch */
+    white-space: normal !important; /* Allow text to wrap */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.5;
+    min-height: 40px; /* Increased minimum height */
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  /* Specifically target the product column (3rd column) */
+  .investment-business-table td:nth-child(3) {
+    width: 45% !important;
+    min-width: 220px !important;
+  }
+
+  .investment-business-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths */
+  .investment-business-table th:nth-child(1),
+  .investment-business-table td:nth-child(1) {
+    width: 25%;
+  }
+
+  .investment-business-table th:nth-child(2),
+  .investment-business-table td:nth-child(2) {
+    width: 30%;
+  }
+
+  .investment-business-table th:nth-child(3),
+  .investment-business-table td:nth-child(3) {
+    width: 45% !important;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .investment-main-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .investment-subtitle {
+    font-size: 2.2vw;
+    width: 35%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .investment-business-table {
+    font-size: 2vw;
+  }
+
+  .investment-business-table th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .investment-business-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 2.5vw; /* Increased padding */
+    padding-left: 4vw;
+    border-right: 0.8px solid #cccccc;
+    white-space: normal !important; /* Allow wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .investment-business-table td a {
+    font-size: 1.8vw;
+    padding: 6px 3px; /* Increased padding */
+    white-space: normal !important; /* Allow wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+  }
+
+  .investment-business-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+}
+
+/* Laptop (1025px - 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .investment-main-title {
+    font-size: 3.8vw;
+  }
+
+  .investment-subtitle {
+    font-size: 1.6vw;
+    width: 28%;
+  }
+
+  .investment-business-table {
+    font-size: 1.4vw;
+  }
+
+  .investment-business-table th {
+    font-size: 1.5vw;
+    padding: 1.5vh 2vw;
+    padding-left: 4.5vw;
+  }
+
+  .investment-business-table td {
+    font-size: 1.3vw;
+    padding: 1.2vh 2vw; /* Slightly increased padding */
+    padding-left: 4.5vw;
+    border-right: 0.9px solid #cccccc;
+    white-space: normal !important; /* Ensure normal wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  .investment-business-table td a {
+    font-size: 1.3vw;
+    white-space: normal !important; /* Allow wrapping */
+    overflow: visible !important; /* Ensure content is visible */
+    text-overflow: clip !important; /* Remove ellipsis */
+    line-height: 1.4;
+    min-height: 30px;
+  }
+
+  .investment-business-table tbody tr:first-child td {
+    padding-top: 2.8vh;
+  }
+}
+
+/* Desktop Large (1367px and above) */
+@media screen and (min-width: 1367px) {
+  .investment-main-title {
+    font-size: 3.2vw;
+  }
+
+  .investment-subtitle {
+    font-size: 1.2vw;
+    width: 25%;
+  }
+
+  .investment-business-table {
+    font-size: 1vw;
+  }
+
+  .investment-business-table th {
+    font-size: 1.1vw;
+    padding: 1.5vh 2vw;
+    padding-left: 5vw;
+  }
+
+  .investment-business-table tbody tr:first-child td {
+    padding-top: 3vh;
+  }
+}
