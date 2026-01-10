@@ -441,49 +441,6 @@
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-  .tech-title {
-    font-size: 3vw;
-  }
-
-  .tech-subtitle {
-    font-size: 1.1vw;
-    width: 25%;
-  }
-
-  .tech-table {
-    font-size: 0.95vw;
-  }
-
-  .tech-table thead th {
-    font-size: 1vw;
-    padding: 2vh 0vw;
-    padding-left: 5vw;
-  }
-  
-  .tech-table tbody tr:first-child td:first-child a,
-  .tech-table tbody tr:first-child td:nth-child(2) a {
-    padding-top: 2vh;
-  }
-
-  /* Adjust column widths for large screens */
-  .tech-table td:first-child,
-  .tech-table th:first-child {
-    width: 22% !important;
-  }
-
-  .tech-table td:nth-child(2),
-  .tech-table th:nth-child(2) {
-    width: 78% !important;
-  }
-
-  /* Adjust padding for column 2 */
-  .tech-table td:nth-child(2) a {
-    padding-left: 4vw !important;
-  }
-}
-
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {
   .tech-table tbody td {

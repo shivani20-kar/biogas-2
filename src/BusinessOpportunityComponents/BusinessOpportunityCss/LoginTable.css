@@ -20,7 +20,7 @@
 
 /* Subtitle */
 .login-subtitle {
-  margin-left: 5vw; 
+  margin-left: 5vw;
   margin-top: 1vh;
   margin-bottom: 4vh;
   font-size: 1.5vw;
@@ -117,7 +117,6 @@
   padding-top: 2vh;
   display: block;
 }
-
 
 /* =================== RESPONSIVE BREAKPOINTS =================== */
 
@@ -463,25 +462,6 @@
     width: 25% !important;
   }
 }
-
-/* Desktop Large (1367px and above) */
-/* @media screen and (min-width: 1367px) {
-  
-
-  .login-table thead th:first-child {
-    padding-left: 5vw;
-  }
-
-  .login-table td {
-    padding: 1.5vh 0vw !important;
-    font-size: 1vw;
-  }
-
-  .login-table td:first-child {
-    padding-left: 5vw !important;
-  }
-
-} */
 
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {

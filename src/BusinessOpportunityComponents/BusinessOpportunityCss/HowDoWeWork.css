@@ -390,10 +390,6 @@
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-}
-
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {
   .work-tablewe td {

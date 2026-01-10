@@ -295,32 +295,6 @@ td.tdd a {
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-  .main-title {
-    font-size: 3.5vw;
-  }
-
-  .subtitle {
-    font-size: 1.3vw;
-    width: 25%;
-  }
-
-  th.thb {
-    font-size: 1.2vw;
-    padding: 2vh 5vw;
-  }
-
-  td.tdd a {
-    font-size: 1vw;
-    padding: 1vh 2vw;
-  }
-
-  .turnkey-table thead th.thd {
-    font-size: 1.2vw;
-    padding: 1.5vh 5vw;
-  }
-}
 
 /* Additional responsive improvements for tables on mobile */
 @media (max-width: 768px) {

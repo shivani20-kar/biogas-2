@@ -201,19 +201,19 @@ function App() {
               <Footer />
             </>
           }
-        /> 
-         <Route
+        />
+        <Route
           path="/investment/biogas-advanced-biofuel"
           element={
             <>
-              <InvestmentHero/>
-              <Congratulations/>
-              <InvestmetProducts/>
-              <InvestStrengthSection/>
-              <InvestmenteIndustrySectors/>
-              <InvestmentBooks/>
-              <InvestmentContactForm/>
-              <Footer/>
+              <InvestmentHero />
+              <Congratulations />
+              <InvestmetProducts />
+              <InvestStrengthSection />
+              <InvestmenteIndustrySectors />
+              <InvestmentBooks />
+              <InvestmentContactForm />
+              <Footer />
             </>
           }
         />

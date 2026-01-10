@@ -444,28 +444,3 @@
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-  .investment-main-title {
-    font-size: 3.2vw;
-  }
-
-  .investment-subtitle {
-    font-size: 1.2vw;
-    width: 25%;
-  }
-
-  .investment-business-table {
-    font-size: 1vw;
-  }
-
-  .investment-business-table th {
-    font-size: 1.1vw;
-    padding: 1.5vh 2vw;
-    padding-left: 5vw;
-  }
-
-  .investment-business-table tbody tr:first-child td {
-    padding-top: 3vh;
-  }
-}

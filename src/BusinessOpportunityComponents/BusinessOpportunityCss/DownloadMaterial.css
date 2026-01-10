@@ -405,17 +405,6 @@
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-  .download-table tbody tr:first-child td {
-    padding-top: 2vh !important;
-  }
-
-  /* Adjust padding for last column */
-  .download-table td:last-child a {
-    padding-left: 4vw !important;
-  }
-}
 
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {

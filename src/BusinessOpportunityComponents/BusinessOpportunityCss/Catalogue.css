@@ -436,29 +436,6 @@
   }
 }
 
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-  .catalogue-table {
-    font-size: 0.95vw;
-  }
-
-  .catalogue-table tbody tr:first-child td:first-child a,
-  .catalogue-table tbody tr:first-child td:nth-child(2) a {
-    padding-top: 2vh;
-  }
-
-  /* Adjust column widths for large screens */
-  .catalogue-table td:first-child,
-  .catalogue-table th:first-child {
-    width: 15% !important;
-  }
-
-  .catalogue-table td:nth-child(2),
-  .catalogue-table th:nth-child(2) {
-    width: 85% !important;
-  }
-}
-
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {
   .catalogue-table tbody td {
