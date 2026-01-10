@@ -223,7 +223,6 @@ function App() {
               <Congratulations />
               <InvestmetProducts />
               <InvestStrengthSection />
->>>>>>> 4a627382d26d51f91c8cbdf50a6b3d57c1b55320
             </>
           }
         />
