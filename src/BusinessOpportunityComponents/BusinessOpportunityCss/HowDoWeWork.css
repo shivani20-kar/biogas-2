@@ -334,65 +334,6 @@
   }
 }
 
-/* Laptop (1025px - 1366px) */
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-  .work-titlewe {
-    font-size: 3.5vw;
-  }
-
-  .work-subtitle {
-    font-size: 1.5vw;
-    width: 30%;
-  }
-
-  .work-tablewe {
-    font-size: 1.3vw;
-  }
-
-  .work-tablewe thead th {
-    font-size: 1.4vw;
-    padding: 2vh 0vw;
-    padding-left: 4.5vw;
-  }
-
-  .work-tablewe td {
-    font-size: 1.2vw;
-    padding: 1.2vh 0vw !important;
-    border-right: 0.9px solid #e0e0e0;
-    /* Ensure text visibility */
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    line-height: 1.4;
-    min-height: 40px;
-  }
-
-  .work-tablewe td:first-child {
-    width: 30% !important;
-  }
-
-  .work-tablewe td:last-child {
-    width: 70% !important;
-  }
-
-  .work-tablewe td a {
-    font-size: 1.2vw;
-    padding: 6px 0px;
-    padding-left: 4.5vw;
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    line-height: 1.4;
-  }
-
-  .work-tablewe tbody tr:first-child td {
-    padding-top: 1.8vh !important;
-  }
-}
-
-/* Desktop Large (1367px and above) */
-@media screen and (min-width: 1367px) {
-}
 
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {

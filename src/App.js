@@ -204,24 +204,34 @@ function App() {
             </>
           }
         /> 
-       <Route
-  path="/investment/biogas-advanced-biofuel"
-  element={
-    <>
-      <InvestmentHero />
-      <Congratulations />
-      <InvestmetProducts />
-      <InvestStrengthSection />
-      <InvestmenteIndustrySectors />
-      <InvestmentBooks />
-      <InvestmentContactForm />
-      <GreenReturnHero/>
+         <Route
+          path="/investment/biogas-advanced-biofuel"
+          element={
+            <>
+              <InvestmentHero/>
+              <Congratulations/>
+              <InvestmetProducts/>
+              <InvestStrengthSection/>
+              <InvestmenteIndustrySectors/>
+              <InvestmentBooks/>
+              <InvestmentContactForm/>
+               <GreenReturnHero/>
       <InvestmentContact/>
-      <Footer />
-    </>
-  }
-/>
-
+              <Footer/>
+              </>
+          }
+        />
+        <Route
+          path="/investment/biogas-advanced-biofuel"
+          element={
+            <>
+              <InvestmentHero />
+              <Congratulations />
+              <InvestmetProducts />
+              <InvestStrengthSection />
+            </>
+          }
+        />
         <Route
           path="/biogas"
           element={

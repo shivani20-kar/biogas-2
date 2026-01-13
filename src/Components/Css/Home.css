@@ -293,3 +293,16 @@ border-bottom: 5px solid #0982FE;
 border-radius: 4px;
 
 }
+
+@media screen and (min-width: 1367px) {
+
+  
+.nav-commons {
+ 
+  margin-top: 5.1vh;
+
+  
+}
+  
+  
+}
