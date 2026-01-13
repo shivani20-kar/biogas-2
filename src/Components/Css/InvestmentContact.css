@@ -1,0 +1,65 @@
+.inv-contact-section {
+  padding: 4vw 6vw;
+  margin-bottom: 8vw;
+}
+
+.inv-contact-containerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4vw;
+}
+
+/* LEFT */
+.inv-contact-left {
+  max-width: 50%;
+}
+
+.inv-contact-text {
+  color: #282828;
+  font-family: 'DDINPRO';
+font-size: 2.5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 140% */
+letter-spacing: 1px;
+  margin-bottom: 1.2vw;
+}
+
+.inv-contact-email {
+ color: #E12D36;
+  font-family: 'DDINPRO';
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.28px;
+  text-decoration: none;
+}
+
+/* RIGHT */
+.inv-contact-right {
+  text-align: right;
+}
+
+.inv-contact-reach {
+color: #282828;
+font-family: 'DDINPRO';
+font-size: 4vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.7px;
+  margin-bottom: 4vw;
+}
+
+.inv-contact-phone {
+ color: #E12D36;
+font-family: 'DDINPRO';
+font-size: 5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.92px;
+  text-decoration: none;
+}

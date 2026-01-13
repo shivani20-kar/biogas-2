@@ -12,7 +12,7 @@ const cardData = [
   "Biogas Plant Charactersticks",
   "Working Principle",
   "Technological",
-  "Main equitpment",
+  "Main Equitpment",
   "Specification List",
   "Appendices",
 ];

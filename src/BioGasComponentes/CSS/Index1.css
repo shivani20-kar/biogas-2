@@ -127,3 +127,77 @@
   color: #3a3a3a;
   font-weight: 600;
 }
+
+/* ===== Responsive for screens 320px to 480px ===== */
+@media (max-width: 480px) {
+  /* Hero Banner */
+  .hero-banner {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .bioenergy-section{
+    
+  }
+  /* Arrow Shape */
+  .arrow-shapee {
+    width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -20vw;
+  }
+
+  .arrow-shapee::before {
+    /* The border shape scales automatically */
+  }
+
+  /* Hero Text */
+  .hero-text {
+    align-items: left;
+    text-align: left;
+  }
+
+  .hero-title-outline {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .hero-title-solid {
+    font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* Animations */
+  .animate-text {
+    font-size: 17px;
+  }
+
+  .animate-arrow {
+    width: 60px;
+    height: 90px;
+  }
+
+  /* Content Section */
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 0 4vw;
+    margin-top: 1vw;
+    margin-bottom: 8vw;
+  }
+
+  .content-column p {
+    font-size: 3.9vw;
+    line-height: 1.5;
+  }
+
+  .content-column strong {
+   font-size: 3.9vw;
+  }
+}

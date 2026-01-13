@@ -122,7 +122,8 @@
   z-index: 5;
 }
 
-.biogashero-circle-elements{
+.biogashero-circle-elements {
+  position: relative; /* ⭐ VERY IMPORTANT */
   background-color: #ffffff;
   width: 55px;
   height: 55px;
@@ -131,9 +132,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible; 
+  overflow: visible;
   animation: float 3s ease-in-out infinite;
+  z-index: 6;
 }
+
 
 .biogashero-title {
   margin-top: -2vw;
@@ -153,6 +156,7 @@ line-height: normal;
   left: 35%;
   top: 0%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 @keyframes float {
@@ -200,5 +204,109 @@ line-height: normal;
   height: 4vh;
   width: 100%;
   position: relative;   /* or remove position */
+}
+/* Mobile Responsive: 320px to 480px */
+@media (max-width: 480px) {
+  .biogashero {
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  .biogasherogdmainbackground img {
+    height: 100vh; /* Reduce hero image height */
+  }
+
+  .biogashero-content-overlayy {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .biogashero-rows {
+  
+    flex-direction: column;
+    gap: 4vw;
+    padding: 0 1rem;
+  }
+
+  .biogashero-logo-container {
+      display: none;
+    width: 40vw; /* Make logo smaller */
+  }
+
+  .biogashero-logo {
+    width: 120px;
+    padding: 1vh 1vw;
+  }
+
+  .biogashero-nav-commons {
+      display: none;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 4vh;
+  }
+
+  .biogashero-nav-list-commons {
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .biogashero-nav-list-commons a {
+    font-size: 14px;
+  }
+
+  .biogashero-nav-title-commons {
+    font-size: 16px;
+  }
+
+  .biogashero-hero-bottom-wrap {
+    flex-direction: row;
+    gap: 2vh;
+    bottom: 5vh;
+    padding: 0 2vw;
+  }
+
+  .biogashero-circle-elements {
+    width: 8vw;
+    height: 8vw;
+    border-width: 1.5px;
+  }
+
+  .biogashero-title {
+    font-size: 5.5vw;
+    margin-top: -1vw;
+    text-shadow: 16px 16px 32px rgba(0, 0, 0, 0.6);
+    line-height: 20px;
+}
+
+
+  .biogashero-circle-gifs {
+    width: 120px;
+    left: 30%;
+    top:-180%;
+    transform: translate(-50%, 0%);
+     z-index: 10; 
+  }
+
+  .index-bar {
+    height: 60px;
+    padding-left: 5%;
+  }
+
+  .index-bar span {
+    font-size: 28px;
+  }
+
+  .index-arrow {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #ffffff;
+    margin-right: 15px;
+  }
+
+  .index-gray {
+    height: 3vh;
+  }
 }
 

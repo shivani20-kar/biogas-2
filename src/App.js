@@ -150,6 +150,8 @@ import EquipmentSection from "./HowDoWeWorkComponents/HowDoOverView3";
 import InvestmenteIndustrySectors from "./Components/Investment5page";
 import InvestmentBooks from "./Components/Investment6page";
 import InvestmentContactForm from "./Components/InvestmentcontactForm";
+import GreenReturnHero from "./Components/NewSection";
+import InvestmentContact from "./Components/InvestmentContact";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -202,30 +204,24 @@ function App() {
             </>
           }
         /> 
-         <Route
-          path="/investment/biogas-advanced-biofuel"
-          element={
-            <>
-              <InvestmentHero/>
-              <Congratulations/>
-              <InvestmetProducts/>
-              <InvestStrengthSection/>
-              <InvestmenteIndustrySectors/>
-              <InvestmentBooks/>
-              <InvestmentContactForm/>
-              <Footer/>
-        />
-        <Route
-          path="/investment/biogas-advanced-biofuel"
-          element={
-            <>
-              <InvestmentHero />
-              <Congratulations />
-              <InvestmetProducts />
-              <InvestStrengthSection />
-            </>
-          }
-        />
+       <Route
+  path="/investment/biogas-advanced-biofuel"
+  element={
+    <>
+      <InvestmentHero />
+      <Congratulations />
+      <InvestmetProducts />
+      <InvestStrengthSection />
+      <InvestmenteIndustrySectors />
+      <InvestmentBooks />
+      <InvestmentContactForm />
+      <GreenReturnHero/>
+      <InvestmentContact/>
+      <Footer />
+    </>
+  }
+/>
+
         <Route
           path="/biogas"
           element={

@@ -127,3 +127,52 @@
   font-weight: 700;
   margin: 22px 0 -10px;
 }
+
+/* ===== MEDIA QUERY FOR 320px TO 480px ===== */
+@media screen and (max-width: 480px) {
+  .silage-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .silage-arrow-shape {
+  width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -10vw;
+  }
+.silage-header-text{
+   align-items: right;
+    text-align: left;
+}
+  .silage-header-text h1 {
+    font-size: 40px;
+    -webkit-text-stroke: 1px #ffffff;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .silage-header-text h2 {
+    font-size: 18px;
+    margin-top: -1vw;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .silage-content {
+    padding: 2vw 3vw;
+    gap: 15px;
+  }
+
+  .silage-left-content h3,
+  .silage-right-content h3 {
+    font-size: 14px;
+  }
+
+  .silage-left-content p,
+  .silage-right-content p {
+    font-size: 13px;
+  }
+}

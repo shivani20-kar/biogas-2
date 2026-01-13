@@ -132,90 +132,71 @@
   font-weight: 700;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .outline-text {
-    font-size: 80px;
-    margin-top: 2vw;
-  }
-  
-  .header-text h3 {
-    font-size: 36px;
-    margin-top: -3vw;
-  }
-  
-  .energy-arrow-shape {
-    width: 100px;
-    height: 150px;
-  }
-  
-  .energy-content {
-    padding: 2vw 5vw;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .energy-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .energy-arrow-shape {
-    margin: 2vw auto;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  
-  .outline-text {
-    font-size: 60px;
-    margin-top: 2vw;
-    margin-left: 0;
-  }
-  
-  .header-text h3 {
-    font-size: 28px;
-    margin-top: -2vw;
-    margin-left: 0;
-  }
-  
-  .energy-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 4vw;
-  }
-  
-  .right-content h4 {
-    font-size: 3vw;
-  }
-  
-  .sep-para {
-    padding: 0 4vw;
-  }
-}
-
+/* ===== Mobile Responsive: 320px to 480px ===== */
 @media (max-width: 480px) {
-  .outline-text {
-    font-size: 48px;
+  .energy-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
   }
-  
-  .header-text h3 {
-    font-size: 22px;
-  }
-  
+
   .energy-arrow-shape {
     width: 80px;
     height: 120px;
+    margin-left: 0;
+    margin-top: -10vw;
   }
-  
-  .right-content h4 {
-    font-size: 18px;
+
+  .header-text {
+    align-items: left;
+    text-align: left;
   }
-  
+
+  .outline-text {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .header-text h3 {
+    font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  .energy-content {
+   display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 0 4vw;
+    margin-top: 1vw;
+  }
+
   .energy-content p,
-  .right-content ul li,
   .sep-para {
-    font-size: 15px;
+    font-size: 3.9vw;
+    line-height: 1.5;
+  }
+
+  .sep-para {
+    padding: 0vw 4vw;
+    margin-bottom: 5vw;
+  }
+
+  .right-content h4 {
+    font-size: 5.5vw;
+    margin: 15px 0 8px;
+  }
+
+  .right-content ul {
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .right-content ul li {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
