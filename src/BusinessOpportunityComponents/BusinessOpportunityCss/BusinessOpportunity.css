@@ -30,15 +30,39 @@
   font-family: "DDINPRO";
 }
 
-/* -------- TABLE COMMON -------- */
+/* -------- TABLE WRAPPER -------- */
+.table-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnkey-wrapper {
+  margin-top: 5vh;
+}
+
+/* -------- TABLE CONTAINER (Scrollable) -------- */
 .table-container {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
 }
 
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------- TABLES -------- */
 .business-table,
 .turnkey-table {
   width: 100%;
+  min-width: 900px;
   border-collapse: collapse;
   border: none;
 }
@@ -55,6 +79,7 @@ th.thb {
   font-family: "DDINPRO";
   font-style: normal;
   line-height: normal;
+  white-space: nowrap;
 }
 
 th.thb:last-child {
@@ -68,6 +93,7 @@ th.thb:last-child {
   border-top: none;
   border-bottom: none;
   border-left: none;
+  white-space: nowrap;
 }
 
 .business-table td.tdd:last-child {
@@ -80,6 +106,7 @@ th.thb:last-child {
   border-top: none;
   border-bottom: none;
   border-left: none;
+  white-space: nowrap;
 }
 
 .turnkey-table td.tdd:last-child {
@@ -87,13 +114,12 @@ th.thb:last-child {
 }
 
 /* -------- LINKS -------- */
-
 td.tdd a:hover {
   background-color: #f2f6fa;
   color: #3498db;
 }
 
-/* -------- OVERVIEW CELL -------- */
+/* -------- CELL STYLING -------- */
 td.tdd {
   width: 16vw;
   text-align: center;
@@ -113,16 +139,11 @@ td.tdd a {
   display: block;
   padding: 1vh 2vw;
   font-size: 1vw;
-
   transition: 0.3s;
   text-align: start;
 }
 
-/* -------- TURNKEY -------- */
-.turnkey-solution {
-  margin-top: 5vh;
-}
-
+/* -------- TURNKEY HEADER -------- */
 .turnkey-table thead th.thd {
   background-color: #e12d36;
   color: #ffffff;
@@ -136,6 +157,7 @@ td.tdd a {
   line-height: normal;
 }
 
+/* -------- TOP MARGIN FOR FIRST ROW -------- */
 .business-table tbody tr:first-child td > :first-child {
   margin-top: 2vh;
 }
@@ -143,6 +165,63 @@ td.tdd a {
 .turnkey-table tbody tr:first-child td > :first-child {
   margin-top: 2vh;
 }
+
+/* -------- ARROWS -------- */
+.table-hero-arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85vw;
+  width: 100%;
+  pointer-events: none;
+}
+
+.table-hero-arrows .arrow-left,
+.table-hero-arrows .arrow-right {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f0f0f0;
+  animation: arrowPulse 2s infinite ease-in-out;
+}
+
+.table-hero-arrows svg {
+  width: 18px;
+  height: 14px;
+}
+
+@keyframes arrowPulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+/* Hide arrows on desktop */
+@media (min-width: 769px) {
+  .table-hero-arrows {
+    display: none;
+  }
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
 
 /* Mobile Small (320px - 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -163,14 +242,14 @@ td.tdd a {
     margin-bottom: 3vh;
   }
 
+  .business-table,
+  .turnkey-table {
+    min-width: 800px;
+  }
+
   th.thb {
     font-size: 3.5vw;
     padding: 1.5vh 4vw;
-  }
-
-  td.tdd {
-    width: auto;
-    min-width: 200px;
   }
 
   td.tdd a {
@@ -184,8 +263,32 @@ td.tdd a {
     padding: 1.5vh 4vw;
   }
 
-  .turnkey-solution {
+  .turnkey-wrapper {
     margin-top: 4vh;
+  }
+
+  .table-hero-arrows {
+    gap: 80vw;
+  }
+
+  .table-hero-arrows .arrow-left,
+  .table-hero-arrows .arrow-right {
+    padding: 10px;
+  }
+
+  .table-hero-arrows svg {
+    width: 20px;
+    height: 16px;
+  }
+
+  .table-hero-arrows .arrow-left,
+  .table-hero-arrows .arrow-right {
+    padding: 6px;
+  }
+
+  .table-hero-arrows svg {
+    width: 16px;
+    height: 12px;
   }
 }
 
@@ -207,14 +310,14 @@ td.tdd a {
     margin-bottom: 3.5vh;
   }
 
+  .business-table,
+  .turnkey-table {
+    min-width: 850px;
+  }
+
   th.thb {
     font-size: 2.8vw;
     padding: 1.8vh 4vw;
-  }
-
-  td.tdd {
-    width: auto;
-    min-width: 180px;
   }
 
   td.tdd a {
@@ -228,8 +331,36 @@ td.tdd a {
     padding: 1.5vh 4vw;
   }
 
-  .turnkey-solution {
+  .turnkey-wrapper {
     margin-top: 4.5vh;
+  }
+
+  .table-hero-arrows {
+    gap: 83vw;
+  }
+
+  .table-hero-arrows .arrow-left,
+  .table-hero-arrows .arrow-right {
+    padding: 14px;
+  }
+
+  .table-hero-arrows svg {
+    width: 24px;
+    height: 18px;
+  }
+
+  .table-hero-arrows {
+    gap: 83vw;
+  }
+
+  .table-hero-arrows .arrow-left,
+  .table-hero-arrows .arrow-right {
+    padding: 8px;
+  }
+
+  .table-hero-arrows svg {
+    width: 18px;
+    height: 14px;
   }
 }
 
@@ -251,11 +382,6 @@ td.tdd a {
     padding: 2vh 4vw;
   }
 
-  td.tdd {
-    width: auto;
-    min-width: 160px;
-  }
-
   td.tdd a {
     font-size: 2vw;
     padding: 1vh 2vw;
@@ -268,27 +394,7 @@ td.tdd a {
   }
 }
 
-
-
-/* Additional responsive improvements for tables on mobile */
-@media (max-width: 768px) {
-  .table-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .business-table,
-  .turnkey-table {
-    min-width: 600px; /* Ensures table doesn't get too narrow on mobile */
-  }
-
-  .business-table td.tdd,
-  .turnkey-table td.tdd {
-    border-right: 0.5px solid #e0e0e0;
-  }
-}
-
-/* Prevent text from becoming too small on very small screens */
+/* Additional improvements for very small screens */
 @media (max-width: 360px) {
   td.tdd a {
     font-size: 3.2vw;
@@ -298,5 +404,19 @@ td.tdd a {
   th.thb {
     font-size: 3.2vw;
     padding: 1.2vh 3vw;
+  }
+
+  .table-hero-arrows {
+    gap: 78vw;
+  }
+
+  .table-hero-arrows .arrow-left,
+  .table-hero-arrows .arrow-right {
+    padding: 8px;
+  }
+
+  .table-hero-arrows svg {
+    width: 18px;
+    height: 14px;
   }
 }
