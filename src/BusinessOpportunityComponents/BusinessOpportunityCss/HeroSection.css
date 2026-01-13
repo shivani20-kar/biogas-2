@@ -627,65 +627,6 @@ svg:hover path {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-  .hero {
-    height: 90vh;
-    margin-top: 8vh;
-  }
-
-  /* .hero-content-overlay {
-    display: none;
-  } */
-
-  .logo-containerhero {
-    width: 12vw;
-  }
-
-  .logohero {
-    width: 200px;
-    padding: 0vh 2vw;
-  }
-
-  .header-row {
-    padding: 4vh 2rem;
-  }
-
-  .nav-common {
-    display: flex;
-    gap: 2vh;
-  }
-
-  .nav-title-common {
-    font-size: 16px;
-    letter-spacing: 0.6px;
-  }
-
-  .nav-list-common {
-    gap: 1.8vw;
-  }
-
-  .nav-list-common a {
-    font-size: 16.5px;
-  }
-
-  .hero-bottom-wrapsectionhero {
-    bottom: 6vh;
-    padding: 0 6vw;
-  }
-
-  .sectionhero-title {
-    font-size: 60px;
-  }
-
-  .circle-element {
-    width: 150px;
-    height: 150px;
-  }
-
-  .circle-gifhero {
-    height: 75%;
-  }
-}
 /* 
 @media screen and (min-width: 1367px) {
   .hero {
