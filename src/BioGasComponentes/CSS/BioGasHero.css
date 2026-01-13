@@ -169,47 +169,11 @@ line-height: normal;
   }
 }
 
-
-
-.index-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  /* background: #6d6e71; */
-  display: flex;
-  align-items: center;
-  padding-left: 7%;
-  z-index: 3;
-}
-
-.index-bar span {
-  font-size: 42px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-/* Arrow Shape */
-.index-arrow {
-  width: 0;
-  height: 0;
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
-  border-right: 45px solid #ffffff;
-  margin-right: 25px;
-}
-.index-gray {
-  background: #6d6e71;
-  height: 4vh;
-  width: 100%;
-  position: relative;   /* or remove position */
-}
 /* Mobile Responsive: 320px to 480px */
 @media (max-width: 480px) {
   .biogashero {
     height: 50vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
 
   .biogasherogdmainbackground img {
@@ -234,30 +198,11 @@ line-height: normal;
       display: none;
     width: 40vw; /* Make logo smaller */
   }
-
-  .biogashero-logo {
-    width: 120px;
-    padding: 1vh 1vw;
-  }
-
   .biogashero-nav-commons {
       display: none;
     flex-direction: column;
     gap: 3vh;
     margin-top: 4vh;
-  }
-
-  .biogashero-nav-list-commons {
-    flex-direction: column;
-    gap: 1.5vh;
-  }
-
-  .biogashero-nav-list-commons a {
-    font-size: 14px;
-  }
-
-  .biogashero-nav-title-commons {
-    font-size: 16px;
   }
 
   .biogashero-hero-bottom-wrap {
@@ -289,24 +234,5 @@ line-height: normal;
      z-index: 10; 
   }
 
-  .index-bar {
-    height: 60px;
-    padding-left: 5%;
-  }
-
-  .index-bar span {
-    font-size: 28px;
-  }
-
-  .index-arrow {
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-right: 30px solid #ffffff;
-    margin-right: 15px;
-  }
-
-  .index-gray {
-    height: 3vh;
-  }
 }
 

@@ -135,3 +135,78 @@
   font-weight: 700;
   margin-bottom: 8px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ---------- HEADER ---------- */
+  .hlr-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .hlr-arrow {
+    clip-path: none;
+    background: transparent;
+     width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -10vw;
+  }
+
+  .hlr-arrow::before {
+    display: none;
+  }
+  .hlr-title {
+  align-items: left;
+    text-align: left;
+  }
+
+  .hlr-title h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .hlr-title h2 {
+    font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* ---------- CONTENT ---------- */
+  .hlr-content {
+  display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 0 4vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+  }
+
+  .hlr-left p,
+  .hlr-right p {
+   font-size: 3.9vw;
+    line-height: 1.5;
+  }
+
+  .hlr-right ul {
+    padding-left: 15px;
+  }
+
+  .hlr-right ul li {
+   font-size: 3.9vw;
+  }
+
+  /* ---------- ANIMATIONS (Mobile Smooth) ---------- */
+  .animate-text {
+    animation-duration: 0.8s;
+  }
+
+  .animate-arrow {
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+  }
+}

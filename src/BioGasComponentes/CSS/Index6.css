@@ -140,3 +140,70 @@
   text-align: center;
   background: #ffffff;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ===== Header ===== */
+  .raw-header {
+   flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .raw-header h1 {
+font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .raw-header p {
+     font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* ===== Arrow ===== */
+  .raw-arrow-shape {
+   width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -10vw;
+  }
+
+  /* ===== Content Padding ===== */
+  .tablle-center {
+    padding: 0vh 4vw;
+  }
+
+  /* ===== Table Title ===== */
+  .table-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+
+  /* ===== Table Wrapper ===== */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ===== Table ===== */
+  .raw-table {
+    min-width: 600px;
+  }
+
+  .raw-table .raw-th {
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+
+  .raw-table .raw-td {
+    font-size: 13px;
+    padding: 10px 4px;
+  }
+
+}
+
