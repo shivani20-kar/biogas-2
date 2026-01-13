@@ -196,11 +196,6 @@ td.tdd a {
   cursor: pointer;
 }
 
-.table-hero-arrows svg {
-  width: 18px;
-  height: 14px;
-}
-
 @keyframes arrowPulse {
   0% {
     opacity: 0.6;
@@ -275,22 +270,7 @@ td.tdd a {
 
   .table-hero-arrows .arrow-left,
   .table-hero-arrows .arrow-right {
-    padding: 10px;
-  }
-
-  .table-hero-arrows svg {
-    width: 20px;
-    height: 16px;
-  }
-
-  .table-hero-arrows .arrow-left,
-  .table-hero-arrows .arrow-right {
     padding: 6px;
-  }
-
-  .table-hero-arrows svg {
-    width: 16px;
-    height: 12px;
   }
 }
 
@@ -338,31 +318,7 @@ td.tdd a {
   }
 
   .table-hero-arrows {
-    gap: 83vw;
-  }
-
-  .table-hero-arrows .arrow-left,
-  .table-hero-arrows .arrow-right {
-    padding: 14px;
-  }
-
-  .table-hero-arrows svg {
-    width: 24px;
-    height: 18px;
-  }
-
-  .table-hero-arrows {
-    gap: 83vw;
-  }
-
-  .table-hero-arrows .arrow-left,
-  .table-hero-arrows .arrow-right {
-    padding: 8px;
-  }
-
-  .table-hero-arrows svg {
-    width: 18px;
-    height: 14px;
+    gap: 85vw;
   }
 
   .table-container::-webkit-scrollbar {
@@ -416,19 +372,5 @@ td.tdd a {
   th.thb {
     font-size: 3.2vw;
     padding: 1.2vh 3vw;
-  }
-
-  .table-hero-arrows {
-    gap: 78vw;
-  }
-
-  .table-hero-arrows .arrow-left,
-  .table-hero-arrows .arrow-right {
-    padding: 8px;
-  }
-
-  .table-hero-arrows svg {
-    width: 18px;
-    height: 14px;
   }
 }

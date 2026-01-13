@@ -43,8 +43,8 @@ const BusinessOpportunity = () => {
           <div className="arrow-left" onClick={() => scrollTable("left")}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="18"
+              width="16"
+              height="16"
               viewBox="0 0 20 14"
               fill="none"
             >
@@ -57,8 +57,8 @@ const BusinessOpportunity = () => {
           <div className="arrow-right" onClick={() => scrollTable("right")}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="18"
+              width="16"
+              height="16"
               viewBox="0 0 20 14"
               fill="none"
             >
