@@ -2,9 +2,8 @@ import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/DownloadMaterial.css";
 
 const DownloadMaterial = () => {
-  return ( 
+  return (
     <div className="download-container">
-
       {/* Title */}
       <h1 className="download-title">Download Material</h1>
       <p className="download-subtitle">
@@ -14,7 +13,6 @@ const DownloadMaterial = () => {
       {/* Table Section */}
       <div className="download-table-wrapper">
         <table className="download-table">
-
           <thead>
             <tr>
               <th className="download-overview">Overview</th>
@@ -23,26 +21,18 @@ const DownloadMaterial = () => {
           </thead>
 
           <tbody>
-
             <tr>
               <td>
-                <a href="company-brochure" >
-                  Company brochure
-                </a>
+                <a href="company-brochure">Company brochure</a>
               </td>
 
               <td>
-                <a href="questionnaire" >
-                  Questionnaires
-                </a>
+                <a href="questionnaire">Questionnaires</a>
               </td>
             </tr>
-
           </tbody>
-
         </table>
       </div>
-
     </div>
   );
 };

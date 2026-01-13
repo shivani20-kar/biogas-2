@@ -189,6 +189,7 @@
   /* Adjust padding for last column */
   .work-tablewe td:last-child a {
     padding-left: 3vw !important;
+    padding: 5px 0;
   }
 }
 
@@ -333,7 +334,6 @@
     padding-left: 3vw !important;
   }
 }
-
 
 /* Additional global fixes for text visibility */
 @media (max-width: 1024px) {

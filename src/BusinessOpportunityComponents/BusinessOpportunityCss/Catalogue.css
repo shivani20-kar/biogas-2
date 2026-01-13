@@ -186,14 +186,15 @@
 
   .catalogue-table td a {
     font-size: 3.5vw;
-    padding: 8px 0px;
+    padding: 20px 0px;
     padding-left: 4vw;
-    /* Allow text to wrap */
     white-space: normal !important;
     overflow: visible !important;
     text-overflow: clip !important;
     line-height: 1.4;
     word-break: break-word;
+    /* margin-top: 0vh; */
+    padding-top: 0px;
   }
 
   .catalogue-table tbody tr:first-child td:first-child a,
