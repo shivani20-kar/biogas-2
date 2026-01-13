@@ -12,7 +12,7 @@ const Industries = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisible(true);
             observer.unobserve(entry.target);
@@ -42,7 +42,9 @@ const Industries = () => {
           </svg>
         </div>
 
-        <div className={`industries-header-text ${visible ? "animate-text" : ""}`}>
+        <div
+          className={`industries-header-text ${visible ? "animate-text" : ""}`}
+        >
           <h1 className="industries-title">Industries</h1>
           <p className="industries-subtitle">GD planet plants</p>
         </div>

@@ -10,7 +10,7 @@ import img5 from "./Biochemical & Fertilizer.png";
 import img4 from "./Biofuel.png";
 import img3 from "./Biogas.png";
 import img2 from "./Animal Feed.png";
-import img1 from "./Feedstock.png";
+import img1 from "./Feedstock.png"; 
 
 const data = [
   { img: img1, title: (
@@ -72,7 +72,7 @@ const InvestmenteIndustrySectors = () => {
 
       <div className="industry-slider" ref={sliderRef}>
         {data.map((item, index) => (
-          <div className="industry-card" key={index}>
+          <div className="industrys-card" key={index}>
             <img src={item.img} alt={item.title} />
             <div className="industry-label">{item.title}</div>
           </div>
