@@ -169,7 +169,7 @@ td.tdd a {
 /* -------- ARROWS -------- */
 .table-hero-arrows {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -191,7 +191,9 @@ td.tdd a {
   align-items: center;
   justify-content: center;
   border: 2px solid #f0f0f0;
-  animation: arrowPulse 2s infinite ease-in-out;
+  /* animation: arrowPulse 2s infinite ease-in-out; */
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .table-hero-arrows svg {
@@ -361,6 +363,16 @@ td.tdd a {
   .table-hero-arrows svg {
     width: 18px;
     height: 14px;
+  }
+
+  .table-container::-webkit-scrollbar {
+    display: block;
+    height: 4px;
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    background: #e12d36;
+    border-radius: 10px;
   }
 }
 

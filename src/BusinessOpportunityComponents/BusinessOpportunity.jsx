@@ -17,6 +17,16 @@ const BusinessOpportunity = () => {
     }
   };
 
+  const scrollTable = (direction) => {
+    if (!container1Ref.current || !container2Ref.current) return;
+
+    const scrollAmount = 220;
+    const value = direction === "left" ? -scrollAmount : scrollAmount;
+
+    container1Ref.current.scrollLeft += value;
+    container2Ref.current.scrollLeft += value;
+  };
+
   return (
     <div className="business-opportunity">
       {/* -------- TITLE -------- */}
@@ -30,7 +40,7 @@ const BusinessOpportunity = () => {
       {/* -------- BUSINESS TABLE -------- */}
       <div className="table-wrapper">
         <div className="table-hero-arrows">
-          <div className="arrow-left">
+          <div className="arrow-left" onClick={() => scrollTable("left")}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -44,7 +54,7 @@ const BusinessOpportunity = () => {
               />
             </svg>
           </div>
-          <div className="arrow-right">
+          <div className="arrow-right" onClick={() => scrollTable("right")}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
