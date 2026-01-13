@@ -268,32 +268,6 @@ td.tdd a {
   }
 }
 
-/* Laptop (1025px - 1366px) */
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-  .main-title {
-    font-size: 4vw;
-  }
-
-  .subtitle {
-    font-size: 1.8vw;
-    width: 30%;
-  }
-
-  th.thb {
-    font-size: 1.6vw;
-    padding: 2vh 4.5vw;
-  }
-
-  td.tdd a {
-    font-size: 1.4vw;
-    padding: 1vh 2vw;
-  }
-
-  .turnkey-table thead th.thd {
-    font-size: 1.6vw;
-    padding: 1.5vh 4.5vw;
-  }
-}
 
 
 /* Additional responsive improvements for tables on mobile */
