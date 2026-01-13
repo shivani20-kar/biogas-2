@@ -38,7 +38,7 @@ const HLRSectionTwo = () => {
         <div className="header-text-two">
           <h1 className="title-two">GD Planet's</h1>
           <h2 className="subtitle-two">
-            High-Load Reactor (HLR): Efficient Biogas <br />
+            High-Load Reactor (HLR): Efficient Biogas 
             Solution for Napier Grass
           </h2>
         </div>
