@@ -164,3 +164,345 @@
   max-height: none !important;
   overflow-y: visible !important;
 }
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .sector-container {
+    padding: 3vh 0;
+  }
+
+  .sector-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .sector-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  /* ------------------ TOP TABS ------------------ */
+  .sector-top-tabs {
+    gap: 4vw;
+    padding-left: 4vw;
+    margin-bottom: 1.5vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+    scrollbar-width: thin;
+  }
+
+  /* स्क्रोलबार स्टाइलिंग */
+  .sector-top-tabs::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+  }
+
+  .sector-top-tabs span {
+    font-size: 3.5vw;
+    padding-bottom: 4px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .sector-top-tabs span.active {
+    border-bottom: 2px solid #e12d36;
+  }
+
+  /* ------------------ TABLE ------------------ */
+  .sector-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sector-table {
+    min-width: 900px;
+    font-size: 3.5vw;
+  }
+
+  .sector-th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .sector-td {
+    font-size: 3.5vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  /* ------------------ LIST BOXES ------------------ */
+  .cell-list {
+    max-height: 40vh;
+    padding-right: 8px;
+  }
+
+  .cell-list a {
+    font-size: 3.5vw;
+    padding: 0.8vh 0vw;
+    line-height: 1.5;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .sector-table th:first-child,
+  .sector-table td:first-child {
+    width: 15vw;
+    min-width: 120px;
+  }
+
+  .sector-table th:nth-child(2),
+  .sector-table td:nth-child(2) {
+    width: 18vw;
+    min-width: 140px;
+  }
+
+  .sector-table th:nth-child(3),
+  .sector-table td:nth-child(3) {
+    width: 24vw;
+    min-width: 180px;
+  }
+
+  .sector-table th:nth-child(4),
+  .sector-table td:nth-child(4) {
+    width: 18vw;
+    min-width: 140px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .sector-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .sector-subtitle {
+    font-size: 3vw;
+    width: 50%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  /* ------------------ TOP TABS (SCROLLABLE) ------------------ */
+  .sector-top-tabs {
+    gap: 3vw;
+    padding-left: 4vw;
+    margin-bottom: 1.8vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+
+  /* स्क्रोलबार स्टाइलिंग */
+  .sector-top-tabs::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 3px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+    border-radius: 3px;
+  }
+
+  .sector-top-tabs span {
+    font-size: 2.5vw;
+    padding-bottom: 5px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .sector-top-tabs span.active {
+    border-bottom: 2px solid #e12d36;
+  }
+
+  /* ------------------ TABLE ------------------ */
+  .sector-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .sector-table {
+    min-width: 800px;
+    font-size: 2.8vw;
+  }
+
+  .sector-th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .sector-td {
+    font-size: 2.8vw;
+    padding: 1.8vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  /* ------------------ LIST BOXES ------------------ */
+  .cell-list {
+    max-height: 40vh;
+    padding-right: 10px;
+  }
+
+  .cell-list a {
+    font-size: 2.8vw;
+    padding: 0.8vh 0vw;
+    line-height: 1.4;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  /* Adjust column widths */
+  .sector-table th:first-child,
+  .sector-table td:first-child {
+    width: 15vw;
+  }
+
+  .sector-table th:nth-child(2),
+  .sector-table td:nth-child(2) {
+    width: 18vw;
+  }
+
+  .sector-table th:nth-child(3),
+  .sector-table td:nth-child(3) {
+    width: 24vw;
+  }
+
+  .sector-table th:nth-child(4),
+  .sector-table td:nth-child(4) {
+    width: 18vw;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sector-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .sector-subtitle {
+    font-size: 2.2vw;
+    width: 35%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  /* ------------------ TOP TABS (SCROLLABLE) ------------------ */
+  .sector-top-tabs {
+    gap: 2.5vw;
+    padding-left: 4vw;
+    margin-bottom: 1.8vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+
+  /* स्क्रोलबार स्टाइलिंग */
+  .sector-top-tabs::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 3px;
+  }
+
+  .sector-top-tabs::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+    border-radius: 3px;
+  }
+
+  .sector-top-tabs span {
+    font-size: 2vw;
+    padding-bottom: 5px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .sector-top-tabs span.active {
+    border-bottom: 2px solid #e12d36;
+  }
+
+  /* ------------------ TABLE ------------------ */
+  .sector-table {
+    font-size: 2vw;
+  }
+
+  .sector-th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .sector-td {
+    font-size: 1.8vw;
+    padding: 1.8vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  /* ------------------ LIST BOXES ------------------ */
+  .cell-list {
+    max-height: 40vh;
+    padding-right: 10px;
+  }
+
+  .cell-list a {
+    font-size: 1.8vw;
+    padding: 0.7vh 0vw;
+    line-height: 1.4;
+    min-height: 30px;
+    word-break: break-word;
+  }
+}

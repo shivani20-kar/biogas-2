@@ -80,7 +80,7 @@
   font-size: 1vw;
   text-decoration: none;
   color: #000;
-font-family: "DDINPRO";
+  font-family: "DDINPRO";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -121,4 +121,224 @@ font-family: "DDINPRO";
 
 .hc-table tbody tr:first-child td {
   padding-top: 2vh;
+}
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .hc-container {
+    padding: 3vh 0;
+  }
+
+  .hc-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .hc-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .hc-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hc-table {
+    min-width: 700px;
+    font-size: 3.5vw;
+  }
+
+  .hc-table th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .hc-table td {
+    font-size: 3.5vw;
+    padding: 0vh;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .hc-table td a {
+    font-size: 3.5vw;
+    padding: 5px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .hc-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .hc-table th:nth-child(1),
+  .hc-table td:nth-child(1) {
+    width: 25%;
+    min-width: 120px;
+  }
+
+  .hc-table th:nth-child(2),
+  .hc-table td:nth-child(2) {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .hc-table th:nth-child(3),
+  .hc-table td:nth-child(3) {
+    width: 45%;
+    min-width: 200px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hc-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .hc-subtitle {
+    font-size: 3vw;
+    width: 70%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .hc-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .hc-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .hc-table th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .hc-table td {
+    font-size: 2.8vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .hc-table td a {
+    font-size: 2.8vw;
+    padding: 10px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .hc-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths */
+  .hc-table th:nth-child(1),
+  .hc-table td:nth-child(1) {
+    width: 25%;
+  }
+
+  .hc-table th:nth-child(2),
+  .hc-table td:nth-child(2) {
+    width: 30%;
+  }
+
+  .hc-table th:nth-child(3),
+  .hc-table td:nth-child(3) {
+    width: 45%;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hc-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .hc-subtitle {
+    font-size: 2.2vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .hc-table {
+    font-size: 2vw;
+  }
+
+  .hc-table th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .hc-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .hc-table td a {
+    font-size: 1.8vw;
+    padding: 6px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .hc-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
 }

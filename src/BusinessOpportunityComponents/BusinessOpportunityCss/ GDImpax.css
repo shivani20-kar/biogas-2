@@ -130,3 +130,240 @@
 .gdimpax-table tbody tr:first-child td {
   padding-top: 2vh;
 }
+
+
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .gdimpax-container {
+    padding: 3vh 0;
+  }
+
+  .gdimpax-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .gdimpax-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .gdimpax-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gdimpax-table {
+    min-width: 700px;
+    font-size: 3.5vw;
+  }
+
+  .gdimpax-table th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .gdimpax-table td {
+    font-size: 3.5vw;
+    padding: 0vh;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .gdimpax-table td a {
+    font-size: 3.5vw;
+    padding: 5px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .gdimpax-overview-link {
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+
+  .gdimpax-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .gdimpax-table th:nth-child(1),
+  .gdimpax-table td:nth-child(1) {
+    width: 25%;
+    min-width: 120px;
+  }
+
+  .gdimpax-table th:nth-child(2),
+  .gdimpax-table td:nth-child(2) {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .gdimpax-table th:nth-child(3),
+  .gdimpax-table td:nth-child(3) {
+    width: 45%;
+    min-width: 200px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .gdimpax-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .gdimpax-subtitle {
+    font-size: 3vw;
+    width: 50%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdimpax-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .gdimpax-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .gdimpax-table th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .gdimpax-table td {
+    font-size: 2.8vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .gdimpax-table td a {
+    font-size: 2.8vw;
+    padding: 10px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .gdimpax-overview-link {
+    font-size: 2.8vw;
+    font-weight: 600;
+  }
+
+  .gdimpax-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths */
+  .gdimpax-table th:nth-child(1),
+  .gdimpax-table td:nth-child(1) {
+    width: 25%;
+  }
+
+  .gdimpax-table th:nth-child(2),
+  .gdimpax-table td:nth-child(2) {
+    width: 30%;
+  }
+
+  .gdimpax-table th:nth-child(3),
+  .gdimpax-table td:nth-child(3) {
+    width: 45%;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gdimpax-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .gdimpax-subtitle {
+    font-size: 2.2vw;
+    width: 35%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdimpax-table {
+    font-size: 2vw;
+  }
+
+  .gdimpax-table th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .gdimpax-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .gdimpax-table td a {
+    font-size: 1.8vw;
+    padding: 6px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+    margin-bottom: 6px;
+  }
+
+  .gdimpax-overview-link {
+    font-size: 1.8vw;
+    font-weight: 600;
+  }
+
+  .gdimpax-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+}

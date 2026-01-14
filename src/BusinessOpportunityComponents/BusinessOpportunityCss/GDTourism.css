@@ -127,7 +127,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 10px;
-      margin-top: 1vw;
+  margin-top: 1vw;
 }
 
 .gdtourism-card-content p {
@@ -161,4 +161,260 @@
 .gdtourism-table th:nth-child(2),
 .gdtourism-table td:nth-child(2) {
   width: 55%;
+}
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .gdtourism-container {
+    padding: 3vh 0;
+  }
+
+  .gdtourism-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .gdtourism-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .gdtourism-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gdtourism-table {
+    min-width: 700px;
+    font-size: 3.5vw;
+  }
+
+  .gdtourism-table th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .gdtourism-table td {
+    font-size: 3.5vw;
+    padding: 2vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  /* LEFT OVERVIEW */
+  .gdtourism-overview h3 {
+    font-size: 4.5vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .gdtourism-overview p {
+    font-size: 3vw;
+    margin-bottom: 1.5vh;
+  }
+
+  /* GREEN SECTION */
+  .gdtourism-card-content {
+    padding: 2vh 3vw;
+  }
+
+  .gdtourism-card-content h4 {
+    font-size: 4vw;
+    margin-bottom: 0.8vh;
+    line-height: 1.2;
+    margin-top: 0.5vw;
+  }
+
+  .gdtourism-card-content p {
+    font-size: 3.5vw;
+    width: 90%;
+    margin-bottom: 1.2vh;
+  }
+
+  .gdtourism-card-content a {
+    font-size: 3.2vw;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .gdtourism-table th:nth-child(1),
+  .gdtourism-table td:nth-child(1) {
+    width: 45%;
+    min-width: 250px;
+  }
+
+  .gdtourism-table th:nth-child(2),
+  .gdtourism-table td:nth-child(2) {
+    width: 55%;
+    min-width: 300px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .gdtourism-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .gdtourism-subtitle {
+    font-size: 3vw;
+    width: 70%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdtourism-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .gdtourism-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .gdtourism-table th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .gdtourism-table td {
+    font-size: 2.8vw;
+    padding: 2.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  /* LEFT OVERVIEW */
+  .gdtourism-overview h3 {
+    font-size: 3.5vw;
+    margin-bottom: 1.8vh;
+  }
+
+  .gdtourism-overview p {
+    font-size: 2.8vw;
+    margin-bottom: 1.8vh;
+  }
+
+  /* GREEN SECTION */
+  .gdtourism-card-content {
+    padding: 2vh 2.5vw;
+  }
+
+  .gdtourism-card-content h4 {
+    font-size: 3.2vw;
+    margin-bottom: 0.8vh;
+    line-height: 1.3;
+    margin-top: 0.8vw;
+  }
+
+  .gdtourism-card-content p {
+    font-size: 2.8vw;
+    width: 70%;
+    margin-bottom: 1.3vh;
+  }
+
+  .gdtourism-card-content a {
+    font-size: 2.5vw;
+  }
+
+  /* Adjust column widths */
+  .gdtourism-table th:nth-child(1),
+  .gdtourism-table td:nth-child(1) {
+    width: 45%;
+  }
+
+  .gdtourism-table th:nth-child(2),
+  .gdtourism-table td:nth-child(2) {
+    width: 55%;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gdtourism-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .gdtourism-subtitle {
+    font-size: 2.2vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdtourism-table {
+    font-size: 2vw;
+  }
+
+  .gdtourism-table th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .gdtourism-table td {
+    font-size: 1.8vw;
+    padding: 2.5vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  /* LEFT OVERVIEW */
+  .gdtourism-overview h3 {
+    font-size: 2.5vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .gdtourism-overview p {
+    font-size: 2vw;
+    margin-bottom: 1.5vh;
+  }
+
+  /* GREEN SECTION */
+  .gdtourism-card-content {
+    padding: 2vh 2vw;
+  }
+
+  .gdtourism-card-content h4 {
+    font-size: 2.2vw;
+    margin-bottom: 0.7vh;
+    line-height: 1.2;
+    margin-top: 0.7vw;
+  }
+
+  .gdtourism-card-content p {
+    font-size: 1.9vw;
+    width: 60%;
+    margin-bottom: 1.2vh;
+  }
+
+  .gdtourism-card-content a {
+    font-size: 1.7vw;
+  }
 }
