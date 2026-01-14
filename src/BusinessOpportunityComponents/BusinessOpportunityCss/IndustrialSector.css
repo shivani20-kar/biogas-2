@@ -295,6 +295,12 @@
     width: 18vw;
     min-width: 140px;
   }
+
+  .sector-table td:first-child {
+    width: 15vw;
+    padding-top: 4vh;
+    min-width: 120px;
+  }
 }
 
 /* Mobile Large / Tablet Small (481px - 768px) */
