@@ -133,8 +133,263 @@
   width: 70%;
 }
 
-
 .gdmart-table tbody tr:first-child td a {
-  padding-top: 2vh; 
-  display: block;    
+  padding-top: 2vh;
+  display: block;
+}
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .gdmart-container {
+    padding: 3vh 0;
+  }
+
+  .gdmart-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .gdmart-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .gdmart-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gdmart-table {
+    min-width: 700px;
+    font-size: 3.5vw;
+  }
+
+  .gdmart-table thead th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .gdmart-table td {
+    font-size: 3.5vw;
+    padding: 0vh;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .left-col {
+    padding-left: 4vw;
+    padding-top: 0.8vh;
+  }
+
+  .left-link {
+    font-size: 3.5vw;
+    padding: 8px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .gdmart-table td a {
+    font-size: 3.5vw;
+    padding: 5px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .gdmart-table tbody tr:first-child td a {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .gdmart-table td:first-child,
+  .gdmart-table th:first-child {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .gdmart-table td:nth-child(2),
+  .gdmart-table th:nth-child(2) {
+    width: 70%;
+    min-width: 300px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .gdmart-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .gdmart-subtitle {
+    font-size: 3vw;
+    width: 70%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdmart-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .gdmart-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .gdmart-table thead th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .gdmart-table td {
+    font-size: 2.8vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .left-col {
+    padding-left: 4vw;
+  }
+
+  .left-link {
+    font-size: 2.8vw;
+    padding: 10px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .gdmart-table td a {
+    font-size: 2.8vw;
+    padding: 10px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .gdmart-table tbody tr:first-child td a {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths */
+  .gdmart-table td:first-child,
+  .gdmart-table th:first-child {
+    width: 30%;
+  }
+
+  .gdmart-table td:nth-child(2),
+  .gdmart-table th:nth-child(2) {
+    width: 70%;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gdmart-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .gdmart-subtitle {
+    font-size: 2.2vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .gdmart-table {
+    font-size: 2vw;
+  }
+
+  .gdmart-table thead th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .gdmart-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .left-col {
+    padding-left: 4vw;
+  }
+
+  .left-link {
+    font-size: 1.8vw;
+    padding: 6px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+  }
+
+  .gdmart-table td a {
+    font-size: 1.8vw;
+    padding: 6px 4vw;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+  }
+
+  .gdmart-table tbody tr:first-child td a {
+    padding-top: 2.5vh;
+  }
 }

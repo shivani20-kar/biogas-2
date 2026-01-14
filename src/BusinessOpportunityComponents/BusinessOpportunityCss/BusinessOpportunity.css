@@ -169,7 +169,7 @@ td.tdd a {
 /* -------- ARROWS -------- */
 .table-hero-arrows {
   position: absolute;
-  top: 65%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;

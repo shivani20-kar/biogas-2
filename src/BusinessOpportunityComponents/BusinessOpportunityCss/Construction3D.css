@@ -110,7 +110,265 @@
   color: #3498db;
 }
 
-
 .construction-table tbody tr:first-child td {
   padding-top: 2.3vh;
+}
+
+
+
+/* -------- ARROWS -------- */
+.table-hero-arrowsconstruction {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85vw;
+  width: 100%;
+  pointer-events: none;
+}
+
+.table-hero-arrowsconstruction .arrow-left,
+.table-hero-arrowsconstruction .arrow-right {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f0f0f0;
+
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+@keyframes arrowPulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+
+/* =================== RESPONSIVE BREAKPOINTS =================== */
+
+/* Mobile Small (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .construction-container {
+    padding: 3vh 0;
+  }
+
+  .construction-title {
+    font-size: 8vw;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  .construction-subtitle {
+    font-size: 4vw;
+    width: 90%;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+
+  .construction-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .construction-table {
+    min-width: 700px;
+    font-size: 3.5vw;
+  }
+
+  .construction-header th {
+    font-size: 4vw;
+    padding: 1.2vh 3vw;
+    padding-left: 4vw;
+    white-space: nowrap;
+  }
+
+  .construction-table td {
+    font-size: 3.5vw;
+    padding: 0vh;
+    padding-left: 4vw;
+    border-right: 0.5px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 50px;
+    word-break: break-word;
+  }
+
+  .construction-table td a {
+    font-size: 3.5vw;
+    padding: 5px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .construction-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths for mobile scrolling */
+  .overview-col {
+    width: 25%;
+    min-width: 120px;
+  }
+
+  .solutions-col {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .products-col {
+    width: 45%;
+    min-width: 200px;
+  }
+}
+
+/* Mobile Large / Tablet Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .construction-title {
+    font-size: 6vw;
+    margin-left: 4vw;
+  }
+
+  .construction-subtitle {
+    font-size: 3vw;
+    width: 70%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .construction-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .construction-table {
+    min-width: 650px;
+    font-size: 2.8vw;
+  }
+
+  .construction-header th {
+    font-size: 3.2vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+  }
+
+  .construction-table td {
+    font-size: 2.8vw;
+    padding: 1.5vh 3vw;
+    padding-left: 4vw;
+    border-right: 0.7px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    min-height: 50px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .construction-table td a {
+    font-size: 2.8vw;
+    padding: 10px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.5;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+
+  .construction-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
+
+  /* Adjust column widths */
+  .overview-col {
+    width: 25%;
+  }
+
+  .solutions-col {
+    width: 30%;
+  }
+
+  .products-col {
+    width: 45%;
+  }
+}
+
+/* Tablet Large (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .construction-title {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .construction-subtitle {
+    font-size: 2.2vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3.5vh;
+  }
+
+  .construction-table {
+    font-size: 2vw;
+  }
+
+  .construction-header th {
+    font-size: 2.2vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .construction-table td {
+    font-size: 1.8vw;
+    padding: 1.5vh 2.5vw;
+    padding-left: 4vw;
+    border-right: 0.8px solid #e0e0e0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 45px;
+    word-break: break-word;
+  }
+
+  .construction-table td a {
+    font-size: 1.8vw;
+    padding: 6px 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
+    min-height: 35px;
+    word-break: break-word;
+  }
+
+  .construction-table tbody tr:first-child td {
+    padding-top: 2.5vh;
+  }
 }
