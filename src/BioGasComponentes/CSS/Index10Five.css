@@ -114,5 +114,81 @@
   font-size: 17px;
   line-height: 1.8;
   color: #282828;
-  /* border-bottom: 1px solid #ddd; */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .reactor-wrapper-two {
+    grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT SIDE */
+  .reactor-left-two {
+    width: 90%;
+    padding: 4vw;
+  }
+
+  .image-box-two {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-box-two img {
+    width: 100%;
+    margin: 0;
+    padding: 2vw;
+  }
+
+  /* RIGHT SIDE */
+  .reactor-right-two {
+    width: 100%;
+    margin: 0;
+  }
+
+  .reactor-header-two {
+   gap: 2vw;
+  }
+
+  .reactor-number-two {
+     font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .reactor-header-two h2 {
+    font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .reactor-right-two h4,
+  .specs-two h4 {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .reactor-right-two p,
+  .reactor-right-two li,
+  .spec-row-two {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .reactor-right-two ul {
+    padding-left: 4vw;
+    margin-top: 3vw;
+  }
+
+  /* SPECS */
+  .specs-two {
+    margin-top: 4vw;
+    
+  }
+
+  .spec-row-two {
+    gap:9vw;
+  }
 }

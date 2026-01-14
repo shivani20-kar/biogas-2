@@ -12,13 +12,6 @@
   width: 40vw;
 }
 
-/* .image-box {
-  background: #fff;
-  padding: 1.5vw;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  text-align: center;
-} */
-
 .imagee-box img {
     margin-top: 18vw;
     margin-left: 6vw;
@@ -119,4 +112,79 @@ font-weight: 700;
   line-height: 1.8;
   color: #282828;
    margin-bottom: -1.2vw;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .gasholder-wrapper {
+   grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT */
+  .gasholder-left {
+   width: 90%;
+    padding: 4vw;
+  }
+
+  .imagee-box img {
+    width: 100%;
+    margin: 0;
+    padding: 0vw;
+  }
+
+  /* RIGHT */
+  .gasholder-right {
+   width: 100%;
+    margin: 0;
+  }
+
+  .gas-number {
+    gap: 2vw;
+  }
+
+  .gasholder-right h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .gasholder-right h2 {
+    width: 100%;
+    font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .gasholder-right h4 {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .gasholder-right p,
+  .gasholder-right li {
+   font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .gasholder-right h5 {
+      font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .gasholder-right ul {
+    padding-left: 5vw;
+  }
+
+  /* SPEC BOX */
+  .spec-box h4 {
+      font-size: 5vw;
+    line-height: 1.5;
+  }
+
+  .spec-box p {
+     font-size: 4vw;
+    line-height: 1.5;
+  }
 }

@@ -68,7 +68,7 @@ const RawMaterial = () => {
         </h2>
 
         <div className="table-wrapper">
-          <table className="table raw-table">
+          <table className="raw-table">
             <thead>
               <tr>
                 <th className="raw-th">Substrate</th>
@@ -109,7 +109,7 @@ const RawMaterial = () => {
         </h2>
 
         <div className="table-wrapper">
-          <table className="table raw-table">
+          <table className="raw-table">
             <thead>
               <tr>
                 <th className="raw-th">Substrate</th>
@@ -150,7 +150,7 @@ const RawMaterial = () => {
         </h2>
 
         <div className="table-wrapper">
-          <table className="table raw-table">
+          <table className="raw-table">
             <thead>
               <tr>
                 <th className="raw-th">Substrate</th>

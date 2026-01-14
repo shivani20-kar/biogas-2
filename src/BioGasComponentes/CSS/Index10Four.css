@@ -122,3 +122,78 @@
   padding: 1vw;
   display: block;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .reactor-wrapper {
+    /* border: 2px solid red; */
+     flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  /* LEFT */
+  .reactor-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* .reactor-title {
+    font-size: 5vw;
+    line-height: 1.6;
+  } */
+
+  .reactor-no {
+    gap: 2vw;
+  }
+
+  .reactor-no h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .reactor-no h2 {
+   font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .reactor-left p,
+  .reactor-left ul li {
+     font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .reactor-left h4,
+  .reactor-left h5 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .reactor-left ul {
+    padding-left: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .spec-grid p {
+    font-size: 4vw;
+  }
+
+  /* RIGHT */
+  .reactor-right {
+    justify-content: center;
+     width: 90%;
+    padding: 4vw;
+    margin-top: 2vw;
+  }
+
+  .reactor-right img {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    padding: 2vw;
+  }
+}
+

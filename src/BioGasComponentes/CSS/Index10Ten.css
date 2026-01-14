@@ -118,3 +118,88 @@ font-weight: 700;
   padding: 1vw;
   display: block;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .dryer-wrapper {
+   flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  /* LEFT */
+  .dryer-left {
+   width: 100%;
+    padding: 0;
+  }
+
+  .dryer-heading {
+    gap: 2vw;
+  }
+
+  .dryer-number {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .dryer-heading h2 {
+     font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .sub-heading {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .description {
+   font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .dryer-left h5 {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  ul {
+    padding-left: 5vw;
+    margin-top: 2vw;
+  }
+
+  ul li {
+     font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* SPECS */
+  .specs h5 {
+    font-size: 5vw;
+    line-height: 1.5;
+    margin-bottom: 1vw;
+  }
+
+  .specs p {
+   font-size: 4vw;
+    line-height: 1.4;
+  }
+
+  /* RIGHT */
+  .dryer-right {
+    justify-content: center;
+     width: 90%;
+    padding: 4vw;
+    margin-top: 2vw;
+  }
+
+  .dryer-right img {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width:100%;
+    padding:  0vw 2vw;
+  }
+}

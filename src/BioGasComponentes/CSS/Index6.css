@@ -147,7 +147,7 @@
   .raw-header {
    flex-direction: row;
     align-items: center;
-    padding: 2vw 0vw;
+    padding: 4vw 0vw;
     gap: 3vw;
   }
 
@@ -179,31 +179,35 @@ font-size: 8vw;
 
   /* ===== Table Title ===== */
   .table-title {
-    font-size: 22px;
-    text-align: center;
+    font-size: 5vw;
+    text-align: left;
     margin-bottom: 4vw;
   }
 
-  /* ===== Table Wrapper ===== */
-  .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+ .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
-  /* ===== Table ===== */
-  .raw-table {
-    min-width: 600px;
-  }
+.raw-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+.raw-wrapper {
+  overflow-x: visible !important;
+}
+
 
   .raw-table .raw-th {
-    font-size: 12px;
-    padding: 10px 4px;
+    font-size: 3vw;
+    padding: 2vw 3vw;
   }
 
   .raw-table .raw-td {
-    font-size: 13px;
+    font-size: 3vw;
     padding: 10px 4px;
   }
-
+ 
 }
 

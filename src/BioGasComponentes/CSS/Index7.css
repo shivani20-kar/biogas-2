@@ -46,7 +46,7 @@
   flex-direction: column;
 }
 
-.arrow-index {
+.arrow-indexs {
   position: relative;
   width: 120px;
   height: 180px;
@@ -56,7 +56,7 @@
   margin-top: -1.2vw;
 }
 
-.arrow-index::before {
+.arrow-indexs::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -189,4 +189,108 @@
 .small-tr th:first-child {
   padding-right: 30vw;
   padding-left: 2vw;
+}
+
+/* ================= MOBILE (320px – 480px) ================= */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ===== HEADER ===== */
+  .biogas-header-index {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+.header-content{
+   align-items: left;
+    text-align: left;
+}
+  .biogas-header-index h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .biogas-header-index p {
+   font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* ===== ARROW ===== */
+  .arrow-indexs {
+    width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -7vw;
+  }
+
+  /* ===== SECTIONS ===== */
+  .table-section,
+  .employee-section {
+    padding: 3vw 3vw;
+  }
+
+  /* ===== TABLE WRAPPER (HORIZONTAL SCROLL) ===== */
+  .table-section,
+  .employee-section {
+    overflow-x: auto;
+  }
+
+  /* ===== TABLE ===== */
+  .big-tabele {
+    min-width: 115vw; /* allows scroll instead of breaking */
+  }
+
+  .big-tabel th {
+    font-size: 4vw;
+    padding: 3vw;
+    height: auto;
+  }
+
+  .big-tabel th:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .tb-new tr td {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+
+  .tb-new tr td:nth-child(2),
+  .tb-new tr td:nth-child(3) {
+    text-align: center;
+  }
+
+  /* ===== SUB HEAD ===== */
+  .sub-head td {
+    font-size: 3vw;
+    padding: 3vw;
+  }
+
+  /* ===== EMPLOYEE TITLE ===== */
+  .employee-section h2 {
+    font-size: 6vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+  }
+
+  /* ===== TOTAL ROW ===== */
+  .total-row td {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+
+  /* ===== SMALL HEADER ROW ===== */
+  .small-tr th {
+    font-size: 4vw;
+    padding: 3vw;
+    text-align: left;
+  }
+
+  .small-tr th:first-child {
+    padding-right: 0;
+    padding-left: 3vw;
+  }
 }

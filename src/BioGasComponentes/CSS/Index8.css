@@ -156,3 +156,78 @@
   line-height: 1.8;
   color: #282828;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* HEADER */
+  .biogas-header-two {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .header-arrow-two {
+    width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -7vw;
+  }
+
+  .biogas-header-two h1 {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .biogas-header-two p {
+    font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* CONTENT GRID */
+  .biogas-content-two {
+   display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 0 4vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+  }
+
+  /* LEFT SECTION */
+  .biogas-left-two h3,
+  .biogas-right-two h3,
+  .biogas-right-two h4 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .biogas-left-two p,
+  .biogas-right-two p,
+  .biogas-right-two li {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* IMAGE FIX */
+  .image-box {
+    text-align: center;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* LIST FIX */
+  .biogas-right-two ul {
+    margin-left: 0;
+    padding-left: 18px;
+    margin-top: 2vw;
+  }
+
+}

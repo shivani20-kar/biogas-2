@@ -131,3 +131,87 @@
 .flare-specs span {
   font-weight: 500;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .flare-wrapper {
+    grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT IMAGE AREA */
+  .flare-image-box {
+    width: 92%;
+    padding: 2vw;
+  }
+
+  .flare-image-box img {
+    width: 95%;
+    margin: 0;
+    padding: 2vw;
+  }
+
+  /* RIGHT CONTENT */
+  .flare-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* NUMBER */
+  .flare-number {
+    gap: 2vw;
+  }
+
+  .flare-number h1 {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  /* HEADINGS */
+  .flare-content h2 {
+   font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .flare-content h4 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .flare-content h5 {
+     font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  /* TEXT */
+  .flare-content p,
+  .flare-content ul li {
+   font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .flare-content ul {
+    padding-left: 5vw;
+    margin-bottom: 3vw;
+  }
+
+  /* SPECS */
+  .flare-spec-title {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .flare-specs {
+    margin-top: 3vw;
+  }
+
+  .flare-specs p {
+   font-size: 4vw;
+    padding: 1vw 0;
+  }
+}

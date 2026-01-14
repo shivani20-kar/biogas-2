@@ -121,3 +121,88 @@ font-weight: 700;
 .spec-block span {
   font-weight: 500;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .pump-section {
+   grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT SIDE */
+  .pump-left {
+   width: 90%;
+    padding: 4vw;
+  }
+
+  .pump-left img {
+   width: 98%;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  /* RIGHT SIDE */
+  .pump-right {
+   width: 100%;
+    margin: 0;
+  }
+
+  .pump-number {
+    gap: 2vw;
+  }
+
+  .pump-number h1 {
+  font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .pump-title {
+   font-size: 5vw;
+    line-height: 1.6;
+    width: 100%;
+  }
+
+  .pump-subtitle {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .pump-right p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .pump-right h5 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  /* SPECS */
+  .spec-heading {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .spec-block {
+    margin-top: 3vw;
+  }
+
+  .spec-block h6 {
+   font-size: 4.5vw;
+    margin-bottom: -1.5vw;
+    line-height: 1.5;
+  }
+
+  .spec-block p {
+   font-size: 4vw;
+   line-height: 1.5;
+    margin-bottom: -1vw;
+        padding: 0vw 0;
+
+  }
+}

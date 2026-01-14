@@ -103,3 +103,83 @@
 .spec-value {
   font-weight: 600;
 }
+
+/* ===============================
+   MOBILE RESPONSIVE (320px–480px)
+   =============================== */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .agitator-wrapper {
+     grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT SECTION */
+  .agitator-left {
+   width: 90%;
+    padding: 4vw;
+  }
+
+  .agitator-left img {
+     width: 100%;
+    margin: 0;
+    padding: 0vw;
+  }
+
+  /* RIGHT SECTION */
+  .agitator-right {
+   width: 100%;
+    margin: 0;
+  }
+
+  .agitator-head {
+   gap: 2vw;
+  }
+
+  .agitator-head h1 {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .agitator-title {
+    font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .agitator-subtitle {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .agitator-right p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .agitator-right ul {
+    padding-left: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .agitator-right li {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* SPECIFICATIONS */
+  .spec-title {
+    margin-top: 5vw;
+  }
+
+  .spec-grid p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .spec-value {
+    font-weight: 600;
+  }
+}
+
