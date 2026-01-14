@@ -5,6 +5,7 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/ITCoreTeam.css";
 import img1 from "../Components/IMAGES/aniketsir.png";
 import img2 from "../Components/IMAGES/riteshNikam.png";
 import img3 from "../Components/IMAGES/shivaniKarhale.png";
+import img4 from "../Components/IMAGES/pratiksha.png";
 import linkedin from "../Components/IMAGES/linkdin.png";
 
 const ITCoreTeam = () => {
@@ -12,6 +13,7 @@ const ITCoreTeam = () => {
     { img: img1, linkedin: "https://www.linkedin.com/" },
     { img: img2, linkedin: "https://www.linkedin.com/" },
     { img: img3, linkedin: "https://www.linkedin.com/" },
+    { img: img4, linkedin: "https://www.linkedin.com/" },
   ];
 
   return (
@@ -23,7 +25,6 @@ const ITCoreTeam = () => {
       <div className="itcorex-container">
         {team.map((member, index) => (
           <div className="itcorex-card" key={index}>
-            
             {/* IMAGE */}
             <img src={member.img} className="itcorex-img" alt="team" />
 
@@ -36,7 +37,6 @@ const ITCoreTeam = () => {
             >
               <img src={linkedin} alt="LinkedIn" className="itcorex-linkedin" />
             </a>
-
           </div>
         ))}
       </div>
