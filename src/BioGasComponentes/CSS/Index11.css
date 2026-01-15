@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.arrow-index {
+.arrow-indexe {
   position: relative;
   width: 120px;
   height: 180px;
@@ -51,7 +51,7 @@
   margin-top: -1.2vw;
 }
 
-.arrow-index::before {
+.arrow-indexe::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -149,4 +149,86 @@
 .equipmentspecifications-table td:nth-child(4) {
   width: 10%;
   text-align: center;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= HEADER ================= */
+  .equipmentspecifications-header {
+  flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  .arrow-indexe {
+      width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -10vw;
+  }
+
+    .equipmentspecifications-title{
+       align-items: left;
+    text-align: left;
+    }
+  .equipmentspecifications-title h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .equipmentspecifications-title p {
+     font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* ================= TABLE SECTION ================= */
+  .equipmentspecifications-table-section {
+    padding: 4vw 4vw;
+    overflow-x: auto;
+  }
+
+  /* Enable horizontal scroll for table */
+  .equipmentspecifications-table {
+    min-width: 600px;
+  }
+
+  /* ================= TABLE HEADER ================= */
+  .equipmentspecifications-table-head th {
+    font-size: 5vw;
+    padding: 2.5vww 2vw;
+  }
+
+  /* ================= TABLE BODY ================= */
+  .equipmentspecifications-table-body td {
+    font-size: 4vw;
+   padding: 2.5vww 2vw;
+  }
+
+  /* ================= COLUMN ALIGNMENT ================= */
+  .equipmentspecifications-table th:nth-child(1),
+  .equipmentspecifications-table td:nth-child(1) {
+    width: 8%;
+    text-align: center;
+  }
+
+  .equipmentspecifications-table th:nth-child(2),
+  .equipmentspecifications-table td:nth-child(2) {
+    width: 42%;
+  }
+
+  .equipmentspecifications-table th:nth-child(3),
+  .equipmentspecifications-table td:nth-child(3) {
+    width: 30%;
+  }
+
+  .equipmentspecifications-table th:nth-child(4),
+  .equipmentspecifications-table td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+  }
 }

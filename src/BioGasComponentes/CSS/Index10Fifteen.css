@@ -161,3 +161,106 @@
   color: #282828;
   margin-bottom: 0.2vw;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .heating-wrapper {
+    grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* IMAGE BOX */
+  .heating-image-box {
+   width: 90%;
+    padding: 4vw;
+  }
+
+  .heating-image-box img {
+   width: 100%;
+    margin: 0;
+    padding: 0vw;
+  }
+
+  /* RIGHT CONTENT */
+  .heating-content {
+ width: 100%;
+    margin: 0;
+  }
+
+  /* NUMBER */
+  .heating-number {
+    gap: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .heating-number h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  /* HEADINGS */
+  .heating-content h2 {
+     font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .heating-content h4 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .heating-setup {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .heating-content h5 {
+    font-size: 17px;
+    margin-top: 3vw;
+  }
+
+  /* TEXT */
+  .heating-content p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* LISTS */
+  .heating-content ul {
+    padding-left: 5vw;
+    margin-top: 2vw;
+  }
+
+  .heating-content ul li {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* SPECS */
+  .heating-spec-title {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .heating-specs {
+    margin-top: 3vw;
+  }
+
+  .heating-specs p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .heating-spec-heading {
+   font-size: 5vw;
+    line-height: 1.5;
+  }
+
+  .heating-spec-row {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+}

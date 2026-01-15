@@ -192,3 +192,95 @@
 .BioCNGEquipment-table td:first-child {
   border-left: 1px solid #d6d6d6;
 }
+
+/* ================= MOBILE (320px–480px) ================= */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= HEADER ================= */
+  .BioCNGEquipment-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    padding: 0vw 4vw 2vw 4vw;
+  }
+
+  .BioCNGEquipment-title {
+       font-size: 6vw;
+
+  }
+
+  .BioCNGEquipment-subtitle {
+        font-size: 5vw;
+
+  }
+
+  /* ================= ARROWS ================= */
+  .BioCNGEquipment-arrows {
+    gap: 3vw;
+  }
+
+  .BioCNGEquipment-arrow-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  /* Disable hover text on touch devices */
+  .arrow-hover-text {
+    display: none;
+  }
+
+  /* ================= TABLE ================= */
+  .BioCNGEquipment-table-container {
+    padding: 0 4vw 6vw;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  .BioCNGEquipment-table {
+    min-width: 900px; /* Ensures horizontal scroll */
+  }
+
+  .BioCNGEquipment-table thead th {
+   font-size: 5vw;
+    padding: 2.5vw 2vw;
+  }
+
+  .BioCNGEquipment-table td {
+    font-size: 4vw;
+    padding: 2vw 2vw;
+  }
+
+  /* Column width overrides for mobile */
+  .BioCNGEquipment-table th:nth-child(1),
+  .BioCNGEquipment-table td:nth-child(1) {
+    width: 40px;
+  }
+
+  .BioCNGEquipment-table th:nth-child(2),
+  .BioCNGEquipment-table td:nth-child(2) {
+    min-width: 240px;
+    text-align: left;
+  }
+
+  .BioCNGEquipment-table th:nth-child(3),
+  .BioCNGEquipment-table td:nth-child(3),
+  .BioCNGEquipment-table th:nth-child(4),
+  .BioCNGEquipment-table td:nth-child(4),
+  .BioCNGEquipment-table th:nth-child(5),
+  .BioCNGEquipment-table td:nth-child(5),
+  .BioCNGEquipment-table th:nth-child(6),
+  .BioCNGEquipment-table td:nth-child(6),
+  .BioCNGEquipment-table th:nth-child(7),
+  .BioCNGEquipment-table td:nth-child(7) {
+    min-width: 120px;
+    text-align: center;
+  }
+
+  /* Bold rows readability */
+  .bold {
+    font-size: 14px;
+  }
+}

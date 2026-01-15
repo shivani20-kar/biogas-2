@@ -31,7 +31,7 @@ const Industries = () => {
     <section className="industries-wrapper">
       {/* ================= HEADER ================= */}
       <div className="industries-header" ref={bannerRef}>
-        <div className={`arrow-index ${visible ? "animate-arrow" : ""}`}>
+        <div className={`arrow-indexm ${visible ? "animate-arrow" : ""}`}>
           <svg className="arrow-svg" viewBox="0 0 120 180">
             <polygon
               points="0,0 84,0 120,90 84,180 0,180 36,90"

@@ -22,6 +22,12 @@
   border-collapse: collapse;
   table-layout: fixed;
 }
+.implementation-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 
 .implementation-table th,
 .implementation-table td {
@@ -64,4 +70,57 @@
   background: #6f6f6f;
   color: #ffffff;
   font-weight: 600;
+}
+
+/* ================= MOBILE (320px–480px) ================= */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .implementation-wrapper {
+    padding: 0vw 4vw;
+    margin-bottom: 6vh;
+  }
+
+  /* TITLE */
+  .implementation-title {
+    font-size: 5vw;
+    padding: 0;
+  }
+
+  /* TABLE WRAP (enable scroll) */
+  .implementation-table {
+    min-width: 700px; /* forces horizontal scroll */
+    font-size: 13px;
+  }
+
+  /* TABLE CELLS */
+  .implementation-table th,
+  .implementation-table td {
+    font-size: 4vw;
+    padding: 8px;
+  }
+
+  /* FIRST COLUMN (TASK NAME) */
+  .col-task {
+    min-width: 180px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  /* MONTH COLUMNS */
+  .col-month {
+    min-width: 60px;
+    font-weight: 500;
+  }
+
+  /* TASK TEXT */
+  .task-name {
+    text-align: left;
+    font-size: 13px;
+  }
+
+  /* FILLED CELLS */
+  .fill {
+    font-weight: 600;
+  }
 }

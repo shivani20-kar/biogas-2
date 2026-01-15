@@ -220,10 +220,13 @@
   }
 
   .rt-image-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    display: flex;
     justify-content: center;
-     width: 90%;
-    padding: 4vw;
-    margin-top: 2vw;
   }
 
   .rt-image-box img {

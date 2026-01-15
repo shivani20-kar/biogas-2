@@ -90,3 +90,73 @@
   padding: 1vw;
   display: block;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .drycooler-wrapper {
+   flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  /* LEFT CONTENT */
+  .drycooler-left {
+     width: 100%;
+    padding: 0;
+  }
+
+  .drycooler-heading {
+    gap: 2vw;
+  }
+
+  .drycooler-number {
+  font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .drycooler-heading h2 {
+    font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .drycooler-description {
+   font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  .drycooler-left h5 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  /* SPECS */
+  .drycooler-specs h5 {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .drycooler-specs p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* RIGHT IMAGE */
+  .drycooler-right {
+  justify-content: center;
+     width: 90%;
+    padding: 4vw;
+    margin-top: 2vw;
+  }
+
+  .drycooler-right img {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

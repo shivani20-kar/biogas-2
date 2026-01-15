@@ -119,3 +119,82 @@
 .automation-specs span {
   font-weight: 500;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .automation-wrapper {
+    grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* IMAGE AREA */
+  .automation-image-box {
+     width: 90%;
+    padding: 4vw;
+  }
+
+  .automation-image-box img {
+    width: 100%;
+    margin: 0;
+    padding: 0vw;
+  }
+
+  /* CONTENT */
+  .automation-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* NUMBER */
+  .automation-number {
+    gap: 2vw;
+  }
+
+  .automation-number h1 {
+     font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  /* HEADINGS */
+  .automation-content h2 {
+    font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .automation-content h5 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  /* TEXT */
+  .automation-content p {
+   font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* LISTS */
+  .automation-content ul {
+    padding-left: 6vw;
+    margin-bottom: 4vw;
+  }
+
+  .automation-content ul li {
+     font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* SPECS */
+  .automation-spec-title {
+   font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .automation-specs p {
+   font-size: 4vw;
+    padding: 1vw 0;
+  }
+}

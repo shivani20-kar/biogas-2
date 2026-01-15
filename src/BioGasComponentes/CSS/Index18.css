@@ -48,7 +48,7 @@
 }
 
 /* ARROW */
-.arrow-index {
+.arrow-indexm {
   position: relative;
   width: 120px;
   height: 180px;
@@ -58,7 +58,7 @@
   margin-top: -1.2vw;
 }
 
-.arrow-index::before {
+.arrow-indexm::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -183,4 +183,97 @@
   font-size: 2.1vw;
   font-weight: bold;
   border: 2px solid #ffffff;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE (320px–480px)
+================================ */
+@media (max-width: 480px) {
+
+  /* HEADER */
+  .industries-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 0vw;
+    gap: 3vw;
+  }
+
+  /* ARROW */
+  .arrow-indexm {
+   clip-path: none;
+    background: transparent;
+     width: 80px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -7vw;
+  }
+
+  /* HEADER TEXT */
+  .industries-header-text {
+   text-align: left;
+   align-items: left;
+  }
+
+  .industries-title {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-top: 1vw;
+    margin-left: 0;
+  }
+
+  .industries-subtitle {
+   font-size: 6vw;
+    margin-top: -1.5vw;
+    margin-left: 0;
+  }
+
+  /* CARDS SECTION */
+  .industries-cards {
+    flex-direction: column;
+    gap: 4vw;
+    padding: 4vw 4vw 12vw 4vw;
+  }
+
+  /* CARD */
+  .industry-card {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .industry-card img {
+    height: 70vw;
+  }
+
+  /* CARD CONTENT */
+  .industry-card-content {
+    padding: 2vw 4vw;
+  }
+
+  .industry-card-content h3 {
+    font-size: 6vw;
+  }
+
+  .industry-card-content p {
+    font-size: 4.5vw;
+    line-height: 20px;
+  }
+
+  /* LINK */
+  .industry-link {
+    font-size: 4.5vw;
+  }
+
+  /* REFERENCES */
+  .industries-reference {
+    right: 15px;
+    bottom: 2vw;
+    font-size: 5vw;
+    gap: 3vw;
+  }
+
+  .reference-arrow {
+    font-size: 4vw;
+    width: 8vw;
+    height: 8vw;
+  }
 }

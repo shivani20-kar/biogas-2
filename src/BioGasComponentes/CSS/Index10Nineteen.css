@@ -115,3 +115,81 @@
   color: #282828;
   margin: 0;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .laboratorysystem-wrapper {
+  grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  /* LEFT IMAGE */
+  .laboratorysystem-image-box {
+    width: 90%;
+    padding: 4vw;
+  }
+
+  .laboratorysystem-image-box img {
+     width: 100%;
+    margin: 0;
+    padding: 0vw;
+  }
+
+  /* RIGHT CONTENT */
+  .laboratorysystem-content {
+     width: 100%;
+    margin: 0;
+  }
+
+  /* NUMBER + TITLE */
+  .laboratorysystem-number {
+    gap: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .laboratorysystem-number h1 {
+   font-size: 8vw;
+    -webkit-text-stroke: 1px #cc3a3a;
+  }
+
+  .laboratorysystem-content h2 {
+   font-size: 5vw;
+    line-height: 1.6;
+  }
+
+  .laboratorysystem-content h5 {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  /* TEXT */
+  .laboratorysystem-content p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* LIST */
+  .laboratorysystem-content ul {
+    padding-left: 5vw;
+  }
+
+  .laboratorysystem-content ul li {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+  /* SPECS */
+  .laboratorysystem-spec-title {
+    font-size: 5.5vw;
+    margin-bottom: 0vw;
+      line-height: 1.5;
+  }
+
+  .laboratorysystem-specs p {
+    font-size: 4vw;
+    padding: 1vw 0;
+  }
+}
