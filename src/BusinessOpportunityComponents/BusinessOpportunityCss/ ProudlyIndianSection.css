@@ -96,13 +96,13 @@
     padding: 3vh 5vw;
     gap: 30px;
     margin-top: 3vh;
-           margin-bottom: 35vh;
+    margin-bottom: 7vh;
   }
 
   /* LEFT BOX */
   .pi-left-box {
     width: 90%;
-    padding: 8vh 6vw;
+    padding: 8vh 5vw;
   }
 
   .pi-quote-icon {

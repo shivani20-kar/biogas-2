@@ -158,11 +158,10 @@
   .adescription-text {
     font-family: "DDINPRO";
     color: #707070;
-    font-size: 2.3vw; /* Reduced from 1.9vw */
+    font-size: 2.5vw; /* Reduced from 1.9vw */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
   }
 
   .blue-text {
