@@ -125,13 +125,13 @@
   .atitle-text {
     color: #707070;
     font-family: "DDINPRO";
-    font-size: 4.5vw; /* Reduced from 6vw */
+    font-size: 4vw; /* Reduced from 6vw */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0;
-    margin-top: 2vw;
     line-height: 0.9;
+    margin-top: 0vh;
   }
 
   .shrimant {
@@ -158,7 +158,7 @@
   .adescription-text {
     font-family: "DDINPRO";
     color: #707070;
-    font-size: 2.5vw; /* Reduced from 1.9vw */
+    font-size: 2.6vw; /* Reduced from 1.9vw */
     font-style: normal;
     font-weight: 400;
     line-height: normal;

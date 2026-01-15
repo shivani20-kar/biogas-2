@@ -1,12 +1,10 @@
-
 /* --------------------------- */
 
 .heros {
   position: relative;
   width: 100%;
   overflow: hidden;
-    margin-top:8vh;
-    
+  margin-top: 8vh;
 }
 
 .smallgdmainbackground {
@@ -26,7 +24,7 @@
 }
 
 /* PMO Section Start */
-.pmomainbackground {
+/* .pmomainbackground {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,14 +39,14 @@
   object-fit: cover;
   position: relative;
   z-index: 1;
-}
+} */
 
 .vendor-registration-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-   height: 100vh;
+  height: 100vh;
   z-index: 0;
 }
 
@@ -60,13 +58,13 @@
 
 .vendor-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .co-owner {
@@ -84,13 +82,13 @@ line-height: normal;
 }
 .coowner-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .rent-on {
@@ -108,13 +106,13 @@ line-height: normal;
 }
 .rent-on-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .careers {
@@ -133,13 +131,13 @@ line-height: normal;
 
 .careers-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .sitevisit {
@@ -158,13 +156,13 @@ line-height: normal;
 
 .sitevisit-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .contactUs-bg {
   position: absolute;
@@ -182,13 +180,13 @@ line-height: normal;
 
 .contactus-title {
   padding-bottom: 25vh;
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .customerservice {
   position: absolute;
@@ -196,7 +194,7 @@ line-height: normal;
   left: 0;
   width: 100%;
   z-index: 0;
-   height: 100%;
+  height: 100%;
 }
 
 .customerservice img {
@@ -206,13 +204,13 @@ line-height: normal;
 }
 
 .customerservice-title {
- font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .circle-gifservice {
@@ -233,10 +231,11 @@ line-height: normal;
   padding: 0 5vw;
   z-index: 5;
 }
-.circle-gif{
- width: 200px;
+.circle-gif {
+  width: 200px;
   height: 200px;
 }
+
 .circle-elementservice {
   overflow: hidden;
   animation: rotateCircle 6s linear infinite;
@@ -250,3 +249,4 @@ line-height: normal;
     transform: rotate(360deg);
   }
 }
+

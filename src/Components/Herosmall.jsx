@@ -9,7 +9,7 @@ import mainbackground from "../Components/IMAGES/aboutusbackground.png";
 const Herosmall = () => {
   const navigate = useNavigate(); // initialize navigate
 
-  const handleLogoClick = () => {
+  const handleLogoClick = () => { 
     navigate("/"); // navigate to home route
   };
   return (

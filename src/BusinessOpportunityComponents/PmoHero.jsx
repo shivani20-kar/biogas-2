@@ -87,13 +87,13 @@ const PmoHero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
 
         <div className="hero-bottom-wrap">
           <div className="aboutus-title">Address To PMO</div>
 
           <div className="circle-element">
-            <img src={gif} alt="Animation" className="circle-gif" />
+            <img src={gif} alt="Animation" className="circle-gifhero" />
           </div>
         </div>
       </section>
