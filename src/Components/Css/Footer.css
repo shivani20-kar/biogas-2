@@ -168,14 +168,14 @@ line-height: 19.6px; /* 98% */
 
   /* ===== FOOTER WRAPPER ===== */
   .footer-wrapper {
-    padding-top: 50vw;
+    padding-top: 40vw;
     background-position: center;
   }
 
   .gd-footer {
     width: 80%;
-    margin: -28vh auto 0 auto;
-    padding: 6vh 6vw;
+    margin: -50vw auto 0 auto;
+    padding: 0vh 4vw;
     text-align: center;
   }
 
@@ -193,20 +193,20 @@ line-height: 19.6px; /* 98% */
   }
 
   .left-section h2 {
-    font-size: 6.5vw;
+    font-size: 5vw;
     line-height: 1.2;
     margin-bottom: 2vh;
   }
 
   .left-section p {
-    font-size: 4.2vw;
+    font-size: 4vw;
     line-height: 1.4;
     margin-bottom: 3vh;
   }
 
   /* ===== CONTACT BUTTON ===== */
   .contact-btn {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 12px 26px;
   }
 
@@ -238,19 +238,19 @@ line-height: 19.6px; /* 98% */
   }
 
   .footer-logo {
-    width: 45vw;
+    width: 40vw;
   }
 
   .sanskrit {
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin-top: 2vh;
   }
 
   /* ===== COPYRIGHT ===== */
   .copyright {
     text-align: center;
-    font-size: 3.4vw;
-    padding: 4vh 6vw;
+    font-size: 3vw;
+    padding: 2vh 2vw;
     line-height: 1.4;
   }
 }
