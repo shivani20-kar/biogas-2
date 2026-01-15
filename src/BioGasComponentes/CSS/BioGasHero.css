@@ -172,6 +172,7 @@ line-height: normal;
 /* Mobile Responsive: 320px to 480px */
 @media (max-width: 480px) {
   .biogashero {
+    
     height: 50vh;
     margin-top: 10vh;
   }

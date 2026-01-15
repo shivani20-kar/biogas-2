@@ -407,11 +407,13 @@
     height: 10vh;
     padding: 0 4vw;
     background-color: #fff;
+     width: auto;
   }
 
   /* Show Hamburger Icon */
   .hamburger-container {
     display: flex !important;
+   
   }
 
   .hamburger-menu {

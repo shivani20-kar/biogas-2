@@ -48,7 +48,7 @@
   font-family: "DDINPRO";
 }
 
-.arrow-index {
+.arrow-indexo {
   position: relative;
   width: 120px;
   height: 180px;
@@ -58,7 +58,7 @@
   margin-top: -1.2vw;
 }
 
-.arrow-index::before {
+.arrow-indexo::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -232,4 +232,114 @@
 .proposal-table th:first-child,
 .proposal-table td:first-child {
   border-left: 1px solid #d6d6d6;
+}
+@media (max-width: 480px) {
+
+  /* ================= WRAPPER ================= */
+  .proposal-wrapper {
+   overflow-x: visible;
+  }
+
+  /* ================= HEADER ================= */
+  .proposal-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    padding: 3vw 0;
+  }
+
+  .arrow-indexo {
+    clip-path: none;
+    background: transparent;
+    width: 70px;
+    height: 100px;
+    margin-top: -18vw;
+  }
+
+  .arrow-indexo::before {
+    display: none;
+  }
+
+  .proposal-title {
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #fff;
+    margin: 0;
+  }
+
+  .proposal-subtitle {
+    font-size: 6vw;
+    margin: 1vw 0;
+  }
+
+  .proposal-desc {
+    font-size: 4.5vw;
+    margin: 2vw 0 0;
+  }
+ .proposal-table-container {
+    display: block;       /* ✅ flex काढलं */
+    overflow-x: auto;
+    padding: 3vw 2vw;
+  }
+
+  /* ================= TABLE ================= */
+  .proposal-table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: max-content;
+    min-width: 100%;
+    background: #fff;
+  }
+
+  /* ================= HEADER ================= */
+  .proposal-table th {
+    font-size: 4vw;
+    padding: 3vw 4vw;
+  }
+
+  /* ================= BODY ================= */
+  .proposal-table td {
+    font-size: 3.6vw;
+    padding: 3vw 4vw;
+  }
+
+  .proposal-table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+  }
+
+
+  /* ================= DROPDOWN ================= */
+  .dropdown-cell {
+    position: relative;
+  }
+
+  .table-dropdown {
+    font-size: 3.6vw;
+    padding: 2vw 7vw 2vw 2vw;
+    width: 100%;
+    background: transparent;
+  }
+
+  .dropdown-arrow {
+    width: 4vw;
+    height: 4vw;
+    right: 2vw;
+  }
+
+  /* ================= DOWNLOAD ================= */
+  .download-cell a {
+    display: inline-flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 3.6vw;
+  }
+
+  .download-cell a svg {
+    width: 4.5vw;
+    height: 4.5vw;
+    flex-shrink: 0;
+  }
+
+  .download-cell span {
+    font-size: 3.6vw;
+  }
 }
