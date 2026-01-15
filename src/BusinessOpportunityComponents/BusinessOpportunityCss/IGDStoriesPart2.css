@@ -3,30 +3,28 @@
   padding: 0vh 5vw;
 }
 .igd-stories-part2-paragraph {
- font-family: 'DDINPRO';
- color: #707070;
-font-size: 1.3vw;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;   
+  font-family: "DDINPRO";
+  color: #707070;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
+/* MOBILE SCREENS (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
   .igd-stories-part2 {
-    /* border: 2px solid red; */
-    font-size: 15px;      /* Smaller text for mobile */
-    margin: 0px;         /* Reduce spacing */
-    padding: 0vh 4vw;     /* Adjust padding */
+    margin: 15px 0; /* Reduced horizontal margin for mobile */
+    padding: 0 20px; /* Increased horizontal padding for better mobile spacing */
   }
 
-  .igd-stories-part2-paragraph.bold-text {
-    font-size: 16px;      /* Bold paragraph slightly bigger */
-    margin: 1.5vh 0vw;
-  }
-
-  .igd-stories-part2 strong {
-    font-size: 16px;
+  .igd-stories-part2-paragraph {
+    font-family: "DDINPRO";
+    color: #707070;
+    font-size: 4vw; /* Converted from 1.3vw to mobile-friendly size */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6; /* Changed from 30px to relative line-height for better scaling */
+    text-align: justify; /* Optional: Better readability on mobile */
   }
 }

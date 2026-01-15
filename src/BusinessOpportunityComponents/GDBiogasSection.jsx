@@ -27,28 +27,30 @@ const GDBiogasSection = () => {
       <div className="right-box">
         <div className="blue-strip"></div>
 
-        <div className="section-heading">Turnkey Solutions</div>
+         <div className="new-content-container">
+          <div className="section-heading">Turnkey Solutions</div>
 
-        <div className="section-para">
-          We offer comprehensive turnkey solutions that encompass every aspect
-          of biogas, CNG, LNG, Hydrogen, Biochar, Artificial Human Substance
-          (AHS), Sustainable Aviation Fuel (SAF), Biomass pellets, LPG, animal
-          feeds, and food processing plants. Our services include:
-        </div>
+          <div className="section-para">
+            We offer comprehensive turnkey solutions that encompass every aspect
+            of biogas, CNG, LNG, Hydrogen, Biochar, Artificial Human Substance
+            (AHS), Sustainable Aviation Fuel (SAF), Biomass pellets, LPG, animal
+            feeds, and food processing plants. Our services include:
+          </div>
 
-        <ul className="service-list">
-          <li>Designing and building customized solutions</li>
-          <li>Procuring and managing raw materials</li>
-          <li>Marketing and distribution support</li>
-        </ul>
+          <ul className="service-list">
+            <li>Designing and building customized solutions</li>
+            <li>Procuring and managing raw materials</li>
+            <li>Marketing and distribution support</li>
+          </ul>
 
-        <div className="section-heading">Our Mission</div>
+          <div className="section-heading">Our Mission</div>
 
-        <div className="section-para">
-          Our mission is to empower agricultural communities by providing
-          innovative, sustainable, and efficient energy solutions. We strive to
-          make renewable energy accessible and affordable, promoting a cleaner,
-          greener future for all.
+          <div className="section-para">
+            Our mission is to empower agricultural communities by providing
+            innovative, sustainable, and efficient energy solutions. We strive to
+            make renewable energy accessible and affordable, promoting a cleaner,
+            greener future for all.
+          </div>
         </div>
 
 

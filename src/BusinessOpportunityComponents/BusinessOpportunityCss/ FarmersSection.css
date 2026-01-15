@@ -16,13 +16,6 @@
 
 .gray-box {
   padding-left: 2vw;
-  /* position: absolute;
-  right: 0;
-  top: -6vh;
-  width: 20%;
-  height: 100%;
-  background: #d3d3d3;
-  z-index: 1; */
 }
 
 .image-boxf img {
@@ -79,4 +72,85 @@
   color: #676767;
   font-size: 7vw;
   font-weight: 700;
+}
+
+/* MOBILE SCREENS (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .farmers-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vh 0vw; /* Keep as is */
+  }
+
+  /* ----- IMAGE SIDE ----- */
+  .image-boxf {
+    position: relative;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw; /* Keep as is */
+  }
+
+  .gray-box {
+    padding-left: 2vw; /* Keep as is */
+  }
+
+  .image-boxf img {
+    position: relative;
+    z-index: 2;
+    width: 75%; /* Keep as is */
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5vw; /* Keep as is */
+    margin-left: 12vw; /* Keep as is */
+  }
+
+  /* ----- TEXT OVERLAY ----- */
+  .text-box {
+    position: absolute;
+    /* top: 10%; */
+    left: 8%; /* Keep as is */
+    z-index: 5;
+    color: #000;
+  }
+
+  /* TEXT STYLES - ONLY FONT SIZES REDUCED */
+  .line {
+    color: #676767;
+    font-family: "DDINPRO";
+    font-size: 5vw; /* Reduced from 7vw to 5vw */
+    font-weight: 400;
+    margin-left: 3vw;
+  }
+
+  .line2 {
+    font-family: "DDINPRO";
+    color: #676767;
+    font-size: 5vw; /* Reduced from 7vw to 5vw */
+    font-weight: 400;
+    margin-top: -5vw;
+    margin-left: 3vw;
+  }
+
+  .red {
+    color: #e12d36;
+    font-size: 5vw; /* Reduced from 7vw to 5vw */
+    font-weight: 700;
+    font-family: "DDINPRO";
+  }
+
+  .whitecolor {
+    color: #fff;
+    font-family: "DDINPRO";
+    font-size: 5vw; /* Reduced from 7vw to 5vw */
+    font-weight: 700;
+  }
+
+  .black {
+    font-family: "DDINPRO";
+    color: #676767;
+    font-size: 5vw; /* Reduced from 7vw to 5vw */
+    font-weight: 700;
+  }
 }
