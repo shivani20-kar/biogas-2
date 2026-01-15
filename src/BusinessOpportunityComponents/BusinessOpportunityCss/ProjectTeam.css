@@ -84,7 +84,7 @@ font-family: 'DDINPRO';
   /* CARD */
   .project-card {
     width: 75%;              /* responsive card width */
-    text-align: center;      /* cleaner on mobile */
+        /* cleaner on mobile */
   }
 
   /* IMAGE */
