@@ -95,14 +95,14 @@
   /* CARD */
   .itcorex-card {
     width: 75%; /* full responsive width */
-    text-align: center; /* center aligned for mobile */
+     /* center aligned for mobile */
   }
 
   /* IMAGE */
   .itcorex-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+          width: 100%;
+        height: auto;
+        border-radius: 10px;
   }
 
   /* LINKEDIN ICON */

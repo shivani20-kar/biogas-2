@@ -162,6 +162,7 @@
   margin-top: 0vh;
   z-index: 1;
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* ---------- MAIN WRAPPER ---------- */
   .team-wrapper {
@@ -180,14 +181,19 @@
     width: 100%;
   }
 
+  .team-quote-icon {
+    color: #e12d36;
+    width: 20%;
+  }
+
   /* ---------- TITLE ---------- */
   .team-title {
-    font-size: 32px; /* Reduced from 60px */
+    font-size: 8vw; /* Reduced from 60px */
     gap: 10px;
   }
 
   .red-line {
-    width: 2vw; /* reduced width */
+    width: 1.4vw; /* reduced width */
     height: 5vh; /* reduced height */
   }
 
@@ -200,6 +206,7 @@
   .team-tagline {
     font-size: 16px; /* reduced from 26px */
     padding: 6px 14px;
+            margin-top: 2vh;
   }
 
   /* ---------- TEAM CARDS ---------- */
@@ -245,8 +252,8 @@
 
   /* GD2 DECOR IMAGE */
   .gd2 {
-    width: 30%;
-    left: 60vw;
-    top: 1vh;
+    width: 16%;
+    left: 78vw;
+    top: 0vh;
   }
 }
