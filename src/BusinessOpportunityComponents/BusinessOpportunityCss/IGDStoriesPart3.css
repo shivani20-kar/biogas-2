@@ -30,14 +30,17 @@
   }
 
   .igd-stories-part3-paragraph {
-    font-size: 15px; /* Smaller font for mobiles */
-    margin-bottom: 1.2vh;
-    text-align: start; /* Avoid harsh full justification on small screens */
-    color: #555555; /* Slightly darker for readability */
+   font-family: "DDINPRO";
+        color: #707070;
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6;
+        text-align: justify;
   }
 
   .igd-stories-part3 strong {
     font-weight: 600;
-    color: #202020;
+    color: #282828;
   }
 }

@@ -45,7 +45,7 @@
 }
 
 .quote-img {
-  width: 4vw;          /* was 60px */
+  width: 4vw; /* was 60px */
   margin: 3vh 0;
 }
 
@@ -63,8 +63,8 @@
   position: absolute;
   right: 9vw;
   bottom: 4vh;
-  width: 30vw;        /* was 450px */
-  height: 7vh;        /* was 60px */
+  width: 30vw; /* was 450px */
+  height: 7vh; /* was 60px */
   background: #e12d36;
   transform: translateX(50%);
   z-index: 10;
@@ -74,9 +74,9 @@
 .red-strip::before {
   content: "";
   position: absolute;
-  left: 1.7vw;       /* was 25px */
-  top: 1.4vh;        /* was 12px */
-  width: 1vw;        /* was 14px */
+  left: 1.7vw; /* was 25px */
+  top: 1.4vh; /* was 12px */
+  width: 1vw; /* was 14px */
   height: 1vw;
   background: #fff;
   border-radius: 50%;
@@ -100,7 +100,7 @@
 .right-box {
   width: 50%;
   background: #d9d9d9;
-  padding: 15vh 5vw;
+  padding: 9vh 5vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
 
 .section-heading {
   font-family: "DDINPRO";
-  margin: 2vh 0 3vh;
+  margin: 6vh 0 3vh;
   color: #2e2e2e;
   font-size: 2.5vw;
   font-weight: 700;
@@ -137,13 +137,11 @@
   position: absolute;
   left: 9vw;
   top: 4vh;
-  width: 30vw;        /* was 450px */
-  height: 7vh;        /* was 60px */
+  width: 30vw; /* was 450px */
+  height: 7vh; /* was 60px */
   background: #0982fe;
   transform: translateX(-50%);
   z-index: 10;
-  
-  
 }
 
 /* START dots (left) */
@@ -176,6 +174,193 @@
 .gd1 {
   width: 40%;
   margin-top: 11vh;
-  margin-bottom: -15vh;
+  margin-bottom: -9vh;
   margin-left: 22vw;
+}
+
+/* MOBILE SCREENS (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* MAIN WRAPPER */
+  .biogas-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background: none;
+    margin-bottom: 5vh;
+  }
+
+  /* ---------------- LEFT BOX ---------------- */
+  .left-box {
+    width: 50%;
+    background: #595959;
+    padding: 15vh 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .brand-title {
+    color: #fff;
+    text-align: center;
+    font-family: "DDINPRO";
+    font-size: 5vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-bottom: 2vw;
+  }
+
+  .red-linegd {
+    width: 0.4vw;
+    height: 3vh;
+    background: #e12d36;
+    display: inline-block;
+    border-radius: 2vw; /* was 24px */
+  }
+
+  .green-text {
+    font-family: "DDINPRO";
+    color: #12b712;
+    font-weight: 700;
+  }
+
+  .quote-img {
+    width: 4vw; /* was 60px */
+    margin: 3vh 0;
+  }
+
+  .brand-desc {
+    font-family: "DDINPRO";
+    color: #d3d3d3;
+    font-size: 3.3vw;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1vw;
+  }
+
+  /* ---------------- RED STRIP ---------------- */
+  .red-strip {
+    position: absolute;
+    right: 9vw;
+    bottom: 4vh;
+    width: 30vw; /* was 450px */
+    height: 5.7vh; /* was 60px */
+    background: #e12d36;
+    transform: translateX(50%);
+    z-index: 10;
+  }
+
+  /* START dots (left) */
+  .red-strip::before {
+    content: "";
+    position: absolute;
+    left: 1.7vw; /* was 25px */
+    top: 1.4vh; /* was 12px */
+    width: 1vw; /* was 14px */
+    height: 1vw;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2.5vh #fff; /* was 20px */
+  }
+
+  /* END dots (right) */
+  .red-strip::after {
+    content: "";
+    position: absolute;
+    right: 1.7vw;
+    top: 1.4vh;
+    width: 1vw;
+    height: 1vw;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2.5vh #fff;
+  }
+
+  /* ---------------- RIGHT BOX ---------------- */
+  .right-box {
+    width: 50%;
+    background: #d9d9d9;
+    padding: 10vh 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .new-content-container {
+    margin-bottom: 6vh;
+  }
+
+  .section-heading {
+    font-family: "DDINPRO";
+    margin: 0vh 0 1vh;
+    color: #2e2e2e;
+    font-size: 2.5vw;
+    font-weight: 700;
+  }
+
+  .section-para {
+    font-family: "DDINPRO";
+    color: #707070;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1vh; /* was 30px */
+    width: 100%;
+  }
+
+  .service-list li {
+    font-family: "DDINPRO";
+    color: #707070;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 2vh;
+  }
+
+  /* ---------------- BLUE STRIP ---------------- */
+  .blue-strip {
+    position: absolute;
+    left: 9vw;
+    top: 4vh;
+    width: 30vw; /* was 450px */
+    height: 5.7vh; /* was 60px */
+    background: #0982fe;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  /* START dots (left) */
+  .blue-strip::before {
+    content: "";
+    position: absolute;
+    left: 1.7vw;
+    top: 1.4vh;
+    width: 1vw;
+    height: 1vw;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2.5vh #fff;
+  }
+
+  /* END dots (right) */
+  .blue-strip::after {
+    content: "";
+    position: absolute;
+    right: 1.7vw;
+    top: 1.4vh;
+    width: 1vw;
+    height: 1vw;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2.5vh #fff;
+  }
+
+  /* ---------------- IMAGE ---------------- */
+  .gd1 {
+    width: 40%;
+    margin-top: 11vh;
+    margin-bottom: -16vh;
+    margin-left: 22vw;
+  }
 }

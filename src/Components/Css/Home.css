@@ -201,12 +201,12 @@
 .aboutus-title {
   margin-top: -2vw;
   font-family: "DDINPRO";
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .aboutus-titleoverview {
@@ -266,43 +266,311 @@ line-height: normal;
   }
 }
 
-.InveHero-title{
-   margin-top: -5vw;
+.InveHero-title {
+  margin-top: -5vw;
   margin-left: 9vw;
-  color: #FFF;
-text-shadow: 0 0 100px #000;
-font-family: "DDINPRO";
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-family: "DDINPRO";
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.InveHero-title span{
+.InveHero-title span {
   color: transparent;
   text-shadow: 0 0 100px #000;
--webkit-text-stroke-width: 4px;
--webkit-text-stroke-color: #FB0;
-font-family: "DDINPRO";
-font-size: 8vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 16px;
-border-bottom: 5px solid #0982FE;
-border-radius: 4px;
-
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #fb0;
+  font-family: "DDINPRO";
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 16px;
+  border-bottom: 5px solid #0982fe;
+  border-radius: 4px;
 }
+
+/* Mobile Responsive: 320px to 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .heror {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+
+  .gdmainbackground,
+  .gdmainbackground img {
+    height: 100vh;
+  }
+
+  .hero-content-overlayy {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-rows {
+    flex-direction: column;
+    gap: 4vw;
+    padding: 0 1rem;
+  }
+
+  .logo-container {
+    width: 40vw;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-commons {
+    display: none;
+  }
+
+  .hero-bottom-wrap {
+    flex-direction: row;
+    gap: 2vh;
+    bottom: 5vh;
+    padding: 0 2vw;
+  }
+
+  .circle-elements {
+    width: 8vw;
+    height: 8vw;
+    border-width: 1.5px;
+  }
+
+  .aboutus-title,
+  .aboutus-titleoverview {
+    font-size: 5.5vw;
+    margin-top: -1vw;
+    text-shadow: 16px 16px 32px rgba(0, 0, 0, 0.6);
+    line-height: 20px;
+  }
+
+  .hero-text-content {
+    max-width: 90vw;
+    padding-bottom: 10vw;
+  }
+
+  .overviewsubtitle {
+    max-width: 90vw;
+    font-size: 4vw;
+    margin-top: 2vh;
+  }
+
+  .circle-gifs {
+    width: 120px;
+    left: 30%;
+    top: -180%;
+    transform: translate(-50%, 0%);
+  }
+
+  .InveHero-title {
+    margin-top: -2vw;
+    margin-left: 0;
+    font-size: 5.5vw;
+  }
+
+  .InveHero-title span {
+    font-size: 8vw;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 8px;
+    border-bottom-width: 3px;
+  }
+}
+
+/* Tablet Portrait: 481px to 768px */
+/* @media (min-width: 481px) and (max-width: 768px) {
+  .heror {
+    height: 70vh;
+    margin-top: 10vh;
+  }
+
+  .gdmainbackground,
+  .gdmainbackground img {
+    height: 70vh;
+  }
+
+  .hero-content-overlayy {
+    padding: 1.5rem;
+  }
+
+  .header-rows {
+    gap: 5vw;
+  }
+
+  .logo-container {
+    width: 15vw;
+  }
+
+  .logo {
+     display: none;
+  }
+
+  .nav-commons {
+     display: none;
+  }
+
+  .nav-title-commons {
+    font-size: 16px;
+  }
+
+  .nav-list-commons {
+    gap: 1.5vw;
+  }
+
+  .nav-list-commons a {
+    font-size: 14px;
+  }
+
+  .hero-bottom-wrap {
+    bottom: 8vh;
+    padding: 0 4vw;
+  }
+
+  .circle-elements {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutus-title {
+    font-size: 4.5vw;
+    margin-top: -1.5vw;
+  }
+
+  .aboutus-titleoverview {
+    font-size: 5.5vw;
+    margin-top: -3vw;
+  }
+
+  .hero-text-content {
+    max-width: 50vw;
+    padding-bottom: 4vw;
+  }
+
+  .overviewsubtitle {
+    max-width: 45vw;
+    font-size: 2vw;
+  }
+
+  .circle-gifs {
+    width: 160px;
+    left: 32%;
+    top: -120%;
+  }
+
+  .InveHero-title {
+    margin-top: -3vw;
+    margin-left: 5vw;
+    font-size: 4.5vw;
+  }
+
+  .InveHero-title span {
+    font-size: 7vw;
+    -webkit-text-stroke-width: 3px;
+    letter-spacing: 12px;
+    border-bottom-width: 4px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heror {
+    height: 85vh;
+    margin-top: 9vh;
+  }
+
+  .gdmainbackground,
+  .gdmainbackground img {
+    height: 85vh;
+  }
+
+  .hero-content-overlayy {
+    padding: 1.8rem;
+  }
+
+  .header-rows {
+    gap: 6vw;
+  }
+
+  .logo-container {
+    width: 12vw;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-commons {
+    display: none;
+  }
+
+  .nav-title-commons {
+    font-size: 17px;
+  }
+
+  .nav-list-commons {
+    gap: 1.8vw;
+  }
+
+  .nav-list-commons a {
+    font-size: 15px;
+  }
+
+  .hero-bottom-wrap {
+    bottom: 9vh;
+    padding: 0 4.5vw;
+  }
+
+  .circle-elements {
+    width: 48px;
+    height: 48px;
+  }
+
+  .aboutus-title {
+    font-size: 4.2vw;
+    margin-top: -1.8vw;
+  }
+
+  .aboutus-titleoverview {
+    font-size: 5.2vw;
+    margin-top: -3.5vw;
+  }
+
+  .hero-text-content {
+    max-width: 45vw;
+    padding-bottom: 4.5vw;
+  }
+
+  .overviewsubtitle {
+    max-width: 40vw;
+    font-size: 1.8vw;
+  }
+
+  .circle-gifs {
+    width: 180px;
+    left: 34%;
+    top: -100%;
+  }
+
+  .InveHero-title {
+    margin-top: -4vw;
+    margin-left: 7vw;
+    font-size: 4.2vw;
+  }
+
+  .InveHero-title span {
+    font-size: 7.5vw;
+    -webkit-text-stroke-width: 3.5px;
+    letter-spacing: 14px;
+  }
+} */
 
 @media screen and (min-width: 1367px) {
-
-  
-.nav-commons {
- 
-  margin-top: 5.1vh;
-
-  
-}
-  
-  
+  .nav-commons {
+    margin-top: 5.1vh;
+  }
 }

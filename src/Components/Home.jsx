@@ -42,7 +42,7 @@ const AboutHero = () => {
                   </li>
                   <li>
                     <Link to="/investors">Investors</Link>
-                  </li>
+                  </li> 
                   <li>
                     <Link to="/technology">Technology</Link> 
                   </li>
