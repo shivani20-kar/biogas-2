@@ -96,7 +96,7 @@
     padding: 3vh 5vw;
     gap: 30px;
     margin-top: 3vh;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
   }
 
   /* LEFT BOX */
@@ -104,7 +104,6 @@
     width: 90%;
     padding: 8vh 5vw;
   }
-git pull origin main
 
   .pi-quote-icon {
     font-size: 28px;
