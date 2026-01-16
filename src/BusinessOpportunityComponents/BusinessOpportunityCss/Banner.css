@@ -58,3 +58,50 @@
   margin: 0;
   padding: 0;
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .banner-wrapper {
+    height: 40vh; /* Reduced height for mobile */
+  }
+  
+  /* TEXT WRAPPER */
+  .banner-text {
+    gap: 2vh; /* Reduced gap for mobile */
+    font-size: 4.5vw; /* Approximately 18px at 400px viewport */
+    width: 90%; /* Ensure text doesn't touch edges */
+    text-align: center;
+  }
+  
+  /* FIRST ROW */
+  .row {
+    font-size: 8vw; /* Approximately 32px at 400px viewport */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    white-space: normal; /* Allow text wrapping */
+    gap: 0.5vh;
+  }
+  
+  /* SECOND ROW */
+  .center-row {
+    font-size: 8vw; /* Approximately 32px at 400px viewport */
+    margin-top: 1.5vh;
+    white-space: normal; /* Allow text wrapping */
+  }
+  
+  /* BULLET DOT */
+  .dot {
+    margin-right: 3vw; /* Converted from 12px to vw */
+    margin-bottom: 0.5vh; /* Add spacing for vertical layout */
+  }
+  
+  .banner-text p {
+    line-height: 1.2; /* Slightly increased for mobile readability */
+  }
+  
+  /* Optional: If you have long text that needs to wrap */
+  .banner-text {
+    word-wrap: break-word;
+  }
+}

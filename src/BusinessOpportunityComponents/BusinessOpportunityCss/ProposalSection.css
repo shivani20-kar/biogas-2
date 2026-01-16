@@ -1,7 +1,7 @@
 .proposal-section {
   position: relative;
   padding: 5vh 5vw;
-  margin-bottom: 12vh;
+  margin-bottom: 16vh;
 }
 
 /* FIXED: Border now stays at top & does NOT shift down */
@@ -24,27 +24,33 @@
 }
 
 .proposal-text {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 18px;
   color: #252525;
   width: 85%;
   line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .proposal-thanks {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   margin-top: 2vh;
   color: #252525;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .proposal-sincerely {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 20px;
   color: #707070;
   margin-top: 25px;
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
 }
 
 .signature-box {
@@ -67,9 +73,12 @@
 }
 
 .signature-content p {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   margin: 6px 0;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .signature-line-bottom {
@@ -79,4 +88,79 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .proposal-section {
+    padding: 2vh 5vw;
+    margin-bottom: 8vh; /* Reduced margin for mobile */
+  }
+
+  .proposalinner-section {
+    padding: 2vh 1vw;
+  }
+
+  /* Adjust border thickness for mobile */
+  .proposalinner-section::after {
+    border-width: 2px; /* Thinner border on mobile */
+  }
+
+  .proposal-text {
+    font-size: 4vw;
+    width: 100%; /* Full width on mobile */
+    line-height: 1.7;
+  }
+
+  .proposal-thanks {
+    font-size: 5.5vw;
+    margin-top: 3vh;
+    text-align: center;
+  }
+
+  .proposal-sincerely {
+    font-size: 5vw;
+    margin-top: 4vh;
+    text-align: center;
+  }
+
+  .signature-box {
+    width: 90vw;
+    max-width: 320px;
+    padding: 4vh 5vw;
+    margin-top: 3vh;
+    margin-bottom: -4vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .signature-line-top {
+    width: 50%;
+    top: 2vh;
+    right: 22vw;
+    height: 1px;
+  }
+
+  .signature-content p {
+    font-size: 4.5vw;
+    margin: 1vh 0;
+    text-align: center;
+  }
+
+  .signature-line-bottom {
+    height: 2px; /* Thinner line on mobile */
+  }
+
+  /* Additional mobile optimizations */
+  .proposal-section * {
+    box-sizing: border-box;
+  }
+
+  /* Ensure proper text wrapping on mobile */
+  .proposal-text br {
+    display: block;
+    content: "";
+    margin-top: 1.5vh;
+  }
 }

@@ -6,27 +6,34 @@
 /* MAIN TITLE */
 .proje-titles {
   color: #535353;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 1vh;
+  font-style: normal;
+  line-height: normal;
 }
 
 /* SUBTITLE */
 .proje-subtitles {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   color: #252525;
   font-size: 18px;
   margin-bottom: 3vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* SECTION TITLE */
 .section-title {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   color: #535353;
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 2vh;
+  margin-bottom: 7vh;
+  font-style: normal;
+  line-height: normal;
 }
 
 /* TWO COLUMN WRAPPER */
@@ -44,11 +51,13 @@
 
 /* RED SMALL HEADINGS */
 .red-heading {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 20px;
-  font-weight: 600;
-  color: #E12D36;
+  font-weight: 700;
+  color: #e12d36;
   margin-bottom: 1vh;
+  font-style: normal;
+  line-height: normal;
 }
 
 .mt-30 {
@@ -57,8 +66,64 @@
 
 /* BULLET LISTS */
 .list {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   color: #252525;
   line-height: 1.8;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .project-wrapper {
+    padding: 2vh 4vw; /* Slightly reduce side padding */
+  }
+
+  /* MAIN TITLE - Converted from 36px */
+  .proje-titles {
+    font-size: 9vw; /* Approximately 36px at 400px viewport width */
+    margin-bottom: 0.5vh;
+  }
+
+  /* SUBTITLE - Converted from 18px */
+  .proje-subtitles {
+    font-size: 4.5vw; /* Approximately 18px at 400px viewport width */
+    margin-bottom: 2vh;
+    line-height: 1.4;
+  }
+
+  /* SECTION TITLE - Converted from 26px */
+  .section-title {
+    font-size: 6.5vw; /* Approximately 26px at 400px viewport width */
+    margin-bottom: 0vh;
+  }
+
+  /* TWO COLUMN WRAPPER - Stack columns vertically */
+  .industry-container {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  /* ONE COLUMN - Full width on mobile */
+  .industry-column {
+    width: 100%;
+  }
+
+  /* RED SMALL HEADINGS - Converted from 20px */
+  .red-heading {
+    font-size: 5vw; /* Approximately 20px at 400px viewport width */
+    margin-bottom: 0.8vh;
+    margin-top: 0vh;
+  }
+
+  .mt-30 {
+    margin-top: 3vh; /* Reduced from 5vh for mobile */
+  }
+
+  /* BULLET LISTS - Converted from 18px */
+  .list {
+    font-size: 4.5vw; /* Approximately 18px at 400px viewport width */
+    line-height: 1.6;
+  }
 }

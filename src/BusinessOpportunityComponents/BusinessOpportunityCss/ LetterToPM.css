@@ -14,8 +14,10 @@
   font-family: "DDINPRO";
   color: #535353;
   font-size: 1.35vw;
-  font-weight: bold;
+
   line-height: 1.2;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .pm-greeting {
@@ -23,6 +25,9 @@
   font-size: 0.95vw;
   font-family: "DDINPRO";
   color: #707070;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .pm-title {
@@ -31,6 +36,9 @@
   color: #535353;
   font-size: 1.35vw;
   font-weight: 700;
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .pm-desc {
@@ -39,6 +47,8 @@
   font-size: 0.95vw;
   color: #707070;
   line-height: 1.65;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .pm-subtitle {
@@ -46,6 +56,9 @@
   color: #535353;
   font-size: 1.35vw;
   font-weight: 700;
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .pm-list {
@@ -55,6 +68,8 @@
   padding-left: 2vw;
   font-family: "DDINPRO";
   line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .pm-inner-list {
@@ -69,6 +84,9 @@
   font-size: 0.95vw;
   color: #252525;
   font-weight: 700;
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .pm-highlight {
@@ -99,6 +117,9 @@
   bottom: 18vh;
   left: 15vw;
   color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .pm-vikasit {
@@ -106,6 +127,9 @@
   font-size: 2.6vw;
   font-weight: 700;
   margin: 0;
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .vikasred-line {

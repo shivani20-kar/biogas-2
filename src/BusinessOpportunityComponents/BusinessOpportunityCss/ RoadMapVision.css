@@ -18,9 +18,11 @@
   color: #ffffff;
   margin: 0vh 1.5vw;
   font-size: 40px;
-  font-weight: 600;
-  font-family: 'DDINPRO';
+  font-weight: 700;
+  font-family: "DDINPRO";
   margin-bottom: 1vh;
+  font-style: normal;
+  line-height: normal;
 }
 
 /* TOP IMAGES ROW */
@@ -79,9 +81,10 @@
 
 /* Extra for planets text */
 .planets-text {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.2rem;
 }
+
 /* Bamboo Wrapper With Custom Border */
 .bamboo-border-box {
   position: relative;
@@ -112,7 +115,6 @@
   height: 50%;
   border-top: 4px solid white;
   border-left: 4px solid white;
-
   pointer-events: none;
 }
 
@@ -121,4 +123,151 @@
   height: 600px;
   object-fit: cover;
   display: block;
+}
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* Overall wrapper - Stack vertically on mobile */
+  .vision-wrapper {
+    flex-direction: column;
+    
+  }
+  
+  .visioninner-wrapper {
+    width: 100%; /* Full width on mobile */
+    padding: 4vh 5vw;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Title - Scale font size */
+  .vision-title {
+    font-size: 10vw; /* ~40px at 400px screen width */
+    margin: 0 0 3vh 0; /* Adjust margins for mobile */
+    text-align: center; /* Center align on mobile */
+  }
+  
+  /* TOP IMAGES ROW - Stack vertically with proper order */
+  .vision-top {
+    flex-direction: column;
+    gap: 4vh; /* Good gap between images */
+    width: 100%;
+    align-items: center; /* Center items */
+  }
+  
+  /* Image boxes - Proper sizing */
+  .vision-box {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+  
+  .bee-box {
+    padding: 0; /* Remove extra padding */
+    order: 2; /* Control display order if needed */
+  }
+  
+  .bamboo-box {
+    order: 1; /* Control display order if needed */
+  }
+  
+  /* Image sizes - Fixed responsive sizing */
+  .vision-image {
+    width: 100%;
+    height: 45vh; /* Fixed height for consistency */
+    max-height: 300px;
+    object-fit: cover;
+    
+  }
+  
+  /* PLANETS SECTION - Adjust for mobile */
+  .vision-bottom {
+    margin-top: 5vh; /* Good spacing from top section */
+    width: 100%;
+  }
+  
+  .planets-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .planets-img {
+    width: 100%;
+    height: 12vh;
+    max-height: 250px;
+    object-fit: contain;
+    margin-bottom: 3vh;
+   
+  }
+  
+  .planets-text {
+    font-size: 4.5vw; /* ~18px at 400px screen width */
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 2vw;
+    color: #ffffff;
+  }
+  
+  /* Bamboo border box - Fix display */
+  .bamboo-border-box {
+    padding: 3vh 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust border thickness and position for mobile */
+  .bamboo-border-box::before {
+    border-width: 2px;
+    width: calc(100% - 4vw); /* Account for padding */
+    height: calc(100% - 4vh);
+    right: 2vw;
+    bottom: 2vh;
+  }
+  
+  .bamboo-border-box::after {
+    border-width: 2px;
+    width: 30%; /* Adjust for mobile */
+    height: 30%;
+    top: 2vh;
+    left: 2vw;
+  }
+  
+  /* Bamboo image - Proper sizing */
+  .bamboo-img {
+    width: 100%;
+    height: 45vh;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Ensure all images are properly contained */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Add specific fixes for image alignment */
+  .vision-box:nth-child(1) .vision-image,
+  .vision-box:nth-child(2) .vision-image {
+    width: 100%;
+    height: 45vh;
+    object-position: center; /* Center the image focus */
+  }
+  
+  /* Optional: Add a container for better image control */
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Fix for any overflow issues */
+  * {
+    box-sizing: border-box;
+  }
 }
