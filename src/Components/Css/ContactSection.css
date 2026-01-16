@@ -43,11 +43,11 @@
   margin-bottom: 1vh;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
+} */
 
 form input,
 form textarea {

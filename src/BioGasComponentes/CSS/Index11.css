@@ -156,6 +156,7 @@
 
   /* ================= HEADER ================= */
   .equipmentspecifications-header {
+     margin-top: 5vw;
   flex-direction: row;
     align-items: center;
     padding: 2vw 0vw;

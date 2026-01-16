@@ -242,6 +242,7 @@
 
   /* ================= HEADER ================= */
   .proposal-header {
+     margin-top: 10vw;
     flex-direction: row;
     align-items: center;
     gap: 3vw;
@@ -253,7 +254,7 @@
     background: transparent;
     width: 70px;
     height: 100px;
-    margin-top: -18vw;
+    margin-top: -22vw;
   }
 
   .arrow-indexo::before {

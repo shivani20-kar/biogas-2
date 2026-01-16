@@ -32,10 +32,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #e0e0e0;
 }
 
+/* Webkit */
 body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
 }

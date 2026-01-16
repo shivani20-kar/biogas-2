@@ -53,3 +53,50 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .partner-wrapper {
+    height: 6vw;
+    transform: none;
+ display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .partner-left-shape {
+    margin-left:-4vw;
+  }
+  .partner-left-shape svg{
+    width: 20vw;
+    margin-top: -34vw;
+  }
+
+  /* TEXT SECTION */
+  .partner-content {
+    transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .partner-title {
+    font-size: 8vw;
+    left: -10vw;
+    margin-bottom: 0vw;
+    top: -15vw;
+  }
+
+  .partner-title span {
+    font-size: 8vw;
+    
+  }
+
+  .partner-subtext {
+    margin-top: -11vw;
+    font-size: 3.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+}

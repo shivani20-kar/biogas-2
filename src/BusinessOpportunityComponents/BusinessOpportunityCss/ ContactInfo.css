@@ -81,3 +81,56 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.92px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .contact-info-container {
+    flex-direction: column;          /* stack columns */
+    padding: 12vw 6vw;
+    margin-bottom: 0;
+    gap: 2vh;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .contact-left {
+    margin-right: 0;
+  }
+
+  /* Labels */
+  .contact-label,
+  .contact-right .contact-label {
+    font-size: 4.2vw;
+    margin: 6px 0 2px 0;
+    letter-spacing: 0.4px;
+  }
+
+  /* Email */
+  .contact-email,
+  .contact-right .contact-email {
+    font-size: 4.8vw;
+    letter-spacing: 0.6px;
+    margin-bottom: 2vh;
+    display: block;
+    word-break: break-word;
+  }
+
+  /* Phone label */
+  .contact-phone-label {
+    font-size: 5.2vw;
+    margin-top: 3vh;                 /* remove huge gap */
+    letter-spacing: 1px;
+  }
+
+  /* Phone number */
+  .contact-phone {
+    font-size: 5.6vw;
+    letter-spacing: 1.2px;
+    display: block;
+    margin-top: 0vh;
+  }
+}

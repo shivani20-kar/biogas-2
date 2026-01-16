@@ -310,6 +310,57 @@
   z-index: 1;
 }
 
+
+.vendor-registration-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.vendor-registration-bg img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.vendor-title {
+  padding-bottom: 25vh;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.co-owner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.co-owner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.coowner-title {
+  padding-bottom: 25vh;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 /* Mobile Responsive: 320px to 480px */
 @media (min-width: 320px) and (max-width: 480px) {
   .heror {
@@ -408,197 +459,58 @@
     height: 30vh;
     object-fit: cover;
   }
+
+  
+.vendor-registration-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
 }
 
-/* Tablet Portrait: 481px to 768px */
-/* @media (min-width: 481px) and (max-width: 768px) {
-  .heror {
-    height: 70vh;
-    margin-top: 10vh;
-  }
-
-  .gdmainbackground,
-  .gdmainbackground img {
-    height: 70vh;
-  }
-
-  .hero-content-overlayy {
-    padding: 1.5rem;
-  }
-
-  .header-rows {
-    gap: 5vw;
-  }
-
-  .logo-container {
-    width: 15vw;
-  }
-
-  .logo {
-     display: none;
-  }
-
-  .nav-commons {
-     display: none;
-  }
-
-  .nav-title-commons {
-    font-size: 16px;
-  }
-
-  .nav-list-commons {
-    gap: 1.5vw;
-  }
-
-  .nav-list-commons a {
-    font-size: 14px;
-  }
-
-  .hero-bottom-wrap {
-    bottom: 8vh;
-    padding: 0 4vw;
-  }
-
-  .circle-elements {
-    width: 40px;
-    height: 40px;
-  }
-
-  .aboutus-title {
-    font-size: 4.5vw;
-    margin-top: -1.5vw;
-  }
-
-  .aboutus-titleoverview {
-    font-size: 5.5vw;
-    margin-top: -3vw;
-  }
-
-  .hero-text-content {
-    max-width: 50vw;
-    padding-bottom: 4vw;
-  }
-
-  .overviewsubtitle {
-    max-width: 45vw;
-    font-size: 2vw;
-  }
-
-  .circle-gifs {
-    width: 160px;
-    left: 32%;
-    top: -120%;
-  }
-
-  .InveHero-title {
-    margin-top: -3vw;
-    margin-left: 5vw;
-    font-size: 4.5vw;
-  }
-
-  .InveHero-title span {
-    font-size: 7vw;
-    -webkit-text-stroke-width: 3px;
-    letter-spacing: 12px;
-    border-bottom-width: 4px;
-  }
+.vendor-registration-bg img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .heror {
-    height: 85vh;
-    margin-top: 9vh;
-  }
-
-  .gdmainbackground,
-  .gdmainbackground img {
-    height: 85vh;
-  }
-
-  .hero-content-overlayy {
-    padding: 1.8rem;
-  }
-
-  .header-rows {
-    gap: 6vw;
-  }
-
-  .logo-container {
-    width: 12vw;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .nav-commons {
-    display: none;
-  }
-
-  .nav-title-commons {
-    font-size: 17px;
-  }
-
-  .nav-list-commons {
-    gap: 1.8vw;
-  }
-
-  .nav-list-commons a {
-    font-size: 15px;
-  }
-
-  .hero-bottom-wrap {
-    bottom: 9vh;
-    padding: 0 4.5vw;
-  }
-
-  .circle-elements {
-    width: 48px;
-    height: 48px;
-  }
-
-  .aboutus-title {
-    font-size: 4.2vw;
-    margin-top: -1.8vw;
-  }
-
-  .aboutus-titleoverview {
-    font-size: 5.2vw;
-    margin-top: -3.5vw;
-  }
-
-  .hero-text-content {
-    max-width: 45vw;
-    padding-bottom: 4.5vw;
-  }
-
-  .overviewsubtitle {
-    max-width: 40vw;
-    font-size: 1.8vw;
-  }
-
-  .circle-gifs {
-    width: 180px;
-    left: 34%;
-    top: -100%;
-  }
-
-  .InveHero-title {
-    margin-top: -4vw;
-    margin-left: 7vw;
-    font-size: 4.2vw;
-  }
-
-  .InveHero-title span {
-    font-size: 7.5vw;
-    -webkit-text-stroke-width: 3.5px;
-    letter-spacing: 14px;
-  }
-} */
-
-@media screen and (min-width: 1367px) {
-  .nav-commons {
-    margin-top: 5.1vh;
-  }
+.vendor-title {
+  padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
+
+.co-owner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.co-owner img {
+ width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.coowner-title {
+ padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+}
+

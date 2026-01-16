@@ -122,6 +122,11 @@
   position: relative;
   z-index: 1;
 }
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .form-outer-frame::before {
   content: "";
@@ -301,4 +306,138 @@
 .submit-btnn:hover .sub-icon {
   opacity: 1;
   transform: translateY(-50%) scale(1);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= CONTAINER ================= */
+  .contact-section-container {
+    padding: 0 0vw;
+  }
+
+  .contact-top-text {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    line-height: 1;
+  }
+
+  /* ================= HEAD TEXT ================= */
+  .red-textvendor,
+  .green-textvendor {
+    font-size: 7vw;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+
+  .red-textvendor {
+    margin-top: 3vh;
+  }
+
+  /* ================= SCROLL ANIMATION (SAFER) ================= */
+  .animate-on-scroll .red-textvendor,
+  .animate-on-scroll .green-textvendor {
+    transform: translateX(0);
+    opacity: 1;
+    animation: none;
+  }
+.contact-form{
+  display: flex;
+  flex-direction: column;
+
+}
+  .contactform-wrapper {
+    margin-top: 1vh;
+  }
+
+  .red-bars {
+    display: none; /* hide for clean mobile */
+  }
+
+  .form-outer-frame {
+    width: 100%;
+    padding: 8vw;
+  }
+
+  .form-outer-frame::before {
+    inset: 4vw;
+  }
+
+  .form-inner-frame {
+    width: 88%;
+    padding: 6vw 5vw;
+  }
+
+  /* ================= INPUT FIELDS ================= */
+  .floating-field input,
+  .floating-field-add input,
+  .floating-field textarea {
+    padding: 16px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .floating-field textarea {
+    height: 8vw;
+  }
+
+  .floating-field label,
+  .floating-field-add label {
+    font-size: 13px;
+  }
+
+  /* ================= ROW INPUTS ================= */
+  .row-con {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .large-input,
+  .small-input {
+    flex: 1;
+  }
+
+
+.submit-btnn {
+  font-size: 4.2vw;
+  padding: 12px 26px;
+  border-radius: 30px;
+}
+
+/* Trigger animation on tap */
+.submit-btnn:active::before,
+.submit-btnn:focus-visible::before {
+  transform: translateX(-50%) scale(1);
+}
+.submit-btnn .sub-icon {
+  position: absolute;
+  right: 25vw; /* RIGHT SIDE */
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: #e53935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+
+.submit-btnn:active,
+.submit-btnn:focus-visible {
+  color: #fff;
+  padding-right: 52px;
+}
+
+/* Icon animation on tap */
+.submit-btnn:active .sub-icon,
+.submit-btnn:focus-visible .sub-icon {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
 }

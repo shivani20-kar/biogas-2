@@ -60,3 +60,54 @@ line-height: 55px; /* 125% */
 letter-spacing: 1.28px;
   padding: 4vh 2vw;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* Outer spacing */
+  .info-box-background {
+    padding-top: 4vh;
+  }
+
+  /* Grey background wrapper */
+  .info-box-backgroundinner {
+    padding: 1vw 1rem;
+    height: 50vw;               /* allow content height */
+    align-items: center;
+  }
+
+  /* Info box */
+  .info-box-container {
+    width: 95%;
+    height: auto;               /* auto height for text */
+    padding: 1.5rem 1.2rem;
+    margin-top: 15vw;
+  }
+
+  /* Corner lines */
+  .info-box-container::before,
+  .info-box-container::after {
+    width: 22vw;
+    height: 12vh;
+    border-width: 1.5px;
+  }
+
+  .info-box-container::before {
+    top: 3vw;
+    left: 3vw;
+  }
+
+  .info-box-container::after {
+    bottom: 3vw;
+    right: 3vw;
+  }
+
+  /* Text */
+  .info-box-text {
+    font-size: 5vw;           /* readable on small screens */
+    line-height: 1.35;
+    letter-spacing: 0.8px;
+    padding: 2vh 2vw;
+    text-align: left;
+  }
+}

@@ -52,3 +52,50 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .land-wrapper {
+   height: 25vw;
+    transform: none;
+ display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .land-left-shape {
+      margin-left:-4vw;
+
+  }
+  .land-left-shape svg{
+     width: 20vw;
+    margin-top: -34vw;
+  }
+
+  /* TEXT SECTION */
+  .land-content {
+   transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .land-title {
+   font-size: 8vw;
+    left: -15vw;
+    margin-bottom: 0vw;
+    top: -16vw;
+  }
+
+  .land-title span {
+   font-size: 8vw;
+  }
+
+  .land-subtext {
+    margin-top: -14vw;
+    font-size: 3.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+}

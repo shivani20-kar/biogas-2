@@ -169,6 +169,21 @@ line-height: normal;
   }
 }
 
+.top-arrow {
+  position: fixed;
+  bottom: 0vw;     
+  right: 1vw;      
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.top-arrow svg {
+  width: 3vw;
+  height: 3vw;
+  color: black;
+}
+
+
 /* Mobile Responsive: 320px to 480px */
 @media (max-width: 480px) {
   .biogashero {
@@ -235,5 +250,19 @@ line-height: normal;
      z-index: 10; 
   }
 
+  
+.top-arrow {
+  position: fixed;
+  bottom: 4vw;     
+  right: 4vw;      
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.top-arrow svg {
+  width: 10vw;
+  height: 10vw;
+  color: black;
+}
 }
 

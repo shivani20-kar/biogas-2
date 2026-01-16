@@ -204,7 +204,7 @@
     background: transparent;
      width: 80px;
     height: 120px;
-    margin-left: 0;
+    margin-left: 1vw;
     margin-top: -7vw;
   }
 
@@ -230,8 +230,8 @@
   /* CARDS SECTION */
   .industries-cards {
     flex-direction: column;
-    gap: 4vw;
-    padding: 4vw 4vw 12vw 4vw;
+    gap: 9vw;
+    padding: 8vw 8vw 18vw 8vw;
   }
 
   /* CARD */
@@ -266,7 +266,7 @@
   /* REFERENCES */
   .industries-reference {
     right: 15px;
-    bottom: 2vw;
+    bottom: 4vw;
     font-size: 5vw;
     gap: 3vw;
   }
