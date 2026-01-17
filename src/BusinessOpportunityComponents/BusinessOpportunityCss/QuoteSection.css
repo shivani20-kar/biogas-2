@@ -81,7 +81,7 @@ letter-spacing: 1.92px;
 
   /* Gray background */
   .quoteinner-wrapper {
-    width: 90%;
+    width: 50%;
     height: auto;
     padding: 4vh 0;
   }
@@ -89,12 +89,13 @@ letter-spacing: 1.92px;
   /* Red quote box */
   .quote-left {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 2vh 6vw;
     transform: none;
     top: 0;
     margin: 0 auto;
+    align-items: center;
   }
 
   .quote-img {
@@ -123,6 +124,7 @@ letter-spacing: 1.92px;
     line-height: 1.2;
     letter-spacing: 1px;
     text-align: center;
+        padding-left:25vw;
   }
 }
 

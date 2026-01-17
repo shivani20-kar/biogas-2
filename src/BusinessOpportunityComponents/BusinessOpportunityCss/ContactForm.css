@@ -343,6 +343,7 @@
 .contact-form{
   display: flex;
   flex-direction: column;
+  width: 100%;
 
 }
   .contactform-wrapper {
@@ -363,7 +364,7 @@
   }
 
   .form-inner-frame {
-    width: 88%;
+    width: 100%;
     padding: 6vw 5vw;
   }
 
@@ -374,7 +375,7 @@
     padding: 16px 14px;
     font-size: 14px;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .floating-field textarea {
