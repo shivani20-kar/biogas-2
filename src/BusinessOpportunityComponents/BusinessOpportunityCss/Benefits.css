@@ -8,18 +8,49 @@
 }
 
 .benefits-title {
-  font-family: 'DDINPRO';
-      color: #535353;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 2vh;
+  font-family: "DDINPRO";
+  color: #535353;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 2vh;
+  font-style: normal;
+
+  line-height: normal;
 }
 
 .benefits-list {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   list-style-type: disc;
   padding-left: 2vw;
   font-size: 18px;
   color: #707070;
   line-height: 1.8;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .benefits-wrapper {
+    padding: 0vh 5vw; /* Slightly reduced vertical padding */
+  }
+
+  .benefits-section {
+    margin-bottom: 4vh; /* Reduced spacing between sections */
+  }
+
+  .benefits-title {
+    font-size: 6.5vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .benefits-list {
+    font-size: 4vw;
+    padding-left: 6vw;
+    line-height: 1.6;
+  }
+
+  .benefits-list li {
+    margin-bottom: 1vh; 
+  }
 }

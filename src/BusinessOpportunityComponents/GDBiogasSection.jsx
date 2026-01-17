@@ -10,7 +10,7 @@ const GDBiogasSection = () => {
       <div className="left-box">
         <div className="brand-title">
           <span className="red-linegd"></span>
-          GD B<span className="green-text">i</span>OGAS
+          GD BIOGAS
         </div>
 
         <img className="quote-img" src={quoteIcon} alt="quote" />
@@ -20,14 +20,14 @@ const GDBiogasSection = () => {
           products using world-class, advanced biogas & biofuel technology.
         </div>
 
-        <div className="red-strip"></div>
+        {/* <div className="red-strip"></div> */}
       </div>
 
       {/* RIGHT SIDE */}
       <div className="right-box">
-        <div className="blue-strip"></div>
+        {/* <div className="blue-strip"></div> */}
 
-         <div className="new-content-container">
+        <div className="new-content-container">
           <div className="section-heading">Turnkey Solutions</div>
 
           <div className="section-para">
@@ -47,12 +47,11 @@ const GDBiogasSection = () => {
 
           <div className="section-para">
             Our mission is to empower agricultural communities by providing
-            innovative, sustainable, and efficient energy solutions. We strive to
-            make renewable energy accessible and affordable, promoting a cleaner,
-            greener future for all.
+            innovative, sustainable, and efficient energy solutions. We strive
+            to make renewable energy accessible and affordable, promoting a
+            cleaner, greener future for all.
           </div>
         </div>
-
 
         <img className="gd1" src={gd} alt="" />
       </div>

@@ -22,7 +22,6 @@
 
 .finance-card {
   width: 260px;
-  text-align: center;
 }
 
 .finance-img {
@@ -85,7 +84,7 @@
 
   /* LINKEDIN ICON */
   .finance-linkedin {
-    justify-content: center; /* center on mobile */
+    /* center on mobile */
     margin-top: 1vh;
   }
 

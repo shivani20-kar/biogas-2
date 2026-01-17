@@ -93,7 +93,10 @@ const LetterToPM = () => {
 
           {/* TEXT OVER FLAG */}
           <div className="pm-flag-text">
-            <h2 className="pm-vikasit"> <span className="vikasred-line"></span> Vikasit Bharat</h2>
+            <h2 className="pm-vikasit">
+              {" "}
+              <span className="vikasred-line"></span> Vikasit Bharat
+            </h2>
 
             <img className="vikasitimg" src={colonimg} alt="" />
             <p className="pm-appeal">
@@ -103,8 +106,6 @@ const LetterToPM = () => {
             </p>
           </div>
         </div>
-
-       
       </div>
     </div>
   );

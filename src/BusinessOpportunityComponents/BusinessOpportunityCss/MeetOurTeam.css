@@ -15,6 +15,7 @@
   padding: 12vh 5vw 18vh 5vw; /* bottom padding added */
   position: relative;
   z-index: 5;
+  margin-top: -5vh;
 }
 
 .team-text-container {
@@ -175,6 +176,7 @@
     align-items: flex-start;
     padding: 10vh 5vw 12vh 5vw;
     background-position: center;
+    margin-top: -5vh;
   }
 
   .team-text-container {
@@ -199,14 +201,14 @@
 
   .team-sub-title {
     width: 100%;
-    font-size: 22px; /* reduced from 40px */
+    font-size: 26px; /* reduced from 40px */
     margin-top: 1vh;
   }
 
   .team-tagline {
     font-size: 16px; /* reduced from 26px */
     padding: 6px 14px;
-            margin-top: 2vh;
+    margin-top: 2vh;
   }
 
   /* ---------- TEAM CARDS ---------- */
@@ -253,7 +255,7 @@
   /* GD2 DECOR IMAGE */
   .gd2 {
     width: 16%;
-    left: 78vw;
+    left: 77vw;
     top: 0vh;
   }
 }
