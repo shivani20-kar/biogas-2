@@ -262,7 +262,6 @@
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 15px;
-    
   }
 
   /* FUNDAMENTALS TITLE */
@@ -285,6 +284,156 @@
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 8px;
-    
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .igd-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: stretch;
+    padding: 4vh 4vw 0vh 4vw;
+    flex-wrap: nowrap;
+  }
+
+  /* LEFT SECTION */
+  .paraone {
+    position: relative;
+    flex: none;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    margin-bottom: 3vh;
+  }
+
+  /* Full width & height image */
+  .full-image {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Text overlay on left section */
+  .text-overlay {
+    position: absolute;
+    top: 16vh;
+    left: 16vw;
+    padding: 3vh 0vw 0vh 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  /* MAIN HEADING (GD Stories) */
+  .main-heading {
+    font-family: "DDINPRO";
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    color: #fff;
+    text-align: left;
+    font-size: 7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 1.5vw;
+  }
+
+  .igdred-line {
+    width: 0.4vw;
+    height: 5vh;
+    background: #e12d36;
+    display: inline-block;
+    border-radius: 24px;
+  }
+
+  /* RED QUOTE ICON */
+  .storiesimg {
+    width: 40px;
+    margin-bottom: 2vh;
+    color: #e12d36;
+  }
+
+  /* SUB HEADING */
+  .sub-headingg {
+    color: #fff;
+    text-shadow: 0 14px 14px rgba(0, 0, 0, 0.15);
+    font-family: "DDINPRO";
+    width: 80%;
+    max-width: 500px;
+    font-size: 4vw;
+    margin-top: 0.5vw;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5vw;
+  }
+
+  /* SMALL TEXT BELOW SUB HEADING */
+  .paragraph-one {
+    color: #fff;
+    text-shadow: 0 14px 14px rgba(0, 0, 0, 0.15);
+    font-family: "DDINPRO";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  /* RIGHT SECTION */
+  .paratwo {
+    flex: none;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* RIGHT SIDE PARAGRAPHS */
+  .paragraph {
+    font-family: "DDINPRO";
+    color: #707070;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2.5vh;
+  }
+
+  /* FUNDAMENTALS TITLE */
+  .fundamentals-heading {
+    margin-top: 1.5vh;
+    font-family: "DDINPRO";
+    color: #282828;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  /* FUNDAMENTALS LIST */
+  .fundamentals-list li {
+    font-family: "DDINPRO";
+    color: #707070;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1vh;
   }
 }
