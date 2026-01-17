@@ -394,3 +394,121 @@ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* MAIN CONTAINER */
+  .contact-section-container-career {
+   padding: 0 0vw;
+  }
+
+  .contact-top-text-career {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    
+  }
+
+  .green-textvendor-career {
+     font-size: 7vw;
+    letter-spacing: 0.8px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /* FORM WRAPPER */
+  .contactform-wrapper-career {
+   margin-top: 1vh;
+  }
+
+  /* RED BARS */
+  .red-bars-career {
+    display: none;
+  }
+
+  .red-linevendor-career {
+    width: 100vw;
+    height: 6vh;
+  }
+
+  /* OUTER FRAME */
+  .form-outer-frame-career {
+   width: 100%;
+    padding: 8vw;
+  }
+
+  .form-outer-frame-career::before {
+    inset: 4vw;
+  }
+
+  /* INNER FRAME */
+  .form-inner-frame-career {
+   width: 88%;
+    padding: 6vw 5vw;
+  }
+
+  /* FORM */
+  .upload-style-form-career {
+    padding: 3vh 4vw;
+    gap: 5vw;
+  }
+
+  .upload-header-career {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 3.5vw;
+  }
+
+  .upload-box-career {
+    height: 18vh;
+    font-size: 4vw;
+    padding: 0 4vw;
+        width: 88%;
+
+  }
+
+  /* SUBMIT BUTTON */
+  .submit-btn-career {
+    font-size: 3.8vw;
+    padding: 10px 24px;
+  }
+
+  .submit-btn-career:hover {
+    padding-right: 40px;
+  }
+
+  .submit-btn-career .icon-career {
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  /* POPUP */
+  .popup-box-career {
+    width: 90%;
+    padding: 4vh 6vw;
+    border-radius: 24px;
+  }
+
+  .popup-title-career {
+    font-size: 7vw;
+  }
+
+  .popup-text-career {
+    font-size: 4.2vw;
+    line-height: 1.5;
+  }
+
+  .popup-done-career {
+    font-size: 4vw;
+    padding: 10px 20px;
+  }
+
+  .popup-done-career .icon-done {
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}

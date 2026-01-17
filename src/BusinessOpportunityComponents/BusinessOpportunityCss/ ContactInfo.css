@@ -86,7 +86,7 @@ letter-spacing: 1.92px;
 
   .contact-info-container {
     flex-direction: column;          /* stack columns */
-    padding: 12vw 6vw;
+    padding: 16vw 6vw;
     margin-bottom: 0;
     gap: 2vh;
   }

@@ -109,3 +109,65 @@ border-radius: 48px;
 border: 1px solid #676767;
 background: #FFF;
 box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.50);}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .why-join-wrapper {
+    padding: 3vw 5vw;
+  }
+
+  /* ---------- TITLE ---------- */
+  .why-join-title {
+    font-size: 9vw;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 2vh;
+  }
+
+  /* ---------- DESCRIPTION ---------- */
+  .why-join-desc {
+    font-size: 4vw;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin-bottom: 4vh;
+  }
+
+  .why-join-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4vw 2vw; /* row gap | column gap */
+  }
+
+  /* ---------- CARD ---------- */
+  .why-card {
+    width: 45%;        /* 🔥 exactly 2 cards per row */
+    height: auto;
+    padding: 4vw 2vw;
+    box-sizing: border-box;
+  }
+  .why-card:hover {
+    transform: none; /* disable hover lift on touch */
+  }
+
+  .why-card-number {
+    font-size: 12vw;
+    line-height: 1;
+    margin-top: 2vw;
+  }
+
+  .why-card-text {
+    font-size: 4vw;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .border-red,
+  .border-blue,
+  .border-purple,
+  .border-green,
+  .border-orange,
+  .border-pink {
+    border-radius: 20px;
+  }
+}

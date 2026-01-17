@@ -527,7 +527,6 @@ function App() {
             </>
           }
         />
-        /CustomerServiceCentre
         <Route
           path="/business"
           element={

@@ -56,7 +56,7 @@ letter-spacing: 0.48px;
 @media (min-width: 320px) and (max-width: 480px) {
 
   .land-wrapper {
-   height: 25vw;
+   height:6vh;
     transform: none;
  display: flex;
     flex-direction: row;

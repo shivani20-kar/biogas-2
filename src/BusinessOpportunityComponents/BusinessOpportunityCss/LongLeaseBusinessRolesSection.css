@@ -84,3 +84,54 @@ box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
  background: #CA9304;
 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .longlease-business-roles-wrapper {
+  padding: 0 5vw;
+  }
+
+  /* Top bullet points */
+  .longlease-top-points ul {
+   padding-left: 5vw;
+    margin-top: 3vh;
+  }
+
+  .longlease-top-points li {
+    font-size: 4.2vw;
+    line-height: 1.4;
+    margin-bottom: 2vw;
+  }
+
+  /* Grid → stacked */
+  .longlease-roles-grid {
+    grid-template-columns: 1fr;
+    gap: 4vh;
+    margin-top: 2vh;
+  }
+
+  /* Card */
+  .longlease-role-card {
+     height: auto;
+    padding: 2.5vh 4vw;
+  }
+
+  .longlease-role-inner-border {
+    padding: 2vh 5vw;
+    border-radius: 10px;
+  }
+
+  /* Title */
+  .longlease-role-title {
+    font-size: 5.2vw;
+    margin-bottom: 0vh;
+    letter-spacing: 0.5px;
+  }
+
+  /* Text */
+  .longlease-role-text {
+    font-size: 4vw;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+}

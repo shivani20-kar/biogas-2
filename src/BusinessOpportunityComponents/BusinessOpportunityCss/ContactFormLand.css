@@ -186,3 +186,88 @@ background: #676767;
 .popup-done-land:hover {
   background: #e2e2e2;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* Container */
+  .contact-section-container-land {
+    padding: 0 0vw;
+  }
+
+  .contact-top-text-land {
+     margin-top: 0vh;
+    margin-bottom: 0vh;
+    padding: 0vw 3vw;
+   
+  }
+
+  .green-textvendor-land {
+   font-size: 7vw;
+    letter-spacing: 0.8px;
+    text-align: center;
+     line-height: 1.2;
+  }
+
+  /* Disable heavy horizontal animation on small screens */
+  .animate-on-scroll .green-textvendor-land {
+    transform: translateX(0);
+  }
+
+  /* Form wrapper */
+  .contactform-wrapper-land {
+    margin-top: 1vh;
+  }
+
+  /* Red decorative bars */
+  .red-bars-land {
+    display: none; /* hide on mobile for clarity */
+  }
+
+  /* Outer frame */
+  .form-outer-frame-land {
+     width: 100%;
+    padding: 8vw;
+  }
+
+  .form-outer-frame-land::before {
+   inset: 4vw;
+  }
+
+  /* Inner frame */
+  .form-inner-frame-land {
+ width: 88%;
+    padding: 6vw 5vw;
+  }
+
+  /* -------- POPUP -------- */
+
+  .popup-box-land {
+    width: 90%;
+    padding: 5vh 6vw;
+    border-radius: 24px;
+  }
+
+  .popup-close-land {
+    top: 14px;
+    right: 18px;
+    font-size: 26px;
+  }
+
+  .popup-title-land {
+    font-size: 9vw;
+    margin-bottom: 1vh;
+  }
+
+  .popup-sub-land,
+  .popup-text-land {
+    font-size: 4.5vw;
+    line-height: 1.5;
+  }
+
+  .popup-done-land {
+    width: 100%;
+    font-size: 4.5vw;
+    padding: 14px 0;
+    margin-top: 4vh;
+  }
+}

@@ -320,3 +320,145 @@
   border: none;
   cursor: pointer;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .sitevisit-section {
+    margin-bottom: 0;
+    padding: 0 0vw;
+  }
+
+  .top-red-area {
+    top: 0;
+    padding-top: 3vw;
+    padding-bottom: 12px;
+  }
+
+  .sitevisitSchedule-title {
+    font-size: 7vw;
+    line-height: 1.2;
+  }
+
+  .date-container {
+    flex-direction: row;
+    gap: 10px;
+    margin: 30px 0;
+    align-items: center;
+    padding: 0vw 4vw;
+  }
+
+  .small-date-box{
+     width: 50%;
+    height: auto;
+    padding: 0vw 2vw;
+    border-radius: 18px;
+  }
+  .small-date-box svg{
+    width: 10vw;
+  }
+  .big-date-box {
+    width: 90%;
+    height: auto;
+    padding: 4vw 4vw;
+    border-radius: 18px;
+  }
+
+  .date-format {
+    font-size: 5vw;
+  }
+
+  .today-text {
+    font-size: 5vw;
+  }
+
+  .today-date {
+    font-size: 8vw;
+  }
+
+  .visit-tabs {
+    gap: 8vw;
+  }
+
+  .tab {
+    font-size: 4vw;
+    padding-bottom: 2vw;
+  }
+
+  /* ================= DESCRIPTION ================= */
+  .visit-description {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.6;
+    margin: 20px auto 30px;
+    text-align: center;
+  }
+
+  /* ================= FORM FRAME ================= */
+  .form-frame-outervisit {
+    width: 84%;
+    top: 0;
+    margin: 0 auto;
+    padding: 8vw 8vw;
+  }
+
+  .form-frame-outervisit::before {
+    inset: 4vw;
+  }
+
+  .form-frame-innervisit {
+    width: 88%;
+    padding: 6vw 5vw;
+  }
+
+  /* ================= INPUT ================= */
+  .input-box input {
+   padding: 16px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 90%;
+  }
+   .input-box select {
+   padding: 16px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 95%;
+  }
+
+  .input-box label {
+    font-size: 13px;
+  }
+
+  .input-box input:focus + label,
+  .input-box input:valid + label,
+  .input-box select:focus + label,
+  .input-box select:valid + label {
+    font-size: 11px;
+  }
+
+  /* ================= SUBMIT BUTTON ================= */
+  .submit-btnsche {
+    font-size: 4vw;
+    padding: 12px 26px;
+  }
+
+  .submit-btnsche:hover {
+    padding-right: 26px; /* disable hover expansion on mobile */
+  }
+
+  .submit-btnsche .sub-icon {
+    display: none;
+  }
+
+  /* ================= POPUP ================= */
+  .popup-box {
+    width: 90%;
+    padding: 4vh 6vw;
+    border-radius: 24px;
+  }
+
+  .popup-close {
+    font-size: 26px;
+    top: 14px;
+    right: 18px;
+  }
+}

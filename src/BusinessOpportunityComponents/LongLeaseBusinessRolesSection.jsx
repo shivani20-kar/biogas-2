@@ -4,7 +4,6 @@ import "../BusinessOpportunityComponents/BusinessOpportunityCss/LongLeaseBusines
 export default function LongLeaseBusinessRolesSection() {
   return (
     <section className="longlease-business-roles-wrapper">
-      {/* ---------- TOP BULLET POINTS ---------- */}
       <div className="longlease-top-points">
         <ul>
           <li>

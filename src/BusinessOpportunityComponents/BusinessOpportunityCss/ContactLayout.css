@@ -59,7 +59,13 @@
   pointer-events: none;
   z-index: 2;
 }
-
+.contact-form-boxx{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  padding: 0;
+}
 /* INNER WHITE BOX */
 .contact-frame-inner {
   width: 70%;
@@ -222,6 +228,7 @@
   color: red;
 }
 .submit-btn {
+  width: 100%;
   position: relative;
   overflow: hidden;
   display: inline-flex;
@@ -296,4 +303,97 @@ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 .submit-btn:hover .sub-icone {
   opacity: 1;
   transform: translateY(-50%) scale(1);
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* MAIN WRAPPER */
+  .contact-main-wrapper {
+    flex-direction: column;
+    padding: 0 0vw;
+    margin-top: -5vw;
+    gap: 6vh;
+  }
+
+  /* LEFT SIDE */
+  .contact-left-side {
+    width: 100%;
+  }
+
+  .contact-left-img-box {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contact-left-caption {
+    font-size: 5.5vw;
+    width: 100%;
+    padding-left: 6vw;
+    margin-top: 2vh;
+  }
+
+  /* RIGHT SIDE */
+  .contact-right-side {
+    width: 100%;
+    margin-top: -5vh;
+  }
+
+  /* OUTER FRAME */
+  .contact-frame-outer {
+    padding: 8vw 10vw;
+  }
+
+  .contact-frame-outer::before {
+    top: 4vw;
+    left: 4vw;
+    right: 4vw;
+    bottom: 4vw;
+  }
+
+  /* INNER FORM BOX */
+  .contact-frame-inner {
+    width: 88%;
+    padding: 6vw 5vw;
+  }
+
+  /* FORM ROWS (Address + Pincode) */
+  .rows {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .rows > .contact-form-box-land:first-child,
+  .rows > .contact-form-box-land:last-child {
+    flex: 1;
+  }
+
+  /* INPUTS & TEXTAREA */
+  .contact-form-box input,
+  .contact-form-box textarea,
+  .contact-form-box-land input {
+    font-size: 14px;
+    padding: 16px 14px;
+    width: 90%;
+  }
+
+  .contact-form-box textarea {
+    height: 4vh;
+  }
+
+  /* LABELS */
+  .contact-form-box label,
+  .contact-form-box-land label {
+    font-size: 13px;
+  }
+
+  /* SUBMIT BUTTON */
+  .submit-btn {
+    font-size: 4vw;
+    padding: 12px 22px;
+  }
+
+  .submit-btn .sub-icone {
+    right: 34%;
+  }
 }

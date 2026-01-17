@@ -122,3 +122,100 @@ line-height: 90px; /* 125% */
   cursor: pointer;
   color: #ffffff;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* WRAPPER */
+  .role-video-wrapper {
+    gap: 10vw;
+    padding: 3vw 0;
+  }
+
+  /* CARD */
+  .role-cardvideo {
+    width: 70%;
+    height: 10vh;
+    padding: 4vw 4vw 33vw 4vw;
+    position: relative;
+  }
+  .left-card .role-textvideo {
+  width: 65%;
+  text-align: left;
+}
+  /* REMOVE AUTO MARGINS */
+  .left-card{
+    margin: 0;
+  }
+  .right-card {
+     margin-left: auto;
+    
+  }
+
+  /* LEFT CARD → VIDEO ON RIGHT */
+  .left-card .video-box {
+    position: absolute;
+    right: -20vw;
+    bottom: 6vw;
+    top: auto;
+    transform: none;
+  }
+
+
+  /* RIGHT CARD → VIDEO ON LEFT */
+  .right-card .video-box {
+    position: absolute;
+    left: -20vw;
+    bottom: 6vw;
+    top: auto;
+    transform: none;
+  }
+
+  /* VIDEO BOX */
+  .video-box {
+    width: 60%;
+    height: 14vh;
+  }
+
+  /* PLAY ICON */
+  .play-icon-wrapper {
+    width: 14vw;
+    height: 14vw;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .play-icon {
+    margin-left: 0;
+  }
+
+  /* TEXT */
+  .role-textvideo {
+    font-size: 7vw;
+    line-height: 1.2;
+  }
+
+  .left-card .role-textvideo {
+    width: 100%;
+    text-align: left;
+  }
+
+  .right-card .role-textvideo {
+    /* width: 100%; */
+    text-align: right;
+  }
+
+  /* POPUP VIDEO */
+  .popup-content {
+    width: 92%;
+  }
+
+  .popup-content iframe {
+    height: 220px;
+  }
+
+  .close-btn {
+    top: -36px;
+    right: 0;
+    font-size: 32px;
+  }
+}
+

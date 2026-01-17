@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/ContactFormLand.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 export default function ContactFormLand() {
   const [showPopup, setShowPopup] = useState(false);
    const sectionRef = useRef(null);

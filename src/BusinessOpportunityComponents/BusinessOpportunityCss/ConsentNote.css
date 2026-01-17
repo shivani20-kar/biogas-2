@@ -17,3 +17,19 @@ letter-spacing: 0.64px;
   margin: 0;
   padding: 0vh 7vw;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .consent-note-wrapper {
+    width: 100%;
+    padding: 3vh 0;
+    text-align: center;
+  }
+
+  .consent-note-text {
+    font-size: 4.2vw;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    padding: 0 6vw;
+  }
+}

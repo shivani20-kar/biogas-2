@@ -112,28 +112,29 @@ letter-spacing: 2.56px;
 
   /* Main wrapper */
   .landowner-wrapper {
-    flex-direction: column;
-        top: 0;
-        padding-top: 5vh;
-        align-items: flex-start;
+   flex-direction: column;
+    top: 0;
+    padding-top: 5vh;
+    align-items: flex-start;
   }
 
   /* Gray side background */
   .land-inner-wrapper {
    width: 90%;
-        height: auto;
-        padding: 4vh 0;
+    height: auto;
+    padding: 4vh 0;
   }
 
   /* Left red box */
   .land-left {
    position: relative;
-        width: 90%;
+        width: 94%;
         height: auto;
         padding: 2vh 6vw;
         transform: none;
         top: 0;
         margin: 0 auto;
+        border: 5px solid #FFF;
   }
 
   .land-quote-img {
@@ -142,41 +143,42 @@ letter-spacing: 2.56px;
   }
 
   .land-text {
-   font-size: 7vw;
-        line-height: 1.3;
-        padding: 0;
-        text-align: left;
-    
+  font-size: 7vw;
+    line-height: 1.3;
+    padding: 0;
+    text-align: left;
   }
 
-  /* Right side content */
   .land-right {
-    padding-left: 0;
     margin-top: 4vh;
   }
 
   .land-right-text {
-    padding-left: 0;
-    font-size: 4.2vw;
-    line-height: 1.6;
+    padding: 0;
+ margin-top: 0vh;
+    font-size: 8vw;
+    line-height: 1.2;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   /* Title section */
   .gs-title {
     flex-wrap: wrap;
     gap: 2vw;
-    justify-content: flex-start;
-    margin-top: 4vh;
+    justify-content: center;
+    margin-top: 0vh;
+     font-size: 7vw;
   }
 
   .new-text {
-    font-size: 8vw;
+    font-size: 7vw;
     letter-spacing: 1px;
   }
 
+
   .gs-blue {
-    font-size: 12vw;
+    font-size: 10vw;
     padding: 1vw 3vw;
   }
 

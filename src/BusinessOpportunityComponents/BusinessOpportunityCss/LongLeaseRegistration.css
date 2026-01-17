@@ -53,3 +53,51 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .longlease-wrapper {
+   height:6vh;
+    transform: none;
+ display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .longlease-left-shape {
+        margin-left:-4vw;
+
+  }
+  .longlease-left-shape svg{
+      width: 20vw;
+    margin-top: -15vh;
+  }
+
+  /* TEXT SECTION */
+  .longlease-content {
+   transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .longlease-title {
+   font-size: 8vw;
+    left: -18vw;
+    margin-bottom: 0vw;
+    top: -8vh;
+  }
+
+  .longlease-title span {
+    font-size: 8vw;
+  }
+
+  .longlease-subtext {
+    margin-top: -14vw;
+    font-size: 3.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+}
+

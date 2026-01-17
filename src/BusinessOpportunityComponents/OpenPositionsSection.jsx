@@ -2,8 +2,6 @@ import React from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/OpenPositionsSection.css";
 import bgImage from "../Components/IMAGES/joingdteambackground.png";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function OpenPositionsSection() {
   return (

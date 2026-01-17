@@ -26,7 +26,7 @@ export default function RentSection() {
             <span className="gs-blue">G</span>RAMSHAKT
             <span className="gs-green">i</span>
           </h1>
-         "Partner with GDBiogas <br /> for a predictable, long-<br />term revenue stream." 
+         Partner with GDBiogas <br /> for a predictable, long-<br />term revenue stream.
         </p>
       </div>
     </section>

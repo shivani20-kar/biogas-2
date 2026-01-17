@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../BusinessOpportunityComponents/BusinessOpportunityCss/ContactLayout.css";
 import supportImg from "../Components/IMAGES/supportgirlContactUs.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function ContactLayout() {
   const [showPopup, setShowPopup] = useState(false);

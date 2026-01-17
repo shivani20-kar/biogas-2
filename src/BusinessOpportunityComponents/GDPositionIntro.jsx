@@ -6,7 +6,7 @@ export default function GDPositionIntro() {
     <section className="gd-position-wrapper">
       <div className="gd-position-left">
         <h1 className="gd-position-title">
-          What does it mean to be <br />
+          What does it mean to be 
           an Positions in GD ?
         </h1>
       </div>

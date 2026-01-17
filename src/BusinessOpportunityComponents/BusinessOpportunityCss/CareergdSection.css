@@ -78,3 +78,47 @@ letter-spacing: 0.64px;
 margin-bottom: -0.5vw;
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .careergd-wrapper {
+    grid-template-columns: 1fr;
+    padding: 8vw 6vw;
+    gap: 8vw;
+  }
+
+  .careergd-left {
+    justify-content: flex-start;
+  }
+
+  .careergd-title {
+    width: 100%;
+    font-size: 8vw;
+    line-height: 1.2;
+    margin-bottom: 0vw;
+  }
+
+  .careergd-link-wrapper {
+    gap: 14px;
+  }
+
+  .careergd-link {
+    font-size: 4.2vw;
+    line-height: 1.2;
+  }
+
+  .careergd-arrow-btn {
+    width: 9vw;
+    height: 9vw;
+    font-size: 20px;
+  }
+
+  .careergd-right {
+    margin-top: -1;
+  }
+
+  .careergd-para {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+}
