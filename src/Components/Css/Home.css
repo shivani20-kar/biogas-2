@@ -798,7 +798,7 @@ text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
   }
 
   .circle-elementservice {
-    animation-duration: 10s;   /* slower = smoother on mobile */
+    animation-duration: 10s;   
   }
 
 }
