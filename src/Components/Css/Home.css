@@ -184,6 +184,18 @@
   z-index: 5;
 }
 
+.hero-bottom-wrapoverview {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  z-index: 5;
+}
+
 .circle-elements {
   position: relative;
   background-color: #ffffff;
@@ -549,6 +561,13 @@
     width: 100%;
   }
 
+  .hero-bottom-wrapoverview {
+    flex-direction: row;
+    gap: 2vh;
+    bottom: 0vh;
+    padding: 0 2vw;
+  }
+
   .circle-elements {
     width: 8vw;
     height: 8vw;
@@ -802,3 +821,5 @@ text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
   }
 
 }
+
+

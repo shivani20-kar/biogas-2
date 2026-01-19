@@ -93,7 +93,7 @@ const OverViewHero = () => {
         </div>
       </div>
 
-      <div className="hero-bottom-wrap">
+      <div className="hero-bottom-wrapoverview">
         {/* LEFT CONTENT */}
         <div className="hero-text-content">
           <h1 className="aboutus-titleoverview">How Do We Work</h1>
