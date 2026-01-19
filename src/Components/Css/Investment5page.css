@@ -142,3 +142,73 @@
   font-weight: 700;
   line-height: normal;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ===== Section ===== */
+  .industry-section {
+    padding: 2vw 4vw;
+  }
+
+  /* ===== Header ===== */
+  .industry-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    padding: 0;
+    margin-bottom: 2vw;
+  }
+
+  .black-text-in {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .gd {
+    font-size: 9vw;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  /* ===== Arrows ===== */
+  .arrow-controls-invest {
+    gap: 3vw;
+  }
+.arrow-controls-invest svg{
+  width: 6vw;
+}
+  .arrow-controls-invest button {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* hide hover text on mobile */
+  .arrow-hover-text {
+    display: none;
+  }
+
+  /* ===== Slider ===== */
+  .industry-slider {
+    gap: 7vw;
+    padding-bottom: 5vw;
+  }
+
+  /* ===== Card ===== */
+  .industrys-card {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  /* ===== Label ===== */
+  .industry-label {
+    width: 60vw;
+    height: auto;
+    bottom: 4vw;
+    left: 7vw;
+    padding: 2.5vw 3vw;
+    border-radius: 12px;
+    font-size: 5vw;
+  }
+
+}

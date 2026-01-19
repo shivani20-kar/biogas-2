@@ -178,13 +178,14 @@
   left: 0;
   width: 90%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 0 5vw;
   z-index: 5;
 }
 
 .circle-elements {
+  position: relative;
   background-color: #ffffff;
   width: 55px;
   height: 55px;
@@ -194,7 +195,6 @@
   align-items: center;
   justify-content: center;
   overflow: visible;
-  animation: float 3s ease-in-out infinite;
 }
 
 .aboutus-title {
@@ -459,7 +459,62 @@
   line-height: normal;
 }
 
-/* Mobile Responsive: 320px to 480px */
+.customerservice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+}
+
+.customerservice img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.customerservice-title {
+  font-family: "DDINPRO";
+  color: #fff;
+  text-shadow: 0 0 100px #000;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-bottom-wrapservice {
+  position: absolute;
+  bottom: 18vh;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  z-index: 5;
+}
+.circle-gif {
+  width: 200px;
+  height: 200px;
+}
+
+.circle-elementservice {
+  overflow: hidden;
+  animation: rotateCircle 6s linear infinite;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   .heror {
     height: 50vh;
@@ -468,7 +523,7 @@
 
   .gdmainbackground,
   .gdmainbackground img {
-    height: 54vh;
+    height: 100vh;
   }
 
   .hero-content-overlayy {
@@ -476,16 +531,6 @@
     padding: 1rem;
     align-items: center;
     text-align: center;
-  }
-
-  .header-rows {
-    flex-direction: column;
-    gap: 4vw;
-    padding: 0 1rem;
-  }
-
-  .logo-container {
-    width: 40vw;
   }
 
   .logo {
@@ -499,8 +544,9 @@
   .hero-bottom-wrap {
     flex-direction: row;
     gap: 2vh;
-    bottom: 5vh;
+    bottom: 2vh;
     padding: 0 2vw;
+    width: 100%;
   }
 
   .circle-elements {
@@ -511,10 +557,10 @@
 
   .aboutus-title,
   .aboutus-titleoverview {
-    font-size: 5.5vw;
-    margin-top: -1vw;
+    font-size: 6vw;
+    margin-top: -4vw;
     text-shadow: 16px 16px 32px rgba(0, 0, 0, 0.6);
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .hero-text-content {
@@ -529,9 +575,9 @@
   }
 
   .circle-gifs {
-    width: 120px;
+    width: 100px;
     left: 30%;
-    top: -180%;
+    top: -160%;
     transform: translate(-50%, 0%);
   }
 
@@ -569,7 +615,7 @@
 
   .vendor-registration-bg img {
     width: 100%;
-    height: 100vh;
+   height: 50%;
     object-fit: cover;
   }
 
@@ -595,7 +641,7 @@
 
 .co-owner img {
  width: 100%;
-  height: 100vh;
+  height: 50%;
   object-fit: cover;
 }
 .coowner-title {
@@ -609,5 +655,150 @@ text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
   line-height: normal;
 }
 
+.rent-on {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
 }
 
+.rent-on img {
+  width: 100%;
+ height: 50%;
+    object-fit: cover;
+}
+.rent-on-title {
+ padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.careers {
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.careers img {
+ width: 100%;
+   height: 50%;
+    object-fit: cover;
+}
+
+.careers-title {
+padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sitevisit {
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.sitevisit img {
+ width: 100%;
+ height: 50%;
+    object-fit: cover;
+}
+
+.sitevisit-title {
+ padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.contactUs-bg {
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.contactUs-bg img {
+  width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.contactus-title {
+ padding-bottom:5vh;
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.customerservice {
+   width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.customerservice img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.customerservice-title {
+  /* padding-bottom:18vh; */
+  font-family: "DDINPRO";
+  color: #fff;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.45);
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+ .hero-bottom-wrapservice {
+    position: relative;        /* remove absolute overlap */
+    bottom: 0vh;
+    left: 0;
+    width: 100%;
+    padding: 3vh 5vw;
+    justify-content:space-between;
+    margin-top: 13vh;
+    /* gap: 4vw; */
+  }
+
+  .circle-gif {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .circle-elementservice {
+    animation-duration: 10s;   /* slower = smoother on mobile */
+  }
+
+}

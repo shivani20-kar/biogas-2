@@ -63,3 +63,55 @@ line-height: normal;
 letter-spacing: 1.92px;
   text-decoration: none;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* Section spacing */
+  .inv-contact-section {
+    padding: 4vw 5vw;
+    margin-bottom: 18vw;
+  }
+
+  /* Stack layout */
+  .inv-contact-containerr {
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  /* LEFT */
+  .inv-contact-left {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .inv-contact-text {
+    font-size: 5vw;        /* ~16px → 24px */
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+    margin-bottom: 2vw;
+  }
+
+  .inv-contact-email {
+    font-size: 6vw;        /* ~19px → 29px */
+    letter-spacing: 0.8px;
+    display: inline-block;
+  }
+
+  /* RIGHT */
+  .inv-contact-right {
+    text-align: left;      /* better UX on mobile */
+  }
+
+  .inv-contact-reach {
+    font-size: 6.5vw;      /* heading scale */
+    letter-spacing: 1px;
+    margin-bottom: 3vw;
+  }
+
+  .inv-contact-phone {
+    font-size: 7.5vw;      /* primary CTA text */
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+}
+

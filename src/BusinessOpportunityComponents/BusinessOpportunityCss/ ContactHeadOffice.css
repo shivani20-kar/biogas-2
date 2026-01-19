@@ -265,3 +265,114 @@ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 .popup-done:hover {
   background: #e2e2e2;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= WRAPPER ================= */
+  .headoffice-wrapper {
+    padding: 2vh 4vw;
+  }
+
+  /* ================= TITLE ================= */
+  .headoffice-title {
+    font-size: 7vw;
+    line-height: 1.2;
+    margin-bottom: 3vh;
+  }
+
+  /* ================= FORM BOX ================= */
+  .headoffice-form-box {
+    width: 100%;
+    padding: 6vw 5vw;
+    border-radius: 20px;
+  }
+
+  /* ================= FORM ================= */
+  .headoffice-form {
+    width: 100%;
+    gap: 22px;
+  }
+
+  /* ================= FLOAT INPUT ================= */
+  .float-inputt {
+    width: 100%;
+  }
+
+  .float-inputt input,
+  .float-inputt textarea {
+    padding: 4vw 4vw;
+    font-size: 4vw;
+    border-radius: 10px;
+  }
+
+  /* textarea height fix */
+  .float-inputt textarea {
+    height: 8vh;
+  }
+
+  .float-inputt label {
+    font-size: 4vw;
+    top: 14px;
+    left: 14px;
+  }
+
+  .float-inputt:hover label,
+  .float-inputt input:focus + label,
+  .float-inputt input:not(:placeholder-shown) + label,
+  .float-inputt textarea:focus + label,
+  .float-inputt textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 3.2vw;
+  }
+
+  .file-box label {
+    font-size: 3.2vw;
+  }
+
+  .headoffice-submit {
+    font-size: 4vw;
+    padding: 12px 20px;
+    border-radius: 20px;
+  }
+
+  .headoffice-submit:hover {
+    padding-right: 44px;
+  }
+
+  .headoffice-submit .carre-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    right: 35%;
+  }
+
+  .popup-box {
+    width: 90%;
+    padding: 4vh 6vw;
+    border-radius: 24px;
+  }
+
+  .popup-close {
+    top: 14px;
+    right: 18px;
+    font-size: 26px;
+  }
+
+  .popup-title {
+    font-size: 9vw;
+  }
+
+  .popup-sub,
+  .popup-text {
+    font-size: 4.5vw;
+  }
+
+  .popup-done {
+    width: 100%;
+    font-size: 4vw;
+    padding: 12px 0;
+    margin-top: 30px;
+  }
+
+}

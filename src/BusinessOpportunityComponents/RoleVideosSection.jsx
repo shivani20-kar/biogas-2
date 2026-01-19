@@ -15,8 +15,8 @@ export default function RoleVideosSection() {
     {
       text: (
         <>
-          What is the role of the <br />
-          Commissioning <br /> Engineer?
+          What is the role of the 
+          Commissioning  Engineer?
         </>
       ),
       align: "left",
@@ -24,14 +24,14 @@ export default function RoleVideosSection() {
     },
     {
       
-      text:(<> What is the <br/> role of the CEO?</>),
+      text:(<> What is the  role of the CEO?</>),
       align: "right",
       video: videoList.ceo,
     },
    {
   text: (
     <>
-      What is the role of the <br />
+      What is the role of the 
       IT Core<span className="red-x">X</span>?
     </>
   ),
@@ -42,9 +42,9 @@ export default function RoleVideosSection() {
     {
       text: (
         <>
-          What is the role of the <br />
+          What is the role of the
           Technical Project
-          <br /> Co-ordinator? 
+          Co-ordinator? 
         </>
       ),
       align: "right",

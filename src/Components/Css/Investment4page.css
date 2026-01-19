@@ -196,3 +196,99 @@ line-height: normal;
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ===== SECTION ===== */
+  .strength-section {
+    min-height: auto;
+    padding: 0vw 0 8vw 0;
+  }
+
+  /* ===== FRAME GRID ===== */
+  .strength-frame-wrapper {
+    grid-template-columns: 1fr;   /* 🔥 1 frame per row */
+    gap: 1vw;
+    padding: 0 6vw;
+    justify-items: center;
+  }
+
+  .strength-frame {
+    max-width: 100%;
+  }
+
+  /* ===== FRAME MASK ===== */
+  .frame-mask {
+    aspect-ratio: 4 / 1;
+  }
+
+  /* ===== FRAME CONTENT ===== */
+  .frame-content {
+    gap: 10vw;
+    padding: 0 5vw;
+  }
+
+  /* ===== NUMBER ===== */
+  .frame-number {
+    font-size: 7vw;
+    margin-top: 2vh;
+  }
+
+  /* ===== TITLE ===== */
+  .frame-title {
+    font-size: 4.2vw;
+    margin-top: 5vh;
+    line-height: 1.2;
+  }
+
+  /* ===== TURNKEY SECTION ===== */
+  .turnkey-section {
+    flex-direction: column;
+    gap: 2vw;
+    width: 90vw;
+    padding: 5vw;
+    text-align: center;
+  }
+
+  .turnkey-section h3 {
+    font-size: 6.5vw;
+  }
+
+  .turnkey-section p {
+    width: 100%;
+    font-size: 4vw;
+  }
+
+ .turnkey-btn {
+    font-size: 4vw;
+    padding: 12px 22px;      /* ✅ auto width */
+    width: auto;
+    min-width: unset;
+  }
+
+
+  /* icon visible by default on mobile */
+  .turnkey-btn .turnkey-icon {
+    opacity: 0;
+    transform: translateY(-50%) scale(1);
+    right: 12px;
+  }
+
+  /* animation on tap */
+  .turnkey-btn:active::before {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .turnkey-btn:active {
+    color: #fff;
+  }
+
+  /* optional: keep hover also (some mobiles support it) */
+  .turnkey-btn:hover::before {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .turnkey-btn:hover {
+    color: #fff;
+  }
+}

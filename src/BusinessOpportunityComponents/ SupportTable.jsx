@@ -28,7 +28,7 @@ const SupportTable = () => {
   return (
     <div className="support-container">
       <h2 className="support-title">
-        For technical assistance,<br />you can contact us at these numbers:
+        For technical assistance, you can contact us at these numbers:
       </h2>
 
       <table className="support-table">

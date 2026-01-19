@@ -125,3 +125,95 @@ line-height: normal;
     inset -6px 0 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ===== Section ===== */
+  .investment-section {
+    padding: 2vw 0;
+    overflow: hidden;
+  }
+
+  /* ===== Title ===== */
+  .investment-title {
+    padding-left: 5vw;
+    font-size: 8vw;
+    text-align: left;
+  }
+
+  /* ===== Decorative Rings (smaller & subtle) ===== */
+  .investment-curves-ring {
+    top: 55%;
+    right: -28vw;
+    width: 36vw;
+    height: 36vw;
+    opacity: 0.4;
+  }
+
+  .investment-curves-ring::before {
+    inset: -6vw;
+  }
+
+  .investment-curves-ring::after {
+    inset: -10vw;
+  }
+
+  .investment-curves-ring span {
+    inset: -14vw;
+  }
+
+  .investment-curves-ring span:nth-child(2) {
+    inset: -18vw;
+  }
+
+  .investment-curves-ring span:nth-child(3) {
+    inset: -22vw;
+  }
+
+  /* ===== Cards Wrapper ===== */
+  .investment-cards {
+    flex-direction: row;
+    gap: 8vw;
+    margin-top: 8vw;
+  }
+
+  /* ===== Card ===== */
+  .investment-card {
+    width: 86vw;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .investment-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== Agri Image ===== */
+  .agri-img {
+    width: 30vw !important;
+  }
+
+  /* ===== Hover Disable (mobile) ===== */
+  .clickable:hover {
+    transform: none;
+  }
+
+  /* ===== Book Modal ===== */
+  .book-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .book-page {
+    width: 42vw;
+  }
+
+  /* reduce heavy shadows on mobile */
+  .book-page.left-page img {
+    box-shadow: 
+      -6px 0 14px rgba(0, 0, 0, 0.25),
+      inset -3px 0 6px rgba(0, 0, 0, 0.12);
+  }
+
+}

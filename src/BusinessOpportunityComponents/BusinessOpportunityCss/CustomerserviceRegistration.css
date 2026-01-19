@@ -53,3 +53,49 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .customerservice-wrapper {
+    height:6vh;
+    transform: none;
+ display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* LEFT SHAPE */
+  .customerservice-left-shape {
+  margin-left:-4vw;
+  }
+  .customerservice-left-shape svg{
+      width: 20vw;
+    margin-top: -34vw;
+  }
+
+  /* TEXT SECTION */
+  .customerservice-content {
+     transform: none;
+    margin-top: 0;
+    align-items: left;
+  }
+
+  .customerservice-titlemain {
+    font-size: 8vw;
+    left: -11vw;
+    margin-bottom: 0vw;
+    top: -8vh;
+  }
+
+  .customerservice-titlemain span {
+    font-size: 8vw;
+  }
+
+  .customerservice-subtext {
+    margin-top: -7vh;
+    font-size: 3.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+}

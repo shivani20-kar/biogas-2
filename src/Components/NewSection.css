@@ -51,3 +51,31 @@ line-height: 70px; /* 109.375% */
 letter-spacing: 1.28px;
   max-width: 700px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  /* Full screen hero */
+  .green-return-hero {
+    height: 35vh;
+  }
+
+  /* Content alignment */
+  .green-return-container {
+   
+    padding-left: 2vw;
+    padding-right: 5vw;
+    align-items: left;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  /* Heading text */
+  .green-return-heading {
+     margin-top: -8vh;
+    font-size: 6vw;      /* scales nicely across 320–480 */
+    line-height: 1.25;    
+    letter-spacing: 0.5px;
+    max-width: 100%;
+  }
+}
+

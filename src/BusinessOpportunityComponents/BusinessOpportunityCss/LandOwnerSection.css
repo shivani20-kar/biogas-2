@@ -120,7 +120,7 @@ letter-spacing: 2.56px;
 
   /* Gray side background */
   .land-inner-wrapper {
-   width: 90%;
+   width: 50%;
     height: auto;
     padding: 4vh 0;
   }
@@ -128,7 +128,7 @@ letter-spacing: 2.56px;
   /* Left red box */
   .land-left {
    position: relative;
-        width: 94%;
+        width: 100vw;
         height: auto;
         padding: 2vh 6vw;
         transform: none;

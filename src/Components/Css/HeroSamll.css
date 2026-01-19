@@ -44,31 +44,6 @@
 
 
 
-.customerservice {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-  height: 100%;
-}
-
-.customerservice img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.customerservice-title {
-  font-family: "DDINPRO";
-  color: #fff;
-  text-shadow: 0 0 100px #000;
-  font-size: 4vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 .circle-gifservice {
   width: 100%;
   height: 70%;
@@ -76,33 +51,4 @@
   border-radius: 50%;
 }
 
-.hero-bottom-wrapservice {
-  position: absolute;
-  bottom: 18vh;
-  left: 0;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5vw;
-  z-index: 5;
-}
-.circle-gif {
-  width: 200px;
-  height: 200px;
-}
-
-.circle-elementservice {
-  overflow: hidden;
-  animation: rotateCircle 6s linear infinite;
-}
-
-@keyframes rotateCircle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 

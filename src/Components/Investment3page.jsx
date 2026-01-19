@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Css/Investment3page.css";
-// import { ReactComponent as ArrowIcon } from "./arrow.svg";
 import img1 from "./Rectangle 103.png";
 import img2 from "./Rectangle 103 (1).png";
 import img3 from "./Rectangle 103 (2).png";
@@ -31,7 +30,7 @@ const products = [
   { id: 11, title: "Carbon Graphite", img: img11 },
   { id: 12, title: "3D Construction", img: img12 },
   { id: 13, title: "Turnkey Smart Village", img: img13 },
-  { id: 14, title: "Gd Tourism", img: img14 },
+  { id: 14, title: "GD Tourism", img: img14 },
   { id: 15, title: "Carbon Crebit", img: img15 },
 ];
 export default function InvestmetProducts() {

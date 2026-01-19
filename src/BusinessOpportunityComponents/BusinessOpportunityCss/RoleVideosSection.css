@@ -18,6 +18,7 @@
 
 .left-card {
   margin-right: auto;
+  
 }
 
 .left-card .video-box {
@@ -73,17 +74,20 @@ font-size: 5vw;
 font-style: normal;
 font-weight: 400;
 line-height: 90px; /* 125% */
+
 }
 
 /* LEFT CARD → TEXT LEFT SIDE AND MORE WIDTH */
 .left-card .role-textvideo {
+ 
   width: 65%;
   text-align: left;
 }
 
 /* RIGHT CARD → TEXT RIGHT SIDE AND LESS WIDTH */
 .right-card .role-textvideo {
-  width: 100%;
+  width: 60%;
+   margin-left: 40vw;
   text-align: right;
 }
 
@@ -133,7 +137,7 @@ line-height: 90px; /* 125% */
   /* CARD */
   .role-cardvideo {
     width: 70%;
-    height: 10vh;
+    height: 30vh;
     padding: 4vw 4vw 33vw 4vw;
     position: relative;
   }
@@ -191,6 +195,7 @@ line-height: 90px; /* 125% */
   .role-textvideo {
     font-size: 7vw;
     line-height: 1.2;
+    margin-top: auto;
   }
 
   .left-card .role-textvideo {
@@ -200,6 +205,7 @@ line-height: 90px; /* 125% */
 
   .right-card .role-textvideo {
     /* width: 100%; */
+     margin-left: 20vw;
     text-align: right;
   }
 

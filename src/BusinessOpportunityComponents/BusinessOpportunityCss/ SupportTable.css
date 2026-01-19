@@ -11,6 +11,7 @@
 
 /* ================= TITLE ================= */
 .support-title {
+  width: 40.5vw;
   color: #000;
   text-align: center;
   font-family: 'DDINPRO';
@@ -87,4 +88,54 @@ line-height: 26px;
   border-right: 1.5px solid #ff4d4d;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= CONTAINER ================= */
+  .support-container {
+    padding: 0 4vw;
+  }
+
+  /* ================= TITLE ================= */
+  .support-title {
+    width: 100%;
+    font-size: 6vw;
+    margin-bottom: 2vh;
+  }
+
+  /* ================= TABLE ================= */
+  .support-table {
+    width: 100%;
+    border-spacing: 0 12px;
+  }
+
+  /* ================= HEADER ================= */
+  .table-header {
+    padding: 3.5vw 2vw;
+    font-size: 3.5vw;
+    line-height: 1.4;
+  }
+
+  /* ================= BODY ROWS ================= */
+  .table-cell {
+    padding: 3.5vw 2vw;
+    font-size: 3.5vw;
+    line-height: 1.4;
+  }
+
+  /* borders thinner for mobile */
+  .table-row td {
+    border-top: 1px solid #ff4d4d;
+    border-bottom: 1px solid #ff4d4d;
+  }
+
+  .table-row td:first-child {
+    border-left: 1px solid #ff4d4d;
+  }
+
+  .table-row td:last-child {
+    border-right: 1px solid #ff4d4d;
+  }
+
 }

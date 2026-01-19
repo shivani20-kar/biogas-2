@@ -309,3 +309,98 @@ line-height: normal;
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* ================= WRAPPER ================= */
+  .investmentcontact-wrapper {
+    min-height: auto;
+    padding: 2vw 4vw;
+  }
+
+  .investmentcontact-top-text {
+    font-size: 4.3vw;
+    line-height: 1.6;
+    margin-bottom: 5vw;
+  }
+
+  /* ================= CARD ================= */
+  .investmentcontact-card {
+    width: 92vw;
+    padding: 6vw 5vw;
+    border-radius: 16px;
+    margin-bottom: 14vw;
+  }
+
+  /* Decorative curves – smaller & lighter */
+  .investmentcontact-curves {
+    right: -25vw;
+    width: 45vw;
+    height: 45vw;
+    opacity: 0.35;
+  }
+
+  .investmentcontact-curves::before { inset: -8vw; }
+  .investmentcontact-curves::after { inset: -12vw; }
+  .investmentcontact-curves span { inset: -16vw; }
+  .investmentcontact-curves span:nth-child(2) { inset: -20vw; }
+  .investmentcontact-curves span:nth-child(3) { inset: -24vw; }
+
+  /* ================= FORM ================= */
+  .investmentcontact-form {
+    gap: 14px;
+  }
+
+  .investmentcontact-field {
+    width: 100%;
+  }
+
+  /* INPUT / TEXTAREA */
+  .investmentcontact-field input,
+  .investmentcontact-field textarea {
+    padding: 4vw 3.5vw;
+    font-size: 4vw;
+    border-radius: 14px;
+  }
+
+  .investmentcontact-field textarea {
+    height: 20vw;
+  }
+
+  /* LABEL */
+  .investmentcontact-field label {
+    left: 3vw;
+    font-size: 3.5vw;
+  }
+
+  /* Floating label */
+  .investmentcontact-field:hover label,
+  .investmentcontact-field input:focus + label,
+  .investmentcontact-field textarea:focus + label,
+  .investmentcontact-field input:not(:placeholder-shown) + label,
+  .investmentcontact-field textarea:not(:placeholder-shown) + label {
+    top: -1.5vw;
+    font-size: 3vw;
+  }
+
+  /* ================= FILE INPUT ================= */
+  .investmentcontact-file {
+    width: 100%;
+    padding: 4vw 3.5vw;
+    font-size: 4vw;
+    border-radius: 14px;
+  }
+
+  /* ================= SUBMIT BUTTON ================= */
+  .investmentcontact-submit {
+    width: 100%;
+    font-size: 4vw;
+    padding: 4vw 6vw;
+    border-radius: 28px;
+  }
+
+ .investmentcontact-submit .submit-icon{
+  right: 30vw;
+ }
+
+}

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Css/Investment4page.css";
 import background from "./Rectangle-164.png"; 
-import frame from "./Frame 2087328311 33.png"
 const strengths = [
   { id: "01", title: "Concept Development and research", color: "#00CCE7" },
   { id: "02", title: "Design and permissions", color: "#20E3BB" },
