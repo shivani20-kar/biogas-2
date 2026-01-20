@@ -259,3 +259,103 @@
     top: 0vh;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* ---------- MAIN WRAPPER ---------- */
+  .team-wrapper {
+    overflow: visible;
+  }
+
+  .team-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10vh 5vw 12vh 5vw;
+    background-position: center;
+    margin-top: -5vh;
+  }
+
+  .team-text-container {
+    width: 100%;
+  }
+
+  .team-quote-icon {
+    color: #e12d36;
+    width: 15%;
+  }
+
+  /* ---------- TITLE ---------- */
+  .team-title {
+    font-size: 6vw;
+    gap: 12px;
+  }
+
+  .red-line {
+    width: 1vw;
+    height: 5vh;
+  }
+
+  .team-sub-title {
+    width: 100%;
+    font-size: 4vw;
+    margin-top: 1.5vh;
+  }
+
+  .team-tagline {
+    font-size: 2.5vw;
+    padding: 8px 16px;
+    margin-top: 2.5vh;
+  }
+
+  /* ---------- TEAM CARDS ---------- */
+  .team-cards-wrapper {
+    margin-top: 2vh;
+    gap: 3vh;
+  }
+
+  /* BIG CENTER CARD */
+  .center-card {
+    width: 75%;
+  }
+
+  .big-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+            margin-top: -8vh;
+  }
+
+  /* BOTTOM SMALL CARDS ROW */
+  .team-card-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-card {
+    width: 40%;
+    max-width: 280px;
+  }
+
+  .small-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* LINKEDIN ICON */
+  .linkedin-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* GD2 DECOR IMAGE */
+  .gd2 {
+    width: 15.3%;
+    left: 77.2vw;
+    top: 0vh;
+  }
+}

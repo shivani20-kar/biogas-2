@@ -8,13 +8,13 @@
 }
 
 .top-points li {
- color: #676767;
-font-size: 1.9vw;
-font-style: normal;
-font-weight: 700;
-line-height: 35px; /* 166.667% */
+  color: #676767;
+  font-size: 1.9vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 166.667% */
   margin-bottom: 3vw;
-   font-family: 'DDINPRO';
+  font-family: "DDINPRO";
 }
 
 .roles-grid {
@@ -47,49 +47,48 @@ line-height: 35px; /* 166.667% */
 
 /* ---------- TITLE ---------- */
 .role-title {
-   font-family: 'DDINPRO';
- color: #FFF;
-text-align: center;
-font-size: 1.8vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.8px;
-margin-bottom: 0vw;
+  font-family: "DDINPRO";
+  color: #fff;
+  text-align: center;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 0vw;
 }
-.role-text{
- color: #FFF;
-text-align: center;
-font-family: 'DDINPRO';
-font-size: 1.2vw;
-font-style: normal;
-font-weight: 700;
-line-height: 29px; /* 166.667% */
-letter-spacing: 0.48px;
+.role-text {
+  color: #fff;
+  text-align: center;
+  font-family: "DDINPRO";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 166.667% */
+  letter-spacing: 0.48px;
 }
 /* ---------- CARD COLORS ---------- */
 .role-red {
- background: #EA647D;
-box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
+  background: #ea647d;
+  box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-yellow {
- background: #BA8E48;
-box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
+  background: #ba8e48;
+  box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-blue {
- background: #03A0D0;
-box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
+  background: #03a0d0;
+  box-shadow: 0 -8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .role-orange {
-background: #CA9304;
-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+  background: #ca9304;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* ---------- WRAPPER ---------- */
   .business-roles-wrapper {
     padding: 0 5vw;
@@ -138,5 +137,59 @@ box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
     font-size: 4vw;
     line-height: 1.5;
     letter-spacing: 0.3px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ---------- WRAPPER ---------- */
+  .business-roles-wrapper {
+    padding: 0 4vw;
+  }
+
+  /* ---------- TOP POINTS ---------- */
+  .top-points ul {
+    padding-left: 4vw;
+    margin-top: 2vh;
+  }
+
+  .top-points li {
+    font-size: 3.5vw;
+    line-height: 1.4;
+    margin-bottom: 3vw;
+  }
+
+  /* ---------- GRID ---------- */
+  .roles-grid {
+    grid-template-columns: 1fr;
+    gap: 4vh;
+    margin-top: 3vh;
+  }
+
+  /* ---------- CARD ---------- */
+  .role-card {
+    height: auto;
+    min-height: 40vh;
+    padding: 2.5vh 4vw;
+  }
+
+  /* ---------- INNER BORDER ---------- */
+  .role-inner-border {
+    padding: 2vh 5vw;
+    border-radius: 10px;
+  }
+
+  /* ---------- TITLE ---------- */
+  .role-title {
+    font-size: 4.5vw;
+    margin-bottom: 1vh;
+    letter-spacing: 0.6px;
+  }
+
+  /* ---------- TEXT ---------- */
+  .role-text {
+    font-size: 3.2vw;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
   }
 }

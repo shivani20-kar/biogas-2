@@ -365,3 +365,128 @@
     margin-left: 22vw;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* MAIN WRAPPER - Keep side by side */
+  .biogas-wrapper {
+    flex-direction: row; /* Keep horizontal layout */
+    margin-bottom: 4vh;
+  }
+
+  /* ---------------- LEFT BOX ---------------- */
+  .left-box {
+    width: 50%; /* Maintain half width */
+    padding: 8vh 3vw; /* Adjusted padding */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .brand-title {
+    font-size: 4.5vw;
+    margin-bottom: 2vw;
+    gap: 0.8vw;
+  }
+
+  .red-linegd {
+    width: 0.6vw;
+    height: 4vh;
+    border-radius: 1vw;
+  }
+
+  .quote-img {
+    width: 5vw;
+    margin: 2vh 0;
+  }
+
+  .brand-desc {
+    font-size: 3.2vw;
+    margin-bottom: 1.5vw;
+  }
+
+  /* ---------------- RED STRIP ---------------- */
+  .red-strip {
+    right: 9vw;
+    bottom: 3vh;
+    width: 25vw;
+    height: 5vh;
+    transform: translateX(50%);
+  }
+
+  .red-strip::before {
+    left: 2vw;
+    top: 1vh;
+    width: 1.2vw;
+    height: 1.2vw;
+    box-shadow: 0 2vh #fff;
+  }
+
+  .red-strip::after {
+    right: 2vw;
+    top: 1vh;
+    width: 1.2vw;
+    height: 1.2vw;
+    box-shadow: 0 2vh #fff;
+  }
+
+  /* ---------------- RIGHT BOX ---------------- */
+  .right-box {
+    width: 50%; /* Maintain half width */
+    padding: 6vh 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .section-heading {
+    font-size: 3vw;
+    margin: 4vh 0 2vh;
+  }
+
+  .section-para {
+    font-size: 2vw;
+    line-height: 1.5;
+  }
+
+  .service-list li {
+    font-size: 2vw;
+    line-height: 1.5;
+  }
+
+  /* ---------------- BLUE STRIP ---------------- */
+  .blue-strip {
+    left: 9vw;
+    top: 3vh;
+    width: 25vw;
+    height: 5vh;
+    transform: translateX(-50%);
+  }
+
+  .blue-strip::before {
+    left: 2vw;
+    top: 1vh;
+    width: 1.2vw;
+    height: 1.2vw;
+    box-shadow: 0 2vh #fff;
+  }
+
+  .blue-strip::after {
+    right: 2vw;
+    top: 1vh;
+    width: 1.2vw;
+    height: 1.2vw;
+    box-shadow: 0 2vh #fff;
+  }
+
+  /* ---------------- IMAGE ---------------- */
+  .gd1 {
+    width: 35%;
+    margin-top: 8vh;
+    margin-bottom: -5vh;
+    margin-left: 24vw;
+  }
+}

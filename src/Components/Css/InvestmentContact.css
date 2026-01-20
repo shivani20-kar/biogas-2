@@ -115,3 +115,52 @@ letter-spacing: 1.92px;
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Section spacing */
+  .inv-contact-section {
+    padding: 4vw 5vw;
+    margin-bottom: 12vw;
+  }
+
+  /* Stack layout */
+  .inv-contact-containerr {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  /* LEFT */
+  .inv-contact-left {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .inv-contact-text {
+    font-size: 3.8vw;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    margin-bottom: 2vw;
+  }
+
+  .inv-contact-email {
+    font-size: 4.5vw;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
+  /* RIGHT */
+  .inv-contact-right {
+    text-align: left;
+  }
+
+  .inv-contact-reach {
+    font-size: 5vw;
+    letter-spacing: 1.2px;
+    margin-bottom: 3vw;
+  }
+
+  .inv-contact-phone {
+    font-size: 5.8vw;
+    letter-spacing: 1.2px;
+    display: inline-block;
+  }
+}

@@ -385,7 +385,9 @@ svg:hover path {
 
 .normal-text {
   color: #fff;
-  text-shadow: 4px 0 4px rgba(0, 0, 0, 0.5), 0 4px 4px rgba(0, 0, 0, 0.5),
+  text-shadow:
+    4px 0 4px rgba(0, 0, 0, 0.5),
+    0 4px 4px rgba(0, 0, 0, 0.5),
     0 0 8px #000;
   font-family: "DDINPRO";
   font-size: 2vw;
@@ -467,10 +469,9 @@ svg:hover path {
 }
 /* ===== Mobile Responsive: 320px to 480px ===== */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  
   .hero {
     margin-top: 10vh;
-    height: 80vh;
+    height: 28vh;
   }
 
   /* Video / Image */
@@ -518,9 +519,9 @@ svg:hover path {
 
   /* Circles */
   .circle-element {
-          width: 8vw;
-        height: 8vw;
-        border-width: 1.5px;
+    width: 8vw;
+    height: 8vw;
+    border-width: 1.5px;
   }
 
   .circle-gifhero {
@@ -561,19 +562,19 @@ svg:hover path {
   .cursor-box {
     display: none; /* hide on small screens for performance */
   }
-  .timeline-mail svg{
+  .timeline-mail svg {
     width: 10vw;
     margin-top: 2vw;
   }
-.title-row svg{
-   width: 8vw;
-}
+  .title-row svg {
+    width: 8vw;
+  }
   /* Normal text */
   .normal-text {
     font-size: 5vw;
     line-height: 1.3;
   }
-  .normal-text svg{
+  .normal-text svg {
     height: 4vh;
   }
 
@@ -586,105 +587,22 @@ svg:hover path {
   }
 }
 
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero {
-    height: 70vh;
-    margin-top: 10vh;
-  }
-
+@media (min-width: 481px) and (max-width: 768px) {
   .hero-content-overlay {
     display: none;
   }
 
-  .logo-containerhero {
-    display: none;
-    width: 15vw;
-  }
-
-  .logohero {
-    width: 180px;
-  }
-
-  .nav-common {
-    display: none;
-    margin-top: 8vh;
-  }
-
-  .nav-title-common {
-    font-size: 16px;
-  }
-
-  .nav-list-common a {
-    font-size: 14px;
-  }
-
-  .sectionhero-title {
-    font-size: 40px;
-  }
-
   .circle-element {
-    width: 110px;
-    height: 110px;
+    position: relative;
+    background-color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    margin-right: 5vw;
   }
 }
-
-/* 
-@media screen and (min-width: 1367px) {
-  .hero {
-    height: 100vh;
-    margin-top: 11vh;
-  }
-
-  .logo-containerhero {
-    width: 10vw;
-  }
-
-  .logohero {
-    width: 200px;
-    padding: 3vh 2vw;
-  }
-
-  .header-row {
-    padding: 5vh 3rem;
-    
-  }
-
-  .nav-common {
-    display: flex;
-    gap: 1.2vh;
-    margin-top: 5vh;
-  }
-
-  .nav-title-common {
-    font-size: 20px;
-    letter-spacing: 0.7px;
-  }
-
-  .nav-list-common {
-    gap: 1vw;
-  }
-
-  .nav-list-common a {
-    font-size: 17px;
-  }
-
-  .hero-bottom-wrapsectionhero {
-    bottom: 7vh;
-    padding: 0 8vw;
-  }
-
-  .sectionhero-title {
-    font-size: 60px;
-    line-height: 1.1;
-  }
-
-  .circle-element {
-    width: 160px;
-    height: 160px;
-  }
-
-  .circle-gifhero {
-    height: 80%;
-  }
-} */

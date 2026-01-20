@@ -61,3 +61,29 @@
   }
 }
 
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-gd-biogas {
+    padding: 0vh 0vw;
+  }
+
+  .why-gd-biogas-header-section {
+    height: 50vh;
+    padding: 7vh 6vw;
+    background-position: center;
+  }
+
+  .why-gd-biogas-main-heading {
+    font-size: 6vw;
+    gap: 1.5vw;
+    align-items: center;
+    text-align: left;
+  }
+
+  .why-gd-biogas-red-line {
+    width: 0.8vw;
+    height: 5vh;
+    border-radius: 1.5vw;
+    flex-shrink: 0;
+  }
+}

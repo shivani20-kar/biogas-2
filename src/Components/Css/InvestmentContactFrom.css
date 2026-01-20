@@ -10,13 +10,13 @@
 }
 
 .investmentcontact-top-text {
- color: #221F1D;
-text-align: center;
-  font-family: 'DDINPRO';
-font-size: 1.3vw;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 125% */
+  color: #221f1d;
+  text-align: center;
+  font-family: "DDINPRO";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
   margin-bottom: 1vw;
 }
 
@@ -26,7 +26,7 @@ line-height: 30px; /* 125% */
   width: 40vw;
   padding: 3vw;
   border-radius: 22px;
-  border: 2px solid #E12D36;
+  border: 2px solid #e12d36;
   background: #fff;
   overflow: hidden;
   margin-bottom: 8vw;
@@ -40,7 +40,7 @@ line-height: 30px; /* 125% */
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  border: 1px solid rgba(255,81,0,.25);
+  border: 1px solid rgba(255, 81, 0, 0.25);
 }
 
 .investmentcontact-curves::before,
@@ -50,13 +50,21 @@ line-height: 30px; /* 125% */
   position: absolute;
   inset: -3vw;
   border-radius: 50%;
-  border: 1px solid rgba(255,81,0,.4);
+  border: 1px solid rgba(255, 81, 0, 0.4);
 }
 
-.investmentcontact-curves::after { inset: -5.5vw; }
-.investmentcontact-curves span { inset: -8vw; }
-.investmentcontact-curves span:nth-child(2){ inset:-10vw;}
-.investmentcontact-curves span:nth-child(3){ inset:-12.5vw;}
+.investmentcontact-curves::after {
+  inset: -5.5vw;
+}
+.investmentcontact-curves span {
+  inset: -8vw;
+}
+.investmentcontact-curves span:nth-child(2) {
+  inset: -10vw;
+}
+.investmentcontact-curves span:nth-child(3) {
+  inset: -12.5vw;
+}
 
 /* 1️⃣ inner – very faint */
 .investmentcontact-curves {
@@ -108,7 +116,7 @@ line-height: 30px; /* 125% */
   padding: 1.3vw 1vw;
   border-radius: 16px;
   border: 1px solid #999;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.1vw;
   outline: none;
   background: #fff;
@@ -149,7 +157,7 @@ line-height: 30px; /* 125% */
 .investmentcontact-field:hover textarea,
 .investmentcontact-field input:focus,
 .investmentcontact-field textarea:focus {
-  border-color: #E12D36;
+  border-color: #e12d36;
 }
 
 /* 🔥 FLOAT ON HOVER / FOCUS / VALUE */
@@ -160,7 +168,7 @@ line-height: 30px; /* 125% */
 .investmentcontact-field textarea:not(:placeholder-shown) + label {
   top: 0;
   font-size: 0.8vw;
-  color: #E12D36;
+  color: #e12d36;
 }
 
 /* ================= SUBMIT BUTTON ================= */
@@ -171,11 +179,13 @@ line-height: 30px; /* 125% */
   border-radius: 24px;
   background: #fff;
   border: 1px solid #ddd;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.1vw;
   cursor: pointer;
-  transition: padding .6s ease, color .4s ease;
-  width:95%;
+  transition:
+    padding 0.6s ease,
+    color 0.4s ease;
+  width: 95%;
 }
 
 /* WAVE */
@@ -186,7 +196,7 @@ line-height: 30px; /* 125% */
   left: 50%;
   width: 160%;
   height: 160%;
-  background: #E12D36;
+  background: #e12d36;
   transform: translateX(-50%) scale(0);
   border-radius: 30px;
   transition: 1s ease;
@@ -202,7 +212,10 @@ line-height: 30px; /* 125% */
 }
 
 /* ICON */
-.submit-text { position: relative; z-index: 1; }
+.submit-text {
+  position: relative;
+  z-index: 1;
+}
 
 .submit-icon {
   position: absolute;
@@ -213,12 +226,12 @@ line-height: 30px; /* 125% */
   height: 28px;
   border-radius: 50%;
   background: #fff;
-  color: #E12D36;
+  color: #e12d36;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: .6s ease;
+  transition: 0.6s ease;
 }
 
 .investmentcontact-submit:hover .submit-icon {
@@ -227,18 +240,18 @@ line-height: 30px; /* 125% */
 }
 
 .investmentcontact-file {
-     width: 90%;
-   border-radius: 16px;
-border: 1px solid hsl(0, 0%, 40%);
-background: #FFF;
-   padding: 1.2vw 1vw;
+  width: 90%;
+  border-radius: 16px;
+     border: 1px solid #999;
+  background: #fff;
+  padding: 1.2vw 1vw;
 
-  color: #221F1D;
-  font-family: 'DDINPRO';
-font-size: 1.1vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #221f1d;
+  font-family: "DDINPRO";
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   cursor: pointer;
 }
 .investmentcontact-submit {
@@ -250,11 +263,13 @@ line-height: normal;
   padding: 12px 26px;
   border-radius: 24px;
   background: #fff;
-  border: 1px solid #ddd;
-  font-family: 'DDINPRO';
+     border: 1px solid #999;
+  font-family: "DDINPRO";
   font-size: 1.1vw;
   cursor: pointer;
-  transition: padding 0.6s ease, color 0.4s ease;
+  transition:
+    padding 0.6s ease,
+    color 0.4s ease;
 }
 
 /* WAVE */
@@ -265,7 +280,7 @@ line-height: normal;
   left: 50%;
   width: 160%;
   height: 160%;
-  background: #E12D36;
+  background: #e12d36;
   transform: translateX(-50%) scale(0);
   transform-origin: bottom center;
   border-radius: 30px;
@@ -297,7 +312,7 @@ line-height: normal;
   height: 28px;
   border-radius: 50%;
   background: #fff;
-  color: #E12D36;
+  color: #e12d36;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,7 +326,6 @@ line-height: normal;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* ================= WRAPPER ================= */
   .investmentcontact-wrapper {
     min-height: auto;
@@ -340,11 +354,21 @@ line-height: normal;
     opacity: 0.35;
   }
 
-  .investmentcontact-curves::before { inset: -8vw; }
-  .investmentcontact-curves::after { inset: -12vw; }
-  .investmentcontact-curves span { inset: -16vw; }
-  .investmentcontact-curves span:nth-child(2) { inset: -20vw; }
-  .investmentcontact-curves span:nth-child(3) { inset: -24vw; }
+  .investmentcontact-curves::before {
+    inset: -8vw;
+  }
+  .investmentcontact-curves::after {
+    inset: -12vw;
+  }
+  .investmentcontact-curves span {
+    inset: -16vw;
+  }
+  .investmentcontact-curves span:nth-child(2) {
+    inset: -20vw;
+  }
+  .investmentcontact-curves span:nth-child(3) {
+    inset: -24vw;
+  }
 
   /* ================= FORM ================= */
   .investmentcontact-form {
@@ -399,8 +423,118 @@ line-height: normal;
     border-radius: 28px;
   }
 
- .investmentcontact-submit .submit-icon{
-  right: 30vw;
- }
+  .investmentcontact-submit .submit-icon {
+    right: 30vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ================= WRAPPER ================= */
+  .investmentcontact-wrapper {
+    min-height: auto;
+    padding: 3vw 4vw;
+  }
 
+  .investmentcontact-top-text {
+    font-size: 3vw;
+    line-height: 1.6;
+    margin-bottom: 4vw;
+    text-align: center;
+  }
+
+  /* ================= CARD ================= */
+  .investmentcontact-card {
+    width: 83vw;
+    padding: 5vw 4vw;
+    border-radius: 18px;
+    margin: 0 auto 10vw auto; /* center the card */
+  }
+
+  /* Decorative curves – tablet size */
+  .investmentcontact-curves {
+    right: -20vw;
+    width: 35vw;
+    height: 35vw;
+    opacity: 0.4;
+  }
+
+  .investmentcontact-curves::before {
+    inset: -6vw;
+  }
+  .investmentcontact-curves::after {
+    inset: -9vw;
+  }
+  .investmentcontact-curves span {
+    inset: -12vw;
+  }
+  .investmentcontact-curves span:nth-child(2) {
+    inset: -15vw;
+  }
+  .investmentcontact-curves span:nth-child(3) {
+    inset: -18vw;
+  }
+
+  /* ================= FORM ================= */
+  .investmentcontact-form {
+    gap: 14px;
+    width: 100%;
+  }
+
+  .investmentcontact-field {
+    width: 100%;
+  }
+
+  /* INPUT / TEXTAREA */
+  .investmentcontact-field input,
+  .investmentcontact-field textarea {
+    padding: 3vw 2.5vw;
+    font-size: 3vw;
+    border-radius: 14px;
+    width: 93%;
+  }
+
+  .investmentcontact-field textarea {
+    height: 15vw;
+  }
+
+  /* LABEL */
+  .investmentcontact-field label {
+    left: 2.5vw;
+    font-size: 2.8vw;
+  }
+
+  /* Floating label */
+  .investmentcontact-field input:focus + label,
+  .investmentcontact-field textarea:focus + label,
+  .investmentcontact-field input:not(:placeholder-shown) + label,
+  .investmentcontact-field textarea:not(:placeholder-shown) + label {
+    top: -1vw;
+    font-size: 2.5vw;
+  }
+
+  /* ================= FILE INPUT ================= */
+  .investmentcontact-file {
+    width: 93%;
+    padding: 3vw 2.5vw;
+    font-size: 3vw;
+    border-radius: 14px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  /* ================= SUBMIT BUTTON ================= */
+  .investmentcontact-submit {
+    width: 100%;
+    font-size: 3.2vw;
+    padding: 3vw 5vw;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .investmentcontact-submit .submit-icon {
+    right: 35vw;
+  }
 }

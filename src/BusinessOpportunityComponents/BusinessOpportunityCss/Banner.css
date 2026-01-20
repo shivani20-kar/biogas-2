@@ -105,3 +105,49 @@
     word-wrap: break-word;
   }
 }
+
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner-wrapper {
+    height: 45vh;
+  }
+  
+  /* TEXT WRAPPER */
+  .banner-text {
+    gap: 3vh;
+    font-size: 4vw;
+    width: 90%;
+    text-align: center;
+  }
+  
+  /* FIRST ROW */
+  .row {
+    font-size: 6vw;
+    flex-direction: column;
+    align-items: center;
+    white-space: normal;
+    gap: 0.8vh;
+  }
+  
+  /* SECOND ROW */
+  .center-row {
+    font-size: 6vw;
+    margin-top: 2vh;
+    white-space: normal;
+  }
+  
+  /* BULLET DOT */
+  .dot {
+    margin-right: 2vw;
+    margin-bottom: 0.8vh;
+  }
+  
+  .banner-text p {
+    line-height: 1.3;
+  }
+  
+  .banner-text {
+    word-wrap: break-word;
+  }
+}

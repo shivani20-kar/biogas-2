@@ -127,3 +127,57 @@
     line-height: 1.6;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .project-wrapper {
+    padding: 3vw 6vw;
+  }
+
+  /* MAIN TITLE */
+  .proje-titles {
+    font-size: 6vw;
+    margin-bottom: 0.8vh;
+  }
+
+  /* SUBTITLE */
+  .proje-subtitles {
+    font-size: 3vw;
+    margin-bottom: 2.5vh;
+    line-height: 1.4;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 4.5vw;
+    margin-bottom: 0vh;
+  }
+
+  /* TWO COLUMN WRAPPER - Stack columns vertically like mobile */
+  .industry-container {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  /* ONE COLUMN - Full width on tablet */
+  .industry-column {
+    width: 100%;
+  }
+
+  /* RED SMALL HEADINGS */
+  .red-heading {
+    font-size: 3.5vw;
+    margin-bottom: 1vh;
+    margin-top: 0vh;
+  }
+
+  .mt-30 {
+    margin-top: 4vh;
+  }
+
+  /* BULLET LISTS */
+  .list {
+    font-size: 3vw;
+    line-height: 1.6;
+  }
+}

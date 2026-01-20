@@ -54,3 +54,29 @@
     margin-bottom: 1vh; 
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .benefits-wrapper {
+    padding: 3vh 5vw;
+  }
+
+  .benefits-section {
+    margin-bottom: 4vh;
+  }
+
+  .benefits-title {
+    font-size: 4vw;
+    margin-bottom: 1.8vh;
+  }
+
+  .benefits-list {
+    font-size: 2.8vw;
+    padding-left: 4vw;
+    line-height: 1.6;
+  }
+
+  .benefits-list li {
+    margin-bottom: 1vh;
+  }
+}

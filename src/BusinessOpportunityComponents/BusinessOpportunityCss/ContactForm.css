@@ -61,8 +61,8 @@
 
 /* ================= HEAD TEXT ================= */
 .red-textvendor {
-  color: #F00;
-  font-family: 'DDINPRO';
+  color: #f00;
+  font-family: "DDINPRO";
   font-size: 4vw;
   font-weight: 700;
   letter-spacing: 1.28px;
@@ -71,8 +71,8 @@
 }
 
 .green-textvendor {
-  color: #26B526;
-  font-family: 'DDINPRO';
+  color: #26b526;
+  font-family: "DDINPRO";
   font-size: 4vw;
   font-weight: 700;
   letter-spacing: 1.28px;
@@ -110,8 +110,8 @@
 .red-linevendor {
   width: 87vw;
   height: 9vh;
-  background: #E12D36;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+  background: #e12d36;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* ================= FORM FRAMES ================= */
@@ -122,10 +122,9 @@
   position: relative;
   z-index: 1;
 }
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
-  
 }
 
 .form-outer-frame::before {
@@ -250,12 +249,14 @@
   padding: 10px 20px;
   border-radius: 24px;
   background: #fff;
-  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   color: #000;
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.2vw;
   cursor: pointer;
-  transition: padding 0.6s ease, color 0.4s ease;
+  transition:
+    padding 0.6s ease,
+    color 0.4s ease;
 }
 
 .submit-btnn::before {
@@ -300,7 +301,9 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: transform 0.6s ease, opacity 0.4s ease;
+  transition:
+    transform 0.6s ease,
+    opacity 0.4s ease;
 }
 
 .submit-btnn:hover .sub-icon {
@@ -309,7 +312,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* ================= CONTAINER ================= */
   .contact-section-container {
     padding: 0 0vw;
@@ -340,12 +342,11 @@
     opacity: 1;
     animation: none;
   }
-.contact-form{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-}
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .contactform-wrapper {
     margin-top: 1vh;
   }
@@ -398,47 +399,184 @@
     flex: 1;
   }
 
+  .submit-btnn {
+    font-size: 4.2vw;
+    padding: 12px 26px;
+    border-radius: 30px;
+  }
 
-.submit-btnn {
-  font-size: 4.2vw;
-  padding: 12px 26px;
-  border-radius: 30px;
+  /* Trigger animation on tap */
+  .submit-btnn:active::before,
+  .submit-btnn:focus-visible::before {
+    transform: translateX(-50%) scale(1);
+  }
+  .submit-btnn .sub-icon {
+    position: absolute;
+    right: 25vw; /* RIGHT SIDE */
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    color: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:
+      transform 0.6s ease,
+      opacity 0.4s ease;
+  }
+
+  .submit-btnn:active,
+  .submit-btnn:focus-visible {
+    color: #fff;
+    padding-right: 52px;
+  }
+
+  /* Icon animation on tap */
+  .submit-btnn:active .sub-icon,
+  .submit-btnn:focus-visible .sub-icon {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
 }
 
-/* Trigger animation on tap */
-.submit-btnn:active::before,
-.submit-btnn:focus-visible::before {
-  transform: translateX(-50%) scale(1);
-}
-.submit-btnn .sub-icon {
-  position: absolute;
-  right: 25vw; /* RIGHT SIDE */
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #fff;
-  color: #e53935;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: transform 0.6s ease, opacity 0.4s ease;
-}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ================= CONTAINER ================= */
+  .contact-section-container {
+    padding: 0 2vw;
+  }
 
+  .contact-top-text {
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    line-height: 1.3;
+  }
 
-.submit-btnn:active,
-.submit-btnn:focus-visible {
-  color: #fff;
-  padding-right: 52px;
-}
+  /* ================= HEAD TEXT ================= */
+  .red-textvendor,
+  .green-textvendor {
+    font-size: 5.5vw;
+    letter-spacing: 1px;
+    text-align: center;
+  }
 
-/* Icon animation on tap */
-.submit-btnn:active .sub-icon,
-.submit-btnn:focus-visible .sub-icon {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
-}
+  .red-textvendor {
+    margin-top: 4vh;
+  }
 
+  /* ================= SCROLL ANIMATION ================= */
+  .animate-on-scroll .red-textvendor,
+  .animate-on-scroll .green-textvendor {
+    transform: translateX(0);
+    opacity: 1;
+    animation: none;
+  }
+
+  .contactform-wrapper {
+    margin-top: 2vh;
+    margin-right: 4vw;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .red-bars {
+    display: none; /* tablet साठी पण hide करा */
+  }
+
+  /* ================= FORM FRAMES ================= */
+  .form-outer-frame {
+    width: 75%;
+    padding: 7vw;
+  }
+
+  .form-outer-frame::before {
+    inset: 3.5vw;
+  }
+
+  .form-inner-frame {
+    padding: 6vw 5vw;
+    width: 86%;
+  }
+
+  /* ================= INPUT FIELDS ================= */
+  .floating-field input,
+  .floating-field-add input,
+  .floating-field textarea {
+    padding: 16px 14px;
+    font-size: 15px;
+    border-radius: 11px;
+    width: 90%;
+  }
+
+  .floating-field textarea {
+    height: 10vh;
+  }
+
+  .floating-field label,
+  .floating-field-add label {
+    font-size: 13.5px;
+  }
+
+  /* ================= ROW INPUTS ================= */
+  .row-con {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .large-input,
+  .small-input {
+    flex: 1;
+  }
+
+  /* ================= SUBMIT BUTTON ================= */
+  .submit-btnn {
+    font-size: 3.5vw;
+    padding: 12px 28px;
+    border-radius: 30px;
+  }
+
+  .submit-btnn .sub-icon {
+    position: absolute;
+    right: 15vw;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #fff;
+    color: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:
+      transform 0.6s ease,
+      opacity 0.4s ease;
+  }
+
+  /* Trigger animation on tap */
+  .submit-btnn:active::before,
+  .submit-btnn:focus-visible::before {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .submit-btnn:active,
+  .submit-btnn:focus-visible {
+    color: #fff;
+    padding-right: 50px;
+  }
+
+  /* Icon animation on tap */
+  .submit-btnn:active .sub-icon,
+  .submit-btnn:focus-visible .sub-icon {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
 }

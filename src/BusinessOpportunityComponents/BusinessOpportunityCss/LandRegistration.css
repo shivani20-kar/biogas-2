@@ -1,5 +1,5 @@
 .land-wrapper {
- height: 20vh;
+  height: 20vh;
   background: #d2d2d2;
   display: flex;
   align-items: center;
@@ -10,55 +10,54 @@
 
 /* LEFT SHAPE IMAGE */
 .land-left-shape {
- margin-left: -2.5vw;
+  margin-left: -2.5vw;
   position: relative;
   top: -4.5vh;
 }
 /* TEXT SECTION */
 .land-content {
-   display: flex;
+  display: flex;
   flex-direction: column;
   transform: translateY(-8vh);
-margin-top: 5vw;
+  margin-top: 5vw;
 }
 
 .land-title {
- color: #252525;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #252525;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   margin-bottom: 0vh;
   position: relative;
   left: -12vh;
 }
 
 .land-title span {
- color: #E12D36;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #e12d36;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .land-subtext {
- color: rgba(37, 37, 37, 0.60);
-font-family: 'DDINPRO';
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: rgba(37, 37, 37, 0.6);
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   .land-wrapper {
-   height:6vh;
+    height: 6vh;
     transform: none;
- display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
@@ -66,30 +65,29 @@ letter-spacing: 0.48px;
 
   /* LEFT SHAPE IMAGE */
   .land-left-shape {
-      margin-left:-4vw;
-
+    margin-left: -4vw;
   }
-  .land-left-shape svg{
-     width: 20vw;
+  .land-left-shape svg {
+    width: 20vw;
     margin-top: -34vw;
   }
 
   /* TEXT SECTION */
   .land-content {
-   transform: none;
+    transform: none;
     margin-top: 0;
     align-items: center;
   }
 
   .land-title {
-   font-size: 8vw;
+    font-size: 8vw;
     left: -15vw;
     margin-bottom: 0vw;
     top: -16vw;
   }
 
   .land-title span {
-   font-size: 8vw;
+    font-size: 8vw;
   }
 
   .land-subtext {
@@ -97,5 +95,52 @@ letter-spacing: 0.48px;
     font-size: 3.5vw;
     line-height: 1.5;
     letter-spacing: 0.3px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .land-wrapper {
+    height: 10vh;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5vh 4vw;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .land-left-shape {
+    margin-left: -3vw;
+  }
+
+  .land-left-shape svg {
+    width: 18vw;
+    margin-top: -25vw;
+  }
+
+  /* TEXT SECTION */
+  .land-content {
+    transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .land-title {
+    font-size: 6.5vw;
+    left: -12vw;
+    margin-bottom: 0vw;
+    top: -10vw;
+  }
+
+  .land-title span {
+    font-size: 6.5vw;
+  }
+
+  .land-subtext {
+    margin-top: -10vw;
+    font-size: 2.5vw;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
   }
 }

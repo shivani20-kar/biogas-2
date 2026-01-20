@@ -143,9 +143,7 @@
   line-height: normal;
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* ===== Section ===== */
   .industry-section {
     padding: 2vw 4vw;
@@ -175,9 +173,9 @@
   .arrow-controls-invest {
     gap: 3vw;
   }
-.arrow-controls-invest svg{
-  width: 6vw;
-}
+  .arrow-controls-invest svg {
+    width: 6vw;
+  }
   .arrow-controls-invest button {
     width: 36px;
     height: 36px;
@@ -210,5 +208,73 @@
     border-radius: 12px;
     font-size: 5vw;
   }
+}
 
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ===== Section ===== */
+  .industry-section {
+    padding: 2vw 3vw;
+  }
+
+  /* ===== Header ===== */
+  .industry-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    padding: 0;
+    margin-bottom: 2vw;
+  }
+
+  .black-text-in {
+    font-size: 5.5vw;
+    text-align: center;
+  }
+
+  .gd {
+    font-size: 7.5vw;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+  /* ===== Arrows ===== */
+  .arrow-controls-invest {
+    gap: 2vw;
+  }
+
+  .arrow-controls-invest svg {
+    width: 4.5vw;
+  }
+
+  .arrow-controls-invest button {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* hide hover text on tablet */
+  .arrow-hover-text {
+    display: none;
+  }
+
+  /* ===== Slider ===== */
+  .industry-slider {
+    gap: 6vw;
+    padding-bottom: 4vw;
+  }
+
+  /* ===== Card ===== */
+  .industrys-card {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  /* ===== Label ===== */
+  .industry-label {
+    width: 50vw;
+    height: auto;
+    bottom: 3vw;
+    left: 7vw;
+    padding: 2vw 2.5vw;
+    border-radius: 16px;
+    font-size: 4vw;
+  }
 }

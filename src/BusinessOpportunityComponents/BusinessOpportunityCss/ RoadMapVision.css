@@ -271,3 +271,145 @@
     box-sizing: border-box;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Overall wrapper - Stack vertically on tablet */
+  .vision-wrapper {
+    flex-direction: column;
+    padding: 4vh 0vw;
+    padding-bottom: 0vh;
+  }
+  
+  .visioninner-wrapper {
+        width: 90%;
+    padding: 4vh 5vw;
+    overflow: hidden;
+  }
+  
+  /* Title */
+  .vision-title {
+    font-size: 7vw;
+    margin: 0 0 3vh 0;
+    text-align: center;
+  }
+  
+  /* TOP IMAGES ROW - Stack vertically */
+  .vision-top {
+    flex-direction: column;
+    gap: 4vh;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* Image boxes */
+  .vision-box {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+  
+  .bee-box {
+    padding: 0;
+    order: 2;
+  }
+  
+  .bamboo-box {
+    order: 1;
+  }
+  
+  /* Image sizes */
+  .vision-image {
+    width: 100%;
+    height: 50vh;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* PLANETS SECTION */
+  .vision-bottom {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  
+  .planets-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .planets-img {
+    width: 100%;
+    height: 15vh;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 3vh;
+  }
+  
+  .planets-text {
+    font-size: 3vw;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 3vw;
+    color: #ffffff;
+  }
+  
+  /* Bamboo border box */
+  .bamboo-border-box {
+    padding: 3vh 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust border thickness and position for tablet */
+  .bamboo-border-box::before {
+    border-width: 3px;
+    width: calc(100% - 4vw);
+    height: calc(100% - 4vh);
+    right: 2vw;
+    bottom: 2vh;
+  }
+  
+  .bamboo-border-box::after {
+    border-width: 3px;
+    width: 25%;
+    height: 25%;
+    top: 2vh;
+    left: 2vw;
+  }
+  
+  /* Bamboo image */
+  .bamboo-img {
+    width: 100%;
+    height: 50vh;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Ensure all images are properly contained */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Image alignment */
+  .vision-box:nth-child(1) .vision-image,
+  .vision-box:nth-child(2) .vision-image {
+    width: 100%;
+    height: 50vh;
+    object-position: center;
+  }
+  
+  /* Image container */
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}

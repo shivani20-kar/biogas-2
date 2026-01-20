@@ -20,46 +20,45 @@
   display: flex;
   flex-direction: column;
   transform: translateY(-8vh);
-margin-top: 5vw;
+  margin-top: 5vw;
 }
 
 .partner-title {
- color: #252525;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #252525;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   margin-bottom: 0vh;
   position: relative;
   left: -12vh;
 }
 
 .partner-title span {
- color: #E12D36;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #e12d36;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .partner-subtext {
- color: rgba(37, 37, 37, 0.60);
-font-family: 'DDINPRO';
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: rgba(37, 37, 37, 0.6);
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   .partner-wrapper {
     height: 6vw;
     transform: none;
- display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
@@ -67,9 +66,9 @@ letter-spacing: 0.48px;
 
   /* LEFT SHAPE IMAGE */
   .partner-left-shape {
-    margin-left:-4vw;
+    margin-left: -4vw;
   }
-  .partner-left-shape svg{
+  .partner-left-shape svg {
     width: 20vw;
     margin-top: -34vw;
   }
@@ -90,7 +89,6 @@ letter-spacing: 0.48px;
 
   .partner-title span {
     font-size: 8vw;
-    
   }
 
   .partner-subtext {
@@ -98,5 +96,53 @@ letter-spacing: 0.48px;
     font-size: 3.5vw;
     line-height: 1.5;
     letter-spacing: 0.3px;
+  }
+}
+
+/* TABLET SCREENS (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .partner-wrapper {
+    height: 6vh;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 6vh 5vw;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .partner-left-shape {
+    margin-left: -3vw;
+  }
+
+  .partner-left-shape svg {
+    width: 15vw;
+    margin-top: -25vw;
+  }
+
+  /* TEXT SECTION */
+  .partner-content {
+    transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .partner-title {
+    font-size: 6vw;
+    left: -8vw;
+    margin-bottom: 0vw;
+    top: -10vw;
+  }
+
+  .partner-title span {
+    font-size: 6vw;
+  }
+
+  .partner-subtext {
+    margin-top: -8vw;
+    font-size: 2.5vw;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
   }
 }

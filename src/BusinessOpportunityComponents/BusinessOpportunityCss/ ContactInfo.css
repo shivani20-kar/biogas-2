@@ -15,77 +15,76 @@
 }
 
 .contact-label {
- color: #282828;
-  font-family: 'DDINPRO';
-font-size: 1.8vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.2px;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
   margin: 10px 0 4px 0;
 }
 
 .contact-email {
   display: inline-block;
-    font-family: 'DDINPRO';
-  color: #E12D36;
-font-family: D-DIN-PRO;
-font-size: 2vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.8px;
+  font-family: "DDINPRO";
+  color: #e12d36;
+  font-family: D-DIN-PRO;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
   margin-bottom: 3vh;
   text-decoration: none;
 }
 
 .contact-right .contact-label {
   color: #282828;
-  font-family: 'DDINPRO';
-font-size: 1.8vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.2px;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
   margin-bottom: 4px;
 }
 
 .contact-right .contact-email {
-  font-family: 'DDINPRO';
-  color: #E12D36;
-font-size: 2vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.8px;
+  font-family: "DDINPRO";
+  color: #e12d36;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
   margin-bottom: 20px;
 }
 
 .contact-phone-label {
- color: #282828;
- font-family: 'DDINPRO';
-font-size: 4.2vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.7px;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-size: 4.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.7px;
   margin-top: 35vh;
 }
 
 .contact-phone {
- color: #E12D36;
-font-family: 'DDINPRO';
-font-size: 4.2vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.92px;
+  color: #e12d36;
+  font-family: "DDINPRO";
+  font-size: 4.2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.92px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   .contact-info-container {
-    flex-direction: column;          /* stack columns */
+    flex-direction: column; /* stack columns */
     padding: 16vw 6vw;
     margin-bottom: 0;
     gap: 2vh;
@@ -122,7 +121,7 @@ letter-spacing: 1.92px;
   /* Phone label */
   .contact-phone-label {
     font-size: 5.2vw;
-    margin-top: 3vh;                 /* remove huge gap */
+    margin-top: 3vh; /* remove huge gap */
     letter-spacing: 1px;
   }
 
@@ -132,5 +131,57 @@ letter-spacing: 1.92px;
     letter-spacing: 1.2px;
     display: block;
     margin-top: 0vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-info-container {
+    flex-direction: column;
+    padding: 12vw 8vw;
+    margin-bottom: 0;
+    gap: 3vh;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .contact-left {
+    margin-right: 0;
+  }
+
+  /* Labels */
+  .contact-label,
+  .contact-right .contact-label {
+    font-size: 3.2vw;
+    margin: 8px 0 3px 0;
+    letter-spacing: 0.3px;
+  }
+
+  /* Email */
+  .contact-email,
+  .contact-right .contact-email {
+    font-size: 3.8vw;
+    letter-spacing: 0.5px;
+    margin-bottom: 2.5vh;
+    display: block;
+    word-break: break-word;
+  }
+
+  /* Phone label */
+  .contact-phone-label {
+    font-size: 4.2vw;
+    margin-top: 4vh;
+    letter-spacing: 0.8px;
+  }
+
+  /* Phone number */
+  .contact-phone {
+    font-size: 4.5vw;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 1vh;
   }
 }

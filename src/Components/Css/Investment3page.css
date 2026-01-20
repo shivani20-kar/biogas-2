@@ -238,3 +238,76 @@ line-height: normal;
 }
 
 
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ===== Section ===== */
+  .products-section {
+    padding: 4vw 0;
+  }
+
+  /* ===== Banner ===== */
+  .product-banner {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.5vw 0vw;
+  }
+
+  /* Arrow Shape */
+  .blue-arrow-shapee {
+    width: 85px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -3vh;
+  }
+
+  /* Text */
+  .product-text {
+    gap: 1.5vw;
+  }
+
+  .product-outline {
+    font-size: 9vw;
+    -webkit-text-stroke: 1.8px #ffffff;
+    margin-top: 0;
+    margin-left: 1.5vw;
+  }
+
+  /* ===== Grid ===== */
+  .products-grid {
+    padding: 5vw 6vw;
+    grid-template-columns: 1fr; /* single column */
+    gap: 6vw;
+  }
+
+  /* ===== Card ===== */
+  .product-card {
+    border-radius: 12px;
+  }
+
+  /* Image */
+  .product-image img {
+    height: 45vw;
+  }
+
+  /* Content */
+  .product-content {
+    padding: 2.5vw 4.5vw;
+    min-height: auto;
+  }
+
+  .product-content h3 {
+    font-size: 4vw;
+  }
+
+  /* Arrow Button */
+  .card-arrow {
+    width: 7vw;
+    height: 7vw;
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  .card-arrow svg {
+    width: 13px;
+    height: 13px;
+  }
+}

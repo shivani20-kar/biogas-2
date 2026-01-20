@@ -146,3 +146,61 @@
     margin-top: 3vh;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .pi-section {
+    flex-direction: column;
+    padding: 4vh 5vw;
+    gap: 35px;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+  }
+
+  /* LEFT BOX */
+  .pi-left-box {
+    width: 90%;
+    padding: 10vh 5vw;
+  }
+
+  .pi-quote-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .pi-left-text {
+    font-size: 4.5vw;
+    margin-bottom: 3.5vh;
+    line-height: 1.3;
+  }
+
+  /* RIGHT CONTENT */
+  .pi-right-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .pi-heading {
+    font-size: 6.5vw;
+    margin-bottom: 2.5vh;
+  }
+
+  .pi-small-text {
+    font-size: 2.8vw;
+    line-height: 1.4;
+  }
+
+  .pi-bold {
+    font-size: 3.2vw;
+  }
+
+  .pi-red-line {
+    font-size: 4vw;
+    margin: 22px 0;
+  }
+
+  .proudlyimg {
+    width: 65px;
+    margin-top: 3.5vh;
+  }
+}

@@ -9,7 +9,7 @@
 
 /* Gray side background */
 .land-inner-wrapper {
- position: relative;
+  position: relative;
   background-color: #595959;
   width: 19%;
   padding: 6vh 0;
@@ -18,10 +18,12 @@
 
 /* Left big red box */
 .land-left {
- border: 10px solid #FFF;
-background: linear-gradient(0deg, #E12D36 0%, #E12D36 100%), #D9D9D9;
-box-shadow: 4px 0 16px 0 rgba(0, 0, 0, 0.25), 0 4px 16px 0 rgba(0, 0, 0, 0.25);
-  font-family: 'DDINPRO';
+  border: 10px solid #fff;
+  background: linear-gradient(0deg, #e12d36 0%, #e12d36 100%), #d9d9d9;
+  box-shadow:
+    4px 0 16px 0 rgba(0, 0, 0, 0.25),
+    0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
   width: 40vw;
   height: 78vh;
   padding: 6vh 4vw;
@@ -35,38 +37,38 @@ box-shadow: 4px 0 16px 0 rgba(0, 0, 0, 0.25), 0 4px 16px 0 rgba(0, 0, 0, 0.25);
 
 .land-quote-img {
   width: 60px;
-   margin-top: 4vw;
+  margin-top: 4vw;
 }
 
 .land-text {
   margin-top: 2vw;
-  color: #FFF;
-font-family: 'DDINPRO';
-font-size: 7vw;
-font-style: normal;
-font-weight: 700;
-line-height: 120px;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 7vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px;
   padding: 0vh 2vw;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
-.land-right{
+.land-right {
   padding-left: 5vw;
 }
 /* Right side black text */
 .land-right-text {
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   padding-left: 30vw;
- color: #000;
-font-size: 3.3vw;
-font-style: normal;
-font-weight: 400;
-line-height: 50px; /* 125% */
-letter-spacing: 1.92px;
+  color: #000;
+  font-size: 3.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 1.92px;
 }
 .gs-title {
   display: flex;
-  align-items: center;      /* vertical center */
-  justify-content: center;  /* horizontal center */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
   gap: 0.5vw;
 }
 
@@ -74,8 +76,8 @@ letter-spacing: 1.92px;
 .new-text {
   display: flex;
   align-items: center;
-  margin-top: 0 !important;   /* remove negative margin */
-  font-family: 'DDINPRO';
+  margin-top: 0 !important; /* remove negative margin */
+  font-family: "DDINPRO";
   color: #000;
   font-size: 6vw;
   font-weight: 700;
@@ -83,36 +85,34 @@ letter-spacing: 1.92px;
   letter-spacing: 1.92px;
 }
 
-
 .gs-blue {
- background: #0982FE;
-color: #FFF;
- font-family: 'DDINPRO';
-font-size: 10vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 2.8px;
-text-transform: none;
+  background: #0982fe;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 10vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: none;
   padding: 0vw 1vw;
   text-align: end;
 }
 
 .gs-green {
- color: #0E9B0E;
- font-family: 'DDINPRO';
-font-size: 6vw;
-font-style: normal;
-font-weight: 700;
-line-height: 120px;
-letter-spacing: 2.56px;
+  color: #0e9b0e;
+  font-family: "DDINPRO";
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: 2.56px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* Main wrapper */
   .landowner-wrapper {
-   flex-direction: column;
+    flex-direction: column;
     top: 0;
     padding-top: 5vh;
     align-items: flex-start;
@@ -120,21 +120,21 @@ letter-spacing: 2.56px;
 
   /* Gray side background */
   .land-inner-wrapper {
-   width: 50%;
+    width: 50%;
     height: auto;
     padding: 4vh 0;
   }
 
   /* Left red box */
   .land-left {
-   position: relative;
-        width: 100vw;
-        height: auto;
-        padding: 2vh 6vw;
-        transform: none;
-        top: 0;
-        margin: 0 auto;
-        border: 5px solid #FFF;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 2vh 6vw;
+    transform: none;
+    top: 0;
+    margin: 0 auto;
+    border: 5px solid #fff;
   }
 
   .land-quote-img {
@@ -143,7 +143,7 @@ letter-spacing: 2.56px;
   }
 
   .land-text {
-  font-size: 7vw;
+    font-size: 7vw;
     line-height: 1.3;
     padding: 0;
     text-align: left;
@@ -155,7 +155,7 @@ letter-spacing: 2.56px;
 
   .land-right-text {
     padding: 0;
- margin-top: 0vh;
+    margin-top: 0vh;
     font-size: 8vw;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -168,14 +168,13 @@ letter-spacing: 2.56px;
     gap: 2vw;
     justify-content: center;
     margin-top: 0vh;
-     font-size: 7vw;
+    font-size: 7vw;
   }
 
   .new-text {
     font-size: 7vw;
     letter-spacing: 1px;
   }
-
 
   .gs-blue {
     font-size: 10vw;
@@ -185,5 +184,89 @@ letter-spacing: 2.56px;
   .gs-green {
     font-size: 7vw;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Main wrapper */
+  .landowner-wrapper {
+    flex-direction: column;
+    top: 0;
+    padding-top: 5vh;
+    align-items: flex-start;
+  }
+
+  /* Gray side background */
+  .land-inner-wrapper {
+    width: 40%;
+    height: auto;
+    padding: 5vh 0;
+  }
+
+  /* Left red box */
+  .land-left {
+    position: relative;
+    width: 80vw;
+    height: auto;
+    min-height: 27vh;
+    padding: 4vh 8vw;
+    transform: none;
+    top: 0;
+    margin: 0 auto;
+    border: 8px solid #fff;
+  }
+
+  .land-quote-img {
+    width: 50px;
+    margin-top: 0;
+  }
+
+  .land-text {
+    font-size: 6.5vw;
+    line-height: 1.4;
+    padding: 0;
+    text-align: left;
+    margin-top: 3vw;
+  }
+
+  .land-right {
+    margin-top: 4vh;
+    padding-left: 0;
+  }
+
+  .land-right-text {
+    padding: 0;
+    margin-top: 2vh;
+    font-size: 7vw;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding-left: 9vw;
+  }
+
+  /* Title section */
+  .gs-title {
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .new-text {
+    font-size: 6.5vw;
+    letter-spacing: 1.2px;
+  }
+
+  .gs-blue {
+    font-size: 9vw;
+    padding: 1vw 2.5vw;
+    letter-spacing: 2px;
+  }
+
+  .gs-green {
+    font-size: 6.5vw;
+    line-height: 1.3;
+    letter-spacing: 1.8px;
   }
 }

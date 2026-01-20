@@ -259,3 +259,106 @@
     background: #858585;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .roadmap-wrapper {
+    padding: 3vh 0vw;
+    overflow-x: hidden;
+  }
+  
+  .roadmap-title {
+    font-size: 4.5vw;
+    margin-bottom: 4vh;
+  }
+  
+  /* COMMON ROW STYLING - Stack vertically */
+  .roadmap-row {
+    flex-direction: column;
+    gap: 2.5vh;
+    margin-bottom: 3.5vh;
+  }
+  
+  /* BOXES */
+  .roadmap-box {
+    width: 80vw;
+    max-width: 400px;
+    padding: 3vh 4vw;
+    border-radius: 1.5vw;
+    font-size: 3vw;
+    margin: 0 auto;
+  }
+  
+  /* Remove arrows for tablet vertical layout */
+  .roadmap-row.top-row .roadmap-arrow,
+  .roadmap-dashed-box .roadmap-arrow {
+    display: none;
+  }
+  
+  /* Add vertical connectors between boxes */
+  .roadmap-row:not(:last-child) .roadmap-box::after {
+    content: "";
+    position: absolute;
+    bottom: -2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2.5vh;
+    background: #858585;
+  }
+  
+  /* DASHED SECTION */
+  .roadmap-dashed-box {
+    border-width: 1px;
+    padding: 2vh 2vw;
+    border-radius: 1.5vw;
+   
+    max-width: 500px;
+    margin: 3.5vh auto;
+  }
+  
+  /* Vertical dashed connector */
+  .roadmap-vertical-connector::before {
+    width: 1px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #bfbfbf,
+      #bfbfbf 4px,
+      transparent 4px,
+      transparent 8px
+    );
+  }
+  
+  /* FOOTER BLOCK */
+  .roadmap-footer {
+    padding: 3vh 5vw;
+    border-radius: 1.5vw;
+    font-size: 3.5vw;
+    width: 80vw;
+    max-width: 400px;
+    margin: 3.5vh auto 0 auto;
+  }
+  
+  .roadmap-footer span {
+    font-size: 2.8vw;
+    display: block;
+    margin-top: 1.5vh;
+  }
+  
+  /* Special handling for the dashed box content */
+  .roadmap-dashed-box .roadmap-row {
+    margin-bottom: 2.5vh;
+  }
+  
+  /* Add connectors inside dashed box */
+  .roadmap-dashed-box .roadmap-row:not(:last-child) .roadmap-box::after {
+    content: "";
+    position: absolute;
+    bottom: -2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2.5vh;
+    background: #858585;
+  }
+}

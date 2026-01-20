@@ -111,3 +111,52 @@ letter-spacing: 1.28px;
     text-align: left;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Outer spacing */
+  .info-box-background {
+    padding-top: 4vh;
+  }
+
+  /* Grey background wrapper */
+  .info-box-backgroundinner {
+    padding: 1.5vw 1.5rem;
+    height: 40vw;
+    align-items: center;
+  }
+
+  /* Info box */
+  .info-box-container {
+    width: 90%;
+    height: auto;
+    padding: 2rem 1.8rem;
+    margin-top: 12vw;
+  }
+
+  /* Corner lines */
+  .info-box-container::before,
+  .info-box-container::after {
+    width: 18vw;
+    height: 14vh;
+    border-width: 1.8px;
+  }
+
+  .info-box-container::before {
+    top: 2.5vw;
+    left: 2.5vw;
+  }
+
+  .info-box-container::after {
+    bottom: 2.5vw;
+    right: 2.5vw;
+  }
+
+  /* Text */
+  .info-box-text {
+    font-size: 4.2vw;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding: 2.5vh 2.5vw;
+    text-align: left;
+  }
+}

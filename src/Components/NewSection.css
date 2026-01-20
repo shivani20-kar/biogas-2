@@ -41,19 +41,18 @@
 
 /* Text styling */
 .green-return-heading {
- color: #FFF;
-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'DDINPRO';
-font-size: 3vw;
-font-style: normal;
-font-weight: 700;
-line-height: 70px; /* 109.375% */
-letter-spacing: 1.28px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 109.375% */
+  letter-spacing: 1.28px;
   max-width: 700px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   /* Full screen hero */
   .green-return-hero {
     height: 35vh;
@@ -61,7 +60,6 @@ letter-spacing: 1.28px;
 
   /* Content alignment */
   .green-return-container {
-   
     padding-left: 2vw;
     padding-right: 5vw;
     align-items: left;
@@ -71,11 +69,36 @@ letter-spacing: 1.28px;
 
   /* Heading text */
   .green-return-heading {
-     margin-top: -8vh;
-    font-size: 6vw;      /* scales nicely across 320–480 */
-    line-height: 1.25;    
+    margin-top: -8vh;
+    font-size: 6vw; /* scales nicely across 320–480 */
+    line-height: 1.25;
     letter-spacing: 0.5px;
     max-width: 100%;
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Full screen hero */
+  .green-return-hero {
+    height: 45vh;
+  }
+
+  /* Content alignment */
+  .green-return-container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Heading text */
+  .green-return-heading {
+    margin-top: 0;
+    font-size: 4.5vw;
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    max-width: 100%;
+    margin-right: 39vw;
+  }
+}

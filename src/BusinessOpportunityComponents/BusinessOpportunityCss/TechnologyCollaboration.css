@@ -153,3 +153,59 @@
     height: 110px;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .technology-collaboration {
+    padding: 2.5vh 0;
+  }
+
+  .collaboration-header-section {
+    padding: 8vh 5vw 10vh;
+    text-align: left;
+  }
+
+  .collaboration-main-heading {
+    font-size: 6vw;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .collaborationred-line {
+    width: 0.6vw;
+    height: 5vh;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .collaboration-sub-heading {
+    font-size: 3.5vw;
+    line-height: 1.3;
+    margin-top: 1.5vh;
+  }
+
+  .collaboration-tagline {
+    font-size: 2.2vw;
+    line-height: 1.4;
+    margin-top: 2vh;
+    letter-spacing: 0.8px;
+  }
+
+  .collaborationimg {
+    width: 55px;
+    margin-top: 3vh;
+  }
+
+  .slider-container {
+    padding: 3vh 0;
+  }
+
+  .logo-slider {
+    gap: 40px;
+  }
+
+  .slide-logo {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -145,3 +145,77 @@
             margin-top: 0vh;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .commissioning-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Image section - पहिला भाग */
+  .commissioning-section::before {
+    content: "";
+    display: block;
+    height: 45vh;
+    width: 100%;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .commissioning-panel {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    background: white;
+  }
+
+  .commissioning-content {
+    padding: 0vh 5vw;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .commissioning-heading {
+    display: flex;
+    gap: 12px;
+    font-size: 5vw;
+    margin: 4vw 0 0vw 0;
+    align-items: center;
+    margin-bottom: 0vh;
+  }
+
+  .commissioning-step-number {
+    font-size: 11vw;
+    -webkit-text-stroke-width: 2px;
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .commissioning-step-title {
+    font-size: 5vw;
+    line-height: 1.3;
+    text-align: start;
+    width: 100%;
+  }
+
+  .commissioning-content p {
+    font-size: 2.8vw;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    margin-top: 0vh;
+  }
+}
+

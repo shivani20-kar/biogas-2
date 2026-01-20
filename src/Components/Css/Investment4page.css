@@ -1,5 +1,5 @@
 .strength-section {
-  min-height: 100vh;                 
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -53,61 +53,60 @@
 /* NUMBER */
 .frame-number {
   border-radius: 50%;
- color: #FFF;
- font-family: 'DDINPRO';
-font-size: 3vw;
-font-style: normal;
-font-weight: 700;  
-  margin-top: 1.5vw; 
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1.5vw;
 }
 
 /* TITLE */
 .frame-title {
- color: #FFF;
-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
- font-family: 'DDINPRO';
-font-size: 1.7vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-top: 3.3vw;
-/* margin-left: 3.3vw; */
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 3.3vw;
+  /* margin-left: 3.3vw; */
 }
-
 
 .turnkey-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #E12D36;
+  border: 2px solid #e12d36;
   border-radius: 10px;
   padding: 2vw 3vw;
- background-color: rgba(225, 45, 54, 0.16);
- width: 80vw;
-  margin: 0 auto;   
+  background-color: rgba(225, 45, 54, 0.16);
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .turnkey-section h3 {
   margin: 0 0 1vw 0;
- color: #FFF;
-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-font-family: "DDINPRO";
-font-size: 3.5vw;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
+  font-size: 3.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .turnkey-section p {
   width: 40vw;
   margin-bottom: 1.5vw;
- color: #FFF;
-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-font-family: "DDINPRO";
-font-size: 2vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .turnkey-btn {
   position: relative;
@@ -124,14 +123,16 @@ line-height: normal;
   background: #fff;
   color: #000;
 
-  font-family: 'DDINPRO';
+  font-family: "DDINPRO";
   font-size: 1.2vw;
   font-weight: 400;
 
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 
-  transition: padding 0.6s ease, color 0.4s ease;
+  transition:
+    padding 0.6s ease,
+    color 0.4s ease;
 }
 
 /* 🔴 animated background layer */
@@ -180,7 +181,9 @@ line-height: normal;
   font-size: 14px;
   opacity: 0;
 
-  transition: transform 0.6s ease, opacity 0.4s ease;
+  transition:
+    transform 0.6s ease,
+    opacity 0.4s ease;
 }
 
 .turnkey-btn:hover::before {
@@ -189,7 +192,7 @@ line-height: normal;
 
 .turnkey-btn:hover {
   color: #fff;
-  padding-right: 52px; 
+  padding-right: 52px;
 }
 
 .turnkey-btn:hover .turnkey-icon {
@@ -198,7 +201,6 @@ line-height: normal;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* ===== SECTION ===== */
   .strength-section {
     min-height: auto;
@@ -207,7 +209,7 @@ line-height: normal;
 
   /* ===== FRAME GRID ===== */
   .strength-frame-wrapper {
-    grid-template-columns: 1fr;   /* 🔥 1 frame per row */
+    grid-template-columns: 1fr; /* 🔥 1 frame per row */
     gap: 1vw;
     padding: 0 6vw;
     justify-items: center;
@@ -259,13 +261,12 @@ line-height: normal;
     font-size: 4vw;
   }
 
- .turnkey-btn {
+  .turnkey-btn {
     font-size: 4vw;
-    padding: 12px 22px;      /* ✅ auto width */
+    padding: 12px 22px; /* ✅ auto width */
     width: auto;
     min-width: unset;
   }
-
 
   /* icon visible by default on mobile */
   .turnkey-btn .turnkey-icon {
@@ -284,6 +285,99 @@ line-height: normal;
   }
 
   /* optional: keep hover also (some mobiles support it) */
+  .turnkey-btn:hover::before {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .turnkey-btn:hover {
+    color: #fff;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ===== SECTION ===== */
+  .strength-section {
+    min-height: auto;
+    padding: 0vw 0 6vw 0;
+  }
+
+  /* ===== FRAME GRID ===== */
+  .strength-frame-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1vw;
+    padding: 0 6vw;
+    justify-items: center;
+    width: 88%;
+  }
+
+  .strength-frame {
+    max-width: 100%;
+  }
+
+  /* ===== FRAME MASK ===== */
+  .frame-mask {
+    aspect-ratio: 4.5 / 1;
+  }
+
+  /* ===== FRAME CONTENT ===== */
+  .frame-content {
+    gap: 8vw;
+    padding: 0 4vw;
+  }
+
+  /* ===== NUMBER ===== */
+  .frame-number {
+    font-size: 6vw;
+    margin-top: 1.8vh;
+  }
+
+  /* ===== TITLE ===== */
+  .frame-title {
+    font-size: 3.5vw;
+    margin-top: 4vh;
+    line-height: 1.2;
+  }
+
+  /* ===== TURNKEY SECTION ===== */
+  .turnkey-section {
+    flex-direction: column;
+    gap: 2.5vw;
+    width: 85vw;
+    padding: 4vw;
+    text-align: center;
+  }
+
+  .turnkey-section h3 {
+    font-size: 5.5vw;
+  }
+
+  .turnkey-section p {
+    width: 100%;
+    font-size: 3.2vw;
+  }
+
+  .turnkey-btn {
+    font-size: 3.5vw;
+    padding: 12px 24px;
+  }
+
+  /* icon visible by default on tablet */
+  .turnkey-btn .turnkey-icon {
+    opacity: 0;
+    transform: translateY(-50%) scale(1);
+    right: 14px;
+  }
+
+  /* animation on tap */
+  .turnkey-btn:active::before {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .turnkey-btn:active {
+    color: #fff;
+  }
+
+  /* optional: keep hover also */
   .turnkey-btn:hover::before {
     transform: translateX(-50%) scale(1);
   }

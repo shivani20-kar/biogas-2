@@ -164,3 +164,77 @@
     margin-top: 1.5vh;
   }
 }
+
+/* TABLET SCREENS (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .proposal-section {
+    padding: 3vh 5vw;
+    margin-bottom: 10vh;
+  }
+
+  .proposalinner-section {
+    padding: 2.5vh 1vw;
+  }
+
+  /* Adjust border thickness for tablet */
+  .proposalinner-section::after {
+    border-width: 3px;
+  }
+
+  .proposal-text {
+    font-size: 3vw;
+    width: 100%;
+    line-height: 1.7;
+  }
+
+  .proposal-thanks {
+    font-size: 4vw;
+    margin-top: 3vh;
+    text-align: center;
+  }
+
+  .proposal-sincerely {
+    font-size: 3.5vw;
+    margin-top: 4vh;
+    text-align: center;
+  }
+
+  .signature-box {
+    width: 80vw;
+    max-width: 400px;
+    padding: 3.5vh 5vw;
+    margin-top: 3vh;
+    margin-bottom: -5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .signature-line-top {
+    width: 50%;
+    top: 2.5vh;
+    right: 18vw;
+    height: 2px;
+  }
+
+  .signature-content p {
+    font-size: 3.5vw;
+    margin: 1.5vh 0;
+    text-align: center;
+  }
+
+  .signature-line-bottom {
+    height: 3px;
+  }
+
+  /* Additional tablet optimizations */
+  .proposal-section * {
+    box-sizing: border-box;
+  }
+
+  .proposal-text br {
+    display: block;
+    content: "";
+    margin-top: 1.5vh;
+  }
+}
