@@ -100,7 +100,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .land-wrapper {
-    height: 10vh;
+    height: 6vh;
     transform: none;
     display: flex;
     flex-direction: row;
@@ -116,7 +116,7 @@
 
   .land-left-shape svg {
     width: 18vw;
-    margin-top: -25vw;
+    margin-top: -17vw;
   }
 
   /* TEXT SECTION */

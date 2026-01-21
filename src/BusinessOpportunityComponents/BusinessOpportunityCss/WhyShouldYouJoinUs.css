@@ -5,24 +5,24 @@
 
 /* ---------- TITLE ---------- */
 .why-join-title {
- color: #282828;
-font-family: 'DDINPRO';
-font-size: 6vw;
-font-style: normal;
-font-weight: 400;
-line-height: 10px; /* 117.188% */
+  color: #282828;
+  font-family: "DDINPRO";
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 117.188% */
   margin-top: -3vw;
 }
 
 /* ---------- DESCRIPTION ---------- */
 .why-join-desc {
-  color: rgba(37, 37, 37, 0.80);
-font-family: 'DDINPRO';
-font-size: 1.2vw;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 166.667% */
-letter-spacing: 0.48px;
+  color: rgba(37, 37, 37, 0.8);
+  font-family: "DDINPRO";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 166.667% */
+  letter-spacing: 0.48px;
   /* max-width: 62vw; */
 }
 
@@ -50,68 +50,72 @@ letter-spacing: 0.48px;
 
 /* ---------- CARD NUMBER ---------- */
 .why-card-number {
- -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #E12D36;
-color: transparent;
-font-family: 'DDINPRO';
-font-size: 6vw;
-font-style: normal;
-font-weight: 700;
-line-height: 0px;
-margin-top: 4vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e12d36;
+  color: transparent;
+  font-family: "DDINPRO";
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0px;
+  margin-top: 4vw;
 }
 
 /* ---------- CARD TEXT ---------- */
 .why-card-text {
   text-align: left;
- color: #282828;
-font-family: 'DDINPRO';
-font-size: 1.8vw;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 125% */
-margin-top: -2vw;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+  margin-top: -2vw;
 }
 
 .border-red {
- border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(225, 45, 54, 0.50);
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(225, 45, 54, 0.5);
 }
 
 .border-blue {
-border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(9, 130, 254, 0.50);}
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(9, 130, 254, 0.5);
+}
 
 .border-purple {
-border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(120, 123, 126, 0.60);}
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(120, 123, 126, 0.6);
+}
 
 .border-green {
-border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(18, 183, 18, 0.50);}
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(18, 183, 18, 0.5);
+}
 
 .border-orange {
-border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(255, 164, 0, 0.60);}
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(255, 164, 0, 0.6);
+}
 
 .border-pink {
-border-radius: 48px;
-border: 1px solid #676767;
-background: #FFF;
-box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.50);}
+  border-radius: 48px;
+  border: 1px solid #676767;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.5);
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   .why-join-wrapper {
     padding: 3vw 5vw;
   }
@@ -141,7 +145,7 @@ box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.50);}
 
   /* ---------- CARD ---------- */
   .why-card {
-    width: 45%;        /* 🔥 exactly 2 cards per row */
+    width: 45%; /* 🔥 exactly 2 cards per row */
     height: auto;
     padding: 4vw 2vw;
     box-sizing: border-box;
@@ -169,5 +173,73 @@ box-shadow: 0 4px 4px 0 rgba(255, 111, 0, 0.50);}
   .border-orange,
   .border-pink {
     border-radius: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .why-join-wrapper {
+    padding: 2vw 5vw;
+  }
+
+  /* ---------- TITLE ---------- */
+  .why-join-title {
+    font-size: 7vw;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 2vh;
+  }
+
+  /* ---------- DESCRIPTION ---------- */
+  .why-join-desc {
+    font-size: 3vw;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    margin-bottom: 3vh;
+  }
+
+  /* ---------- CARDS LAYOUT ---------- */
+  .why-join-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3vw 2vw; /* row gap | column gap */
+  }
+
+  /* ---------- CARD ---------- */
+  .why-card {
+    width: 45%; /* 🔥 exactly 2 cards per row */
+    height: auto;
+    min-height: 25vw;
+    padding: 3vw 2vw;
+    box-sizing: border-box;
+  }
+
+  .why-card:hover {
+    transform: none; /* disable hover on tablet */
+  }
+
+  /* ---------- CARD NUMBER ---------- */
+  .why-card-number {
+    font-size: 9vw;
+    line-height: 1;
+    margin-top: 1vw;
+  }
+
+  /* ---------- CARD TEXT ---------- */
+  .why-card-text {
+    font-size: 3.2vw;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: -1vw;
+  }
+
+  /* ---------- CARD BORDERS ---------- */
+  .border-red,
+  .border-blue,
+  .border-purple,
+  .border-green,
+  .border-orange,
+  .border-pink {
+    border-radius: 32px;
   }
 }

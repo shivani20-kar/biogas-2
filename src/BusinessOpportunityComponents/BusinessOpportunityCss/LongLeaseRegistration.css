@@ -17,49 +17,48 @@
 
 /* TEXT SECTION */
 .longlease-content {
-   display: flex;
+  display: flex;
   flex-direction: column;
   transform: translateY(-8vh);
-margin-top: 5vw;
+  margin-top: 5vw;
 }
 
 .longlease-title {
   color: #252525;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   margin-bottom: 0vh;
   position: relative;
   left: -12vh;
 }
 
 .longlease-title span {
-   color: #E12D36;
-font-family: 'DDINPRO';
-font-size: 5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #e12d36;
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .longlease-subtext {
- color: rgba(37, 37, 37, 0.60);
-font-family: 'DDINPRO';
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: rgba(37, 37, 37, 0.6);
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   .longlease-wrapper {
-   height:6vh;
+    height: 6vh;
     transform: none;
- display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
@@ -67,23 +66,22 @@ letter-spacing: 0.48px;
 
   /* LEFT SHAPE IMAGE */
   .longlease-left-shape {
-        margin-left:-4vw;
-
+    margin-left: -4vw;
   }
-  .longlease-left-shape svg{
-      width: 20vw;
+  .longlease-left-shape svg {
+    width: 20vw;
     margin-top: -15vh;
   }
 
   /* TEXT SECTION */
   .longlease-content {
-   transform: none;
+    transform: none;
     margin-top: 0;
     align-items: center;
   }
 
   .longlease-title {
-   font-size: 8vw;
+    font-size: 8vw;
     left: -18vw;
     margin-bottom: 0vw;
     top: -8vh;
@@ -101,3 +99,49 @@ letter-spacing: 0.48px;
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .longlease-wrapper {
+    height: 6vh;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5vh 4vw;
+  }
+
+  /* LEFT SHAPE IMAGE */
+  .longlease-left-shape {
+    margin-left: -3vw;
+  }
+
+  .longlease-left-shape svg {
+    width: 18vw;
+    margin-top: -11vh;
+  }
+
+  /* TEXT SECTION */
+  .longlease-content {
+    transform: none;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .longlease-title {
+    font-size: 6.5vw;
+    left: -15vw;
+    margin-bottom: 0vw;
+    top: -6vh;
+  }
+
+  .longlease-title span {
+    font-size: 6.5vw;
+  }
+
+  .longlease-subtext {
+    margin-top: -10vw;
+    font-size: 2.5vw;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+  }
+}

@@ -13,13 +13,13 @@
 }
 
 .green-textvendor-land {
-color: #26B526;
-font-family: 'DDINPRO';
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: 10px; /* 234.375% */
-letter-spacing: 1.28px;
+  color: #26b526;
+  font-family: "DDINPRO";
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px; /* 234.375% */
+  letter-spacing: 1.28px;
 }
 
 .animate-on-scroll .green-textvendor-land {
@@ -38,7 +38,7 @@ letter-spacing: 1.28px;
 
 @keyframes greenSlideIn {
   from {
-     transform: translateX(100vw);
+    transform: translateX(100vw);
     opacity: 0;
   }
   to {
@@ -48,7 +48,7 @@ letter-spacing: 1.28px;
 }
 
 .contactform-wrapper-land {
- width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ letter-spacing: 1.28px;
 }
 
 .red-bars-left-land {
-top: 5vh; 
+  top: 5vh;
   left: 0;
 }
 
@@ -75,23 +75,23 @@ top: 5vh;
 }
 
 .red-linevendor-land {
-   width: 87vw;
+  width: 87vw;
   height: 9vh;
- background: #E12D36;
-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #e12d36;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: none;
 }
 
 /* OUTER DARK GREY FRAME */
 .form-outer-frame-land {
-background: #676767;
+  background: #676767;
   padding: 6vw 6vw;
   width: 55%;
   position: relative; /* for inner border */
   z-index: 1;
 }
 .form-outer-frame-land::before {
- content: "";
+  content: "";
   position: absolute;
   top: 3vw;
   left: 3vw;
@@ -109,7 +109,7 @@ background: #676767;
   padding: 6vw 6vw;
   border-radius: 4px;
   position: relative;
-  z-index: 3; 
+  z-index: 3;
 }
 
 /* -------- POPUP OVERLAY -------- */
@@ -188,24 +188,22 @@ background: #676767;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
   /* Container */
   .contact-section-container-land {
     padding: 0 0vw;
   }
 
   .contact-top-text-land {
-     margin-top: 0vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
     padding: 0vw 3vw;
-   
   }
 
   .green-textvendor-land {
-   font-size: 7vw;
+    font-size: 7vw;
     letter-spacing: 0.8px;
     text-align: center;
-     line-height: 1.2;
+    line-height: 1.2;
   }
 
   /* Disable heavy horizontal animation on small screens */
@@ -225,17 +223,17 @@ background: #676767;
 
   /* Outer frame */
   .form-outer-frame-land {
-     width: 100%;
+    width: 100%;
     padding: 8vw;
   }
 
   .form-outer-frame-land::before {
-   inset: 4vw;
+    inset: 4vw;
   }
 
   /* Inner frame */
   .form-inner-frame-land {
- width: 100%;
+    width: 100%;
     padding: 6vw 5vw;
   }
 
@@ -269,5 +267,89 @@ background: #676767;
     font-size: 4.5vw;
     padding: 14px 0;
     margin-top: 4vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Container */
+  .contact-section-container-land {
+    padding: 0 2vw;
+  }
+
+  .contact-top-text-land {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    padding: 0 2vw;
+  }
+
+  .green-textvendor-land {
+    font-size: 5.5vw;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  /* Disable heavy horizontal animation on tablet */
+  .animate-on-scroll .green-textvendor-land {
+    transform: translateX(0);
+  }
+
+  /* Form wrapper */
+  .contactform-wrapper-land {
+    margin-top: 2vh;
+  }
+
+  /* Red decorative bars */
+  .red-bars-land {
+    display: none; /* hide on tablet for clarity */
+  }
+
+  /* Outer frame */
+  .form-outer-frame-land {
+    width: 76%;
+    padding: 7vw;
+    margin-right: 3vw;
+  }
+
+  .form-outer-frame-land::before {
+    inset: 3.5vw;
+  }
+
+  /* Inner frame */
+  .form-inner-frame-land {
+    width: 87%;
+    padding: 6vw 5vw;
+  }
+
+  /* -------- POPUP -------- */
+
+  .popup-box-land {
+    width: 80%;
+    padding: 4vh 5vw;
+    border-radius: 32px;
+  }
+
+  .popup-close-land {
+    top: 18px;
+    right: 22px;
+    font-size: 28px;
+  }
+
+  .popup-title-land {
+    font-size: 7vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .popup-sub-land,
+  .popup-text-land {
+    font-size: 3.5vw;
+    line-height: 1.5;
+  }
+
+  .popup-done-land {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 12px 0;
+    margin-top: 3vh;
   }
 }

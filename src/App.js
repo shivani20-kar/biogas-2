@@ -181,7 +181,7 @@ function App() {
           element={
             <>
               <HeroSection />
-              <HeroSectionSecondPage />
+              {/* <HeroSectionSecondPage /> */}
             </>
           }
         />

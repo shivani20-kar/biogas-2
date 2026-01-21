@@ -178,3 +178,48 @@ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     right: 10px;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .open-positions-wrapper {
+    height: 65vh;
+  }
+
+  .open-positions-bg {
+    height: 100%;
+  }
+
+  .open-positions-content {
+    width: 100%;
+    padding: 0 5vw;
+  }
+
+  .open-positions-title {
+    font-size: 7vw;
+    line-height: 1.3;
+    margin-bottom: 3vw;
+  }
+
+  .open-positions-desc {
+    font-size: 3.2vw;
+    line-height: 1.5;
+    margin-bottom: 5vw;
+  }
+
+  .open-positions-btn {
+    font-size: 3vw;
+    padding: 12px 20px;
+    border-radius: 14px;
+  }
+
+  /* Hover padding adjustment for tablet */
+  .open-positions-btn:hover {
+    padding-right: 48px;
+  }
+
+  .open-positions-btn .icon-join {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    right: 12px;
+  }
+}

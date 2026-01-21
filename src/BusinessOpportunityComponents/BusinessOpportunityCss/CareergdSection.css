@@ -122,3 +122,47 @@ margin-bottom: -0.5vw;
     line-height: 1.5;
   }
 }
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .careergd-wrapper {
+    grid-template-columns: 1fr;
+    padding: 6vw 5vw;
+    gap: 6vw;
+  }
+
+  .careergd-left {
+    justify-content: flex-start;
+  }
+
+  .careergd-title {
+    width: 100%;
+    font-size: 6.5vw;
+    line-height: 1.3;
+    margin-bottom: 3vh;
+  }
+
+  .careergd-link-wrapper {
+    gap: 16px;
+  }
+
+  .careergd-link {
+    font-size: 3.5vw;
+    line-height: 1.3;
+  }
+
+  .careergd-arrow-btn {
+    width: 7vw;
+    height: 7vw;
+    font-size: 22px;
+  }
+
+  .careergd-right {
+    margin-top: 0;
+  }
+
+  .careergd-para {
+    font-size: 3vw;
+    line-height: 1.6;
+  }
+}
