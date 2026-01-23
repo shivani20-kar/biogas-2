@@ -1,0 +1,81 @@
+.home-technology {
+
+  padding: 5vh 4vw;
+  font-family: "DDINPRO";
+  background: #ffffff;
+}
+
+.home-technology__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6vw;
+}
+
+/* LEFT */
+.home-technology__left {
+  max-width: 38vw;
+}
+
+.home-technology__left h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.1;
+  margin-bottom: 2vh;
+}
+
+.home-technology__left p {
+  font-size: 0.95vw;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 3vh;
+}
+
+/* BUTTON */
+.home-technology__btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1.1vh 2vw;
+  border-radius: 24px;
+  font-size: 0.9vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-technology__btn:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT SECTION */
+.home-technology__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* COMMON CARD */
+.home-technology__card {
+  width: 24vw;
+  border-radius: 14px;
+}
+
+/* BIG RED CARD */
+.home-technology__card--large {
+  height: 20vh;
+  background: #e12d36;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+      width: 22vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+/* SMALL LIGHT CARDS */
+.home-technology__card--small {
+  height: 4.8vh;
+  background: #eeeae3;
+}

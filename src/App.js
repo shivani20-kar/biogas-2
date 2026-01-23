@@ -152,6 +152,11 @@ import InvestmentBooks from "./Components/Investment6page";
 import InvestmentContactForm from "./Components/InvestmentcontactForm";
 import GreenReturnHero from "./Components/NewSection";
 import InvestmentContact from "./Components/InvestmentContact";
+import HeroVision from "./Components/HeroVision";
+import FarmerDignitySection from "./Components/FarmerDignitySection";
+import HomeIndustrialSection from "./Components/HomeIndustrialSection";
+import HomeOurServices from "./Components/HomeOurServices";
+import HomeTechnologyAssociation from "./Components/HomeTechnologyAssociation";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -182,6 +187,12 @@ function App() {
             <>
               <HeroSection />
               {/* <HeroSectionSecondPage /> */}
+              <HeroVision />
+              <FarmerDignitySection />
+              <HomeTechnologyAssociation />
+              <HomeIndustrialSection />
+              <HomeOurServices />
+              {/* <Footer /> */}
             </>
           }
         />

@@ -1,0 +1,377 @@
+.hero-vision {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  font-family: "DDINPRO", sans-serif;
+  padding: 10vh 0vw;
+}
+
+/* ================= LEFT RED PANEL ================= */
+
+.hero-leftvision {
+  width: 45%;
+  background-color: #ff000d;
+  color: #ffffff;
+  padding: 4.5vw 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* TOP TEXT */
+.hero-company-text {
+  font-size: 2.8vw;
+  line-height: 1;
+  max-width: 100%;
+  margin-bottom: 2.4vw;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0vh;
+}
+
+/* TITLE */
+.hero-title-wrapper {
+  display: flex;
+  gap: 0.5vw;
+}
+
+/* MAIN TITLE */
+.hero-main-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* TEXT SIZES (FIGMA MATCH) */
+.line-small {
+  font-size: 4.5vw;
+  color: #fff;
+  text-shadow: 8px 0 8px rgba(0, 0, 0, 0.55);
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  margin-left: -1vw;
+}
+
+.line-big {
+  font-size: 5vw; /* BIGGEST */
+
+  color: #fff;
+  text-shadow: 8px 0 8px rgba(0, 0, 0, 0.55);
+  font-family: "DDINPRO";
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+
+.line-medium {
+  font-size: 4.5vw; /* slightly smaller */
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 8px 0 8px rgba(0, 0, 0, 0.55);
+  font-family: "DDINPRO";
+
+  font-style: normal;
+
+  line-height: normal;
+  letter-spacing: -0.42px;
+  margin-left: -1vw;
+}
+
+.line-medium-m {
+  font-size: 6.5vw; /* slightly smaller */
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 8px 0 8px rgba(0, 0, 0, 0.55);
+  font-family: "DDINPRO";
+
+  font-style: normal;
+
+  line-height: normal;
+  letter-spacing: -0.42px;
+  margin-left: -1vw;
+}
+
+/* VERTICAL LINE */
+.hero-vertical-line {
+  width: 0.28vw;
+  margin-top: 4.7vw;
+
+  /* Height = District + Trillion */
+  height: 9vw;
+
+  background-color: #fff;
+  text-shadow: 8px 0 8px rgba(0, 0, 0, 0.55);
+  font-family: "DDINPRO";
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+
+/* BOTTOM SECTION */
+.hero-bottom {
+  position: absolute;
+  bottom: 2vh;
+  left: 4vw;
+  right: 4vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.hero-bottom-text {
+  max-width: 70%;
+}
+
+.hero-location-text {
+  font-size: 1.5vw;
+  font-family: "DDINPRO";
+  margin-bottom: -0.4vw;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1; /* 70% */
+}
+
+.hero-description-text {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  width: 20vw;
+}
+
+/* CTA */
+.hero-bottom-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 4vh;
+}
+
+.hero-bottom-cta-span {
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.cta-circle {
+  width: 1.9vw;
+  height: 1.9vw;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9vw;
+  text-decoration-line: none;
+}
+/* ================= RIGHT IMAGE PANEL ================= */
+
+.hero-rightvision {
+  width: 55%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGES */
+.background-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TOP TEXT - FIXED */
+.hero-overlay-top {
+  position: absolute;
+  top: 0vw;
+  left: 3.2vw;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.hero-overlay-top-p {
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.42px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* BOTTOM TEXT - दोन्ही एकाच वेळी */
+.hero-overlay-bottom {
+  position: absolute;
+  bottom: 2.8vw;
+  left: 3.2vw;
+  color: #fff;
+  z-index: 2;
+  overflow: hidden;
+  height: 13vw;
+  width: 100%;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+/* ANIMATION - दोन्ही एकाच वेळी */
+.slide-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-out {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.hero-bottom-text-large {
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  margin-bottom: 1vw;
+  display: block;
+}
+
+.hero-bottom-number-large {
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 7.3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -2px;
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
+  margin: 0;
+  display: block;
+}
+
+/* SLIDE UP ANIMATION */
+@keyframes slideUpTogether {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideUpTogether 0.3s ease-out forwards;
+}
+
+@keyframes slideOutTogether {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-out {
+  animation: slideOutTogether 0.5s ease-out forwards;
+}
+
+/* ENTRANCE EFFECT FOR BOTH */
+@keyframes textEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-bottom-text-large,
+.hero-bottom-number-large {
+  animation: textEntrance 0.8s ease-out 0.3s both;
+}
+
+/* PULSE EFFECT FOR NUMBER */
+@keyframes numberPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
+  }
+  50% {
+    transform: scale(1.03);
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 1);
+  }
+}
+
+/* IMAGE TRANSITION */
+.background-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  z-index: 1;
+}
+
+.background-slide.active {
+  opacity: 1;
+  z-index: 2;
+}

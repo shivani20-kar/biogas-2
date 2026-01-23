@@ -1,0 +1,157 @@
+.home-industrial-section {
+  width: 100%;
+  background: linear-gradient(66deg, #e0e8eb 0%, #fff 100%);
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* TOP SECTION - No changes */
+.home-industrial-top {
+  padding: 5vh 8vw;
+  position: relative;
+}
+
+.home-industrial-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7vw; /* 10px */
+  position: relative;
+}
+
+.home-industrial-biggd {
+  font-size: 13.9vw; /* 200px */
+  opacity: 0.6;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.home-industrial-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35vh;
+  margin-top: 6vh;
+}
+
+.home-industrial-planet {
+  font-size: 3.5vw;
+  color: #0982fe;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.home-industrial-solutions {
+  font-size: 3.5vw;
+  font-family: "DDINPRO";
+  color: #08222b;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* DESCRIPTION */
+.home-industrial-desc {
+  display: flex;
+  margin-top: 0vh;
+}
+
+.home-desc-left,
+.home-desc-right {
+  width: 30%;
+}
+
+.home-desc-line {
+  height: 0.22vh; /* 2px */
+  background: #9caaaf;
+  width: 20%;
+  margin-bottom: 1.1vh; /* 10px */
+}
+
+.home-desc-left p,
+.home-desc-right p {
+  font-size: 1.2vw;
+  line-height: 1;
+  color: #08222b;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SLIDER CONTAINER */
+.home-industrial-bottom {
+  padding: 2vh 0vw;
+  position: relative;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  gap: 2.1vw; /* 30px */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* CARD STYLES */
+.home-industrial-card {
+  flex: 0 0 calc((100% - (2.1vw * 2)) / 3); /* Show 3 cards at a time with gaps */
+  overflow: hidden;
+}
+
+.home-industrial-card img {
+  width: 100%;
+  height: 31vh; /* 280px */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.home-card-title {
+  padding: 1.5vh;
+  font-size: 1.95vw;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* ARROWS */
+.home-industrial-arrows {
+  position: absolute;
+  right: 8vw;
+  top: -25%;
+  display: flex;
+  gap: 0.6vw; /* gap reduced */
+}
+
+.home-arrow {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.home-arrow svg {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.home-arrow:hover svg path:first-child {
+  stroke: #08222b; /* dark border on hover */
+  stroke-width: 1.5;
+}
