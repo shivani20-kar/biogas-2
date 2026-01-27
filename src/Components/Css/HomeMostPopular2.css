@@ -1,5 +1,6 @@
 .home-most-popular2 {
   background-color: #fff;
+  
 }
 
 /* Image container */
@@ -33,4 +34,20 @@
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 1px;
   text-transform: capitalize;
+}
+
+/* 2nd section style */
+.home-most-popular2 {
+  position: relative;
+  margin-top: -20vw;   /* 1st section वर overlap करण्यासाठी */
+  z-index: 6;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+/* Active state */
+.home-most-popular2.active {
+  opacity: 1;
+  transform: translateY(0);
 }

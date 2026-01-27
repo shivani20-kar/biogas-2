@@ -1,0 +1,25 @@
+.vertical-most-popular {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Common style for all cards */
+.vertical-most-popular section {
+  position: sticky;
+  top: 0;
+  height: 100vh;       
+  width: 100%;
+}
+
+/* Image full screen */
+.vertical-most-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vertical-most-popula-stack {
+  position: relative;
+  height: 600vh; /* 6 cards = 6 screens */
+}

@@ -12,7 +12,6 @@ import img8 from "../Components/IMAGES/business-img8.png";
 import img9 from "../Components/IMAGES/business-img9.png";
 import img10 from "../Components/IMAGES/business-img10.png";
 
-
 const data = [
   {
     number: "01",
@@ -84,6 +83,13 @@ const data = [
 const HomeBusinessSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // ✅ HE FUNCTION ITHE ADD KAR
+  const getVisibleNumbers = () => {
+    const start = activeIndex;
+    const reordered = [...data.slice(start), ...data.slice(0, start)];
+    return reordered.slice(0, 14);
+  };
+
   const next = () => {
     setActiveIndex((prev) => (prev + 1) % data.length);
   };
@@ -91,7 +97,6 @@ const HomeBusinessSection = () => {
   const prev = () => {
     setActiveIndex((prev) => (prev === 0 ? data.length - 1 : prev - 1));
   };
-
   return (
     <section className="home-business">
       {/* CENTER TITLE */}
