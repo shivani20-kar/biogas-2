@@ -1,0 +1,51 @@
+.home-most-popular {
+  background-color: #fff;
+}
+
+/* Top heading */
+.home-most-popular__title {
+  font-size: 5vw;
+  margin-bottom: 1.8vw;
+  padding-left: 4vw;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: var(--letter-spacing--2_2, -2.2px);
+  margin-top: 0vh;
+}
+
+/* Card wrapper */
+.home-most-popular__card {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+}
+
+/* Background image */
+.home-most-popular__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay */
+.home-most-popular__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay text */
+.home-most-popular__overlay-text {
+  font-size: 6vw;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}

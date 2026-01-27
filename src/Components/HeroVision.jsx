@@ -45,7 +45,7 @@ const HeroVision = () => {
       image: heroImage6,
     },
     {
-      text: "Supporting to milking animals",
+      text: "Supporting to milking animals", 
       count: "130000",
       image: heroImage7,
     },
@@ -63,7 +63,7 @@ const HeroVision = () => {
   const currentSlide = slides[currentIndex];
 
   return (
-    <section className="hero-vision">
+    <section className="heros-vision">
       {/* ================= LEFT RED PANEL ================= */}
       <div className="hero-leftvision">
         <p className="hero-company-text">

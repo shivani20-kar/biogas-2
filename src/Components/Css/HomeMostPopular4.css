@@ -1,0 +1,36 @@
+.home-most-popular4 {
+  background-color: #fff;
+}
+
+/* Image container */
+.home-most-popular4__card {
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+}
+
+/* Image */
+.home-most-popular4__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-most-popular4__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay text */
+.home-most-popular4__overlay-text {
+  font-size: 6vw;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}

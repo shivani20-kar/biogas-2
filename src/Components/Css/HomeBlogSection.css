@@ -1,0 +1,216 @@
+.home-blog {
+  padding: 15vh 5vw;
+  background: #ffffff;
+}
+
+.home-blog__container {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+/* Header */
+.home-blog__badge {
+  padding: 0.52vh 0.93vw;
+  border-radius: 1.4vw;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-91, #d1e0ff);
+  font-size: 0.97vw;
+  margin-bottom: 1.78vh;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5vw;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: inherit;
+  font-family: inherit;
+}
+
+.home-blog__badge svg {
+  flex-shrink: 0;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: transform 0.3s ease;
+}
+
+.home-blog__badge svg,
+.home-blog__badge svg *,
+.home-blog__badge:hover svg,
+.home-blog__badge:hover svg * {
+  fill: #0040c1 !important;
+  stroke: #0040c1 !important;
+}
+
+.home-blog__badge svg path {
+  fill: #0040c1 !important;
+  transition: fill 0.3s ease;
+}
+
+.home-blog__badge:hover svg path {
+  fill: #0a2cff !important;
+}
+
+.home-blog__badge span {
+  color: var(--fizens-framer-ai-cobalt, var(--color-azure-38, #0040c1));
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-blog__title {
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -1.92px;
+  margin: 0;
+}
+
+.home-blog__title--orange {
+  background: linear-gradient(90deg, #e12d36 0%, #ffa400 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-blog__title--blue {
+  color: #0040c1;
+}
+
+.home-blog__subtitle {
+  max-width: 44vw;
+  font-size: 1.2vw;
+  margin-top: 1vh;
+  color: #676767;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Content */
+.home-blog__content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.78vw;
+  margin-top: 6.67vh;
+}
+
+/* Main Card */
+.home-blog__main-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-blog__main-image {
+  width: 80%;
+  border-radius: 1.11vw;
+  margin-bottom: 2.22vh;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.home-blog__meta {
+  font-size: 0.97vw;
+  color: #666;
+  margin-bottom: 1.11vh;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.home-blog__category {
+  font-size: 1vw;
+  font-family: "DDINPRO";
+  color: var(--fizens-framer-ai-cobalt, var(--color-azure-38, #0040c1));
+
+  /* fizens.framer.ai/Semantic/Link */
+
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+}
+
+.home-blog__date {
+  opacity: 0.8;
+  color: var(--fizens-framer-ai-pale-sky, var(--color-grey-46, #6b7280));
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--item-spacing-s, 24px);
+}
+
+.home-blog__card-title {
+  font-size: 2vw;
+
+  line-height: 1.3;
+
+  transition: color 0.3s ease;
+
+  color: var(--fizens-framer-ai-cod-gray, var(--color-grey-9, #171717));
+  font-family: "DDINPRO";
+
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.home-blog__description {
+  font-size: 1.04vw;
+  line-height: 1.6;
+  color: var(--fizens-framer-ai-pale-sky, var(--color-grey-46, #6b7280));
+  width: 40vw;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+}
+
+/* Side Cards */
+.home-blog__side-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.67vh;
+}
+
+.home-blog__side-card {
+  display: flex;
+  gap: 1.11vw;
+  cursor: pointer;
+  padding: 1vh 0.5vw;
+  border-radius: 0.69vw;
+}
+
+.home-blog__side-card img {
+  width: 9.64vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.69vw;
+  flex-shrink: 0;
+}
+
+.home-blog__side-title {
+  font-size: 1.11vw;
+  margin: 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+  color: var(--fizens-framer-ai-cod-gray, var(--color-grey-9, #171717));
+  font-family: "DDINPRO";
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+.home-blog__side-desc {
+  font-size: 0.9vw;
+
+  line-height: 1;
+
+  color: #676767;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+}

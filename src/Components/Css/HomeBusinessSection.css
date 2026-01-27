@@ -1,0 +1,144 @@
+/* ROOT */
+.home-business {
+  height: 90vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 10vh 0;
+}
+
+/* LEFT */
+.home-business__left {
+  width: 50%;
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-business__heading {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  margin-left: 4vw;
+}
+
+/* NUMBERS */
+.home-business__numbers-wrapper {
+  position: absolute;
+  top: 190px;
+  left: 70px;
+  display: flex;
+  gap: 20px;
+}
+
+.home-business__line {
+  width: 35px;
+  height: 2px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.home-business__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-business__number {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+}
+
+.home-business__number.active {
+  color: #fff;
+}
+
+/* BUTTON */
+.home-business__btn {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  padding: 14px 34px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.home-business__right {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-business__right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CENTER TITLE */
+.home-business__title {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  font-weight: 800;
+  color: #fff;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* NAV */
+.home-business__nav {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 18px;
+}
+
+.home-business__arrow {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ===== FULL SLIDE ANIMATIONS ===== */
+@keyframes fullSlideUp {
+  from {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: fullSlideUp 0.9s ease forwards;
+}
+
+@keyframes fullSlideDown {
+  from {
+    transform: translateY(-80%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down img {
+  animation: fullSlideDown 0.9s ease forwards;
+}
+

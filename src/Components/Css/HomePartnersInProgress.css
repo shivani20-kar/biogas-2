@@ -1,0 +1,43 @@
+.home-partners {
+  width: 100%;
+  background: var(--color-grey-95, #f2f2f2);
+}
+
+.home-partners__container {
+  margin: 0 auto;
+  padding: 5vh 4vw;
+}
+
+/* Title */
+.home-partners__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 4vh;
+}
+
+.home-partners__title h2 {
+  color: var(--loginord-framer-website-cod-gray, var(--color-grey-10, #1c1817));
+  font-family: "DDINPRO";
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* Logos Row */
+.home-partners__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  padding-bottom: 6vh;
+}
+
+.home-partners__logo {
+  height: 4vh;
+  width: 4vw;
+  object-fit: contain;
+  opacity: 0.9;
+}

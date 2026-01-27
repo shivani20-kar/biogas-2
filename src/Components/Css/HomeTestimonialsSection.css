@@ -1,0 +1,149 @@
+.home-testimonials-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17vh 4vw;
+  background: #fff;
+}
+
+.home-testimonials-left {
+  width: 45%;
+}
+
+/* LABEL WRAPPER */
+.home-testimonials-label {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d0d7ff;
+  padding: 6px 12px;
+  border-radius: 4vw;
+  cursor: pointer;
+  color: #0040c1;
+  font-family: "DDINPRO";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.home-testimonials-quote {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.home-testimonials-title {
+  font-size: 5vw;
+  margin: 20px 0 0;
+  color: #171717;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-testimonials-subtitle {
+  font-size: 3vw;
+  margin: 10px 0 40px;
+  color: #0040c1;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-testimonials-rating {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.home-testimonials-avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: -12px;
+  border: 2px solid #fff;
+}
+
+.home-rating-score {
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--fizens-framer-ai-cod-gray, var(--color-grey-9, #171717));
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: -1vh;
+}
+
+.home-rating-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.home-rating-review {
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.home-testimonials-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+
+.home-testimonial-card {
+  text-align: center;
+  border-radius: 16px;
+  background: var(--color-grey-99, #f9fcff);
+  padding: 3vh 2vw;
+}
+
+.home-testimonial-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.home-testimonial-name {
+  font-weight: 700;
+  color: var(--fizens-framer-ai-cod-gray, var(--color-grey-9, #171717));
+  /* fizens.framer.ai/Semantic/Item */
+  font-family: "DDINPRO";
+  font-size: 1.2vw;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 0vh;
+}
+
+.home-testimonial-role {
+  font-size: 14px;
+  color: #b8b8b8;
+  color: var(--fizens-framer-ai-pale-sky, var(--color-grey-46, #6b7280));
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: normal;
+}
+
+.home-testimonial-stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.home-testimonial-text {
+  font-size: 14px;
+  color: var(--fizens-framer-ai-cod-gray, var(--color-grey-9, #171717));
+  text-align: center;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
