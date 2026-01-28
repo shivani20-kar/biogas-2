@@ -207,11 +207,17 @@ function App() {
               <HomeIndustrialSection />
               <HomeBusinessSection />
               <HomeOurServices />
-              <HomeReferenceSection />
-              <HomePartnersInProgress />
+              {/* <HomeReferenceSection />
+              <HomePartnersInProgress /> */}
               <HomeBlogSection />
 
-              <VerticalMostPopular />
+              {/* <VerticalMostPopular /> */}
+              <HomeMostPopular />
+              <HomeMostPopular2 />
+              <HomeMostPopular3 />
+              <HomeMostPopular4 />
+              <HomeMostPopular5 />
+              <HomeMostPopular6 />
               <HomeTestimonialsSection />
               <HomeWorkingWithGD />
               <HomeSustainabilitySection />

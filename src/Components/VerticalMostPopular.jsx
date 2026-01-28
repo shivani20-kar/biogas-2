@@ -1,24 +1,66 @@
-import React from "react";
-import HomeMostPopular from "../Components/HomeMostPopular";
-import HomeMostPopular2 from "../Components/HomeMostPopular2";
-import HomeMostPopular3 from "../Components/HomeMostPopular3";
-import HomeMostPopular4 from "../Components/HomeMostPopular4";
-import HomeMostPopular5 from "../Components/HomeMostPopular5";
-import HomeMostPopular6 from "../Components/HomeMostPopular6";
+// import React, { useEffect, useRef } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "../Components/Css/VerticalMostPopular.css";
+// import HomeMostPopular1 from "./HomeMostPopular";
+// import HomeMostPopular2 from "./HomeMostPopular2";
+// import HomeMostPopular3 from "./HomeMostPopular3";
+// import HomeMostPopular4 from "./HomeMostPopular4";
+// import HomeMostPopular5 from "./HomeMostPopular5";
+// import HomeMostPopular6 from "./HomeMostPopular6";
 
-const VerticalMostPopular = () => {
-  return (
-    <section className="vertical-most-popular-stack">
-      <HomeMostPopular />
-      <HomeMostPopular2 />
-      <HomeMostPopular3 />
-      <HomeMostPopular4 />
-      <HomeMostPopular5 />
-      <HomeMostPopular6 />
-    </section>
-  );
-};
+// import "./Css/VerticalMostPopular.css";
 
-export default VerticalMostPopular;
+// gsap.registerPlugin(ScrollTrigger);
+
+// const VerticalMostPopular = () => {
+//   const sectionsRef = useRef([]);
+
+//   useEffect(() => {
+//     sectionsRef.current.forEach((section, index) => {
+//       if (index === 0) return;
+
+//       gsap.fromTo(
+//         section,
+//         {
+//           y: "100%",
+//         },
+//         {
+//           y: "0%",
+
+//           ease: "power2.out",
+//           scrollTrigger: {
+//             trigger: section,
+//             start: "top bottom",
+//             end: "top top",
+//             scrub: true,
+//           },
+//         },
+//       );
+//     });
+//   }, []);
+
+//   return (
+//     <section className="vertical-wrapper">
+//       {[
+//         <HomeMostPopular1 />,
+//         <HomeMostPopular2 />,
+//         <HomeMostPopular3 />,
+//         <HomeMostPopular4 />,
+//         <HomeMostPopular5 />,
+//         <HomeMostPopular6 />,
+//       ].map((Component, index) => (
+//         <div
+//           key={index}
+//           className="stack-section"
+//           ref={(el) => (sectionsRef.current[index] = el)}
+//           style={{ zIndex: index + 1 }}
+//         >
+//           {Component}
+//         </div>
+//       ))}
+//     </section>
+//   );
+// };
+
+// export default VerticalMostPopular;

@@ -90,7 +90,7 @@
 
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 /* Button */
@@ -100,7 +100,7 @@
   bottom: 40px;
   overflow: hidden;
   display: inline-flex;
-  padding: 1.5vh 2vw;
+  padding: 1.5vh 1.5vw;
   border-radius: 18px;
   background: #fff;
   color: #000;
@@ -135,6 +135,11 @@
   z-index: 1;
 }
 
+.home-working__dot svg {
+  display: block;
+  margin-bottom: 2px;
+}
+
 .home-working__btn-icon {
   position: absolute;
   right: 14%;
@@ -160,7 +165,7 @@
 
 .home-working__button:hover {
   color: #fff;
-  padding-right: 4vw;
+  padding-right: 4.5vw;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   border: 1px solid #e12d36;
 }

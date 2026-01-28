@@ -45,7 +45,7 @@ const HeroVision = () => {
       image: heroImage6,
     },
     {
-      text: "Supporting to milking animals", 
+      text: "Supporting to milking animals",
       count: "130000",
       image: heroImage7,
     },
@@ -72,7 +72,7 @@ const HeroVision = () => {
         </p>
 
         <div className="hero-title-wrapper">
-          <div className="hero-vertical-line"></div>
+          <div className="hero-vertical-number">1</div>
           <h1 className="hero-main-title">
             <span className="line-small">Asia's First</span>
             <span className="line-big with-line">District</span>

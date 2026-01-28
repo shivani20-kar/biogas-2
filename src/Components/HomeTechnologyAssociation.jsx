@@ -14,7 +14,7 @@ const cards = [
   "Animal Feeds",
   "Organic Milk and Milk Products",
   "Food processing",
-  "Cold Storage and Godowns",
+  "Cold Storage and Warehouses",
   "Advance Vertical Farms",
   "Advance Animals Farms",
   "Fishery",
