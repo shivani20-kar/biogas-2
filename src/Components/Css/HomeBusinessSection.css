@@ -263,13 +263,14 @@
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: 800;
   color: #fff;
   z-index: 5;
   white-space: nowrap;
   pointer-events: none;
   font-family: "DDINPRO";
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* ================= NAV ================= */

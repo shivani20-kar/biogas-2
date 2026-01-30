@@ -31,3 +31,40 @@
     transform: rotate(360deg);
   }
 }
+/* =============================== */
+/* MOST POPULAR – FINAL FIX */
+/* =============================== */
+
+.mostpopular-wrapper {
+  position: relative;
+}
+
+/* ONLY FIRST SECTION FIXED */
+.mostpopular-fixed {
+  position: fixed;
+  top: 90px; /* header height */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: #fff;
+  z-index: 1;
+}
+
+/* STACK SECTIONS (NOT STICKY) */
+.mostpopular-stack {
+  position: relative;
+  z-index: 2;
+  margin-top: calc(100vh - 90px); /* space for fixed */
+}
+
+/* NORMAL SECTIONS */
+.mostpopular-stack > * {
+  position: relative;   /* 👈 IMPORTANT: NOT sticky */
+  height: 100vh;
+  background: #fff;
+}
+
+/* OVERLAP EFFECT */
+.mostpopular-stack > *:not(:first-child) {
+  margin-top: -100vh;
+}

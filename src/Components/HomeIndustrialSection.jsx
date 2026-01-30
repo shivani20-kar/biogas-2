@@ -122,7 +122,7 @@ const HomeIndustrialSection = () => {
               <path
                 d="M32 63.75C49.535 63.75 63.75 49.535 63.75 32C63.75 14.465 49.535 0.25 32 0.25C14.465 0.25 0.25 14.465 0.25 32C0.25 49.535 14.465 63.75 32 63.75Z"
                 stroke="#9CAAAF"
-                strokeWidth="0.8"
+                strokeWidth="0.8" 
                 fill="none"
               />
               <path d="M28 32L34 40V24L28 32Z" fill="#08222B" />

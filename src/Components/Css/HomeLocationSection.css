@@ -1,0 +1,170 @@
+/* Section */
+.home-location-section {
+  background-color: #ffffff;
+  padding: 5vh 4vw 18vh 4vw;
+  position: relative;
+  overflow: hidden;
+  font-family: "DDINPRO", sans-serif;
+}
+
+/* Container */
+.home-location-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.home-location-header {
+  margin-bottom: 40px;
+}
+
+.home-location-tagline {
+  font-size: 1vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+.home-location-title {
+  margin: 10px 0;
+  font-size: 4vw;
+  font-weight: 700;
+  color: #282828;
+}
+
+.home-location-subtitle {
+  font-size: 1.5vw;
+  color: #282828;
+}
+
+/* Map Wrapper */
+.home-map-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Map Image */
+.home-world-map {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-world-map:hover {
+  transform: scale(1.01);
+}
+
+
+/* ============================= */
+/* SVG DOT (FINAL & CLEAN) */
+/* ============================= */
+
+.home-map-svg-dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 4;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.home-map-svg-dot:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(249, 64, 6, 0.7));
+}
+
+/* SVG size */
+.home-map-svg-dot svg {
+  width: 5vw;
+  height: auto;
+  overflow: visible;
+}
+
+/* Invisible overlay (if needed later) */
+.home-map-overlay {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  background: transparent;
+  z-index: 5;
+}
+
+/* DOT WRAPPER */
+.home-map-svg-dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* SVG SIZE */
+.home-map-svg-dot svg {
+  width: 5vw;
+  height: auto;
+  overflow: visible;
+}
+
+/* ============================= */
+/* PULSE EFFECT */
+/* ============================= */
+
+.pulse {
+  transform-origin: center;
+  animation: pulseAnim 2.8s infinite ease-out;
+  opacity: 0.5;
+}
+
+.pulse-1 {
+  animation-delay: 0s;
+}
+
+.pulse-2 {
+  animation-delay: 0.8s;
+}
+
+.pulse-3 {
+  animation-delay: 1.6s;
+}
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+
+.satara-overlay-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  cursor: pointer;
+  animation: fadeInScale 0.35s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

@@ -171,6 +171,8 @@ import HomeMostPopular5 from "./Components/HomeMostPopular5";
 import HomeMostPopular6 from "./Components/HomeMostPopular6";
 import HomeBusinessSection from "./Components/HomeBusinessSection";
 import VerticalMostPopular from "./Components/VerticalMostPopular";
+import HomeTurnkeySection from "./Components/ HomeTurnkeySection";
+import HomeLocationSection from "./Components/HomeLocationSection";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -205,20 +207,37 @@ function App() {
               <FarmerDignitySection />
               <HomeTechnologyAssociation />
               <HomeIndustrialSection />
+              <HomeTurnkeySection />
               <HomeBusinessSection />
               <HomeOurServices />
-              {/* <HomeReferenceSection />
-              <HomePartnersInProgress /> */}
+              <HomeReferenceSection />
+              <HomePartnersInProgress />
               <HomeBlogSection />
 
               {/* <VerticalMostPopular /> */}
-              <HomeMostPopular />
+              {/* <HomeMostPopular />
               <HomeMostPopular2 />
               <HomeMostPopular3 />
               <HomeMostPopular4 />
               <HomeMostPopular5 />
-              <HomeMostPopular6 />
+              <HomeMostPopular6 /> */}
+
+              <div className="mostpopular-wrapper">
+                <div className="mostpopular-sticky">
+                  <HomeMostPopular />
+                </div>
+
+                <div className="mostpopular-scroll">
+                  <HomeMostPopular2 />
+                  <HomeMostPopular3 />
+                  <HomeMostPopular4 />
+                  <HomeMostPopular5 />
+                  <HomeMostPopular6 />
+                </div>
+              </div>
+
               <HomeTestimonialsSection />
+              <HomeLocationSection />
               <HomeWorkingWithGD />
               <HomeSustainabilitySection />
               <Footer />

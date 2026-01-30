@@ -48,7 +48,7 @@ const TechnologyCollaboration = () => {
       </div>
 
       {/* ---------------- LOGO SLIDER SECTION ---------------- */}
-      <div className="slider-container">
+      <div className="slider-containers">
         <div className="logo-slider">
           {/* ===== FIRST SET ===== */}
           <img src={zorgBiogasLogo} className="slide-logo" alt="Zorg Biogas" />

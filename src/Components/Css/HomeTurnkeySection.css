@@ -1,0 +1,183 @@
+.home-turnkey {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* LEFT */
+.home-turnkey__left {
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.home-turnkey__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.home-turnkey__title,
+.home-turnkey__text,
+.home-turnkey__btn {
+  position: relative;
+  z-index: 2;
+}
+
+.home-turnkey__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.home-turnkey__text {
+  max-width: 420px;
+  margin: 25px 0 35px;
+  font-size: 15px;
+}
+
+.home-turnkey__btn {
+  padding: 14px 36px;
+  border-radius: 40px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.home-turnkey__right {
+  width: 65%;
+  background: linear-gradient(135deg, #0a6b6a, #19a6a1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* CONTENT */
+.home-turnkey__content {
+  position: relative;
+  z-index: 5;
+  padding: 100px 90px;
+  max-width: 460px;
+  color: #fff;
+}
+
+.home-turnkey__subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.home-turnkey__desc {
+  font-size: 24px;
+  line-height: 1.45;
+  margin: 32px 0;
+}
+
+.home-turnkey__count {
+  opacity: 0.7;
+}
+
+.home-turnkey__approach {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.home-turnkey__approach-desc {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* HONEYCOMB – TRUE CENTER */
+.home-turnkey__pattern {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 25%,
+    100% 75%,
+    75% 100%,
+    25% 100%,
+    0% 75%,
+    0% 25%
+  );
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hex-row {
+  display: flex;
+}
+
+.hex-row.offset {
+  transform: translateX(37px);
+}
+
+.hex {
+  width: 74px;
+  height: 44px;
+  margin: 3px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+}
+
+/* CENTER LOGO – EXACT */
+.home-turnkey__logo-wrap {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.logo-hex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.35);
+}
+
+.logo-hex img {
+  width: 30vw;
+  position: relative;
+  z-index: 2;
+}
+
+/* NAV */
+.home-turnkey__nav {
+  position: absolute;
+  right: 110px;
+  bottom: 60px;
+  display: flex;
+  gap: 16px;
+  z-index: 7;
+}
+
+.home-turnkey__nav span {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
