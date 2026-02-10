@@ -1,0 +1,28 @@
+.biogascogenerationprocess {
+  background-color: #fff;
+  padding: 0vh 5vw;
+}
+
+/* CONTAINER */
+.biogascogenerationprocess-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* DIAGRAM WRAPPER */
+.biogascogenerationprocess-diagram {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE */
+.biogascogenerationprocess-diagram img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  object-fit: contain;
+}

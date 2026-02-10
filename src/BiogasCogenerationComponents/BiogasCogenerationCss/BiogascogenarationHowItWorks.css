@@ -1,0 +1,101 @@
+.biogascogenarationhowitworks {
+  background-color: #fff;
+  padding: 8vh 5vw;
+}
+
+.biogascogenarationhowitworks-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 6vw; */
+}
+
+/* LEFT */
+.biogascogenarationhowitworks-left {
+  width: 40%;
+}
+
+.biogascogenarationhowitworks-title {
+  font-family: "DDINPRO";
+  font-size: 5vw;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #282828;
+  font-style: normal;
+  margin: 0;
+}
+
+/* ENERGY BLOCK */
+.biogascogenarationhowitworks-energy-title {
+  font-size: 2.5vw;
+  margin: 2vh 0 1vw 0;
+  color: #e12d36;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.biogascogenarationhowitworks-energy-block {
+  margin-bottom: 2vh;
+}
+
+.biogascogenarationhowitworks-energy-block strong {
+  display: block;
+  font-size: 2vw;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.biogascogenarationhowitworkss-energy-block p {
+  color: #282828;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.biogascogenarationhowitworks-network {
+  font-size: 1.8vw;
+  margin: 2vh 0 1vw 0;
+}
+
+.biogascogenarationhowitworks-energy-sub {
+  font-size: 1.8vw;
+  margin-top: 0.4vh;
+  color: #282828;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2vh 0 1vw 0;
+}
+
+.ulsection {
+  padding-left: 15vw;
+}
+
+.biogascogenarationhowitworks-energy-block li {
+  color: #676767;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* RIGHT */
+.biogascogenarationhowitworks-right {
+  width: 55%;
+}
+
+.biogascogenarationhowitworks-right p {
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  line-height: 1.2;
+  color: rgba(37, 37, 37, 0.8);
+  font-style: normal;
+  font-weight: 400;
+}

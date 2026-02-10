@@ -287,7 +287,7 @@ const handleNext = () => {
     <p className="normal-text">Renewable, Electrical, Cooking Gas & <br/> Thermal Engergy From</p>
     </div>,
      <div className="animated-box" key={activeSlide}>
-      <div className="title-row"><span>Explore GD Planet Solutionns<br />For Biomethane Upgrading & Liquification<br/>
+      <div className="title-row"><span>Explore GD Planet Solutions<br />For Biomethane Upgrading & Liquification<br/>
       </span>
         <svg
   xmlns="http://www.w3.org/2000/svg"

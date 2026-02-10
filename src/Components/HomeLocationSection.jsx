@@ -93,7 +93,7 @@ const HomeLocationSection = () => {
           {/* MAP 1 */}
           {activeMap === "map1" && (
             <MapDot
-              style={{ top: "52%", left: "63.5%" }}
+              style={{ top: "58%", left: "64.5%" }}
               onClick={(e) => {
                 e.stopPropagation();
                 setActiveMap("map2");
@@ -105,21 +105,21 @@ const HomeLocationSection = () => {
           {activeMap === "map2" && (
             <>
               <MapDot
-                style={{ top: "48.5%", left: "34.6%" }}
+                style={{ top: "48.5%", left: "28.6%" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setActiveMap("map3a");
                 }}
               />
               <MapDot
-                style={{ top: "57%", left: "37.5%" }}
+                style={{ top: "57%", left: "33%" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setActiveMap("mapbdaman");
                 }}
               />
               <MapDot
-                style={{ top: "61%", left: "42%" }}
+                style={{ top: "64.5%", left: "36%" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setActiveMap("map3cmaharashta");
@@ -143,14 +143,14 @@ const HomeLocationSection = () => {
           {activeMap === "map3cmaharashta" && (
             <>
               <MapDot
-                style={{ top: "30%", left: "27%" }}
+                style={{ top: "24%", left: "27%" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setActiveMap("map3cnashik");
                 }}
               />
               <MapDot
-                style={{ top: "60%", left: "28%" }}
+                style={{ top: "55%", left: "28%" }}
                 onClick={(e) => {
                   e.stopPropagation();
                   setActiveMap("map3csatara");

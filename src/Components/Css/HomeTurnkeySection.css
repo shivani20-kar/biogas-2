@@ -2,20 +2,20 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: "DDINPRO";
+  padding-top: 9vh;
 }
 
 /* LEFT */
 .home-turnkey__left {
-  width: 35%;
+  width: 28%;
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 80px;
+  padding: 5vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  color: #fff;
+  align-items: start;
 }
 
 .home-turnkey__overlay {
@@ -32,78 +32,262 @@
 }
 
 .home-turnkey__title {
-  font-size: 60px;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 5.5vw;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.home-turnkey__title2 {
+  padding-left: 5vw;
 }
 
 .home-turnkey__text {
-  max-width: 420px;
-  margin: 25px 0 35px;
-  font-size: 15px;
+  width: 20vw;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
+/* ================= TURNKEY – LEARN MORE BUTTON ================= */
+
 .home-turnkey__btn {
+  position: absolute;
+  bottom: 40px;
+  left: 29%;
+  transform: translateX(-50%);
+
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 14px 36px;
   border-radius: 40px;
-  border: none;
   background: #fff;
+  color: #000;
+
+  font-family: "DDINPRO";
+  font-size: 16px;
+  font-weight: 500;
+
+  border: none;
   cursor: pointer;
+  z-index: 5;
+
+  transition:
+    padding 0.6s ease,
+    color 0.4s ease;
+}
+
+/* RED BG HOVER ANIMATION */
+.home-turnkey__btn::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 160%;
+  height: 160%;
+  background: #e53935;
+  transform: translateX(-50%) scale(0);
+  transform-origin: bottom center;
+  border-radius: 40px;
+  transition: transform 1.1s ease;
+  z-index: 0;
+}
+
+/* TEXT */
+.home-turnkey__btn .btn-text {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+/* ARROW ICON */
+.home-turnkey__btn .btn-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition:
+    transform 0.6s ease,
+    opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* HOVER EFFECTS */
+.home-turnkey__btn:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+
+.home-turnkey__btn:hover {
+  color: #fff;
+  padding-right: 60px;
+}
+
+.home-turnkey__btn:hover .btn-icon {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
 }
 
 /* RIGHT */
 .home-turnkey__right {
-  width: 65%;
-  background: linear-gradient(135deg, #0a6b6a, #19a6a1);
+  width: 72%;
+  background: linear-gradient(208deg, #092934 0%, #05b5b0 100%);
   position: relative;
   overflow: hidden;
 }
-
-/* CONTENT */
 .home-turnkey__content {
   position: relative;
   z-index: 5;
-  padding: 100px 90px;
-  max-width: 460px;
-  color: #fff;
+  padding: 20vh 5vw;
+  color: #ffffff;
 }
 
+.home-turnkey__subtitle-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-turnkey__line {
+  width: 3vw;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* END-TO-END */
 .home-turnkey__subtitle {
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: 1.5vw;
+  letter-spacing: 2.5px;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
 }
 
+/* MAIN TEXT */
 .home-turnkey__desc {
-  font-size: 24px;
-  line-height: 1.45;
-  margin: 32px 0;
+  font-size: 1.5vw;
+  letter-spacing: 2.5px;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+  width: 12vw;
 }
 
+.home-turnkey__desc strong {
+  font-weight: 700;
+}
+
+.home-turnkey__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 15vh;
+}
 .home-turnkey__count {
-  opacity: 0.7;
+  font-size: 1.5vw;
+  font-family: "DDINPRO";
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
 }
 
+.count-active {
+  color: #fff;
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* TOTAL (/10) */
+.count-total {
+  color: #bcbcbc;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* Our Integrated Approach */
 .home-turnkey__approach {
-  font-weight: 600;
-  margin-top: 6px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "DDINPRO";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 20vw;
 }
 
+/* One partner text */
 .home-turnkey__approach-desc {
-  font-size: 14px;
-  margin-top: 6px;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  opacity: 0.9;
+  color: #fff;
+  font-family: "DDINPRO";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0;
+  width: 12vw;
 }
+
+.home-turnkey__text-anim {
+  animation: slideUpFade 0.7s ease forwards;
+}
+
+/* BOTTOM → TOP */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* HONEYCOMB – TRUE CENTER */
 .home-turnkey__pattern {
   position: absolute;
-  left: 65%;
-  top: 50%;
+  left: 71%;
+  top: 37%;
   transform: translate(-50%, -50%);
   width: 620px;
   height: 620px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   clip-path: polygon(
     25% 0%,
     75% 0%,
@@ -120,17 +304,18 @@
 
 .hex-row {
   display: flex;
+  margin-top: 0vh;
 }
 
 .hex-row.offset {
-  transform: translateX(37px);
+  transform: translateX(36px);
 }
 
 .hex {
-  width: 74px;
-  height: 44px;
-  margin: 3px;
-  background-size: cover;
+  width: 10vw;
+  height: 10vh;
+  margin: 1px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
@@ -139,8 +324,8 @@
 /* CENTER LOGO – EXACT */
 .home-turnkey__logo-wrap {
   position: absolute;
-  left: 65%;
-  top: 50%;
+  left: 71%;
+  top: 37%;
   transform: translate(-50%, -50%);
   z-index: 6;
 }
@@ -150,7 +335,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.35);
 }
 
 .logo-hex img {
@@ -159,25 +343,40 @@
   z-index: 2;
 }
 
-/* NAV */
 .home-turnkey__nav {
   position: absolute;
-  right: 110px;
+  right: 110px; 
   bottom: 60px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
   z-index: 7;
 }
 
-.home-turnkey__nav span {
+.home-turnkey__arrow {
   width: 44px;
   height: 44px;
+  border: 2px solid #fff;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   cursor: pointer;
+  transition:
+    background 0.3s ease,
+    border 0.3s ease;
 }
+
+.home-turnkey__arrow svg path {
+  transition: fill 0.3s ease;
+}
+
+.home-turnkey__arrow:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.home-turnkey__arrow:hover svg path {
+  fill: #e53935; /* same red hover as in business section */
+}
+
 

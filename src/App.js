@@ -173,6 +173,12 @@ import HomeBusinessSection from "./Components/HomeBusinessSection";
 import VerticalMostPopular from "./Components/VerticalMostPopular";
 import HomeTurnkeySection from "./Components/ HomeTurnkeySection";
 import HomeLocationSection from "./Components/HomeLocationSection";
+import BioGasCogenerationHero from "./BiogasCogenerationComponents/BiogasCogenerationHero";
+import BiogasCogenerationInfo from "./BiogasCogenerationComponents/BiogasCogenerationInfo";
+import BiogasCogenerationProcess from "./BiogasCogenerationComponents/BiogasCogenerationProcess";
+import BiogascogenarationHowItWorks from "./BiogasCogenerationComponents/BiogascogenarationHowItWorks";
+import BiogasCogenerationChpVideoSection from "./BiogasCogenerationComponents/BiogasCogenerationChpVideoSection";
+import BiogascogenerationEnhancementSection from "./BiogasCogenerationComponents/BiogascogenerationEnhancementSection";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -398,6 +404,24 @@ function App() {
             </>
           }
         />
+
+
+         <Route
+          path="/biogas-cogeneration"
+          element={
+            <>
+              <BioGasCogenerationHero />
+              <BiogasCogenerationInfo />
+              <BiogasCogenerationProcess />
+              <BiogascogenarationHowItWorks />
+              <BiogasCogenerationChpVideoSection />
+              <BiogascogenerationEnhancementSection />
+            </>
+          }
+        />
+
+
+
         <Route
           path="/aboutus"
           element={

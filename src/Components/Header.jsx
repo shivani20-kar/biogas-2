@@ -126,7 +126,7 @@ const Header = () => {
             {mobileOpenMenu === "solutions" && (
               <div className="mobile-submenu open">
                 <Link to="/biogas" onClick={() => handleMenuItemClick("link")}>Biogas</Link>
-                <Link to="/biogas-cogeneration" onClick={() => handleMenuItemClick("link")}>Biogas Co-generation</Link>
+                <Link to="/biogas-cogeneration" onClick={() =>  handleMenuItemClick("link")}>Biogas Co-generation</Link>
                 <Link to="/liquefication-biomethane" onClick={() => handleMenuItemClick("link")}>Liquefication of Biomethane</Link>
                 <Link to="/co2-liquefication" onClick={() => handleMenuItemClick("link")}>Co2 Liquefication</Link>
                 <Link to="/waste-hydrochar" onClick={() => handleMenuItemClick("link")}>Waste to Hydrochar</Link>

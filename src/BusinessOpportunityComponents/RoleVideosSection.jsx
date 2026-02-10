@@ -13,7 +13,7 @@ export default function RoleVideosSection() {
 
   const roles = [
     {
-      text: (
+      text: ( 
         <>
           What is the role of the 
           Commissioning  Engineer?

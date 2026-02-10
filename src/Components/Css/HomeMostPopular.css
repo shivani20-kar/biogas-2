@@ -1,9 +1,5 @@
 .home-most-popular {
   background-color: #fff;
-  
-  /* position: sticky;
-  top: 0;
-  z-index: 10; */
 }
 
 .home-most-popular__image {
@@ -23,7 +19,7 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: var(--letter-spacing--2_2, -2.2px);
-  margin-top: 0vh;
+  margin-top: 4vh;
 }
 
 /* Card wrapper */
@@ -35,7 +31,6 @@
 }
 
 /* Background image */
-
 
 /* Dark overlay */
 .home-most-popular__overlay {

@@ -1,21 +1,16 @@
 /* Section */
 .home-location-section {
   background-color: #ffffff;
-  padding: 5vh 4vw 18vh 4vw;
+  padding: 0vh 4vw 6vh 4vw;
   position: relative;
   overflow: hidden;
-  font-family: "DDINPRO", sans-serif;
+  font-family: "DDINPRO";
 }
 
 /* Container */
 .home-location-container {
   width: 100%;
   margin: 0 auto;
-}
-
-/* Header */
-.home-location-header {
-  margin-bottom: 40px;
 }
 
 .home-location-tagline {
@@ -57,7 +52,6 @@
 .home-world-map:hover {
   transform: scale(1.01);
 }
-
 
 /* ============================= */
 /* SVG DOT (FINAL & CLEAN) */
@@ -145,7 +139,6 @@
     opacity: 0;
   }
 }
-
 
 .satara-overlay-map {
   position: absolute;
